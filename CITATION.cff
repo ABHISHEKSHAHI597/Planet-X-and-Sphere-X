@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use ParallaX, please cite it as below, and cite the SPHEREx data and the catalogues listed on its About page."
+title: "ParallaX — SPHEREx blink comparator"
+abstract: >-
+  A public web tool that blinks SPHEREx visit stacks of any patch of sky, one band at a time on one shared brightness
+  scale, so that moving and varying objects can be spotted. Built for the NASA Space Apps Challenge 2026,
+  "Planet X and SPHEREx".
+type: software
+authors:
+  - name: "The ParallaX team, NASA Space Apps Challenge 2026"
+repository-code: "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026"
+license: GPL-3.0-or-later
+keywords:
+  - SPHEREx
+  - blink comparator
+  - proper motion
+  - brown dwarfs
+  - citizen science
