@@ -1,0 +1,17 @@
+# Build context for backend/Dockerfile and deploy/web.Dockerfile (audit O-01): only sources, config and fixtures.
+.git
+**/node_modules
+**/.venv
+**/__pycache__
+**/*.pyc
+.cache
+validation
+audit
+snapshot
+calib
+release
+frontend/dist
+frontend/dist-mock
+scripts/e2e/node_modules
+.env
+.claude

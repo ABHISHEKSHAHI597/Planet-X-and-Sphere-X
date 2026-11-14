@@ -1,0 +1,35 @@
+# ParallaX deployment (implementation.md §9; workflow.md §12.1; owner P).
+#
+#   Staging / production (AWS us-east-1 VM):  IMAGE_TAG=<sha or RC> docker compose up -d
+#   Offline demo laptop:                      docker compose --env-file deploy/offline.env up -d
+#   Build locally instead of pulling:         docker compose build
+#
+# Images are pushed by digest from CI (.github/workflows/ci.yml); release.json records the digests.
+# Rollback = set IMAGE_TAG to the previous RC and `docker compose up -d` (docs/deploy.md, < 5 min).
+services:
+  api:
+    image: ${REGISTRY:-ghcr.io/parallax}/parallax-api:${IMAGE_TAG:-local}
+    build: {context: ., dockerfile: backend/Dockerfile, args: {GIT_SHA: "${GIT_SHA:-unknown}"}}
+    env_file: [.env]
+    environment:
+      CACHE_DIR: /cache
+      CALIB_ROOT: ${CALIB_ROOT_IN_CONTAINER:-}
+    volumes:
+      - cache:/cache
+      - ${SNAPSHOT_HOST_DIR:-./snapshot}:/snapshot:ro
+      - ${CALIB_HOST_DIR:-./calib}:/calib:ro
+    restart: unless-stopped
+    stop_grace_period: 20s
+    logging: {driver: json-file, options: {max-size: "50m", max-file: "5"}}
+  web:
+    image: ${REGISTRY:-ghcr.io/parallax}/parallax-web:${IMAGE_TAG:-local}
+    build: {context: ., dockerfile: deploy/web.Dockerfile}
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:-:80}
+    ports: ["80:80", "443:443"]
+    volumes: [caddy_data:/data]
+    depends_on: [api]
+    restart: unless-stopped
+volumes:
+  cache: {}
+  caddy_data: {}
