@@ -1,0 +1,3 @@
+validation/** linguist-generated=true
+frontend/src/api/generated.ts linguist-generated=true
+frontend/src/api/openapi.json linguist-generated=true
