@@ -1,0 +1,108 @@
+[project]
+name = "parallax-backend"
+version = "0.0.1"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "astropy>=6.1",
+  "reproject>=0.14",
+  "photutils>=3.0",
+  "httpx>=0.27",      # spherex/access + external: async archive and catalogue I/O (owner D)
+  "pyyaml>=6.0",      # config/releases.yaml (owner D)
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "pillow>=10.4",
+]
+
+[dependency-groups]
+dev = [
+    "import-linter>=2.1",
+    "jsonschema>=4.23",
+    "mypy>=1.11",
+    "pytest>=8",
+    "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*", "spherex*"]
+
+[tool.setuptools.package-data]
+spherex = ["data/*.txt", "data/*.json", "data/templates/*.fits", "data/templates/*.fits.gz", "data/templates/*.txt.gz", "data/templates/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: needs live services"]
+addopts = "-m 'not network'"
+
+[tool.mypy]
+# workflow.md §3: `mypy --strict` on spherex/types.py (and boundary functions). Scientific deps ship no stubs.
+python_version = "3.12"
+
+[[tool.mypy.overrides]]
+module = ["astropy.*", "reproject.*", "photutils.*", "scipy.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# numpy expressions on untyped astropy/scipy results are Any; every signature is still fully typed.
+module = ["spherex.flags", "spherex.blink25", "spherex.preprocess", "spherex.epochs", "spherex.grid", "spherex.stack",
+          "spherex.cube", "spherex.render", "spherex.movers"]
+warn_return_any = false
+
+# ---------------------------------------------------------------- static checks (workflow.md §3, §9.5; owner P)
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = [".venv", "tests/data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008", "UP007", "UP047"]   # UP047: TypeVar generics stay readable for the science owners
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["B", "E402"]
+"app/pipeline.py" = ["I001", "B007", "B905"]   # cosmetic; file is a G2-repro code path, edit with the next record
+# Code paths of fresh evidence records (G5.25yr-jumps; S3-section benchmarks): a cosmetic edit would change their
+# code digest and drop them a level (scripts/validate.py). Fix with each file's next record.
+"spherex/access/blink25.py" = ["I001"]
+"spherex/access/s3sections.py" = ["I001", "B905"]
+
+[[tool.mypy.overrides]]
+module = ["spherex.types"]
+strict = true
+
+[[tool.mypy.overrides]]
+# Typed debt recorded in docs/role-P-handoff.md; fixed together with the next G2-repro record (code path).
+module = ["app.pipeline"]
+disable_error_code = ["arg-type", "var-annotated"]
+
+[[tool.mypy.overrides]]
+module = ["yaml.*", "PIL.*", "jsonschema.*"]
+ignore_missing_imports = true
+
+[tool.importlinter]
+root_packages = ["spherex", "app"]
+include_external_packages = true
+
+[[tool.importlinter.contracts]]
+name = "spherex never imports app, FastAPI or settings (workflow.md §3)"
+type = "forbidden"
+source_modules = ["spherex"]
+forbidden_modules = ["app", "fastapi", "starlette", "uvicorn"]
+
+[[tool.importlinter.contracts]]
+name = "only spherex.access and spherex.external do network I/O (workflow.md §3)"
+type = "forbidden"
+source_modules = ["spherex.flags", "spherex.preprocess", "spherex.epochs", "spherex.grid", "spherex.stack",
+                  "spherex.cube", "spherex.render", "spherex.movers", "spherex.types", "spherex.constants",
+                  "spherex.targets", "spherex.astrometry", "spherex.epsf", "spherex.photometry",
+                  "spherex.lightcurve", "spherex.ephem", "spherex.linking", "spherex.planetx",
+                  "spherex.templates", "spherex.reference", "spherex.joint_astrometry", "spherex.blink25"]
+forbidden_modules = ["httpx", "spherex.access.http", "spherex.access.s3sections", "spherex.access.fitsstream"]
+# Direct imports only: spherex.calib (D) may fetch calibration lazily, and science modules import calib for maps.
+allow_indirect_imports = true
+
+[[tool.mypy.overrides]]
+# Code path of a fresh evidence record (G5.planetx): annotate with its next record, not cosmetically now.
+module = ["spherex.planetx"]
+disable_error_code = ["var-annotated"]

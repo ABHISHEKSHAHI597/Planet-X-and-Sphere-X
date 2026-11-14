@@ -1,0 +1,18 @@
+{
+  "W1": {
+    "url": "https://irsa.ipac.caltech.edu/data/WISE/docs/release/All-Sky/expsup/figures/RSR-W1.txt",
+    "sha256": "6ade5b074dc7652e08c4de7767969126b7e48fdf4b6295bbf7f44e22d33ec1e9",
+    "bytes": 8468,
+    "retrieved": "2026-11-07T19:10:09.716721+00:00",
+    "units": "wavelength micron; response per photon; uncertainty ppt",
+    "source": "Wright et al. 2010 via WISE All-Sky Explanatory Supplement IV.4.h Fig5a"
+  },
+  "W2": {
+    "url": "https://irsa.ipac.caltech.edu/data/WISE/docs/release/All-Sky/expsup/figures/RSR-W2.txt",
+    "sha256": "b0a86a7e86b07713cecfe9c853292d56f19da6c385de45f6265b676cc1330f2a",
+    "bytes": 11618,
+    "retrieved": "2026-11-07T19:10:10.437632+00:00",
+    "units": "wavelength micron; response per photon; uncertainty ppt",
+    "source": "Wright et al. 2010 via WISE All-Sky Explanatory Supplement IV.4.h Fig5a"
+  }
+}

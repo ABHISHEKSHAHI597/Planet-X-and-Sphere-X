@@ -1,0 +1,67 @@
+{
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits RANGE bytes=0-32767": {
+  "bytes": 32768,
+  "file": "1a3c0c5f2595fad60130f46c.gz",
+  "headers": {
+   "content-length": "32768",
+   "content-range": "bytes 0-32767/64941120",
+   "content-type": "binary/octet-stream",
+   "etag": "\"bcbc62495c94cab1efa774e730c4e415\""
+  },
+  "retrieved": "2026-11-07T07:53:04+00:00",
+  "sha256": "afb5071d002b10f95730d97c9eca27e630a03b9122488fa4037260ae734323ec",
+  "status": 206
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits RANGE bytes=16672320-16705087": {
+  "bytes": 32768,
+  "file": "bb0fb7634ced1b9d97c31cc2.gz",
+  "headers": {
+   "content-length": "32768",
+   "content-range": "bytes 16672320-16705087/64941120",
+   "content-type": "binary/octet-stream",
+   "etag": "\"bcbc62495c94cab1efa774e730c4e415\""
+  },
+  "retrieved": "2026-11-07T07:53:06+00:00",
+  "sha256": "489e7c4eb84497548ceecfee85c008125352f568c3f1ded69d52c5723414d3fc",
+  "status": 206
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits RANGE bytes=27751680-27784447": {
+  "bytes": 32768,
+  "file": "cf99258b35bc8ea3949d1051.gz",
+  "headers": {
+   "content-length": "32768",
+   "content-range": "bytes 27751680-27784447/64941120",
+   "content-type": "binary/octet-stream",
+   "etag": "\"bcbc62495c94cab1efa774e730c4e415\""
+  },
+  "retrieved": "2026-11-07T07:53:09+00:00",
+  "sha256": "3269f28be3ce6941f41ac11156030879eb76d70fe33c7bf3bda07961a8ed378d",
+  "status": 206
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits RANGE bytes=2880-35647": {
+  "bytes": 32768,
+  "file": "bd81a882e9c0959800d06342.gz",
+  "headers": {
+   "content-length": "32768",
+   "content-range": "bytes 2880-35647/64941120",
+   "content-type": "binary/octet-stream",
+   "etag": "\"bcbc62495c94cab1efa774e730c4e415\""
+  },
+  "retrieved": "2026-11-07T07:53:05+00:00",
+  "sha256": "0eb9e42880f9d068d18f6694d11200885299f8ebfe4b8f460ce8349f904b1ef3",
+  "status": 206
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits RANGE bytes=44409600-44442367": {
+  "bytes": 32768,
+  "file": "1b84e03a21a8f7ced5f33e76.gz",
+  "headers": {
+   "content-length": "32768",
+   "content-range": "bytes 44409600-44442367/64941120",
+   "content-type": "binary/octet-stream",
+   "etag": "\"bcbc62495c94cab1efa774e730c4e415\""
+  },
+  "retrieved": "2026-11-07T07:53:10+00:00",
+  "sha256": "77e0821ee2d9dee47b7dd7cd39c90c3cfa002deeeaf29a67eb72d0591a9e87eb",
+  "status": 206
+ }
+}

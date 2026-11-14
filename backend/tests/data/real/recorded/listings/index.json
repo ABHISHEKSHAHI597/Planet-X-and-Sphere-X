@@ -1,0 +1,132 @@
+{
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?continuation-token=12KnV0kwrKR8saG3EP5iyqhuptfdkhFBUJmz4kUHAgwn4VQYnl1dMy%2FHYv33pmivUQxe%2B3cGHMkWFt0dVGCJ7IROvYMU2vjTCVtmfazHhDeD2XCh9hWpCHBcW3Or4ruMdNgCzfvHI6Oc%3D&list-type=2&max-keys=3&prefix=qr3%2Fepsf%2F": {
+  "bytes": 1710,
+  "file": "9b6c799024e6ee32b180b427.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:24+00:00",
+  "sha256": "b4839108c9ace1b78a3bad68d79ebd38d06450759bb37bedc4064b3c91281bc1",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?continuation-token=141DiG0DOLruXIBsvdqRylve6PVkYnLIZq%2BDGFhPYhieNp87unFwgg0JxzMQLTNLLVyWpUomEyT1F8JAAYCwBLpT8gWT36IaZMmZuRzvNSF%2Bzt4Rgd8fW9LhgT7TvWpdzNzAQUIbejhY%3D&list-type=2&max-keys=3&prefix=qr3%2Fepsf%2F": {
+  "bytes": 1710,
+  "file": "375d8c7c1941878aff6e1ddb.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:04:59+00:00",
+  "sha256": "f331c3f460fbd21aaf026a61b2c51791902e77bbc40eef3e06e01690003c3206",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?continuation-token=19w5UugkXBbx09D4e7XkAPv0pQIFRnihnJauNu9kEkdULMmqMv7LaDzUTKQzO%2FrqwI6Kyvmmc6zNLW%2BB%2FGeIJVp4y4lUfpcAJ%2BSd1D0T8brHrHNh7WLFtUTuQ1fAWdxq7SiuMJxKCWC8%3D&list-type=2&max-keys=3&prefix=qr3%2Fepsf%2F": {
+  "bytes": 797,
+  "file": "d9c845a4543b6289af4cf1da.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:04:59+00:00",
+  "sha256": "cc456bab1ba1fc70ef85f587af69fe11fd8c3d0b10916cfc81a565bc96d15dcb",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?continuation-token=1hSItztql66MpWT3Ea7eyQTfABnjm6VWUU9kf3RnzvKBT7w3zXdJzWxlY6yMNbpMJV1IVr5ig2SuQGNou6VhOQC5coBM7aYVkSB%2FVjn3YjGcsUvhwt7pgsEsph6FtNMMC0c19IO9yR8k%3D&list-type=2&max-keys=3&prefix=qr3%2Fepsf%2F": {
+  "bytes": 797,
+  "file": "abbe21d3cf64cb86b87b3d34.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:24+00:00",
+  "sha256": "0de3800c94636b52da325bf1f4c1080a0fca96fe1a0c85ba65b6ed5b2bfbc216",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?delimiter=%2F&list-type=2&prefix=": {
+  "bytes": 671,
+  "file": "ca6957a4fe984db7cb360327.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:23+00:00",
+  "sha256": "37337f8e3900d812b86196a2e8082e63079b8bec2a0b90ace99153135c8bc1e4",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?delimiter=%2F&list-type=2&prefix=qr2%2Flevel2%2F": {
+  "bytes": 9573,
+  "file": "b915fe60de427ac5e58b9451.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:24+00:00",
+  "sha256": "0a4993484bb24b2d4b6c127aa053823c8316b3d34cf9b831d1236b10f7765dac",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?delimiter=%2F&list-type=2&prefix=qr3%2Flevel2%2F": {
+  "bytes": 1868,
+  "file": "456506cc5e6ad51d71216763.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:23+00:00",
+  "sha256": "00e8bdff98f57e8ae8d52d68a83bb25677dd50f02217b205ffbe716c3aea35b7",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?list-type=2&max-keys=3&prefix=qr3%2Fepsf%2F": {
+  "bytes": 1530,
+  "file": "273f2ceed401c2de97fd09bb.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:24+00:00",
+  "sha256": "037a571abefd3b93b86873927d0e3b054191132ab5cffca9d221d5906cd12689",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?list-type=2&prefix=qr3%2Fepsf%2F": {
+  "bytes": 2798,
+  "file": "ff34ce698741ba030111dd78.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:25+00:00",
+  "sha256": "c5577e8938eb6e0e75f3debe1bf3615cae49cc55aae4953c4a858e12f61c9abd",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?list-type=2&prefix=qr3%2Fl3_flux_corrections%2F": {
+  "bytes": 2636,
+  "file": "bbcc53f45923a775e912e9ea.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:26+00:00",
+  "sha256": "178aeb8dfe24a1b96fe93b5d18007789693163d00e3c15823d6c2caf781e38de",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?list-type=2&prefix=qr3%2Fsolid_angle_pixel_map%2F": {
+  "bytes": 2662,
+  "file": "8b3aeadc8d4ec10352cc2db2.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:26+00:00",
+  "sha256": "93645a82bd914fc2ee53b47da54d040b3497d00ed7959104823830646e3bb978",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?list-type=2&prefix=qr3%2Fspectral_channels%2F": {
+  "bytes": 652,
+  "file": "4463f8a1f10458d3d6775eac.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:25+00:00",
+  "sha256": "b6546758ec56373de64427690c733a5eefb649082c1969bc8822658affaa6bb5",
+  "status": 200
+ },
+ "GET https://nasa-irsa-spherex.s3.amazonaws.com/?list-type=2&prefix=qr3%2Fspectral_wcs%2F": {
+  "bytes": 2545,
+  "file": "67269c7ca786a2da177e20b8.gz",
+  "headers": {
+   "content-type": "application/xml"
+  },
+  "retrieved": "2026-11-07T07:06:25+00:00",
+  "sha256": "54baeae11c15896adb9a83edb6d1add80e4df1de1c41cc9400798f05714ce33e",
+  "status": 200
+ }
+}

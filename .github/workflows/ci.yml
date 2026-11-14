@@ -1,0 +1,202 @@
+# CI (workflow.md §9.5; owner P). Every PR: Static, Unit, Synthetic, Real-file, Contract, End-to-end offline.
+# Merge to main: build images, push by digest, deploy to staging.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+env:
+  UV_VERSION: "0.5.11"
+  PYTHON_VERSION: "3.12"
+  NODE_VERSION: "22"
+
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}            # validate.py status reads git history for legacy records
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "${{ env.UV_VERSION }}", python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: ruff (platform code and the science/data package)
+        run: |
+          uv run ruff check app spherex tests/app ../scripts/validate.py ../scripts/check_flags.py ../scripts/gen_contracts.py             ../scripts/make_snapshot.py ../scripts/prewarm.py ../scripts/perf_probe.py ../scripts/contract_probe.py             ../scripts/make_release.py ../scripts/go_no_go.py ../scripts/make_goldens.py ../scripts/verify/_evidence.py             ../scripts/verify/_p_build.py ../scripts/verify/p_platform.py ../scripts/verify/p_repro.py
+        working-directory: backend
+      - name: mypy (app; spherex; spherex.types strict)
+        run: uv run mypy -p app --follow-imports=silent && uv run mypy spherex/types.py --strict && uv run mypy -p spherex
+        working-directory: backend
+      - name: import-linter (workflow.md §3 module boundaries)
+        run: uv run lint-imports
+        working-directory: backend
+      - uses: actions/setup-node@v4
+        with: {node-version: "${{ env.NODE_VERSION }}", cache: npm, cache-dependency-path: frontend/package-lock.json}
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run typecheck
+        working-directory: frontend
+      - run: npm run lint
+        working-directory: frontend
+
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}            # validate.py status reads git history for legacy records
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "${{ env.UV_VERSION }}", python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: pytest L0
+        run: uv run pytest -q tests/unit tests/app/test_platform_unit.py tests/app/test_resolver_adapter.py
+        working-directory: backend
+      - uses: actions/setup-node@v4
+        with: {node-version: "${{ env.NODE_VERSION }}", cache: npm, cache-dependency-path: frontend/package-lock.json}
+      - run: npm ci && npm test
+        working-directory: frontend
+
+  synthetic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}            # validate.py status reads git history for legacy records
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "${{ env.UV_VERSION }}", python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: pytest L1 (reported separately, workflow.md §4.2)
+        run: uv run pytest -q tests/synthetic --junitxml=../synthetic.xml
+        working-directory: backend
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: synthetic-report, path: synthetic.xml}
+
+  real-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}            # validate.py status reads git history for legacy records
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "${{ env.UV_VERSION }}", python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: pytest L2 on committed fixtures, offline
+        run: uv run pytest -q tests/real
+        working-directory: backend
+
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}            # validate.py status reads git history for legacy records
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "${{ env.UV_VERSION }}", python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: platform, contract and regression tests (mock + fixture-backed; every file of tests/app)
+        run: uv run pytest -q tests/app
+        working-directory: backend
+      - name: openapi.json and generated.ts fresh
+        run: uv run python ../scripts/gen_contracts.py --check
+        working-directory: backend
+      - name: goldens fresh
+        run: uv run python ../scripts/make_goldens.py --check
+        working-directory: backend
+      - name: evidence records valid
+        run: uv run python ../scripts/validate.py check
+        working-directory: backend
+      - name: STATUS.md regenerated from the records
+        run: uv run python ../scripts/validate.py status --check
+        working-directory: backend
+      - name: proof page and README proof table regenerated from the records (optimisation.md VAL-2)
+        run: uv run python ../scripts/make_proof.py --check
+        working-directory: backend
+      - name: feature flags vs accepted evidence (workflow.md §9.6)
+        run: uv run python ../scripts/check_flags.py
+        working-directory: backend
+
+  e2e-offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}            # validate.py status reads git history for legacy records
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "${{ env.UV_VERSION }}", python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: fixture-backed pipeline to PNG, snapshot mode, exports (workflow.md §8.5)
+        run: uv run pytest -q tests/app/test_e2e_fixture.py tests/app/test_modes.py
+        working-directory: backend
+      - uses: actions/setup-node@v4
+        with: {node-version: "${{ env.NODE_VERSION }}", cache: npm, cache-dependency-path: frontend/package-lock.json}
+      - run: npm ci && npm run build && npm run size
+        working-directory: frontend
+      - name: start API in mock mode
+        run: (MOCK=1 uv run uvicorn app.main:app --port 8000 > ../api.log 2>&1 &) && sleep 1
+        working-directory: backend
+      - name: start preview
+        run: (PARALLAX_API=http://localhost:8000 npx vite preview --port 4173 --strictPort > ../web.log 2>&1 &)
+        working-directory: frontend
+      - name: wait for both
+        run: |
+          for i in $(seq 1 60); do curl -fsS localhost:8000/healthz >/dev/null && curl -fsS localhost:4173 >/dev/null && exit 0; sleep 1; done
+          cat api.log web.log; exit 1
+      - name: headless smoke, with and without WebGL
+        run: |
+          npm i --no-save --prefix scripts/e2e playwright@1.49.1
+          npx --prefix scripts/e2e playwright install --with-deps chromium
+          NODE_PATH=scripts/e2e/node_modules node scripts/e2e/smoke.mjs http://localhost:4173
+      - if: failure()
+        run: cat api.log web.log
+
+  build-deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [static, unit, synthetic, real-file, contract, e2e-offline]
+    runs-on: ubuntu-latest
+    permissions: {contents: read, packages: write}
+    outputs:
+      api: ${{ steps.api.outputs.digest }}
+      web: ${{ steps.web.outputs.digest }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: lowercase image prefix (ghcr repository names must be lowercase)
+        run: echo "IMAGE_PREFIX=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with: {registry: ghcr.io, username: "${{ github.actor }}", password: "${{ secrets.GITHUB_TOKEN }}"}
+      - id: api
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: backend/Dockerfile
+          push: true
+          build-args: GIT_SHA=${{ github.sha }}
+          tags: ${{ env.IMAGE_PREFIX }}/parallax-api:main-${{ github.sha }},${{ env.IMAGE_PREFIX }}/parallax-api:main
+      - id: web
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: deploy/web.Dockerfile
+          push: true
+          tags: ${{ env.IMAGE_PREFIX }}/parallax-web:main-${{ github.sha }},${{ env.IMAGE_PREFIX }}/parallax-web:main
+      - name: deploy to staging
+        if: ${{ vars.STAGING_HOST != '' }}
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST: ${{ vars.STAGING_HOST }}
+        run: |
+          install -m 600 /dev/null key && echo "$SSH_KEY" > key
+          ssh -i key -o StrictHostKeyChecking=accept-new ubuntu@"$HOST" \
+            "cd /srv/parallax && git fetch -q && git checkout -q ${{ github.sha }} && ./deploy/deploy.sh main-${{ github.sha }}"
+      - name: staging not configured
+        if: ${{ vars.STAGING_HOST == '' }}
+        # a block scalar: the message contains ": ", which in a plain scalar made this whole file invalid YAML
+        run: |
+          echo "::warning::STAGING_HOST not set — images pushed, no deploy (docs/deploy.md: VM blocked on AWS account)"

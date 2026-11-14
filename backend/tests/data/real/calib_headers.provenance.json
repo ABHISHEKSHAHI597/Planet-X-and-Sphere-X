@@ -1,0 +1,10 @@
+{
+ "source": "https://nasa-irsa-spherex.s3.amazonaws.com/<s3_key> byte ranges (headers only)",
+ "retrieved": "2026-11-07",
+ "calibration_lock": "b612c26fa411a72e",
+ "content": "every HDU header (text), data offset and size of every file in config/calibration.lock",
+ "bytes": 264609,
+ "sha256": "9f00651af539c806847c7534baf9d1f6a95b0c9f816af6f3eb99af19fd4f93d7",
+ "collected_by": "D (scripts/collect_d_fixtures.py calheaders)",
+ "needed_by": "tests/unit/test_watcher_calib_replay.py; F1, F3 (I); F4, F5, F13 (M)"
+}

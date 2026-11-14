@@ -1,0 +1,24 @@
+# Demo views (workflow.md §12.4 "pinned fallbacks"; implementation.md §9 snapshot mode). Owner P.
+# scripts/prewarm.py builds each against a running API, then the `extras` (derived products the demo script uses,
+# implementation.md §9 and §11.4) whose capability is enabled there; scripts/make_snapshot.py packages the built views
+# for the offline laptops. Every entry is pinned so the demo never depends on a live archive answer.
+schema: parallax-demo-views@1
+views:
+  - {name: "Barnard's Star blink", body: {q: "Barnard's Star", pin: "21a7689afc4b", bands: "6"},
+     extras: [diff, blink25, flip, astrometry, spectrum]}
+  - {name: "Barnard's Star 12'", body: {q: "Barnard's Star", pin: "21a7689afc4b", bands: "6", fov: "12"}}
+  - {name: "eps Indi B", body: {q: "eps Ind B", pin: "3addc0f80339", bands: "6"},
+     extras: [blink25, spectrum, astrometry]}
+  - {name: "eps Indi B 12'", body: {q: "eps Ind B", pin: "3addc0f80339", bands: "6", fov: "12"}}
+  - {name: "WISE 0855-0714 by name", body: {q: "WISE 0855-0714", pin: "325c57328320", bands: "6"},
+     extras: [diff, blink25, spectrum, astrometry]}
+  - {name: "WISE 0855-0714 (challenge coordinate: epoch banner)",
+     body: {ra: "08:55:10.831", dec: "-07:14:42.53", pin: "325c57328320", bands: "6", fov: "12"}}
+  # The views the home page and the epoch banner open (audit F-02 to F-04), bodies as the frontend posts them. The
+  # mission buttons reuse the entries above: `bands` is display-only, so it never changes the view or its snapshot key.
+  - {name: "WISE 0855-0714 12' (\"Track it\" from the challenge coordinate)",
+     body: {q: "WISE 0855-0714", pin: "325c57328320", bands: "6", fov: "12"}}
+  - {name: "Barnard's Star J2000 coordinate (home-page example: epoch banner)",
+     body: {ra: "269.452083", dec: "4.693333", pin: "21a7689afc4b", bands: "6", fov: "6"}}
+  - {name: "RW Aur variability", body: {q: "RW Aur", pin: "177ce03ed2a6", bands: "3"}, extras: [lightcurve, spectrum]}
+  - {name: "R Dra (bright, model-fill off)", body: {q: "R Dra", pin: "152b410215da", bands: "1"}, extras: [lightcurve]}

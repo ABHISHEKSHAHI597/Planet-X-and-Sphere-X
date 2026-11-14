@@ -1,0 +1,10 @@
+{
+ "source": "S3 header byte ranges of every frame in pin 152b410215da",
+ "retrieved": "2026-11-07",
+ "calibration": "config/calibration.lock 94e18b883fdc9b28",
+ "content": "per-frame R Dra parent pixel, channel, \u03bb, header QA/timing; deep vs wide",
+ "bytes": 178744,
+ "sha256": "76da685742a92acd35cadcf9b123f4e7c3b507f3dcaaccb7e30d369a0496d30b",
+ "collected_by": "D (scripts/rdra_inputs.py)",
+ "needed_by": "M: lightcurve.py annulus method (G5.lc); I: R Dra fixed-bin axis"
+}

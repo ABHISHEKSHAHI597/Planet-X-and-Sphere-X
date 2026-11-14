@@ -1,0 +1,24 @@
+{
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+ra_error%2C+dec_error%2C+parallax%2C+parallax_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+radial_velocity%2C+radial_velocity_error%2C+ruwe%2C+phot_g_mean_mag%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag+FROM+gaia_dr3_source+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+269.44621831457897%2C+4.769503024039262%2C+0.1%29%29+AND+phot_g_mean_mag+%3C+18.0&REQUEST=doQuery": {
+  "bytes": 245144,
+  "file": "405436c297d5b04dbea6223e.gz",
+  "headers": {
+   "content-length": "245144",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T19:45:51+00:00",
+  "sha256": "a5d2debe5448fecdcf9fc18c5b2cdf1a9617ccc8f30a5aa74e82a1f971ef1a78",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+ra_error%2C+dec_error%2C+parallax%2C+parallax_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+radial_velocity%2C+radial_velocity_error%2C+ruwe%2C+phot_g_mean_mag%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag+FROM+gaia_dr3_source+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+331.0962481918031%2C+-56.80059485403458%2C+0.1%29%29+AND+phot_g_mean_mag+%3C+18.0&REQUEST=doQuery": {
+  "bytes": 40145,
+  "file": "ec56e8e30ed6d5a0ffe5eba1.gz",
+  "headers": {
+   "content-length": "40145",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T18:58:51+00:00",
+  "sha256": "355e97d7d23521d36f0b1df7ac87624aef33443a882c5875820cc8c77fc2afce",
+  "status": 200
+ }
+}

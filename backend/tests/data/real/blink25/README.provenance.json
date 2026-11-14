@@ -1,0 +1,6 @@
+{
+ "source": "IRSA fp_psc (TAP), IBE 2MASS image search, SIA2 wise_allwise/neowiser; sample cutouts in the cache only",
+ "retrieved": "2026-11-07",
+ "collected_by": "D (scripts/blink25_acquire.py)",
+ "needed_by": "I (25-year-blink normalisation), F (display), P (API)"
+}

@@ -1,0 +1,111 @@
+{
+ "created": "2026-11-14",
+ "note": "Written by scripts/freeze_targets.py; reviewed like a pin (owner D). Do not edit by hand.",
+ "schema": "parallax-pin-targets@1",
+ "targets": {
+  "152b410215da": {
+   "v* r dra": {
+    "astrometry_source": "Gaia DR3 1648328016354496384",
+    "dec": 66.75500674547,
+    "epoch": 2016.0,
+    "extra": {
+     "k_mag": 2.2300000190734863
+    },
+    "kind": "star",
+    "main_id": "V* R Dra",
+    "name": "V* R Dra",
+    "otype": "Mi*",
+    "plx": 1.2509,
+    "pmdec": 6.149,
+    "pmra": -20.643,
+    "query": "R Dra",
+    "ra": 248.16737836729,
+    "rv": null,
+    "spt": "M4.5-6+e"
+   }
+  },
+  "177ce03ed2a6": {
+   "v* rw aur": {
+    "astrometry_source": "Gaia DR3 A position; B PM/parallax (A RUWE=16)",
+    "dec": 30.401438173888888,
+    "epoch": 2000.0,
+    "extra": {
+     "k_mag": 7.019999980926514
+    },
+    "kind": "star",
+    "main_id": "V* RW Aur",
+    "name": "V* RW Aur",
+    "otype": "TT*",
+    "plx": 6.4062,
+    "pmdec": -27.398,
+    "pmra": 2.641,
+    "query": "RW Aur",
+    "ra": 76.95652603458333,
+    "rv": null,
+    "spt": "K1/5e+K5e"
+   }
+  },
+  "21a7689afc4b": {
+   "name barnard's star": {
+    "astrometry_source": "Gaia DR3 4472832130942575872",
+    "dec": 4.73942005111,
+    "epoch": 2016.0,
+    "extra": {
+     "k_mag": 4.52400016784668
+    },
+    "kind": "star",
+    "main_id": "NAME Barnard's star",
+    "name": "NAME Barnard's star",
+    "otype": "BY*",
+    "plx": 546.9759,
+    "pmdec": 10362.394,
+    "pmra": -801.551,
+    "query": "Barnard's Star",
+    "ra": 269.44850252544,
+    "rv": -110.47000122070312,
+    "spt": "M4V"
+   }
+  },
+  "325c57328320": {
+   "wise j085510.83-071442.5": {
+    "astrometry_source": "SIMBAD J2000 (linear)",
+    "dec": -7.247048000000001,
+    "epoch": 2000.0,
+    "extra": {},
+    "kind": "star",
+    "main_id": "WISEA J085510.74-071442.5",
+    "name": "WISEA J085510.74-071442.5",
+    "otype": "BD*",
+    "plx": 439.0,
+    "pmdec": 673.2,
+    "pmra": -8123.7,
+    "query": "WISE 0855-0714",
+    "ra": 133.81890825,
+    "rv": null,
+    "spt": "Y2"
+   }
+  },
+  "3addc0f80339": {
+   "* eps ind b": {
+    "astrometry_source": "Gaia DR3 6412596012146801152",
+    "dec": -56.79381206688,
+    "epoch": 2016.0,
+    "extra": {
+     "k_mag": 11.208000183105469,
+     "quality_warning": "Gaia DR3 6412596012146801152 has RUWE 4.3 (> 1.4): its astrometry may be unreliable (unresolved binary?), so the predicted track can be off."
+    },
+    "kind": "star",
+    "main_id": "* eps Ind B",
+    "name": "* eps Ind B",
+    "otype": "BD*",
+    "plx": 270.658,
+    "pmdec": -2466.832,
+    "pmra": 3981.977,
+    "query": "eps Ind B",
+    "ra": 331.07645259656,
+    "rv": null,
+    "spt": "T1V+T6V"
+   }
+  }
+ }
+}

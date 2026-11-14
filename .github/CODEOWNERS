@@ -1,0 +1,77 @@
+# Ownership (workflow.md §2.1, §9.3). Owner first, backup second. Contract files list both members of each
+# interface pair; validation/ lists both scientists; feature flags and release configuration list P.
+#
+# The role handles below are GitHub teams. Create them once in the organisation (Settings → Teams) and add
+# each person to their role team: role-d, role-i, role-m, role-p, role-f. Until the teams exist, GitHub
+# ignores unknown owners (the rest of the file still works).
+
+*                                   @ABHISHEKSHAHI597
+
+# Data and archive (D; backup P)
+/backend/spherex/access/            @parallax-2026/role-d @parallax-2026/role-p
+/backend/spherex/external/          @parallax-2026/role-d @parallax-2026/role-p
+/backend/spherex/calib.py           @parallax-2026/role-d @parallax-2026/role-p
+/config/calibration.lock            @parallax-2026/role-d @parallax-2026/role-p
+/config/pins/                       @parallax-2026/role-d @parallax-2026/role-p
+/config/releases.yaml               @parallax-2026/role-d @parallax-2026/role-p
+/backend/tests/data/real/           @parallax-2026/role-d @parallax-2026/role-p
+
+# Imaging science (I; backup M)
+/backend/spherex/flags.py           @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/preprocess.py      @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/epochs.py          @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/grid.py            @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/stack.py           @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/cube.py            @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/render.py          @parallax-2026/role-i @parallax-2026/role-m
+/backend/spherex/movers.py          @parallax-2026/role-i @parallax-2026/role-m
+/backend/tests/synthetic/           @parallax-2026/role-i @parallax-2026/role-m
+
+# Measurement science (M; backup I)
+/backend/spherex/targets.py         @parallax-2026/role-m @parallax-2026/role-i
+/backend/spherex/epsf.py            @parallax-2026/role-m @parallax-2026/role-i
+/backend/spherex/astrometry.py      @parallax-2026/role-m @parallax-2026/role-i
+/backend/spherex/photometry.py      @parallax-2026/role-m @parallax-2026/role-i
+/backend/spherex/lightcurve.py      @parallax-2026/role-m @parallax-2026/role-i
+/backend/spherex/ephem.py           @parallax-2026/role-m @parallax-2026/role-i
+/backend/spherex/planetx.py         @parallax-2026/role-m @parallax-2026/role-i
+
+# Platform and release (P; backup D, F)
+/backend/app/                       @parallax-2026/role-p @parallax-2026/role-d
+/backend/Dockerfile                 @parallax-2026/role-p @parallax-2026/role-d
+/deploy/                            @parallax-2026/role-p @parallax-2026/role-d
+/docker-compose.yml                 @parallax-2026/role-p @parallax-2026/role-d
+/.github/                           @parallax-2026/role-p @parallax-2026/role-f
+/scripts/validate.py                @parallax-2026/role-p @parallax-2026/role-d
+/scripts/check_flags.py             @parallax-2026/role-p @parallax-2026/role-f
+/scripts/gen_contracts.py           @parallax-2026/role-p @parallax-2026/role-f
+/scripts/make_goldens.py            @parallax-2026/role-p @parallax-2026/role-i @parallax-2026/role-f
+/scripts/make_snapshot.py           @parallax-2026/role-p @parallax-2026/role-d
+/scripts/prewarm.py                 @parallax-2026/role-p @parallax-2026/role-d
+/scripts/perf_probe.py              @parallax-2026/role-p @parallax-2026/role-d
+/scripts/make_release.py            @parallax-2026/role-p
+/scripts/go_no_go.py                @parallax-2026/role-p @parallax-2026/role-f
+/config/features.yaml               @parallax-2026/role-p
+/config/demo_views.yaml             @parallax-2026/role-p @parallax-2026/role-f
+/release/                           @parallax-2026/role-p
+/validation/registry.yaml           @parallax-2026/role-p @parallax-2026/role-i @parallax-2026/role-m
+/validation/schema.json             @parallax-2026/role-p @parallax-2026/role-i @parallax-2026/role-m
+
+# Evidence: both scientists (science), P (engineering) — never the author (§9.4)
+/validation/                        @parallax-2026/role-i @parallax-2026/role-m @parallax-2026/role-p
+/scripts/verify/                    @parallax-2026/role-i @parallax-2026/role-m @parallax-2026/role-d
+
+# Frontend (F; P backs up)
+/frontend/                          @parallax-2026/role-f @parallax-2026/role-p
+
+# Contract surfaces: both members of each interface pair (§2.4, §7.1)
+/backend/spherex/types.py           @parallax-2026/role-d @parallax-2026/role-i @parallax-2026/role-m @parallax-2026/role-p
+/backend/app/schemas.py             @parallax-2026/role-p @parallax-2026/role-f
+/frontend/src/api/                  @parallax-2026/role-f @parallax-2026/role-p
+/frontend/fixtures/                 @parallax-2026/role-f @parallax-2026/role-p @parallax-2026/role-i
+/CONTRACTS.md                       @parallax-2026/role-p @parallax-2026/role-f @parallax-2026/role-d
+
+# Sources of truth (§1)
+/understanding.md                   @parallax-2026/role-i @parallax-2026/role-m
+/implementation.md                  @parallax-2026/role-i @parallax-2026/role-m @parallax-2026/role-p
+/workflow.md                        @parallax-2026/role-f @parallax-2026/role-p

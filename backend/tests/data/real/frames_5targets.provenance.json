@@ -1,0 +1,32 @@
+{
+ "source_url": "IRSA SIA2 (COLLECTION=spherex_qr2, spherex_qr2_deep, spherex_qr3, spherex_qr3_deep; POS=CIRCLE <2026.0 position> 0.001) for the 5 targets, then bytes 0-28800 of every listed file from https://nasa-irsa-spherex.s3.amazonaws.com/<s3_key> (PRIMARY + IMAGE headers)",
+ "positions_deg": {
+  "barnard": [
+   269.4461,
+   4.7707
+  ],
+  "epsindb": [
+   331.0918,
+   -56.7966
+  ],
+  "wise0855": [
+   133.7578,
+   -7.242
+  ],
+  "rwaur": [
+   76.95654,
+   30.4013
+  ],
+  "rdra": [
+   248.16733,
+   66.75502
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "release": "qr2+qr3 as served (dedup NOT applied: one row per SIA2 row)",
+ "content": "one row per SIA2 row: target, s3_key, collection, obs_id, t_min, and IMAGE-header keywords DETECTOR, MJD-AVG, SPS_EPA, FINAST, L1DQAFLG, L2DQAFLG, PSF_FWHM, PXSRCMSK, plus PRIMARY VERSION",
+ "collected_by": "I, with the temporary adapter scripts/verify/collect_real.py (coverage, headers) from a laptop; D to re-collect from the VM with the real coverage client",
+ "bytes": 849976,
+ "sha256": "37ef950ab41d6671a25c11e5a4079e335db542f4660afa807a586e0abca142bd",
+ "needed_by": "scripts/verify/f08_frame_qa.py (F8), tests/real/test_real_epochs.py (G1 time model, surveys)"
+}

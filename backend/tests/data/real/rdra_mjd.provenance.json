@@ -1,0 +1,9 @@
+{
+ "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&COLLECTION=spherex_qr2_deep&COLLECTION=spherex_qr3&COLLECTION=spherex_qr3_deep&POS=circle+248.16737+66.75501+0.001&RESPONSEFORMAT=VOTABLE",
+ "retrieved": "2026-11-06",
+ "release": "qr2+qr3 (SIA2 as served)",
+ "content": "t_min, detector, collection per SIA2 row; dedup not applied",
+ "bytes": 86487,
+ "sha256": "ab640d2f61b7470b6f1d52ea3401e876ccb7c3351ec10d9c86f2b57578059abe",
+ "needed_by": "tests/real/test_real_epochs.py (G1 time model)"
+}

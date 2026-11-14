@@ -1,0 +1,237 @@
+{
+ "schema": "parallax-calibration-lock@1",
+ "release": "qr3",
+ "listed": "2026-11-07T07:04:51+00:00",
+ "lock_hash": "94e18b883fdc9b28",
+ "complete": true,
+ "notes": [
+  "epsf: version dirs ['cal-epsf-v1-2026-191', 'cal-epsf-v2-2026-191']; newest per detector selected (D1=cal-epsf-v1-2026-191, D2=cal-epsf-v1-2026-191, D3=cal-epsf-v2-2026-191, D4=cal-epsf-v1-2026-191, D5=cal-epsf-v1-2026-191, D6=cal-epsf-v1-2026-191)"
+ ],
+ "files": [
+  {
+   "product": "epsf",
+   "detector": 1,
+   "s3_key": "qr3/epsf/cal-epsf-v1-2026-191/1/epsf_D1_spx_cal-epsf-v1-2026-191.fits",
+   "version_dir": "cal-epsf-v1-2026-191",
+   "size": 7943040,
+   "etag_md5": "6c6bbc7f03c062bbdc0f781fd58598a7",
+   "sha256": "f5eacb19eb90cb96a1684e9116b85f43f615ae5724c0aa26ac0c0ed45fa309e9"
+  },
+  {
+   "product": "epsf",
+   "detector": 2,
+   "s3_key": "qr3/epsf/cal-epsf-v1-2026-191/2/epsf_D2_spx_cal-epsf-v1-2026-191.fits",
+   "version_dir": "cal-epsf-v1-2026-191",
+   "size": 7943040,
+   "etag_md5": "4271972259cb7f0c352e8140af073be8",
+   "sha256": "7b94af0250aa7e56a9e78af34ca2c1373985926c0a0f3263218d1b0ddc94a926"
+  },
+  {
+   "product": "epsf",
+   "detector": 3,
+   "s3_key": "qr3/epsf/cal-epsf-v2-2026-191/3/epsf_D3_spx_cal-epsf-v2-2026-191.fits",
+   "version_dir": "cal-epsf-v2-2026-191",
+   "size": 8118720,
+   "etag_md5": "0acf3f094d70f1bca51a71aa8452c491",
+   "sha256": "6c753e5e322e9905fe44be6505e492f1943e3b115e5dea49b010140570dad2a1"
+  },
+  {
+   "product": "epsf",
+   "detector": 4,
+   "s3_key": "qr3/epsf/cal-epsf-v1-2026-191/4/epsf_D4_spx_cal-epsf-v1-2026-191.fits",
+   "version_dir": "cal-epsf-v1-2026-191",
+   "size": 7943040,
+   "etag_md5": "4f9486e02e22d26abff5f3f084de4a89",
+   "sha256": "b37cb9423746477427121e2c3b3f4b8291c1df9cadba6f770ea1a7f962748b4c"
+  },
+  {
+   "product": "epsf",
+   "detector": 5,
+   "s3_key": "qr3/epsf/cal-epsf-v1-2026-191/5/epsf_D5_spx_cal-epsf-v1-2026-191.fits",
+   "version_dir": "cal-epsf-v1-2026-191",
+   "size": 7943040,
+   "etag_md5": "d9dae7946639a301cdf0723adcc6e93f",
+   "sha256": "73847447802363cbae37078d404a39f266ec3cca863461cacaae730e18facfe7"
+  },
+  {
+   "product": "epsf",
+   "detector": 6,
+   "s3_key": "qr3/epsf/cal-epsf-v1-2026-191/6/epsf_D6_spx_cal-epsf-v1-2026-191.fits",
+   "version_dir": "cal-epsf-v1-2026-191",
+   "size": 7943040,
+   "etag_md5": "4c15b66f86af4197fc855c94201e266c",
+   "sha256": "52f85faeb93d67ed2020b68a628fc947c1f0b78cbf9282ca193ec6d588ac1a36"
+  },
+  {
+   "product": "l3_flux_corrections",
+   "detector": 1,
+   "s3_key": "qr3/l3_flux_corrections/cal-flxc-v1-2026-191/1/l3_flux_corrections_D1_spx_cal-flxc-v1-2026-191.fits",
+   "version_dir": "cal-flxc-v1-2026-191",
+   "size": 16652160,
+   "etag_md5": "3f51c741d6bf57c0bbc2060cd3a8d01f",
+   "sha256": "413726abdef9351ad21486d4c0a46f622dc53294bf9e9e53fe56de424ce06d1b"
+  },
+  {
+   "product": "l3_flux_corrections",
+   "detector": 2,
+   "s3_key": "qr3/l3_flux_corrections/cal-flxc-v1-2026-191/2/l3_flux_corrections_D2_spx_cal-flxc-v1-2026-191.fits",
+   "version_dir": "cal-flxc-v1-2026-191",
+   "size": 16652160,
+   "etag_md5": "8a5cee358ec09626cc092324d145f665",
+   "sha256": "548f8bfa67468b6c7ff04dee9a7456411d29c377da19ad01de98c7c3a07b465e"
+  },
+  {
+   "product": "l3_flux_corrections",
+   "detector": 3,
+   "s3_key": "qr3/l3_flux_corrections/cal-flxc-v1-2026-191/3/l3_flux_corrections_D3_spx_cal-flxc-v1-2026-191.fits",
+   "version_dir": "cal-flxc-v1-2026-191",
+   "size": 16652160,
+   "etag_md5": "59326cd9e7d4aa9db3331aeff6a17d11",
+   "sha256": "46e406f7afc42e6161ead7509f7f761ed870f529f18172fa6d7e78b66db2e617"
+  },
+  {
+   "product": "l3_flux_corrections",
+   "detector": 4,
+   "s3_key": "qr3/l3_flux_corrections/cal-flxc-v1-2026-191/4/l3_flux_corrections_D4_spx_cal-flxc-v1-2026-191.fits",
+   "version_dir": "cal-flxc-v1-2026-191",
+   "size": 16652160,
+   "etag_md5": "015d24a1f59f05cb99a9d774de3353e0",
+   "sha256": "a47504220ee2abf0bcc6203ada596fbfd93433b2f6f70fb4caedd13203479889"
+  },
+  {
+   "product": "l3_flux_corrections",
+   "detector": 5,
+   "s3_key": "qr3/l3_flux_corrections/cal-flxc-v1-2026-191/5/l3_flux_corrections_D5_spx_cal-flxc-v1-2026-191.fits",
+   "version_dir": "cal-flxc-v1-2026-191",
+   "size": 16652160,
+   "etag_md5": "305d3f85a8175c8ea4b87536f8f35634",
+   "sha256": "cfe3af6f8d43df93ec66a640aab9555d4d16ddf298fceb74c8d4fe0f341a18a3"
+  },
+  {
+   "product": "l3_flux_corrections",
+   "detector": 6,
+   "s3_key": "qr3/l3_flux_corrections/cal-flxc-v1-2026-191/6/l3_flux_corrections_D6_spx_cal-flxc-v1-2026-191.fits",
+   "version_dir": "cal-flxc-v1-2026-191",
+   "size": 16652160,
+   "etag_md5": "f8a185d52e203c20ae3d909593da8af8",
+   "sha256": "001e18be41b2ec95670c04686b5dd1065d2024e330bfe46d1d2e5f3131a5f6c1"
+  },
+  {
+   "product": "solid_angle_pixel_map",
+   "detector": 1,
+   "s3_key": "qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/1/solid_angle_pixel_map_D1_spx_cal-sapm-v3-2026-191.fits",
+   "version_dir": "cal-sapm-v3-2026-191",
+   "size": 16652160,
+   "etag_md5": "5c406266c0aabe8624cb9ecd76b8a1f4",
+   "sha256": "f2439d694c68766d0c488af6f051924aea886c2c015af80f10dc5f760a0aa193"
+  },
+  {
+   "product": "solid_angle_pixel_map",
+   "detector": 2,
+   "s3_key": "qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/2/solid_angle_pixel_map_D2_spx_cal-sapm-v3-2026-191.fits",
+   "version_dir": "cal-sapm-v3-2026-191",
+   "size": 16652160,
+   "etag_md5": "4125a5e4dd3d53b324246efa42d2174c",
+   "sha256": "231bcdab0aa31d0ee9c9349b10e6c871070bf3ed860b7dc799745c0f9d1c8bc0"
+  },
+  {
+   "product": "solid_angle_pixel_map",
+   "detector": 3,
+   "s3_key": "qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/3/solid_angle_pixel_map_D3_spx_cal-sapm-v3-2026-191.fits",
+   "version_dir": "cal-sapm-v3-2026-191",
+   "size": 16652160,
+   "etag_md5": "861e16afb49bd2cb8aa870f48cf374c2",
+   "sha256": "4c731f195020b227ae05afc38463d30a0d18cab5a3786bc7af0bd49c46f87ea5"
+  },
+  {
+   "product": "solid_angle_pixel_map",
+   "detector": 4,
+   "s3_key": "qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/4/solid_angle_pixel_map_D4_spx_cal-sapm-v3-2026-191.fits",
+   "version_dir": "cal-sapm-v3-2026-191",
+   "size": 16652160,
+   "etag_md5": "a1befba7328271b17742733061d5b39a",
+   "sha256": "b5ede34463ab365ce4b97fdb10a98eba85c8d628141e7e6df1b3e84d50831204"
+  },
+  {
+   "product": "solid_angle_pixel_map",
+   "detector": 5,
+   "s3_key": "qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/5/solid_angle_pixel_map_D5_spx_cal-sapm-v3-2026-191.fits",
+   "version_dir": "cal-sapm-v3-2026-191",
+   "size": 16652160,
+   "etag_md5": "18e4d999332cd019f14499722c8b2bc0",
+   "sha256": "1081fd45e39f96297589e9c4f8cec4fd212c081798fb62886dbb9607b8c865e2"
+  },
+  {
+   "product": "solid_angle_pixel_map",
+   "detector": 6,
+   "s3_key": "qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/6/solid_angle_pixel_map_D6_spx_cal-sapm-v3-2026-191.fits",
+   "version_dir": "cal-sapm-v3-2026-191",
+   "size": 16652160,
+   "etag_md5": "c01934ebcdd287f96e94c2af6ba9be26",
+   "sha256": "0986595851aab50dcc984b2d2f1c66a57d7726c5996368ed449bf89cf44346f7"
+  },
+  {
+   "product": "spectral_channels",
+   "detector": null,
+   "s3_key": "qr3/spectral_channels/cal-sch-v2-2026-229/spectral_channels_spx_cal-sch-v2-2026-229.fits",
+   "version_dir": "cal-sch-v2-2026-229",
+   "size": 4176000,
+   "etag_md5": "c6b8bab6f5a06091d45b164c49010ba4",
+   "sha256": "1da3549d363b6c7eb8ac0b709dbed6dafe2fd24eefe03ebee6e2e8912634694e"
+  },
+  {
+   "product": "spectral_wcs",
+   "detector": 1,
+   "s3_key": "qr3/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+   "version_dir": "cal-swcs-v5-2026-191",
+   "size": 33312960,
+   "etag_md5": "624790eba5fdde40a6cb2187099e415d",
+   "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23"
+  },
+  {
+   "product": "spectral_wcs",
+   "detector": 2,
+   "s3_key": "qr3/spectral_wcs/cal-swcs-v5-2026-191/2/spectral_wcs_D2_spx_cal-swcs-v5-2026-191.fits",
+   "version_dir": "cal-swcs-v5-2026-191",
+   "size": 33312960,
+   "etag_md5": "af87630c33716cd77ae54ab6c63d388d",
+   "sha256": "0eb4e27f351e6161e21372818f9e811480a7ab8bab9295722f180791e151a463"
+  },
+  {
+   "product": "spectral_wcs",
+   "detector": 3,
+   "s3_key": "qr3/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+   "version_dir": "cal-swcs-v5-2026-191",
+   "size": 33312960,
+   "etag_md5": "327f973e59efeaa101bf1fe9ac7c354e",
+   "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a"
+  },
+  {
+   "product": "spectral_wcs",
+   "detector": 4,
+   "s3_key": "qr3/spectral_wcs/cal-swcs-v5-2026-191/4/spectral_wcs_D4_spx_cal-swcs-v5-2026-191.fits",
+   "version_dir": "cal-swcs-v5-2026-191",
+   "size": 33312960,
+   "etag_md5": "438a1d94ca7b392cf854f68d18bfd7db",
+   "sha256": "dbdcb8addb4ffe817f31786c8cb359b1f47df3528173e9d4602b94c84f7d7c1a"
+  },
+  {
+   "product": "spectral_wcs",
+   "detector": 5,
+   "s3_key": "qr3/spectral_wcs/cal-swcs-v5-2026-191/5/spectral_wcs_D5_spx_cal-swcs-v5-2026-191.fits",
+   "version_dir": "cal-swcs-v5-2026-191",
+   "size": 33312960,
+   "etag_md5": "d59bd98b5d1d14ae8d74499b1c1ccb3f",
+   "sha256": "3361428284bddad1dcdce42081ebfbd225acb0b19f6caa94fba3e133bbabfc1c"
+  },
+  {
+   "product": "spectral_wcs",
+   "detector": 6,
+   "s3_key": "qr3/spectral_wcs/cal-swcs-v5-2026-191/6/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits",
+   "version_dir": "cal-swcs-v5-2026-191",
+   "size": 33312960,
+   "etag_md5": "e665c189ad63ca0cd032c0797e8aabf2",
+   "sha256": "19195d253892883586aa2183cb66238b32f6032ade62d490b36b85b0dd18f212"
+  }
+ ]
+}

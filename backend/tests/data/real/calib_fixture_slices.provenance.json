@@ -1,0 +1,34 @@
+{
+ "source_url": "s3://nasa-irsa-spherex/qr3/spectral_wcs/cal-swcs-v5-2026-191/6/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits (CWAVE, WCS-WAVE) and qr3/spectral_channels/cal-sch-v2-2026-229/spectral_channels_spx_cal-sch-v2-2026-229.fits (CHANNEL_MAP, SPECTRAL_CHANNELS)",
+ "retrieved": "2026-11-06",
+ "release": "qr3 calibration",
+ "content": "CWAVE and CHANNEL_MAP at parent pixels [1919:1948, 638:667] (the 29x29 Barnard fixture cutout, CRPIXnA = -637, -1918); WCS-WAVE table of D6 and the SPECTRAL_CHANNELS table as raw HDU header text + data bytes",
+ "collected_by": "I (temporary adapter scripts/verify/collect_real.py); D to re-collect under the calibration lock",
+ "files": {
+  "cwave_D6_fixture_slice.npy": {
+   "bytes": 3492,
+   "sha256": "e5a67245907b42ca7ff39f6dd9b51a8bd3a1d0344c6b8bcb7dd5cf82ca7e170e"
+  },
+  "channel_map_fixture_slice.npy": {
+   "bytes": 969,
+   "sha256": "947da873ec2776c5c000a7ef15b43baf80dcae237160f498eccf5e1d83c3f652"
+  },
+  "cal_wcswave_D6.hdr": {
+   "bytes": 2880,
+   "sha256": "1758fa265f02c614760f38a91acca3fa60804b124627e6673e1088ced9c8062f"
+  },
+  "cal_wcswave_D6.bin": {
+   "bytes": 720,
+   "sha256": "2ca4789e3a5d17b1af41c89eca0f7523ccd3150d3dbea5052a22f2d193fbb134"
+  },
+  "cal_spectral_channels.hdr": {
+   "bytes": 5760,
+   "sha256": "4a86c0c1c7ae615742d7261bdb5c63fc19bd703fc79aed8483d97ee01ffa77c9"
+  },
+  "cal_spectral_channels.bin": {
+   "bytes": 2652,
+   "sha256": "40f3500c4946b83639b9556e81a1685758badb8e056545f950c3f85e1f0405be"
+  }
+ },
+ "needed_by": "tests/real/test_real_calib.py (F1, F3)"
+}

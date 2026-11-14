@@ -1,0 +1,112 @@
+{
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&COLLECTION=spherex_qr2_deep&COLLECTION=spherex_qr3&COLLECTION=spherex_qr3_deep&POS=CIRCLE+133.7578000+-7.2420000+0.001000&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 561064,
+  "file": "7b49662152a6e07765984b94.gz",
+  "headers": {
+   "content-length": "561064",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:10:52+00:00",
+  "sha256": "f37519d577fab1017582c04e537c3dbed2ebce67a44bdd9b5f933434d59d28b3",
+  "status": 200
+ },
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&COLLECTION=spherex_qr2_deep&COLLECTION=spherex_qr3&COLLECTION=spherex_qr3_deep&POS=CIRCLE+248.1673300+66.7550200+0.001000&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 5209963,
+  "file": "48346d83d379a5465bfe18a0.gz",
+  "headers": {
+   "content-length": "5209963",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:12:10+00:00",
+  "sha256": "eab0b27cc33f33a6256d33d069e19b7942088024763b73905ddf29f07755e021",
+  "status": 200
+ },
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&COLLECTION=spherex_qr2_deep&COLLECTION=spherex_qr3&COLLECTION=spherex_qr3_deep&POS=CIRCLE+269.4461000+4.7707000+0.001000&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 773764,
+  "file": "8459f21817b070ea619cfdc9.gz",
+  "headers": {
+   "content-length": "773764",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:10:14+00:00",
+  "sha256": "2dddc299ba31ddf86efda13d76b81aaf573cbddb2c6e0107beabef0e216ee468",
+  "status": 200
+ },
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&COLLECTION=spherex_qr2_deep&COLLECTION=spherex_qr3&COLLECTION=spherex_qr3_deep&POS=CIRCLE+331.0918000+-56.7966000+0.001000&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 959475,
+  "file": "22b2ffd80d0f1cce3f915fe6.gz",
+  "headers": {
+   "content-length": "959475",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:10:36+00:00",
+  "sha256": "828c09ab9943442308f0de6e4a6bfbb3536227b530d496ba7052f2477d854ff2",
+  "status": 200
+ },
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&COLLECTION=spherex_qr2_deep&COLLECTION=spherex_qr3&COLLECTION=spherex_qr3_deep&POS=CIRCLE+76.9565400+30.4013000+0.001000&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 719253,
+  "file": "2228ee0fc7f22c8152e57587.gz",
+  "headers": {
+   "content-length": "719253",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:11:10+00:00",
+  "sha256": "9c5770b9d18665c80af7ceacabb664f90b7849dd2de69133079a8d5e6577f668",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+o.collection%2C+o.observationid%2C+p.energy_bandpassname%2C+p.energy_bounds_lower%2C+p.energy_bounds_upper%2C+p.time_bounds_lower%2C+p.time_bounds_upper%2C+p.time_exposure%2C+a.uri%2C+a.contentlength+FROM+spherex.plane+AS+p+JOIN+spherex.artifact+AS+a+ON+a.planeid+%3D+p.planeid+JOIN+spherex.observation+AS+o+ON+o.obsid+%3D+p.obsid+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+133.7578%2C+-7.242%29%2C+p.poly%29+AND+o.collection+IN+%28%27spherex_qr3%27%2C+%27spherex_qr3_deep%27%2C+%27spherex_qr2%27%2C+%27spherex_qr2_deep%27%29+ORDER+BY+p.time_bounds_lower&REQUEST=doQuery": {
+  "bytes": 121313,
+  "file": "320c1675c35791c75a381ac2.gz",
+  "headers": {
+   "content-length": "121313",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:10:59+00:00",
+  "sha256": "0c2358f2190be86dff48ea9765a0a0e24850809dbb8d280c56c270a32032e54f",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+o.collection%2C+o.observationid%2C+p.energy_bandpassname%2C+p.energy_bounds_lower%2C+p.energy_bounds_upper%2C+p.time_bounds_lower%2C+p.time_bounds_upper%2C+p.time_exposure%2C+a.uri%2C+a.contentlength+FROM+spherex.plane+AS+p+JOIN+spherex.artifact+AS+a+ON+a.planeid+%3D+p.planeid+JOIN+spherex.observation+AS+o+ON+o.obsid+%3D+p.obsid+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+248.16733%2C+66.75502%29%2C+p.poly%29+AND+o.collection+IN+%28%27spherex_qr3%27%2C+%27spherex_qr3_deep%27%2C+%27spherex_qr2%27%2C+%27spherex_qr2_deep%27%29+ORDER+BY+p.time_bounds_lower&REQUEST=doQuery": {
+  "bytes": 1162233,
+  "file": "7a84e5f55d4bca883de348f6.gz",
+  "headers": {
+   "content-length": "1162233",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:12:32+00:00",
+  "sha256": "48b259568237d7899e9fb79ddf569fe86c76d1b746d61fa8f2f402735eb58e93",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+o.collection%2C+o.observationid%2C+p.energy_bandpassname%2C+p.energy_bounds_lower%2C+p.energy_bounds_upper%2C+p.time_bounds_lower%2C+p.time_bounds_upper%2C+p.time_exposure%2C+a.uri%2C+a.contentlength+FROM+spherex.plane+AS+p+JOIN+spherex.artifact+AS+a+ON+a.planeid+%3D+p.planeid+JOIN+spherex.observation+AS+o+ON+o.obsid+%3D+p.obsid+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+269.4461%2C+4.7707%29%2C+p.poly%29+AND+o.collection+IN+%28%27spherex_qr3%27%2C+%27spherex_qr3_deep%27%2C+%27spherex_qr2%27%2C+%27spherex_qr2_deep%27%29+ORDER+BY+p.time_bounds_lower&REQUEST=doQuery": {
+  "bytes": 169002,
+  "file": "cfa7b579a82526d5fffe30fd.gz",
+  "headers": {
+   "content-length": "169002",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:10:23+00:00",
+  "sha256": "9a4df60f09b37c67426df0d829912d0dc1dff063c5ddbaa89bdfac2aa685f0e6",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+o.collection%2C+o.observationid%2C+p.energy_bandpassname%2C+p.energy_bounds_lower%2C+p.energy_bounds_upper%2C+p.time_bounds_lower%2C+p.time_bounds_upper%2C+p.time_exposure%2C+a.uri%2C+a.contentlength+FROM+spherex.plane+AS+p+JOIN+spherex.artifact+AS+a+ON+a.planeid+%3D+p.planeid+JOIN+spherex.observation+AS+o+ON+o.obsid+%3D+p.obsid+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+331.0918%2C+-56.7966%29%2C+p.poly%29+AND+o.collection+IN+%28%27spherex_qr3%27%2C+%27spherex_qr3_deep%27%2C+%27spherex_qr2%27%2C+%27spherex_qr2_deep%27%29+ORDER+BY+p.time_bounds_lower&REQUEST=doQuery": {
+  "bytes": 209770,
+  "file": "79dd28f9d2bd59c6f8f2eca8.gz",
+  "headers": {
+   "content-length": "209770",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:10:45+00:00",
+  "sha256": "e88539a2d00ef2eaf225eb8fc8e22e5f1eabf48405fa41f5179a3d3da3c9d9b1",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+o.collection%2C+o.observationid%2C+p.energy_bandpassname%2C+p.energy_bounds_lower%2C+p.energy_bounds_upper%2C+p.time_bounds_lower%2C+p.time_bounds_upper%2C+p.time_exposure%2C+a.uri%2C+a.contentlength+FROM+spherex.plane+AS+p+JOIN+spherex.artifact+AS+a+ON+a.planeid+%3D+p.planeid+JOIN+spherex.observation+AS+o+ON+o.obsid+%3D+p.obsid+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+76.95654%2C+30.4013%29%2C+p.poly%29+AND+o.collection+IN+%28%27spherex_qr3%27%2C+%27spherex_qr3_deep%27%2C+%27spherex_qr2%27%2C+%27spherex_qr2_deep%27%29+ORDER+BY+p.time_bounds_lower&REQUEST=doQuery": {
+  "bytes": 156988,
+  "file": "9c3936def196162eed416d03.gz",
+  "headers": {
+   "content-length": "156988",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:11:18+00:00",
+  "sha256": "e38441fd5642117793fe144e4b3d2e7213347df317792ccdbffbd71fb015cceb",
+  "status": 200
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "source_url": "IRSA cutouts (stream-aborted after ZODI) of the s3_keys listed inside the file",
+ "retrieved": "2026-11-06",
+ "release": "as noted",
+ "content": "the FLAGS extension header (text) of one real frame per pipeline version: 6.4+psffix1, 6.5.6, 7.0.5",
+ "collected_by": "I (temporary adapter scripts/verify/collect_real.py); D to re-collect under the calibration lock",
+ "files": {
+  "flags_headers_by_version.json": {
+   "bytes": 46508,
+   "sha256": "06c4160288ea54a2e66796bec196433fa206f3d8b4c227e34e90799cd2e1ee2d"
+  }
+ },
+ "needed_by": "tests/real/test_real_flags.py (F6)"
+}

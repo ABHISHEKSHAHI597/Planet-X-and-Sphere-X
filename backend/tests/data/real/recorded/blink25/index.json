@@ -1,0 +1,35 @@
+{
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=neowiser&POS=CIRCLE+133.7756882+-7.2434950+0.011322&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 9719232,
+  "file": "d5d6e1c72263cbfe69349119.gz",
+  "headers": {
+   "content-length": "9719232",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:57:41+00:00",
+  "sha256": "7c39b4c83eec42bf22159abb07ef6038de1322008d2d779471a39a2e915d02f6",
+  "status": 200
+ },
+ "GET https://irsa.ipac.caltech.edu/SIA?COLLECTION=wise_allwise&POS=CIRCLE+133.7766778+-7.2435763+0.000500&RESPONSEFORMAT=VOTABLE": {
+  "bytes": 82675,
+  "file": "b3f842ebfc6c8229fca385d3.gz",
+  "headers": {
+   "content-length": "82675",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:53:25+00:00",
+  "sha256": "abf09445e8fb26904fb6728ff0e4c7eb46a1852cf94ecfbfeb2cf007a11ad224",
+  "status": 200
+ },
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+designation%2C+ra%2C+dec%2C+j_m%2C+h_m%2C+k_m%2C+jdate%2C+ph_qual+FROM+fp_psc+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+133.81890825%2C+-7.247048%2C+0.01%29%29&REQUEST=doQuery": {
+  "bytes": 3343,
+  "file": "7007f076917b68b2bc834856.gz",
+  "headers": {
+   "content-length": "3343",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T07:53:22+00:00",
+  "sha256": "482746ef8c17b99ec304875f61f71e4f226a875842fad1813208a9c28a864aea",
+  "status": 200
+ }
+}

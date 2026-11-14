@@ -1,0 +1,66 @@
+{
+ "qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits": {
+  "bytes": 201600,
+  "file": "wise0855_qr2_d6_cutout.fits",
+  "needed_by": "F2; tests/real/test_real_access.py",
+  "origin": [
+   1730,
+   924
+  ],
+  "origin_from": "crpixa",
+  "path": "irsa-cutout (stream-aborted after ZODI)",
+  "pipeline_version": "6.5.6",
+  "release": "qr2",
+  "retrieved": "2026-11-07",
+  "sha256": "984fbf3ede55c64a0e609b41a51751d2d494cee08e81b3f27ab3123c1e65cd0d",
+  "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits?center=133.7578000,-7.2420000deg&size=0.15509"
+ },
+ "qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits#s3section": {
+  "bytes": 201600,
+  "file": "wise0855_qr2_d6_s3section.fits",
+  "needed_by": "F2; tests/real/test_real_access.py",
+  "origin": [
+   1730,
+   924
+  ],
+  "origin_from": "section",
+  "path": "s3 byte-range rows of all four HDUs (FLAGS is a plain image in QR2 6.5.6 full files)",
+  "pipeline_version": "6.5.6",
+  "release": "qr2",
+  "retrieved": "2026-11-07",
+  "sha256": "984fbf3ede55c64a0e609b41a51751d2d494cee08e81b3f27ab3123c1e65cd0d",
+  "source_url": "https://nasa-irsa-spherex.s3.amazonaws.com/qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits"
+ },
+ "qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits": {
+  "bytes": 204480,
+  "file": "barnard_qr3_d6_cutout.fits",
+  "needed_by": "F2; tests/real/test_real_access.py",
+  "origin": [
+   607,
+   1888
+  ],
+  "origin_from": "crpixa",
+  "path": "irsa-cutout (stream-aborted after ZODI)",
+  "pipeline_version": "7.0.5",
+  "release": "qr3",
+  "retrieved": "2026-11-07",
+  "sha256": "6bf14db34e8808a22090928dd93980b09c5f363720d23bac9953714f39a3c32e",
+  "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits?center=269.4461000,4.7707000deg&size=0.15509"
+ },
+ "qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits#s3section": {
+  "bytes": 204480,
+  "file": "barnard_qr3_d6_s3section.fits",
+  "needed_by": "F2; tests/real/test_real_access.py",
+  "origin": [
+   607,
+   1888
+  ],
+  "origin_from": "section",
+  "path": "s3 byte-range rows (IMAGE/VARIANCE/ZODI) + RICE_1 row heap (FLAGS, tile-compressed in QR3 7.0.5)",
+  "pipeline_version": "7.0.5",
+  "release": "qr3",
+  "retrieved": "2026-11-07",
+  "sha256": "6bf14db34e8808a22090928dd93980b09c5f363720d23bac9953714f39a3c32e",
+  "source_url": "https://nasa-irsa-spherex.s3.amazonaws.com/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits"
+ }
+}

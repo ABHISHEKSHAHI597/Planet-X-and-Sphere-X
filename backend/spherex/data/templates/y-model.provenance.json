@@ -1,0 +1,16 @@
+{
+  "url": "https://api.github.com/repos/aburgasser/splat/git/blobs/6bf19c07c2cadeb9f9eeb23b714c8d6f32f65af5",
+  "source_path": "src/splat/resources/SpectralModels/btsettl08/SPEX-PRISM/btsettl08_t500_g4.50_z-0.00_en-0.00_SPEX-PRISM.txt.gz",
+  "git_blob": "6bf19c07c2cadeb9f9eeb23b714c8d6f32f65af5",
+  "sha256": "ca37f3bf8e14d5ef9842d04d15a9a97df34cd55e146654100471f93b60841281",
+  "retrieved": "2026-11-08T07:39:32.364228+00:00",
+  "format": "splat-flambda-model",
+  "spectral_type": "500 K BT-Settl model",
+  "temperature_K": 500,
+  "log_g_cgs": 4.5,
+  "units": "um; erg/s/cm2/um (surface F_lambda)",
+  "kind": "atmosphere model",
+  "units_source": "https://raw.githubusercontent.com/aburgasser/splat/main/src/splat/model.py (_loadInterpolatedModel units)",
+  "reference": "Allard et al. 2012, Philosophical Transactions A 370, 2765; SPLAT instrument-sampled distribution",
+  "note": "Illustrative 500 K cool-atmosphere model, not an observed Y standard or a measured temperature. SPEX-PRISM wavelength coverage only; no extrapolation to 5 microns."
+}

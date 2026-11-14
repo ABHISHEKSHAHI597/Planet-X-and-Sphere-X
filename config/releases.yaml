@@ -1,0 +1,28 @@
+# Release registry (implementation.md §3.1; loaded and validated by backend/spherex/access/releases.py).
+# Owner D; changes are reviewed PRs (workflow.md §8.4, §12.4). Nothing in the code edits this file:
+# DR1 is adopted only by adding it here by hand after the §12.4 procedure (docs/data-refresh.md).
+# ✅ 11-06: the bucket has no dr1/ prefix yet (only qr2/ and qr3/).
+releases:
+  - id: qr3
+    collections: [spherex_qr3, spherex_qr3_deep]
+    s3_prefix: qr3/
+    pipeline_family: R7
+    photometric_scale: qr3          # reference gain scale
+    priority: 30
+  - id: qr2
+    collections: [spherex_qr2, spherex_qr2_deep]
+    s3_prefix: qr2/
+    pipeline_family: "6.x"
+    photometric_scale: qr2          # needs l3_flux_corrections to reach qr3 scale (F4, owner M)
+    priority: 20
+  # - id: dr1                       # expected "late fall 2026"; supersedes qr2 for Surveys 1–2
+  #   collections: [<from IRSA>]
+  #   s3_prefix: dr1/
+  #   pipeline_family: R7
+  #   photometric_scale: qr3
+  #   priority: 40
+never_use: [qr1]                    # retired Feb 2026; never mix with later releases
+calibration:
+  release: qr3                      # spectral_wcs, spectral_channels, epsf, l3_flux_corrections, solid_angle_pixel_map
+  discover_by_listing: true         # real dir is cal-swcs-v5-2026-191, not the documented cal-wcs
+include_deep: auto                  # auto = query *_deep everywhere (no rows outside the deep fields)

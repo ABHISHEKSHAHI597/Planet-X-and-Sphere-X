@@ -1,0 +1,13 @@
+{
+ "POST https://irsa.ipac.caltech.edu/TAP/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+ra_error%2C+dec_error%2C+parallax%2C+parallax_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+radial_velocity%2C+radial_velocity_error%2C+ruwe%2C+phot_g_mean_mag%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag+FROM+gaia_dr3_source+WHERE+source_id+IN+%286412592370014523776%2C+6412593435166417536%2C+6412595771628639616%29&REQUEST=doQuery": {
+  "bytes": 6043,
+  "file": "7e0e4517984d2e3fc64cd409.gz",
+  "headers": {
+   "content-length": "6043",
+   "content-type": "application/x-votable+xml"
+  },
+  "retrieved": "2026-11-07T19:04:28+00:00",
+  "sha256": "14b9e262a23082ee7e1ed5a8320c0f2637964c80f8870965e4a484ffeccaf21d",
+  "status": 200
+ }
+}

@@ -1,0 +1,68 @@
+# Nightly validation (workflow.md §9.5: 02:00 on the VM; owner P). Runs on the self-hosted runner installed on
+# the us-east-1 VM (labels: self-hosted, parallax-vm). Network tests, L3 checks on pinned data, perf and contract
+# probes against staging; regenerates STATUS.md and opens an issue for any regression.
+name: nightly
+on:
+  schedule: [{cron: "0 2 * * *"}]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  validate:
+    runs-on: [self-hosted, parallax-vm]
+    timeout-minutes: 240
+    env:
+      PARALLAX_CALIB: /srv/parallax-data/calib
+      CALIB_ROOT: /srv/parallax-data/calib
+      PARALLAX_ENVIRONMENT: "AWS us-east-1 VM (nightly)"
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 0}
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "0.5.11", python-version: "3.12"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: network tests
+        id: network
+        continue-on-error: true
+        run: uv run pytest -q -m network
+        working-directory: backend
+      - name: L3 checks on pinned data (re-establish stale records)
+        id: l3
+        continue-on-error: true
+        run: |
+          set +e; fail=0
+          for c in F11 G1-time-model G2-registration G2-repro G4a-real G4b-wise-stacks F16; do
+            uv run python ../scripts/validate.py run "$c" || fail=1
+          done
+          exit $fail
+        working-directory: backend
+      - name: contract probe vs staging
+        id: contract
+        continue-on-error: true
+        run: uv run python ../scripts/contract_probe.py --api "${{ vars.STAGING_URL }}" --build
+        working-directory: backend
+      - name: perf probe vs staging
+        id: perf
+        continue-on-error: true
+        run: uv run python ../scripts/perf_probe.py --api "${{ vars.STAGING_URL }}" --where "AWS us-east-1 VM (nightly runner)" --record
+        working-directory: backend
+      - name: regenerate STATUS.md and commit records
+        run: |
+          uv run python ../scripts/validate.py status --write
+          cd .. && git add validation && git -c user.name="parallax-nightly" -c user.email="nightly@invalid" \
+            commit -m "nightly: evidence records $(date -u +%F)" && git push origin HEAD:refs/heads/nightly/$(date -u +%F) || true
+        working-directory: backend
+      - name: open an issue on regression
+        if: steps.network.outcome == 'failure' || steps.l3.outcome == 'failure' || steps.contract.outcome == 'failure' || steps.perf.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const s = (o) => o === 'failure' ? 'FAILED' : 'ok';
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo,
+              title: `Nightly validation regression ${new Date().toISOString().slice(0,10)}`,
+              labels: ['nightly'],
+              body: `network ${s('${{ steps.network.outcome }}')}, L3 ${s('${{ steps.l3.outcome }}')}, ` +
+                    `contract ${s('${{ steps.contract.outcome }}')}, perf ${s('${{ steps.perf.outcome }}')}.\n` +
+                    `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`});

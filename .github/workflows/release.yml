@@ -1,0 +1,68 @@
+# Release candidate (workflow.md §12.2; owner P, release manager). Manual: Actions → release → RC name + sha.
+# Builds images, pushes by digest, writes release/<RC>/release.json, tags the commit and deploys to production.
+# The G6 go/no-go (scripts/go_no_go.py) must be GO before the production step is approved (environment gate).
+name: release
+on:
+  workflow_dispatch:
+    inputs:
+      rc: {description: "RC0 | RC1 | final", required: true}
+      sha: {description: "commit on main (default: HEAD of main)", required: false}
+permissions:
+  contents: write
+  packages: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      api: ${{ steps.api.outputs.digest }}
+      web: ${{ steps.web.outputs.digest }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: "${{ inputs.sha || 'main' }}", fetch-depth: 0}
+      - uses: astral-sh/setup-uv@v5
+        with: {version: "0.5.11", python-version: "3.12"}
+      - run: uv sync --frozen
+        working-directory: backend
+      - name: release flags guard (workflow.md §9.6)
+        run: uv run python ../scripts/check_flags.py
+        working-directory: backend
+      - name: lowercase image prefix (ghcr repository names must be lowercase)
+        run: echo "IMAGE_PREFIX=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with: {registry: ghcr.io, username: "${{ github.actor }}", password: "${{ secrets.GITHUB_TOKEN }}"}
+      - id: api
+        uses: docker/build-push-action@v6
+        with: {context: ., file: backend/Dockerfile, push: true, build-args: "GIT_SHA=${{ inputs.rc }}",
+               tags: "${{ env.IMAGE_PREFIX }}/parallax-api:${{ inputs.rc }}"}
+      - id: web
+        uses: docker/build-push-action@v6
+        with: {context: ., file: deploy/web.Dockerfile, push: true,
+               tags: "${{ env.IMAGE_PREFIX }}/parallax-web:${{ inputs.rc }}"}
+      - name: release.json + tag
+        run: |
+          cd backend
+          uv run python ../scripts/make_release.py "${{ inputs.rc }}" \
+            --image-digest api=${{ env.IMAGE_PREFIX }}/parallax-api@${{ steps.api.outputs.digest }} \
+            --image-digest web=${{ env.IMAGE_PREFIX }}/parallax-web@${{ steps.web.outputs.digest }}
+          cd ..
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add release/${{ inputs.rc }}
+          git commit -m "release: ${{ inputs.rc }} manifest"
+          git tag -a "${{ inputs.rc }}" -m "${{ inputs.rc }}"
+          git push origin "${{ inputs.rc }}"
+      - uses: actions/upload-artifact@v4
+        with: {name: "release-${{ inputs.rc }}", path: "release/${{ inputs.rc }}"}
+  production:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production          # required reviewers = P (+ one of I, M, F) after the G6 go/no-go
+    if: ${{ vars.PRODUCTION_HOST != '' }}
+    steps:
+      - name: deploy RC
+        env: {SSH_KEY: "${{ secrets.DEPLOY_SSH_KEY }}", HOST: "${{ vars.PRODUCTION_HOST }}"}
+        run: |
+          install -m 600 /dev/null key && echo "$SSH_KEY" > key
+          ssh -i key -o StrictHostKeyChecking=accept-new ubuntu@"$HOST" \
+            "cd /srv/parallax && git fetch -q --tags && git checkout -q ${{ inputs.rc }} && ./deploy/deploy.sh ${{ inputs.rc }}"

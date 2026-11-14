@@ -1,0 +1,10 @@
+{
+ "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits?center=269.4461,4.7707deg&size=0.05",
+ "retrieved": "2026-11-06",
+ "release": "qr3",
+ "pipeline_version": "7.0.5 (PRIMARY VERSION)",
+ "content": "first 89,280 bytes of the cutout stream: PRIMARY + IMAGE, FLAGS, VARIANCE, ZODI (EPSF and WCS-WAVE not included)",
+ "bytes": 89280,
+ "sha256": "cfd160e4830aca985e556017b9ed7abad074d5f0f4f3e53a1fca6e9ebb0af653",
+ "needed_by": "tests/real/test_real_flags.py, scripts/verify/f06_flags.py"
+}

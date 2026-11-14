@@ -1,0 +1,196 @@
+{
+ "barnard": {
+  "pin": "21a7689afc4b",
+  "frames": 359,
+  "file": "config/pins/21a7689afc4b.json",
+  "params": {
+   "target": "barnard",
+   "ra": 269.4461,
+   "dec": 4.7707,
+   "radius_deg": 0.001,
+   "fov": 6,
+   "center": "fixed",
+   "collections": [
+    "spherex_qr3",
+    "spherex_qr3_deep",
+    "spherex_qr2",
+    "spherex_qr2_deep"
+   ],
+   "position_note": "\u22482026.0 position (fixture provenance)"
+  },
+  "counts": {
+   "frames": 359,
+   "by_detector": {
+    "1": 60,
+    "2": 61,
+    "3": 59,
+    "4": 59,
+    "5": 61,
+    "6": 59
+   },
+   "by_release": {
+    "qr2": 240,
+    "qr3": 119
+   },
+   "by_collection": {
+    "spherex_qr2": 240,
+    "spherex_qr3": 119
+   }
+  }
+ },
+ "epsindb": {
+  "pin": "3addc0f80339",
+  "frames": 447,
+  "file": "config/pins/3addc0f80339.json",
+  "params": {
+   "target": "epsindb",
+   "ra": 331.0918,
+   "dec": -56.7966,
+   "radius_deg": 0.001,
+   "fov": 6,
+   "center": "fixed",
+   "collections": [
+    "spherex_qr3",
+    "spherex_qr3_deep",
+    "spherex_qr2",
+    "spherex_qr2_deep"
+   ],
+   "position_note": "\u22482026.0 position (fixture provenance)"
+  },
+  "counts": {
+   "frames": 447,
+   "by_detector": {
+    "1": 43,
+    "2": 92,
+    "3": 97,
+    "4": 43,
+    "5": 80,
+    "6": 92
+   },
+   "by_release": {
+    "qr2": 327,
+    "qr3": 120
+   },
+   "by_collection": {
+    "spherex_qr2": 327,
+    "spherex_qr3": 120
+   }
+  }
+ },
+ "wise0855": {
+  "pin": "325c57328320",
+  "frames": 256,
+  "file": "config/pins/325c57328320.json",
+  "params": {
+   "target": "wise0855",
+   "ra": 133.7578,
+   "dec": -7.242,
+   "radius_deg": 0.001,
+   "fov": 6,
+   "center": "fixed",
+   "collections": [
+    "spherex_qr3",
+    "spherex_qr3_deep",
+    "spherex_qr2",
+    "spherex_qr2_deep"
+   ],
+   "position_note": "\u22482026.0 position (fixture provenance)"
+  },
+  "counts": {
+   "frames": 256,
+   "by_detector": {
+    "1": 36,
+    "2": 48,
+    "3": 45,
+    "4": 36,
+    "5": 48,
+    "6": 43
+   },
+   "by_release": {
+    "qr2": 256
+   },
+   "by_collection": {
+    "spherex_qr2": 256
+   }
+  }
+ },
+ "rwaur": {
+  "pin": "177ce03ed2a6",
+  "frames": 333,
+  "file": "config/pins/177ce03ed2a6.json",
+  "params": {
+   "target": "rwaur",
+   "ra": 76.95654,
+   "dec": 30.4013,
+   "radius_deg": 0.001,
+   "fov": 6,
+   "center": "fixed",
+   "collections": [
+    "spherex_qr3",
+    "spherex_qr3_deep",
+    "spherex_qr2",
+    "spherex_qr2_deep"
+   ],
+   "position_note": "\u22482026.0 position (fixture provenance)"
+  },
+  "counts": {
+   "frames": 333,
+   "by_detector": {
+    "1": 56,
+    "2": 55,
+    "3": 56,
+    "4": 56,
+    "5": 56,
+    "6": 54
+   },
+   "by_release": {
+    "qr2": 224,
+    "qr3": 109
+   },
+   "by_collection": {
+    "spherex_qr2": 224,
+    "spherex_qr3": 109
+   }
+  }
+ },
+ "rdra": {
+  "pin": "152b410215da",
+  "frames": 2483,
+  "file": "config/pins/152b410215da.json",
+  "params": {
+   "target": "rdra",
+   "ra": 248.16733,
+   "dec": 66.75502,
+   "radius_deg": 0.001,
+   "fov": 6,
+   "center": "fixed",
+   "collections": [
+    "spherex_qr3",
+    "spherex_qr3_deep",
+    "spherex_qr2",
+    "spherex_qr2_deep"
+   ],
+   "position_note": "\u22482026.0 position (fixture provenance)"
+  },
+  "counts": {
+   "frames": 2483,
+   "by_detector": {
+    "1": 584,
+    "2": 89,
+    "3": 575,
+    "4": 581,
+    "5": 89,
+    "6": 565
+   },
+   "by_release": {
+    "qr2": 1760,
+    "qr3": 723
+   },
+   "by_collection": {
+    "spherex_qr2": 536,
+    "spherex_qr2_deep": 1224,
+    "spherex_qr3_deep": 723
+   }
+  }
+ }
+}

@@ -1,0 +1,134 @@
+# Proof page (optimisation.md VAL-2, VAL-5, VAL-6; advanced_research.md A4). Owner F + D; wording reviewed by I and M.
+#
+# Each row ties one plain-language claim to one evidence record under validation/. scripts/make_proof.py fills in
+# the numbers, the verdict, the review state and whether the record is stale; NOTHING numeric is typed here.
+#   ours:      {metric: <key>} | {metrics: [<key>…], reduce: max|min|passes}, with an optional `format`
+#   reference: {metric: <key>} (another number of the same record) | {threshold: <key>} (the record's own pass rule)
+# `open` lists known limits in the same form. The generator, not this file, decides which heading a row appears
+# under: any row whose record fails, is inconclusive, or was sent back by its reviewer is shown as "not proven yet".
+schema: parallax-proof@1
+repo: https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026
+
+claims:
+  - id: registration
+    claim: Stars that should stay still, stay still
+    detail: Static Gaia stars line up from one visit stack to the next, so a jump in the blink is the sky and not the camera.
+    check: G2-registration
+    ours: {metrics: [V1_V2_median_offset_px, V1_V4_median_offset_px, V2_V4_median_offset_px], reduce: max, format: "{:.2f} px"}
+    ours_label: largest median offset between two visits
+    reference: {threshold: V1_V2_median_offset_px}
+
+  - id: barnard-25yr
+    claim: Barnard's Star has moved by the amount its catalogue motion predicts
+    detail: Measured between the 2MASS image (about 2000) and the SPHEREx stack, against the position function used for every overlay.
+    check: G5.25yr-jumps
+    ours: {metric: barnard_jump_arcmin, format: "{:.3f}′"}
+    ours_label: measured jump
+    reference: {metric: barnard_predicted_jump_arcmin, format: "{:.3f}′ predicted"}
+
+  - id: epsindb-25yr
+    claim: So has ε Indi B
+    detail: 2MASS to SPHEREx, same method.
+    check: G5.25yr-jumps
+    ours: {metric: epsindb_jump_arcmin, format: "{:.3f}′"}
+    ours_label: measured jump
+    reference: {metric: epsindb_predicted_jump_arcmin, format: "{:.3f}′ predicted"}
+
+  - id: wise0855-epoch
+    claim: The challenge's WISE 0855 coordinate is an old position, and we know where the object is now
+    detail: Measured between the AllWISE image (about 2010) and the SPHEREx stack. This is the move the epoch banner announces.
+    check: G5.25yr-jumps
+    ours: {metric: wise0855_jump_arcmin, format: "{:.3f}′"}
+    ours_label: measured jump
+    reference: {metric: wise0855_predicted_jump_arcmin, format: "{:.3f}′ predicted"}
+
+  - id: epsindb-pm
+    claim: A motion fitted from SPHEREx alone agrees with the catalogue
+    detail: ε Indi B's proper motion fitted to SPHEREx centroids from four visits, compared with the catalogue value.
+    check: G3-pm-epsindb
+    ours: {metric: pm_error_arcsec_yr, format: "{:.2f}″/yr"}
+    ours_label: difference from the catalogue
+    reference: {threshold: pm_error_arcsec_yr}
+
+  - id: visits
+    claim: Every moving test target has at least two full visits to blink
+    detail: Full visits in band 6 for Barnard's Star, ε Indi B, WISE 0855 and RW Aur. R Dra is seen almost continuously and uses 14-day bins.
+    check: G1-time-model
+    ours: {metrics: [barnard_full_visits_band6, epsindb_full_visits_band6, wise0855_full_visits_band6, rwaur_full_visits_band6], reduce: min, format: "{:d}"}
+    ours_label: fewest full visits among the four
+    reference: {threshold: barnard_full_visits_band6}
+
+  - id: coverage
+    claim: We find every frame the archive has, by two independent routes
+    detail: The image search (SIA2) and the table search (TAP) return identical frame lists for all five test targets.
+    check: F11
+    ours: {metrics: [barnard_sia2_eq_tap, epsindb_sia2_eq_tap, wise0855_sia2_eq_tap, rwaur_sia2_eq_tap, rdra_sia2_eq_tap], reduce: passes}
+    ours_label: targets with identical lists
+    reference: {threshold: barnard_sia2_eq_tap}
+
+  - id: wavelength
+    claim: Each pixel is given the right wavelength
+    detail: SPHEREx sees a different wavelength at every detector position. The per-pixel wavelength map we use agrees with the wavelength table carried in the SPHEREx image files, in all six detectors.
+    check: F1
+    ours: {metrics: [D1_p99_nm, D2_p99_nm, D3_p99_nm, D4_p99_nm, D5_p99_nm, D6_p99_nm], reduce: max, format: "{:.2f} nm"}
+    ours_label: worst detector, 99th percentile error
+    reference: {threshold: D1_p99_nm}
+
+  - id: repro
+    claim: The same link gives the same pixels
+    detail: Two cold builds of one pinned view, from scratch, produce byte-identical image files.
+    check: G2-repro
+    ours: {metric: byte_identical_f16_f32}
+    ours_label: all payloads compared
+    reference: {threshold: byte_identical_f16_f32}
+
+  - id: trap
+    claim: Subtracting two visits naively is wrong for SPHEREx, and our tests show it
+    detail: On a synthetic sky with known answers, a plain visit-minus-visit difference leaves false residuals at static stars, because the two visits saw different wavelengths.
+    check: I-L1-synthetic
+    ours: {metric: "test_synthetic_diff::test_synthetic_naive_stack_difference_fails"}
+    ours_label: test that the naive method fails
+    reference: {threshold: "test_synthetic_diff::test_synthetic_naive_stack_difference_fails"}
+
+  - id: null-result
+    claim: Where nothing moves, the matched difference shows nothing
+    detail: The same synthetic sky, differenced with wavelengths matched pixel by pixel. Static stars cancel; only the moving source remains.
+    check: I-L1-synthetic
+    ours: {metric: "test_synthetic_diff::test_synthetic_matched_difference_static_stars_cancel"}
+    ours_label: test that static stars cancel
+    reference: {threshold: "test_synthetic_diff::test_synthetic_matched_difference_static_stars_cancel"}
+
+open:
+  - id: epsf
+    claim: Star profiles in the short-wavelength bands
+    detail: Our fitted star profile leaves residuals in detectors 1 to 4, and the archive's noise values are too low there. Until this is settled, spectra, fitted positions and filled bright cores are shown as unvalidated or kept off the public site.
+    check: F5
+
+  - id: difference
+    claim: The wavelength-matched difference image on real data
+    detail: The dipole it shows for Barnard's Star has the expected size and direction, but too many static stars leave residuals above 3σ, and the reviewer did not accept a looser rule. The difference mode stays off in public builds.
+    check: G4a-real
+    ours: {metric: barnard_V1_V3_pa_deg, format: "{:.1f}° dipole direction"}
+    reference: {threshold: barnard_V1_V3_pa_deg}
+
+  - id: wise0855-blend
+    claim: WISE 0855's spectrum at short wavelengths
+    detail: An ordinary star sits less than two pixels away. Our two-source fit should return zero flux for the brown dwarf in band 1; in one visit it returns a significantly negative value. Its spectrum is not shown as a result.
+    check: G4b-wise-stacks
+    ours: {metric: V2_D1, format: "{:.2f}σ"}
+    ours_label: band-1 flux of the brown dwarf, visit 2
+    reference: {threshold: V2_D1}
+
+  - id: rdra-period
+    claim: R Draconis's pulsation period
+    detail: SPHEREx has not yet watched R Dra for long enough to recover its period of about 245 days. The light curve is shown as relative brightness only, without a period.
+    check: G5.lc-rdra
+    ours: {metric: independent_bins, format: "{:d} independent bins"}
+    reference: {threshold: independent_bins}
+
+  - id: barnard-pm
+    claim: Barnard's Star's motion fitted from SPHEREx alone
+    detail: The fitted speed and direction are within their limits, but the star saturates the detector and the fit's scatter is far larger than its error bars, so the result is not accepted.
+    check: G3-pm-barnard
+    ours: {metric: pm_error_arcsec_yr, format: "{:.2f}″/yr from the catalogue"}
+    reference: {threshold: pm_error_arcsec_yr}

@@ -1,0 +1,66 @@
+# Caddy (implementation.md §5.3, §9; owner P). SITE_ADDRESS is the public host name (automatic HTTPS) or
+# ":80" on an offline laptop. Security headers here mirror the API's middleware, so both layers agree:
+# `frame-ancestors *` on /embed only (P1-5); everything else SAMEORIGIN.
+{
+	admin off
+}
+
+{$SITE_ADDRESS::80} {
+	encode zstd gzip
+
+	@api path /api/* /healthz /openapi.json /docs
+	handle @api {
+		reverse_proxy api:8000 {
+			flush_interval -1          # SSE: stream job events immediately
+			transport http {
+				read_timeout 15m
+			}
+		}
+	}
+
+	@metrics path /metrics
+	handle @metrics {
+		@outside not remote_ip private_ranges
+		respond @outside 403
+		reverse_proxy api:8000
+	}
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+		# Report-only (audit O-19): the browser logs violations but blocks nothing. Fonts and scripts are self-hosted;
+		# Aladin Lite fetches HiPS tiles from CDS mirrors (https:) and runs WebAssembly. Switch to enforcing
+		# Content-Security-Policy once a demo session shows no reports in the console.
+		Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; connect-src 'self' https:; worker-src 'self' blob:; font-src 'self' data:; object-src 'none'; base-uri 'self'"
+	}
+
+	@embed path /embed /embed/*
+	header @embed {
+		Content-Security-Policy "frame-ancestors *"
+		-X-Frame-Options
+	}
+	@notembed not path /embed /embed/* /api/*
+	header @notembed {
+		X-Frame-Options SAMEORIGIN
+		Content-Security-Policy "frame-ancestors 'self'"
+	}
+
+	# Immutable hashed assets; everything else the SPA serves (/, /embed, /about, /f14, any query) is the same
+	# index.html through try_files and must never be cached, or an old shell points at deleted asset hashes (O-03).
+	@assets path /assets/*
+	header @assets Cache-Control "public, max-age=31536000, immutable"
+	@shell not path /assets/* /api/* /healthz /metrics /openapi.json /docs
+	header @shell Cache-Control "no-cache"
+
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+
+	log {
+		output stdout
+		format json
+	}
+}
