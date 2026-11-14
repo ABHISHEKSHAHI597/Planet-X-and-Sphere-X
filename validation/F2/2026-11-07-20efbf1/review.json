@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F2",
+ "record": "2026-11-07-20efbf1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "approve",
+ "reproduced": true,
+ "notes": "Reproduced by P at git 40e3c21 (code digest 24ceb49212b1...): f02_sections_vs_cutouts.py re-run against the live archive -> PASS; IMAGE/FLAGS/VARIANCE/ZODI bit-identical, WCS max sep 0.0 arcsec, S3 box contains the cutout box for both pairs; frames.json gives provenance. Legacy record (@0-temporary, dirty tree, no code digest) shows STALE: D re-records under the harness (python scripts/validate.py run F2) and this review is repeated on the new record.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "24ceb49212b155ffe70108fd3b790337f3d288ea4b88ba88f164c5791d955f79"
+}

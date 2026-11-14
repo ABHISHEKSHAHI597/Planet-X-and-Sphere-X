@@ -1,0 +1,39 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G1-resolver",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-network"
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 60.6,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/targets.py",
+  "backend/spherex/astrometry.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/photometry.py",
+  "backend/spherex/ephem.py",
+  "scripts/verify/m_foundations.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "81daef1bc827f6e86fdf41c6182ea625ea2192ec711fbdf7c5dbc3bbc7aa6856",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "Windows developer checkout; not deployment performance",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

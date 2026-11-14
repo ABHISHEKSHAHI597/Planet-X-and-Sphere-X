@@ -1,0 +1,311 @@
+[
+ {
+  "label": "barnard_qr3_d6",
+  "s3_key": "qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits",
+  "release": "qr3",
+  "version": "7.0.5",
+  "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits?center=269.4461000,4.7707000deg&size=0.15509",
+  "box_deg": 0.1550880229039762,
+  "cutout_origin": [
+   607,
+   1888
+  ],
+  "cutout_origin_from_crpixa": [
+   607,
+   1888
+  ],
+  "cutout_shape": [
+   91,
+   91
+  ],
+  "s3_box_origin": [
+   606,
+   1887
+  ],
+  "s3_box_shape": [
+   93,
+   92
+  ],
+  "s3_section_header_origin": [
+   607,
+   1888
+  ],
+  "cover_box": [
+   605,
+   700,
+   1884,
+   1982
+  ],
+  "cover_contains_cutout": true,
+  "hdu_after_zodi": null,
+  "pixels": {
+   "IMAGE": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 6,
+    "max_abs_diff": 0.0
+   },
+   "FLAGS": {
+    "identical": true,
+    "dtype": [
+     "int64",
+     "int64"
+    ],
+    "n": 8281,
+    "nan": 0,
+    "max_abs_diff": 0.0
+   },
+   "VARIANCE": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 6,
+    "max_abs_diff": 0.0
+   },
+   "ZODI": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 0,
+    "max_abs_diff": 0.0
+   }
+  },
+  "header_diffs": {
+   "IMAGE": {},
+   "FLAGS": {},
+   "VARIANCE": {},
+   "ZODI": {}
+  },
+  "flags_compressed_in_s3": true,
+  "same_origin": true,
+  "s3_box_edges_minus_cutout": [
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "s3_box_contains_cutout": true,
+  "same_shape": true,
+  "wcs_max_sep_arcsec": 0.0,
+  "wcs_vs_fullfile_max_sep_arcsec": 2.2020995559507204e-10,
+  "bytes_cutout": 204480,
+  "bytes_s3_exact": 2686327,
+  "ok": true
+ },
+ {
+  "label": "wise0855_qr2_d6",
+  "s3_key": "qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits",
+  "release": "qr2",
+  "version": "6.5.6",
+  "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits?center=133.7578000,-7.2420000deg&size=0.15509",
+  "box_deg": 0.1550880229039762,
+  "cutout_origin": [
+   1730,
+   924
+  ],
+  "cutout_origin_from_crpixa": [
+   1730,
+   924
+  ],
+  "cutout_shape": [
+   91,
+   91
+  ],
+  "s3_box_origin": [
+   1729,
+   924
+  ],
+  "s3_box_shape": [
+   92,
+   93
+  ],
+  "s3_section_header_origin": [
+   1730,
+   924
+  ],
+  "cover_box": [
+   1719,
+   1832,
+   912,
+   1028
+  ],
+  "cover_contains_cutout": true,
+  "hdu_after_zodi": null,
+  "pixels": {
+   "IMAGE": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 3,
+    "max_abs_diff": 0.0
+   },
+   "FLAGS": {
+    "identical": true,
+    "dtype": [
+     "int64",
+     "int64"
+    ],
+    "n": 8281,
+    "nan": 0,
+    "max_abs_diff": 0.0
+   },
+   "VARIANCE": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 3,
+    "max_abs_diff": 0.0
+   },
+   "ZODI": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 0,
+    "max_abs_diff": 0.0
+   }
+  },
+  "header_diffs": {
+   "IMAGE": {},
+   "FLAGS": {},
+   "VARIANCE": {},
+   "ZODI": {}
+  },
+  "flags_compressed_in_s3": false,
+  "same_origin": true,
+  "s3_box_edges_minus_cutout": [
+   -1,
+   0,
+   1,
+   1
+  ],
+  "s3_box_contains_cutout": true,
+  "same_shape": true,
+  "wcs_max_sep_arcsec": 0.0,
+  "wcs_vs_fullfile_max_sep_arcsec": 1.054875901632378e-10,
+  "bytes_cutout": 201600,
+  "bytes_s3_exact": 2970240,
+  "ok": true
+ },
+ {
+  "label": "rdra_qr2deep",
+  "s3_key": "qr2/level2/2026W06_2A/l2b-v23-2026-040/3/level2_2026W06_2A_0609_1D3_spx_l2b-v23-2026-040.fits",
+  "release": "qr2",
+  "version": "6.5.5+psffix1",
+  "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W06_2A/l2b-v23-2026-040/3/level2_2026W06_2A_0609_1D3_spx_l2b-v23-2026-040.fits?center=248.1673300,66.7550200deg&size=0.15509",
+  "box_deg": 0.1550880229039762,
+  "cutout_origin": [
+   884,
+   9
+  ],
+  "cutout_origin_from_crpixa": [
+   884,
+   9
+  ],
+  "cutout_shape": [
+   91,
+   91
+  ],
+  "s3_box_origin": [
+   883,
+   8
+  ],
+  "s3_box_shape": [
+   92,
+   93
+  ],
+  "s3_section_header_origin": [
+   884,
+   9
+  ],
+  "cover_box": [
+   869,
+   990,
+   0,
+   116
+  ],
+  "cover_contains_cutout": true,
+  "hdu_after_zodi": null,
+  "pixels": {
+   "IMAGE": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 13,
+    "max_abs_diff": 0.0
+   },
+   "FLAGS": {
+    "identical": true,
+    "dtype": [
+     "int64",
+     "int64"
+    ],
+    "n": 8281,
+    "nan": 0,
+    "max_abs_diff": 0.0
+   },
+   "VARIANCE": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 13,
+    "max_abs_diff": 0.0
+   },
+   "ZODI": {
+    "identical": true,
+    "dtype": [
+     "float32",
+     "float32"
+    ],
+    "n": 8281,
+    "nan": 0,
+    "max_abs_diff": 0.0
+   }
+  },
+  "header_diffs": {
+   "IMAGE": {},
+   "FLAGS": {},
+   "VARIANCE": {},
+   "ZODI": {}
+  },
+  "flags_compressed_in_s3": false,
+  "same_origin": true,
+  "s3_box_edges_minus_cutout": [
+   -1,
+   -1,
+   1,
+   0
+  ],
+  "s3_box_contains_cutout": true,
+  "same_shape": true,
+  "wcs_max_sep_arcsec": 0.0,
+  "wcs_vs_fullfile_max_sep_arcsec": 1.5868704236211908e-10,
+  "bytes_cutout": 201600,
+  "bytes_s3_exact": 2970240,
+  "ok": true
+ }
+]

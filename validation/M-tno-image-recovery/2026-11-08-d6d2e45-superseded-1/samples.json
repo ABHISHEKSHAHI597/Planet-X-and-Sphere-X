@@ -1,0 +1,23 @@
+{
+  "Makemake": {
+    "samples": [],
+    "rejected": [],
+    "errors": [
+      "ConnectError: All connection attempts failed"
+    ]
+  },
+  "Haumea": {
+    "samples": [],
+    "rejected": [],
+    "errors": [
+      "ConnectError: All connection attempts failed"
+    ]
+  },
+  "Eris": {
+    "samples": [],
+    "rejected": [],
+    "errors": [
+      "ConnectError: All connection attempts failed"
+    ]
+  }
+}

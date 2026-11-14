@@ -1,0 +1,103 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G2-repro",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {
+  "same_key": {
+   "value": "689aae6e44f729c76d6dac0b / 689aae6e44f729c76d6dac0b",
+   "threshold": "equal",
+   "pass": true
+  },
+  "f16_payloads": {
+   "value": 24,
+   "threshold": "> 0 (every ready stack)",
+   "pass": true
+  },
+  "byte_identical_f16_f32": {
+   "value": "all identical",
+   "threshold": "byte-identical",
+   "pass": true
+  },
+  "f16_digest": {
+   "value": "c78616ac063ba3db",
+   "threshold": "reported",
+   "pass": null
+  },
+  "frames_stacked": {
+   "value": 359,
+   "threshold": "reported",
+   "pass": null
+  },
+  "frames_skipped": {
+   "value": 0,
+   "threshold": "reported (each with a reason)",
+   "pass": null
+  },
+  "job_errors": {
+   "value": 0,
+   "threshold": "0",
+   "pass": true
+  },
+  "cold_s": {
+   "value": [
+    175.7,
+    210.0
+   ],
+   "threshold": "reported (budgets are G2-perf)",
+   "pass": null
+  },
+  "frames_by_source": {
+   "value": [
+    {
+     "irsa-cutout": 187,
+     "s3-section": 172
+    },
+    {
+     "irsa-cutout": 195,
+     "s3-section": 164
+    }
+   ],
+   "threshold": "reported",
+   "pass": null
+  }
+ },
+ "git_sha": "989bf01",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "21a7689afc4b"
+ ],
+ "inputs": [
+  "config/pins/21a7689afc4b",
+  "live IRSA archive"
+ ],
+ "input_frame_count": 359,
+ "runtime_s": 395.5,
+ "author": "P",
+ "reviewer": "pending (D, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/app/pipeline.py",
+  "backend/app/worker.py",
+  "backend/spherex/stack.py",
+  "backend/spherex/grid.py",
+  "backend/spherex/preprocess.py",
+  "backend/spherex/render.py",
+  "backend/spherex/access/window.py",
+  "backend/spherex/access/failover.py"
+ ],
+ "code_digest": "b2b8b79916504d18a70515f76e1290ac3074d62d8b62659006f3150da4727adf",
+ "caveats": [
+  "CALIB_ROOT not set: stacks do not use \u03bb maps, so bytes are unaffected",
+  "runtime 389 s",
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "HPVictusTPS (Windows)",
+ "supersedes": null,
+ "date": "2026-11-10"
+}

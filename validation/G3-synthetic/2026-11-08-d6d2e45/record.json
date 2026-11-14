@@ -1,0 +1,46 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G3-synthetic",
+ "level": "L1",
+ "verdict": "pass",
+ "metrics": {
+  "pytest_returncode": {
+   "value": 0,
+   "threshold": "0",
+   "pass": true
+  }
+ },
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "backend/tests/synthetic/test_synthetic_measurement.py"
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 71.5,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/targets.py",
+  "backend/spherex/astrometry.py",
+  "backend/spherex/joint_astrometry.py",
+  "backend/spherex/epsf.py",
+  "backend/tests/synthetic/scene.py",
+  "backend/tests/synthetic/test_synthetic_measurement.py",
+  "backend/tests/synthetic/test_joint_astrometry.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "929585f8f49acc1d9eb0c50400ed611537fbe286349f4717d9f11e9527701b9b",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-d6d2e45-superseded-3",
+ "date": "2026-11-08"
+}

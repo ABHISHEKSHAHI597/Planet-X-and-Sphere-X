@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F12-concurrency2",
+ "record": "2026-11-07-20efbf1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "Supplementary F12 run with the same limitation (not us-east-1). Context only; superseded by the VM run.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "5b15ae79becc4db4d2d2cfbb6304ceb4f2944db931c4d10483809f60243385a2"
+}

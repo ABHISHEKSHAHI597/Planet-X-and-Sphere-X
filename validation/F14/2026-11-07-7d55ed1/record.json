@@ -1,0 +1,30 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F14",
+ "level": "L2",
+ "verdict": "inconclusive",
+ "metrics": {
+  "golden_decodes_bit_for_bit": { "value": true, "threshold": "Python to_f16(golden_F) == TS f16Bits(file); sentinel bits 0xfbff", "pass": true },
+  "cpu_png_path_F_top_left": { "value": true, "threshold": "F upright top-left, sentinel bottom-right + centre, ramp brighter right", "pass": true },
+  "webgl_mapping_math_no_flip": { "value": true, "threshold": "shader uv->pixel: canvas top-left = (col 0, row ny-1)", "pass": true },
+  "webgl_rendered_in_chrome": { "value": "F upright top-left, ramp brighter right, purple corner bottom-right (visual, /f14)", "threshold": "same as CPU path", "pass": true },
+  "real_field_vs_aladin_2mass": { "value": "not run", "threshold": "stars coincide with Aladin 2MASS HiPS, north up / east left", "pass": null }
+ },
+ "git_sha": "7d55ed1",
+ "git_dirty": true,
+ "contract_versions": { "binary": "f16le-row0south-nodata-65504@1", "http_api": "0.1.0 (provisional)" },
+ "calibration_lock": "n/a (display check)",
+ "pins": "none: config/pins not yet created (owner D)",
+ "inputs": ["frontend/fixtures/golden/stack_F_121x121.f16", "frontend/fixtures/golden/stack_F_121x121.json"],
+ "input_frame_count": 0,
+ "runtime_s": 0.2,
+ "author": "F",
+ "reviewer": "pending (P, workflow.md §9.4)",
+ "code_paths": ["frontend/src/gl/renderer.ts", "frontend/src/gl/shaders.ts", "frontend/src/lib/stretch.ts", "frontend/src/lib/viewport.ts", "frontend/src/lib/half.ts"],
+ "caveats": [
+  "Second half of F14 (a real SPHEREx field blinked beside Aladin's 2MASS HiPS) needs P's API and D's pins; run on staging, then this record is superseded with verdict pass/fail.",
+  "WebGL check was visual in one Chrome on Linux; the device matrix (Firefox, Safari, Android, iPhone) is part of G6.",
+  "Found and fixed during this check: React StrictMode remount + WEBGL_lose_context in dispose() left the canvas with a dead context (blank viewer)."
+ ],
+ "date": "2026-11-07"
+}

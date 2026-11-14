@@ -1,0 +1,41 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-aavso-lightcurve",
+ "level": "L4",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  {
+   "url": "https://vsx.aavso.org/index.php?view=api.object&ident=000-BBX-660&data=50000&fromjd=2460796&tojd=2461350&csv&band=Vis.,V&mtype=std",
+   "final_url": "https://vsx.aavso.org/index.php?view=api.object&ident=000-BBX-660&data=50000&fromjd=2460796&tojd=2461350&csv&band=Vis.,V&mtype=std",
+   "status": 200,
+   "acquired": "2026-11-08T06:23:10.903090+00:00",
+   "sha256": "d8b4812f363407047c2a76c8efc0017012831129cc64d3df865ab97e27fb4b19",
+   "content_type": "text/xml; charset=utf-8"
+  }
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 4.1,
+ "author": "M",
+ "reviewer": "pending (other scientist or P, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_aavso_lightcurve.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "bda50f83b465ab5f810742184adc16d18722ec2953a3b30ac37387a0d232f1e1",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

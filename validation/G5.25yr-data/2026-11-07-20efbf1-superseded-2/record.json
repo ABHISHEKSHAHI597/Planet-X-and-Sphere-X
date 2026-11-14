@@ -1,0 +1,184 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "G5.25yr-data",
+ "level": "L3",
+ "verdict": "fail",
+ "metrics": {
+  "barnard_jump_arcmin": {
+   "value": 4.539,
+   "threshold": "4.55 \u00b1 0.1 (2MASS\u2192now (catalogue position \u2192 pos(now)))",
+   "pass": true
+  },
+  "barnard_2mass_epoch": {
+   "value": "2000-05-28",
+   "threshold": "per-target fp_psc.jdate",
+   "pass": true
+  },
+  "barnard_fov_arcmin": {
+   "value": 6.81,
+   "threshold": "\u2265 1.5 \u00d7 jump",
+   "pass": true
+  },
+  "barnard_sample_cutout": {
+   "value": {
+    "contains": {
+     "archival": true,
+     "now": true
+    },
+    "mosaic": true,
+    "cutouts": [
+     {
+      "bytes": 277402,
+      "shape": [
+       323,
+       311
+      ],
+      "contains": {
+       "archival": false,
+       "now": true
+      }
+     },
+     {
+      "bytes": 125480,
+      "shape": [
+       140,
+       311
+      ],
+      "contains": {
+       "archival": true,
+       "now": false
+      }
+     }
+    ]
+   },
+   "threshold": "valid FITS; archival and 2026 positions inside (one image or a mosaic)",
+   "pass": true
+  },
+  "barnard_epochs": {
+   "value": {
+    "2MASS Ks": 2,
+    "AllWISE W1": 1,
+    "AllWISE W2": 1,
+    "NEOWISE W2 epochs": 21
+   },
+   "threshold": "reported",
+   "pass": null
+  },
+  "epsindb_jump_arcmin": {
+   "value": 2.092,
+   "threshold": "2.1 \u00b1 0.1 (2MASS\u2192now (catalogue position \u2192 pos(now)))",
+   "pass": true
+  },
+  "epsindb_2mass_epoch": {
+   "value": "1999-11-08",
+   "threshold": "per-target fp_psc.jdate",
+   "pass": true
+  },
+  "epsindb_fov_arcmin": {
+   "value": 3.14,
+   "threshold": "\u2265 1.5 \u00d7 jump",
+   "pass": true
+  },
+  "epsindb_sample_cutout": {
+   "value": {
+    "contains": {
+     "archival": true,
+     "now": true
+    },
+    "mosaic": false,
+    "cutouts": [
+     {
+      "bytes": 79921,
+      "shape": [
+       190,
+       150
+      ],
+      "contains": {
+       "archival": true,
+       "now": true
+      }
+     }
+    ]
+   },
+   "threshold": "valid FITS; archival and 2026 positions inside (one image or a mosaic)",
+   "pass": true
+  },
+  "epsindb_epochs": {
+   "value": {
+    "2MASS Ks": 2,
+    "AllWISE W1": 2,
+    "AllWISE W2": 2,
+    "NEOWISE W2 epochs": 21
+   },
+   "threshold": "reported",
+   "pass": null
+  },
+  "wise0855_jump_arcmin": {
+   "value": 2.191,
+   "threshold": "2.2 \u00b1 0.1 (AllWISE\u2192now (pos))",
+   "pass": true
+  },
+  "wise0855_2mass_epoch": {
+   "value": "not detected",
+   "threshold": "not detected (J\u224825)",
+   "pass": true
+  },
+  "wise0855_fov_arcmin": {
+   "value": 3.29,
+   "threshold": "\u2265 1.5 \u00d7 jump",
+   "pass": true
+  },
+  "wise0855_sample_cutout": {
+   "value": {
+    "contains": {
+     "archival": false,
+     "now": false
+    },
+    "mosaic": false,
+    "cutouts": [
+     {
+      "bytes": 190,
+      "error": "OSError('No SIMPLE card found, this file does not appear to be a valid FITS file. If this is really a FITS file, try with ignore_missing_simple=True')"
+     }
+    ]
+   },
+   "threshold": "valid FITS; archival and 2026 positions inside (one image or a mosaic)",
+   "pass": false
+  },
+  "wise0855_epochs": {
+   "value": {
+    "2MASS Ks": 0,
+    "AllWISE W1": 1,
+    "AllWISE W2": 1,
+    "NEOWISE W2 epochs": 21
+   },
+   "threshold": "reported",
+   "pass": null
+  }
+ },
+ "git_sha": "20efbf1",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "not used: this check reads no calibration file (lock 94e18b883fdc9b28 exists)",
+ "pins": "not applicable: archival epochs; plans listed in inputs",
+ "inputs": {
+  "plans": "backend/tests/data/real/blink25",
+  "now_year": 2026.63
+ },
+ "input_frame_count": 0,
+ "runtime_s": 236.2,
+ "author": "D",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/access/blink25.py",
+  "backend/spherex/external/twomass.py",
+  "backend/spherex/external/wise.py"
+ ],
+ "caveats": [
+  "pos(t) is a temporary linear-PM adapter (no parallax): \u22721\u2033 error, far below the 0.1\u2032 tolerance",
+  "catalogue-based jumps only; image-measured jumps belong to I/M/F"
+ ],
+ "date": "2026-11-07"
+}

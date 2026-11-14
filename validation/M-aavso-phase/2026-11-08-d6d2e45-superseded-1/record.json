@@ -1,0 +1,45 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-aavso-phase",
+ "level": "L4",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\validation\\M-aavso-lightcurve\\2026-11-08-d6d2e45\\reference-response.txt",
+   "sha256": "75459c0858a1975d3add662c42ee640b119d6a0cec70ffb54c0fe5a4cbfa2ed5"
+  },
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\validation\\M-aavso-reference\\2026-11-08-d6d2e45\\reference-response.txt",
+   "sha256": "84dbbc2b30e7be3917c9364fc1f962f98b1f9a3a7ef9b99c9affe8949c1b4d19"
+  },
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\rdra-lightcurve.json",
+   "sha256": "adc14a9b05183f5b4bde81094b48a559d65a7dcdd66eae324b38c1225068dea1"
+  }
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 2.0,
+ "author": "M",
+ "reviewer": "pending (other scientist or P, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_aavso_phase.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "c311dd15f3a52409bf6150fcf5cd326fe7c958bbdfe82b52d8d267d918e67c6a",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

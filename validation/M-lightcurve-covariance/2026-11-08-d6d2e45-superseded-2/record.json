@@ -1,0 +1,40 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-lightcurve-covariance",
+ "level": "L1",
+ "verdict": "pass",
+ "metrics": {
+  "noise_trials": {
+   "value": 500,
+   "threshold": "variances agree within 20%, PSD and no detector leakage",
+   "pass": true
+  }
+ },
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [],
+ "input_frame_count": 0,
+ "runtime_s": 5.9,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/lightcurve.py",
+  "backend/tests/synthetic/test_lightcurve_covariance.py",
+  "scripts/verify/m_lightcurve.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "3785bcd20f46f151c40a51f8bc362b0a31e3b1a7283a6e2a0b16e4b4f67e5c07",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-d6d2e45-superseded-1",
+ "date": "2026-11-08"
+}

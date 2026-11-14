@@ -1,0 +1,295 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "I-L1-synthetic",
+ "level": "L1",
+ "verdict": "pass",
+ "metrics": {
+  "test_synthetic_diff::test_synthetic_matched_difference_static_stars_cancel": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_diff::test_synthetic_naive_stack_difference_fails": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_diff::test_synthetic_pairing_at_target_fails_off_centre": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_diff::test_synthetic_mover_leaves_dipole": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_diff::test_synthetic_pair_frames_half_channel_offsets_pair": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_native_matched_difference_static_stars_cancel[25.0]": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_native_matched_difference_static_stars_cancel[400.0]": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_resampling_trap_teeth": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_native_naive_stack_difference_fails": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_native_mover_dipole_and_template_shift": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_native_variable_monopole": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_stack_unbiased_through_pipeline": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_registration_offsets_between_pa_flipped_visits": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_bright_target_presets_fill_and_masked_core_shift": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_null_test_and_occupancy": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_partial_visit_trap": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_qr2_scale_guard": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_detection_native_only_and_transients": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_qa_rejects_and_lists_skipped": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_generator_produces_the_traps": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_pipeline::test_synthetic_difference_refuses_mixed_photometric_scales": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_reject_transients_moving_point_on_dark_sky": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_reject_transients_keeps_skewed_bright_source": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_weighted_stack_unbiased_bright_star": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_cosmic_rays_rejected_on_sky": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_significance_unit_sigma_native_and_upsampled": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_to_grid_undoes_pa180_rotation": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_detect_recovers_injected_source_only": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_synthetic_stack::test_synthetic_red_sum_catches_cold_dwarf": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_at_wavelengths_matches_documented_version_where_it_is_defined": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_shift_pa_convention_and_dipole_fit": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_scrubber_sorted_by_measured_lambda_and_lambda_slice": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_null_halves_disjoint_and_alternate_in_lambda": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_psf_match_variance_of_white_noise": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_grid_helpers": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_bicubic_resampling_is_nan_safe": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_cube_grid_unit::test_transients_and_empty_stack": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_flags_epochs::test_flag_bits_both_header_conventions": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_flags_epochs::test_canonical_repack_from_a_different_layout": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_flags_epochs::test_presets_policy": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_flags_epochs::test_survey_number_branches": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_flags_epochs::test_labels_and_date_ranges": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_flags_epochs::test_time_bins_axes": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_to_f16_sentinel_and_clip": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_science_payloads_keep_nan_and_flags_are_u32le": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_golden_F_contract_file_and_orientation": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_shared_limits_from_median_stack_ignore_one_bright_frame": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_per_frame_stretch_flickers_teeth": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_stretch_matches_shader_endpoints": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_display_fill_only_fills_core_holes": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_flipbook_sorted_by_lambda_and_decimated": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  },
+  "test_render::test_normalise_epoch_unit_sky_sigma_and_blink25_plan": {
+   "value": "passed",
+   "threshold": "pass",
+   "pass": true
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "backend/tests/synthetic",
+  "backend/tests/unit"
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 46.7,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/flags.py",
+  "backend/spherex/preprocess.py",
+  "backend/spherex/epochs.py",
+  "backend/spherex/grid.py",
+  "backend/spherex/stack.py",
+  "backend/spherex/cube.py",
+  "backend/spherex/render.py",
+  "backend/spherex/movers.py"
+ ],
+ "caveats": [],
+ "date": "2026-11-06"
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F8",
+ "level": "L2",
+ "verdict": "pass",
+ "metrics": {
+  "barnard_fail_fraction": {
+   "value": "0/359",
+   "threshold": "measured",
+   "pass": null
+  },
+  "epsindb_fail_fraction": {
+   "value": "0/447",
+   "threshold": "measured",
+   "pass": null
+  },
+  "wise0855_fail_fraction": {
+   "value": "0/256",
+   "threshold": "measured",
+   "pass": null
+  },
+  "rwaur_fail_fraction": {
+   "value": "0/333",
+   "threshold": "measured",
+   "pass": null
+  },
+  "rdra_fail_fraction": {
+   "value": "0/2483",
+   "threshold": "measured",
+   "pass": null
+  },
+  "total_fail": {
+   "value": "0/3878",
+   "threshold": "measured",
+   "pass": null
+  },
+  "cutouts_over_50pct_bad_discovery": {
+   "value": "1/279",
+   "threshold": "measured",
+   "pass": null
+  },
+  "cutouts_median_bad_discovery": {
+   "value": 0.0134,
+   "threshold": "measured",
+   "pass": null
+  },
+  "cutouts_over_50pct_bad_bright": {
+   "value": "0/279",
+   "threshold": "measured",
+   "pass": null
+  },
+  "cutouts_median_bad_bright": {
+   "value": 0.0071,
+   "threshold": "measured",
+   "pass": null
+  },
+  "cutouts_over_50pct_bad_imaging": {
+   "value": "1/279",
+   "threshold": "measured",
+   "pass": null
+  },
+  "cutouts_median_bad_imaging": {
+   "value": 0.0134,
+   "threshold": "measured",
+   "pass": null
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "backend/tests/data/real/frames_5targets.json",
+  "~/.cache/parallax-verify/cutouts (279 real cutouts)"
+ ],
+ "input_frame_count": 3878,
+ "runtime_s": 9.5,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/preprocess.py"
+ ],
+ "caveats": [
+  "L2 not L3: QA keywords counted over every frame of the 5 targets (the level F8 asks for); pixel bad fractions only over the 279 cutouts collected (WISE 0855 full visits, Barnard band 6, Barnard 12\u2032 field)",
+  "frames come from SIA2 at a 0.001\u00b0 radius; pinned lists (D) may differ slightly"
+ ],
+ "date": "2026-11-06"
+}

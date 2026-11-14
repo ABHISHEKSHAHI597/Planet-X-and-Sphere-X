@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F8",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Reproduced QA counts from recorded real frame metadata in repository tests. Zero failures in these pins supports retaining the explicit future Fail/FINAST rejection policy, not disabling it. All failed and capped frames remain listed. Legacy record still needs fresh digest for acceptance.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "5877bbde678e8a002e29b0b4b1d61070b9178986ce66ed1e1929a8612f8bdeaa"
+}

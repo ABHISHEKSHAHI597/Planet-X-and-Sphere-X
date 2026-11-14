@@ -1,0 +1,35 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-tno-image-recovery",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [],
+ "input_frame_count": 0,
+ "runtime_s": 5.8,
+ "author": "M",
+ "reviewer": "pending (other scientist or P, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_tno_recovery.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/planetx.py",
+  "backend/spherex/movers.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "6ab7b673c5c96d5c1b7a175d50045c8a609d12ffe3d70d7c526f487492292161",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

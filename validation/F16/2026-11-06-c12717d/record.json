@@ -1,0 +1,81 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F16",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {
+  "wise0855_V1_frac_bins_1": {
+   "value": 0.7,
+   "threshold": "\u22481 sample/bin assumed",
+   "pass": null
+  },
+  "wise0855_V1_frac_bins_empty": {
+   "value": 0.27,
+   "threshold": "measured",
+   "pass": null
+  },
+  "wise0855_V2_frac_bins_1": {
+   "value": 0.68,
+   "threshold": "\u22481 sample/bin assumed",
+   "pass": null
+  },
+  "wise0855_V2_frac_bins_empty": {
+   "value": 0.17,
+   "threshold": "measured",
+   "pass": null
+  },
+  "barnard_off_V1_frac_bins_1": {
+   "value": 0.78,
+   "threshold": "\u22481 sample/bin assumed",
+   "pass": null
+  },
+  "barnard_off_V1_frac_bins_empty": {
+   "value": 0.16,
+   "threshold": "measured",
+   "pass": null
+  },
+  "barnard_off_V2_frac_bins_1": {
+   "value": 0.71,
+   "threshold": "\u22481 sample/bin assumed",
+   "pass": null
+  },
+  "barnard_off_V2_frac_bins_empty": {
+   "value": 0.18,
+   "threshold": "measured",
+   "pass": null
+  },
+  "barnard_off_V4_frac_bins_1": {
+   "value": 0.8,
+   "threshold": "\u22481 sample/bin assumed",
+   "pass": null
+  },
+  "barnard_off_V4_frac_bins_empty": {
+   "value": 0.2,
+   "threshold": "measured",
+   "pass": null
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "~/.cache/parallax-verify/cutouts/{wise0855,barnard_off} (band 6)",
+  "qr3/spectral_wcs/cal-swcs-v5-2026-191/6 (CWAVE)"
+ ],
+ "input_frame_count": 92,
+ "runtime_s": 14.8,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/cube.py",
+  "backend/spherex/grid.py"
+ ],
+ "caveats": [
+  "2 targets, band 6 only (CWAVE collected for D6 only); other bands need D1\u2013D5 CWAVE (D)"
+ ],
+ "date": "2026-11-06"
+}

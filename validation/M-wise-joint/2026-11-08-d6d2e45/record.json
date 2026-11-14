@@ -1,0 +1,41 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-wise-joint",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "325c57328320"
+ ],
+ "inputs": [
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\wise0855-astrometry.json",
+   "sha256": "4b7439844d47f16c3cddc2254d618421f0f9091a9d39202ec35238b3ee211d76"
+  }
+ ],
+ "input_frame_count": 37,
+ "runtime_s": 13.6,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_joint_wise.py",
+  "backend/spherex/joint_astrometry.py",
+  "backend/spherex/epsf.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "b47c50bed7c5f366bf9ebf7bac43110727d1db724a2023a47a10ce11950aefb5",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-d6d2e45-superseded-1",
+ "date": "2026-11-08"
+}

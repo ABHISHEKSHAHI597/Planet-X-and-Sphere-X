@@ -1,0 +1,123 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F1",
+ "level": "L2",
+ "verdict": "pass",
+ "metrics": {
+  "D1_p99_nm": {
+   "value": 0.76,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "D1_max_nm": {
+   "value": 1.37,
+   "threshold": "reported (localised structure)",
+   "pass": null
+  },
+  "D2_p99_nm": {
+   "value": 0.72,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "D2_max_nm": {
+   "value": 95.61,
+   "threshold": "reported (localised structure)",
+   "pass": null
+  },
+  "D3_p99_nm": {
+   "value": 1.16,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "D3_max_nm": {
+   "value": 5.34,
+   "threshold": "reported (localised structure)",
+   "pass": null
+  },
+  "D4_p99_nm": {
+   "value": 2.52,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "D4_max_nm": {
+   "value": 5.6,
+   "threshold": "reported (localised structure)",
+   "pass": null
+  },
+  "D5_p99_nm": {
+   "value": 0.86,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "D5_max_nm": {
+   "value": 11.16,
+   "threshold": "reported (localised structure)",
+   "pass": null
+  },
+  "D6_p99_nm": {
+   "value": 1.27,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "D6_max_nm": {
+   "value": 2.29,
+   "threshold": "reported (localised structure)",
+   "pass": null
+  },
+  "cutout_p99_nm": {
+   "value": 0.66,
+   "threshold": "< 3.0",
+   "pass": true
+  },
+  "cutout_CRPIXnW_equals_CRPIXnA": {
+   "value": true,
+   "threshold": "True",
+   "pass": true
+  },
+  "section_lambda_identical_to_cutout": {
+   "value": true,
+   "threshold": "same parent slice",
+   "pass": true
+  },
+  "section_pixels_equal_cutout": {
+   "value": {
+    "IMAGE": true,
+    "FLAGS": true,
+    "VARIANCE": true,
+    "ZODI": true
+   },
+   "threshold": "all True (supporting evidence for F2, owner D)",
+   "pass": true
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "qr3/spectral_wcs/cal-swcs-v5-2026-191 (discovered by S3 listing 2026-11-06; lock pending, D)",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "qr3/level2/2026W34_2A/l2b-v27-2026-243/1/level2_2026W34_2A_0757_1D1_spx_l2b-v27-2026-243.fits",
+  "qr3/level2/2026W34_1A/l2b-v27-2026-243/2/level2_2026W34_1A_0363_1D2_spx_l2b-v27-2026-243.fits",
+  "qr3/level2/2026W33_2A/l2b-v27-2026-241/3/level2_2026W33_2A_0594_4D3_spx_l2b-v27-2026-241.fits",
+  "qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0757_1D4_spx_l2b-v27-2026-243.fits",
+  "qr3/level2/2026W34_1A/l2b-v27-2026-243/5/level2_2026W34_1A_0363_1D5_spx_l2b-v27-2026-243.fits",
+  "qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits",
+  "backend/tests/data/real/barnard_qr3_d6_29x29_hdu0-4.fits",
+  "qr3/spectral_wcs/cal-swcs-v5-2026-191/{1..6}"
+ ],
+ "input_frame_count": 7,
+ "runtime_s": 0.8,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/calib.py",
+  "backend/spherex/preprocess.py"
+ ],
+ "caveats": [
+  "CWAVE sampled every 40th row for D1\u2013D5 (full map for D6)",
+  "one L2 file per detector (Barnard field, QR3); QR2 files not checked (same calibration product)"
+ ],
+ "date": "2026-11-06"
+}

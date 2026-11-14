@@ -1,0 +1,58 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "F4",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {
+  "matched_pairs": {
+   "value": 1,
+   "threshold": "at least one isolated star at matching wavelength",
+   "pass": true
+  },
+  "multiplication_improves": {
+   "value": "False",
+   "threshold": "corrected QR2 agrees better with QR3",
+   "pass": false
+  }
+ },
+ "git_sha": "8d12a02",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "3addc0f80339"
+ ],
+ "inputs": [
+  {
+   "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W18_2A/l2b-v24-2026-125/6/level2_2026W18_2A_0174_2D6_spx_l2b-v24-2026-125.fits",
+   "box": "331.10332,-56.80000,0.30829",
+   "sha256": "565710f17518dc22855fa452c4c491019f8222e395970e2451a7019a71685450"
+  },
+  {
+   "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W39_2A/l2b-v27-2026-271/6/level2_2026W39_2A_0312_3D6_spx_l2b-v27-2026-271.fits",
+   "box": "331.10332,-56.80000,0.30829",
+   "sha256": "c025326508a8f675fc675c8d0cb7ddccd51d0d90dbacb859be95e7af5dfd78ba"
+  }
+ ],
+ "input_frame_count": 2,
+ "runtime_s": 88.7,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/photometry.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/preprocess.py",
+  "scripts/verify/m_f4.py"
+ ],
+ "code_digest": "e2908358e042c3c8abbdf0aa954dba894341722b0d3e430a931776468f8a1130",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-8d12a02-superseded-4",
+ "date": "2026-11-08"
+}

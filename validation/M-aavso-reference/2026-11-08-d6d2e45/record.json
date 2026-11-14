@@ -1,0 +1,41 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-aavso-reference",
+ "level": "L4",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  {
+   "url": "https://vsx.aavso.org/index.php?view=api.object&ident=R%20Dra&format=json",
+   "final_url": "https://vsx.aavso.org/index.php?view=api.object&ident=R%20Dra&format=json",
+   "status": 200,
+   "acquired": "2026-11-08T06:14:43.398053+00:00",
+   "sha256": "84dbbc2b30e7be3917c9364fc1f962f98b1f9a3a7ef9b99c9affe8949c1b4d19",
+   "content_type": "application/json"
+  }
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 3.2,
+ "author": "M",
+ "reviewer": "pending (other scientist or P, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_aavso_reference.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "aa74a2c52e6cac5a012887d45f79387cd91299e8bd97f03546730d2c7733132a",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

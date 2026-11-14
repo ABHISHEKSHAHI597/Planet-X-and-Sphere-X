@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F7",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Onset estimates are field- and detector-limited, with bounds in bands 1/5/6; do not generalize them into a universal K threshold. OVERFLOW by itself is late ramp fitting; SUR_ERROR with early events and nonfinite values are unusable. This supports flag-based quality behavior, not reliable wing photometry or display fill acceptance. Legacy evidence stale.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "464956cfa66a84f1588acfd523dacbea378cf8ba096a2b2ca030f934babbf942"
+}

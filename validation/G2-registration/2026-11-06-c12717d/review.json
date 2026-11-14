@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "G2-registration",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "The statistic computed is norm of median vector, which can hide cancelling individual offsets. Report both median radial separation and signed translation with uncertainty, plus all six bands and five targets. The one-field band6 result supports that field only. Legacy record stale and cannot approve G2.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "ed8da5204b71531a58819346192a98f11503f9d2867a860e7304e23472add356"
+}

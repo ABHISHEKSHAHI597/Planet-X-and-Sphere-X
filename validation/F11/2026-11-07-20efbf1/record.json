@@ -1,0 +1,118 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F11",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {
+  "barnard_sia2_eq_tap": {
+   "value": "359 vs 359; only SIA2 0, only TAP 0",
+   "threshold": "identical deduplicated sets",
+   "pass": true
+  },
+  "barnard_vs_doc": {
+   "value": "359 now; 359 on 2026-11-06; doc 359; +0 new ({}), -0 gone",
+   "threshold": "every difference explained",
+   "pass": null
+  },
+  "epsindb_sia2_eq_tap": {
+   "value": "447 vs 447; only SIA2 0, only TAP 0",
+   "threshold": "identical deduplicated sets",
+   "pass": true
+  },
+  "epsindb_vs_doc": {
+   "value": "447 now; 447 on 2026-11-06; doc 449 (\u2705 11-06: 447 SIA2 rows); +0 new ({}), -0 gone",
+   "threshold": "every difference explained",
+   "pass": null
+  },
+  "wise0855_sia2_eq_tap": {
+   "value": "256 vs 256; only SIA2 0, only TAP 0",
+   "threshold": "identical deduplicated sets",
+   "pass": true
+  },
+  "wise0855_vs_doc": {
+   "value": "256 now; 256 on 2026-11-06; doc 256, all QR2; +0 new ({}), -0 gone",
+   "threshold": "every difference explained",
+   "pass": null
+  },
+  "rwaur_sia2_eq_tap": {
+   "value": "333 vs 333; only SIA2 0, only TAP 0",
+   "threshold": "identical deduplicated sets",
+   "pass": true
+  },
+  "rwaur_vs_doc": {
+   "value": "333 now; 333 on 2026-11-06; doc 333; +0 new ({}), -0 gone",
+   "threshold": "every difference explained",
+   "pass": null
+  },
+  "rdra_sia2_eq_tap": {
+   "value": "2483 vs 2483; only SIA2 0, only TAP 0",
+   "threshold": "identical deduplicated sets",
+   "pass": true
+  },
+  "rdra_vs_doc": {
+   "value": "2483 now; 2483 on 2026-11-06; doc \u22482,480 (\u22481,950 deep); +0 new ({}), -0 gone",
+   "threshold": "every difference explained",
+   "pass": null
+  },
+  "sia2_required_columns": {
+   "value": "present",
+   "threshold": "obs_collection, obs_id, access_url, t_min, energy_bandpassname, cloud_access",
+   "pass": true
+  }
+ },
+ "git_sha": "20efbf1",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "not used: this check reads no calibration file (lock 94e18b883fdc9b28 exists)",
+ "pins": {
+  "barnard": "21a7689afc4b",
+  "epsindb": "3addc0f80339",
+  "wise0855": "325c57328320",
+  "rwaur": "177ce03ed2a6",
+  "rdra": "152b410215da"
+ },
+ "inputs": {
+  "positions": {
+   "barnard": [
+    269.4461,
+    4.7707
+   ],
+   "epsindb": [
+    331.0918,
+    -56.7966
+   ],
+   "wise0855": [
+    133.7578,
+    -7.242
+   ],
+   "rwaur": [
+    76.95654,
+    30.4013
+   ],
+   "rdra": [
+    248.16733,
+    66.75502
+   ]
+  },
+  "collections": [
+   "spherex_qr3",
+   "spherex_qr3_deep",
+   "spherex_qr2",
+   "spherex_qr2_deep"
+  ],
+  "recorded": "backend/tests/data/real/recorded/coverage"
+ },
+ "input_frame_count": 3878,
+ "runtime_s": 150.5,
+ "author": "D",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/access/coverage.py",
+  "backend/spherex/access/dedup.py",
+  "config/releases.yaml"
+ ],
+ "caveats": [],
+ "date": "2026-11-07"
+}

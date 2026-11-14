@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "G5.25yr-data",
+ "record": "2026-11-07-20efbf1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Reviewed, not re-run (needs IRSA 2MASS/WISE fetches). Scope honestly limited to catalogue-based jumps and server-side acquisition; thresholds are implementation.md \u00a710.2's, unchanged; the WISE 0855 2MASS false match is rejected; superseded failing runs are kept (\u00a74.4). Committed plans in backend/tests/data/real/blink25 match. Caveat stands: linear-PM pos(t) until M's targets.pos(t). Legacy record -> STALE until re-recorded.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "a63ffc00db1944106c2c5e563a51237706cb712e5b14a6430311d0c9c9954409"
+}

@@ -1,0 +1,143 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "F13",
+ "level": "L2",
+ "verdict": "pass",
+ "metrics": {
+  "D1": {
+   "value": {
+    "min": 37.45560836791992,
+    "median": 37.86044692993164,
+    "max": 38.37782287597656,
+    "relative_to_omega_median": [
+     -0.010704469662180971,
+     -1.1678986549856774e-05,
+     0.013653503164514191
+    ],
+    "frame_omega_median": 37.860889106746285,
+    "bunit": "arcsec2",
+    "detcoord": "sky"
+   },
+   "threshold": "positive finite 2040x2040 arcsec^2 in sky orientation",
+   "pass": true
+  },
+  "D2": {
+   "value": {
+    "min": 37.41252899169922,
+    "median": 37.69452667236328,
+    "max": 38.03976821899414,
+    "relative_to_omega_median": [
+     -0.007505879490847467,
+     -2.4935336593867596e-05,
+     0.009133766692414724
+    ],
+    "frame_omega_median": 37.69546662151155,
+    "bunit": "arcsec2",
+    "detcoord": "sky"
+   },
+   "threshold": "positive finite 2040x2040 arcsec^2 in sky orientation",
+   "pass": true
+  },
+  "D3": {
+   "value": {
+    "min": 37.446685791015625,
+    "median": 37.86412811279297,
+    "max": 38.380638122558594,
+    "relative_to_omega_median": [
+     -0.010982993990524825,
+     4.22154918302553e-05,
+     0.013683934982928303
+    ],
+    "frame_omega_median": 37.86252972747859,
+    "bunit": "arcsec2",
+    "detcoord": "sky"
+   },
+   "threshold": "positive finite 2040x2040 arcsec^2 in sky orientation",
+   "pass": true
+  },
+  "D4": {
+   "value": {
+    "min": 37.53776931762695,
+    "median": 37.932926177978516,
+    "max": 38.46365737915039,
+    "relative_to_omega_median": [
+     -0.010409289484349604,
+     8.046583001908303e-06,
+     0.013999465785790699
+    ],
+    "frame_omega_median": 37.93262094999556,
+    "bunit": "arcsec2",
+    "detcoord": "sky"
+   },
+   "threshold": "positive finite 2040x2040 arcsec^2 in sky orientation",
+   "pass": true
+  },
+  "D5": {
+   "value": {
+    "min": 37.49059295654297,
+    "median": 37.77254104614258,
+    "max": 38.12245178222656,
+    "relative_to_omega_median": [
+     -0.00741401894353344,
+     5.0726184574356736e-05,
+     0.009314823225149427
+    ],
+    "frame_omega_median": 37.770625086442955,
+    "bunit": "arcsec2",
+    "detcoord": "sky"
+   },
+   "threshold": "positive finite 2040x2040 arcsec^2 in sky orientation",
+   "pass": true
+  },
+  "D6": {
+   "value": {
+    "min": 37.54255294799805,
+    "median": 37.935359954833984,
+    "max": 38.4864616394043,
+    "relative_to_omega_median": [
+     -0.010435715337508755,
+     -8.192332798728774e-05,
+     0.014444274318281103
+    ],
+    "frame_omega_median": 37.93846800039132,
+    "bunit": "arcsec2",
+    "detcoord": "sky"
+   },
+   "threshold": "positive finite 2040x2040 arcsec^2 in sky orientation",
+   "pass": true
+  }
+ },
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\calib",
+  "config/calibration.lock"
+ ],
+ "input_frame_count": 6,
+ "runtime_s": 4.3,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/targets.py",
+  "backend/spherex/astrometry.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/photometry.py",
+  "backend/spherex/ephem.py",
+  "scripts/verify/m_foundations.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "d7a3236de4640625bff9899bc7b43169e1024ea178b297a9000bb96751d0aa45",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "Windows developer checkout; not deployment performance",
+ "supersedes": "2026-11-08-d6d2e45-superseded-2",
+ "date": "2026-11-08"
+}

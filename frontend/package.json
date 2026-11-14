@@ -1,0 +1,45 @@
+{
+  "name": "parallax-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ParallaX frontend: WebGL2 + PNG blink viewer for SPHEREx visit stacks (workflow.md §2.1, role F)",
+  "scripts": {
+    "dev": "vite",
+    "dev:mock": "VITE_MOCK=1 vite",
+    "build": "tsc -b && vite build",
+    "build:mock": "tsc -b && VITE_MOCK=1 vite build --outDir dist-mock",
+    "build:lite": "tsc -b && VITE_LITE=1 vite build --outDir dist-lite",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "size": "node scripts/check_bundle_size.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@tanstack/react-query": "5.80.7",
+    "aladin-lite": "3.6.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zustand": "5.0.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.28.0",
+    "@testing-library/react": "16.3.0",
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.6",
+    "@types/react-dom": "19.1.6",
+    "@vitejs/plugin-react": "4.5.1",
+    "eslint": "9.28.0",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "globals": "16.2.0",
+    "jsdom": "26.1.0",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.33.1",
+    "vite": "6.3.5",
+    "vitest": "3.2.2"
+  }
+}

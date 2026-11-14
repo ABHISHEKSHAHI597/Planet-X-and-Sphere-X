@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "RDra-inputs",
+ "record": "2026-11-07-20efbf1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Reviewed; output verified offline by P: backend/tests/data/real/rdra_frame_inputs.json.gz has 2,483 rows for pin 152b410215da with 0 header errors, matching the record; locked calibration 94e18b883fdc9b28. Not re-run (2,483 S3 header walks). Legacy record -> STALE until re-recorded.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "82665aadf097b4faa997eeb5c63edbd35c443205d5d72948f01dc263dc18fa60"
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://vsx.aavso.org/index.php?view=api.object&ident=000-BBX-660&data=50000&fromjd=2460796&tojd=2461350&csv&band=Vis.,V&mtype=std",
+  "final_url": "https://vsx.aavso.org/index.php?view=api.object&ident=000-BBX-660&data=50000&fromjd=2460796&tojd=2461350&csv&band=Vis.,V&mtype=std",
+  "status": 200,
+  "acquired": "2026-11-08T06:23:10.903090+00:00",
+  "sha256": "d8b4812f363407047c2a76c8efc0017012831129cc64d3df865ab97e27fb4b19",
+  "content_type": "text/xml; charset=utf-8"
+}

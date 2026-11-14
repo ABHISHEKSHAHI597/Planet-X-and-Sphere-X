@@ -1,0 +1,92 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "G4a-real",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {
+  "barnard_V1_V3_shift_px": {
+   "value": 1.62,
+   "threshold": "1.5\u20131.9 px",
+   "pass": true
+  },
+  "barnard_V1_V3_pa_deg": {
+   "value": 354.3,
+   "threshold": "356 \u00b1 15",
+   "pass": true
+  },
+  "barnard_V1_V3_kind": {
+   "value": "dipole",
+   "threshold": "dipole",
+   "pass": true
+  },
+  "paflip_frac_gt3": {
+   "value": 0.12,
+   "threshold": "\u2248 sky-box rate 0.08",
+   "pass": null
+  },
+  "paflip_p90_sigma": {
+   "value": 2.82,
+   "threshold": "< 3",
+   "pass": true
+  },
+  "paflip_max_sigma": {
+   "value": 3.58,
+   "threshold": "< 3 (strict reading; see report)",
+   "pass": null
+  },
+  "null_k": {
+   "value": 1.26,
+   "threshold": "reported (renormalised to 1)",
+   "pass": null
+  },
+  "null_frac_gt3_at_stars": {
+   "value": 0.12,
+   "threshold": "\u2264 2 \u00d7 sky-box rate (0.14)",
+   "pass": true
+  },
+  "xrel_V4_V1_frac_gt3": {
+   "value": 0.46,
+   "threshold": "blocked on F4 (owner M)",
+   "pass": null
+  },
+  "xrel_V4_V2_frac_gt3": {
+   "value": 0.38,
+   "threshold": "blocked on F4 (owner M)",
+   "pass": null
+  },
+  "paflip_rate_vs_sky": {
+   "value": "0.12 vs 0.08",
+   "threshold": "\u2264 2 \u00d7 sky-box rate (proposed)",
+   "pass": true
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "~/.cache/parallax-verify/cutouts/{barnard,barnard_off} (band 6)",
+  "qr3/spectral_wcs/cal-swcs-v5-2026-191/6",
+  "IRSA gaia_dr3_source"
+ ],
+ "input_frame_count": 110,
+ "runtime_s": 10.9,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/cube.py",
+  "backend/spherex/grid.py",
+  "backend/spherex/stack.py",
+  "backend/spherex/preprocess.py"
+ ],
+ "caveats": [
+  "band 6 only (CWAVE collected for D6 only); one PA-flip pair, one null visit",
+  "Barnard's own static-residual test is impossible in a 4\u2032 field: its band-6 wings cover it (moved off-field)",
+  "pos(t) and Gaia propagation are temporary adapters for M's modules",
+  "proposed thresholds and the distribution statistic need M's sign-off"
+ ],
+ "date": "2026-11-06"
+}

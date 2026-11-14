@@ -1,0 +1,186 @@
+# Evidence registry (workflow.md §4.5, §5, §6). Owner P (harness); each check's content is owned by the
+# owner named here. scripts/validate.py reads this file to run checks, regenerate STATUS.md, detect stale
+# records and compute gate and capability states. Editing a check's owner, level or criteria needs the
+# owner's review (§9.4); adding a criterion that a gate in workflow.md §6 does not list is not allowed.
+#
+# checks.<id>:  kind (foundation | gate-criterion | engineering), owner (+pair), level required,
+#               reviewer role (§9.4: "other scientist" for science, P for engineering), script (harness run).
+# gates.<id>:   requires (checks/gates), criteria [{id, text, checks, level, owner}], signoff (§2.3).
+#               A criterion without `checks` is a manual item: it is met only when `met:` names the evidence.
+schema: parallax-registry@1
+
+checks:
+  M-mover-s3-probe: {kind: engineering, owner: M, level: L2, reviewer: I, script: scripts/verify/m_mover_s3_probe.py}
+  M-epsf-scalar-sky: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_psf_residuals.py}
+  M-planetx-synthetic: {kind: engineering, owner: M, level: L1, reviewer: I, script: scripts/verify/m_planetx.py}
+  M-wise-individual-reanalysis: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_motion_diagnostics.py}
+  M-mover-five-field-sample: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_mover_fields.py}
+  M-tno-image-recovery: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_tno_recovery.py}
+  M-wise-joint: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_joint_wise.py}
+  M-epsf-residuals: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_psf_residuals.py}
+  M-aavso-reference: {kind: engineering, owner: M, level: L4, reviewer: I, script: scripts/verify/m_aavso_reference.py}
+  M-aavso-lightcurve: {kind: engineering, owner: M, level: L4, reviewer: I, script: scripts/verify/m_aavso_lightcurve.py}
+  M-aavso-phase: {kind: engineering, owner: M, level: L4, reviewer: I, script: scripts/verify/m_aavso_phase.py}
+  M-wise0855-astrometry-failure: {kind: engineering, owner: M, level: L3, reviewer: I}
+  M-pluto-image-sample: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_pluto_image.py}
+  M-template-overlay: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_template_overlay.py}
+  M-epsf-background: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_psf_background.py}
+  M-wise-motion-diagnostic: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_motion_diagnostics.py}
+  M-epsf-width: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_psf_width.py}
+  M-noise-scale: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_noise_scale.py}
+  M-fluxcorr-header: {kind: engineering, owner: M, level: L2, reviewer: I, script: scripts/verify/m_foundations.py}
+  M-lightcurve-covariance: {kind: engineering, owner: M, level: L1, reviewer: I, script: scripts/verify/m_lightcurve.py}
+  M-epsf-format: {kind: engineering, owner: M, level: L2, reviewer: I, script: scripts/verify/m_foundations.py}
+  M-epsf-orientation: {kind: engineering, owner: M, level: L3, reviewer: I, script: scripts/verify/m_psf_diagnostics.py}
+  M-rwaur-spectrum: {kind: engineering, owner: M, level: L3, reviewer: I}
+  # ---------------------------------------------------------------- foundation checks (§5): L2 records
+  F1:  {kind: foundation, owner: I, pair: D, level: L2, reviewer: M, script: scripts/verify/f01_cwave.py}
+  F2:  {kind: foundation, owner: D, pair: I, level: L2, reviewer: P, script: scripts/verify/f02_sections_vs_cutouts.py}
+  F3:  {kind: foundation, owner: I, pair: D, level: L2, reviewer: M, script: scripts/verify/f03_channels.py}
+  F4:  {kind: foundation, owner: M, pair: D, level: L2, reviewer: I, script: scripts/verify/m_f4.py}
+  F5:  {kind: foundation, owner: M, pair: I, level: L2, reviewer: I, script: scripts/verify/m_native.py}
+  F6:  {kind: foundation, owner: I, pair: M, level: L2, reviewer: M, script: scripts/verify/f06_flags.py}
+  F7:  {kind: foundation, owner: I, pair: D, level: L2, reviewer: M, script: scripts/verify/f07_overflow.py}
+  F8:  {kind: foundation, owner: I, pair: D, level: L2, reviewer: M, script: scripts/verify/f08_frame_qa.py}
+  F9:  {kind: foundation, owner: M, pair: D, level: L2, reviewer: I, script: scripts/verify/m_foundations.py}
+  F10: {kind: foundation, owner: M, pair: D, level: L2, reviewer: I, script: scripts/verify/m_foundations.py}
+  F11: {kind: foundation, owner: D, level: L3, reviewer: P, script: scripts/verify/f11_coverage.py}
+  F12: {kind: foundation, owner: D, pair: P, level: L3, reviewer: P, script: scripts/verify/f12_framesource_bench.py,
+        note: "must run from the AWS us-east-1 deployment VM (owner P, docs/deploy.md); laptop runs are inconclusive by design"}
+  F13: {kind: foundation, owner: M, pair: D, level: L2, reviewer: I, script: scripts/verify/m_foundations.py}
+  F14: {kind: foundation, owner: F, pair: P, level: L2, reviewer: P}
+  F15: {kind: foundation, owner: M, pair: I, level: L2, reviewer: I, script: scripts/verify/m_native.py}
+  F16: {kind: foundation, owner: I, level: L3, reviewer: M, script: scripts/verify/f16_occupancy.py}
+
+  # ------------------------------------------------------------------- gate criteria with a record
+  G1-resolver:      {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G1-time-model:    {kind: gate-criterion, owner: I, level: L3, reviewer: M, script: scripts/verify/g1_time_model.py}
+  G2-p0-items:      {kind: gate-criterion, owner: F, level: L3, reviewer: P}
+  G2-render-all:    {kind: gate-criterion, owner: I, level: L3, reviewer: M}
+  G2-registration:  {kind: gate-criterion, owner: I, level: L3, reviewer: M, script: scripts/verify/g2_registration.py}
+  G2-repro:         {kind: gate-criterion, owner: P, level: L3, reviewer: D, script: scripts/verify/p_repro.py}
+  G2-png-pins:      {kind: gate-criterion, owner: F, level: L3, reviewer: P}
+  G2-perf:          {kind: gate-criterion, owner: P, pair: D, level: L3, reviewer: D, script: scripts/perf_probe.py}
+  I-L1-synthetic:   {kind: gate-criterion, owner: I, level: L1, reviewer: M, script: scripts/verify/l1_synthetic.py}
+  G3-synthetic:     {kind: gate-criterion, owner: M, level: L1, reviewer: I, script: scripts/verify/m_l1.py}
+  G3-pm-fits:       {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G3-pm-barnard:    {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G3-pm-epsindb:    {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G3-pm-wise0855:   {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G3-gaia:          {kind: gate-criterion, owner: M, level: L4, reviewer: I, script: scripts/verify/m_motion_reference.py}
+  G3-track:         {kind: gate-criterion, owner: M, level: L3, reviewer: I, script: scripts/verify/m_motion_reference.py}
+  G3-rereg:         {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G4a-synthetic:    {kind: gate-criterion, owner: I, level: L1, reviewer: M}
+  G4a-null:         {kind: gate-criterion, owner: I, level: L3, reviewer: M}
+  G4a-real:         {kind: gate-criterion, owner: I, level: L3, reviewer: M, script: scripts/verify/g4a_real.py}
+  G4a-paflip:       {kind: gate-criterion, owner: I, level: L3, reviewer: M}
+  G4b-epsind:       {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G4b-wise-stacks:  {kind: gate-criterion, owner: M, pair: I, level: L3, reviewer: I, script: scripts/verify/g4b_wise_stacks.py}
+  G4b-repeat:       {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G4b-sptool:       {kind: gate-criterion, owner: M, level: L4, reviewer: I}
+  G4b-flagged:      {kind: gate-criterion, owner: M, pair: F, level: L3, reviewer: I}
+  G5.25yr-data:     {kind: gate-criterion, owner: D, level: L3, reviewer: P, script: scripts/blink25_acquire.py}
+  G5.25yr-jumps:    {kind: gate-criterion, owner: I, level: L3, reviewer: M, script: scripts/verify/g5_25yr_jumps.py}
+  G5.lc-rdra:       {kind: gate-criterion, owner: M, level: L4, reviewer: I}
+  G5.lc-rwaur:      {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G5.sso-pluto:     {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G5.flip-order:    {kind: gate-criterion, owner: I, pair: F, level: L3, reviewer: M}
+  G5.movers-recover: {kind: gate-criterion, owner: I, level: L3, reviewer: M}
+  G5.movers-fields: {kind: gate-criterion, owner: M, level: L3, reviewer: I}
+  G5.planetx-distance: {kind: gate-criterion, owner: M, level: L4, reviewer: I}
+  G5.eng-accept:    {kind: gate-criterion, owner: P, pair: F, level: L3, reviewer: F}
+
+  # --------------------------------------------------------------- engineering records (not gate criteria)
+  F12-concurrency2: {kind: engineering, owner: D, level: L3, reviewer: P, note: "F12 supplementary run"}
+  RDra-inputs:      {kind: engineering, owner: D, level: L3, reviewer: P, script: scripts/rdra_inputs.py}
+  P-platform-L2:    {kind: engineering, owner: P, level: L2, reviewer: D, script: scripts/verify/p_platform.py,
+                     note: "fixture-backed end-to-end plumbing: API → pipeline → payloads → PNG. Not real-target evidence."}
+
+gates:
+  G0:
+    requires: []
+    criteria:
+      - {id: G0.ci, text: "CI with all stages of §9.5 green", owner: P, met: null}
+      - {id: G0.contracts, text: "Contracts v0.x for every §7.1 surface, contract tests in CI against mock mode", owner: P,
+         met: "backend/tests/app/test_contract.py; CONTRACTS.md 'HTTP API 0.1.0'"}
+      - {id: G0.fixtures, text: "Real-file fixtures with provenance; calibration lock", owner: D,
+         met: "backend/tests/data/real; config/calibration.lock"}
+      - {id: G0.synthetic, text: "Synthetic generator produces the §4.2 traps", owner: I, met: "backend/tests/synthetic"}
+      - {id: G0.staging, text: "Staging deploy from main working", owner: P, met: null}
+      - {id: G0.owners, text: "Every foundation check has an owner and target date", owner: P, met: null,
+         note: "owners are in this registry; target dates are set at the planning board (F) — not recorded yet"}
+    signoff: null
+  G1:
+    requires: [F11]
+    criteria:
+      - {id: G1.resolver, text: "Resolver/propagation/epoch-guard tests (impl §10.1), L0 + live L3", checks: [G1-resolver], level: L3, owner: M}
+      - {id: G1.f11, text: "F11 confirmed; SIA2 = TAP for all 5 targets", checks: [F11], level: L3, owner: D}
+      - {id: G1.visits, text: "Visit classification on real MJDs", checks: [G1-time-model], level: L3, owner: I}
+      - {id: G1.pins, text: "Pinned frame lists for the 5 targets", owner: D, met: "config/pins (5 pins)"}
+    signoff: null
+  G2:
+    requires: [G1, F2, F6, F8, F14]
+    criteria:
+      - {id: G2.p0, text: "All P0 acceptance items of impl §1.3", checks: [G2-p0-items], level: L3, owner: F}
+      - {id: G2.render, text: "6-band visit stacks render for each target in both viewers from pins", checks: [G2-render-all], level: L3, owner: I}
+      - {id: G2.registration, text: "Static Gaia stars < 0.1 px between visit stacks", checks: [G2-registration], level: L3, owner: I}
+      - {id: G2.repro, text: "Two cold builds of a pinned view give byte-identical .f16", checks: [G2-repro], level: L3, owner: P}
+      - {id: G2.unbiased, text: "Stack flux unbiasedness (impl §10.1)", checks: [I-L1-synthetic], level: L1, owner: I}
+      - {id: G2.orientation, text: "Orientation vs Aladin on a real field (F14)", checks: [F14], level: L2, owner: F}
+      - {id: G2.png, text: "PNG fallback with WebGL off; pinned links reproduce", checks: [G2-png-pins], level: L3, owner: F}
+      - {id: G2.perf, text: "Cold/warm performance from staging vs budgets", checks: [G2-perf], level: L3, owner: P}
+      - {id: G2.credits, text: "Credits page with every understanding.md §4.8 acknowledgement", owner: F, met: null}
+    signoff: null
+  G3:
+    requires: [G2, F5, F15]
+    criteria:
+      - {id: G3.synthetic, text: "fit_star/fit_pm synthetic tests", checks: [G3-synthetic], level: L1, owner: M}
+      - {id: G3.pm, text: "PM fits for Barnard, eps Ind B, WISE 0855", checks: [G3-pm-barnard, G3-pm-epsindb, G3-pm-wise0855], level: L3, owner: M}
+      - {id: G3.gaia, text: "Fitted PMs vs Gaia DR3 / literature", checks: [G3-gaia], level: L4, owner: M}
+      - {id: G3.track, text: "Predicted track within per-visit centroid errors", checks: [G3-track], level: L3, owner: M}
+      - {id: G3.rereg, text: "Re-registration residuals before/after (F15)", checks: [G3-rereg], level: L3, owner: M}
+    signoff: null
+  G4a:
+    requires: [G2, F1, F2, F3, F16]
+    criteria:
+      - {id: G4a.synthetic, text: "Synthetic matched-difference test; naive method fails", checks: [G4a-synthetic], level: L1, owner: I}
+      - {id: G4a.null, text: "Null test on disjoint halves of one visit", checks: [G4a-null], level: L3, owner: I}
+      - {id: G4a.barnard, text: "Barnard V1→V3 band-6 dipole", checks: [G4a-real], level: L3, owner: I}
+      - {id: G4a.paflip, text: "PA-flip pair residual distribution", checks: [G4a-paflip], level: L3, owner: I}
+    signoff: null
+  G4b:
+    requires: [G2, F1, F5, F13]
+    criteria:
+      - {id: G4b.epsind, text: "eps Ind B spectrum criteria", checks: [G4b-epsind], level: L3, owner: M}
+      - {id: G4b.wise, text: "WISE 0855 band-6 S/N; non-detection bands 1-3", checks: [G4b-wise-stacks], level: L3, owner: M}
+      - {id: G4b.repeat, text: "Field-star per-visit repeatability", checks: [G4b-repeat], level: L3, owner: M}
+      - {id: G4b.sptool, text: "Bright star vs IRSA Spectrophotometry Tool", checks: [G4b-sptool], level: L4, owner: M}
+      - {id: G4b.flagged, text: "Flagged points hidden and counted", checks: [G4b-flagged], level: L3, owner: M}
+    signoff: null
+  G5.25yr:
+    requires: [G2]
+    criteria:
+      - {id: G5.25yr.data, text: "Archival epochs acquired for the 3 movers", checks: [G5.25yr-data], level: L3, owner: D}
+      - {id: G5.25yr.jumps, text: "Jumps of impl §10.2/§4.13; positions-only labelling", checks: [G5.25yr-jumps], level: L3, owner: I}
+    signoff: null
+  G5.lc:
+    requires: [G4b, F3, F4]
+    criteria:
+      - {id: G5.lc.rdra, text: "R Dra periodogram + AAVSO phase", checks: [G5.lc-rdra], level: L4, owner: M}
+      - {id: G5.lc.rwaur, text: "RW Aur at least three visits per band, finite errors and visible flags", checks: [G5.lc-rwaur], level: L3, owner: M}
+    signoff: null
+  G5.sso:   {requires: [G4b, F10], criteria: [{id: G5.sso.pluto, text: "Pluto criteria", checks: [G5.sso-pluto], level: L3, owner: M}], signoff: null}
+  G5.flip:  {requires: [G4a], criteria: [{id: G5.flip.order, text: "Planes sorted by measured λ; labelled spectral", checks: [G5.flip-order], level: L3, owner: I}], signoff: null}
+  G5.movers:
+    requires: [G3]
+    criteria:
+      - {id: G5.movers.recover, text: "Recovers every Gaia μ>0.5″/yr star", checks: [G5.movers-recover], level: L3, owner: I}
+      - {id: G5.movers.fields, text: "Candidate counts on at least five random fields and no unvetted unmatched candidate", checks: [G5.movers-fields], level: L3, owner: M}
+    signoff: null
+  G5.planetx: {requires: [G5.movers, G5.sso], criteria: [{id: G5.planetx.distance, text: "Makemake, Haumea and Eris distances within 30 percent of independent Horizons truth", checks: [G5.planetx-distance], level: L4, owner: M}], signoff: null}
+  G5.eng:   {requires: [G2], criteria: [{id: G5.eng.accept, text: "Engineering acceptance of P1-5, P1-6, P2-7, P2-9", checks: [G5.eng-accept], level: L3, owner: P}], signoff: null}
+  G6:
+    requires: [G2]
+    criteria:
+      - {id: G6.checklist, text: "Go/no-go checklist of workflow.md §12.2 (scripts/go_no_go.py)", owner: P, met: null}
+    signoff: null

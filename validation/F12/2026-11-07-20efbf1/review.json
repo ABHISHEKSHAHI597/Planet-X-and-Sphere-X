@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F12",
+ "record": "2026-11-07-20efbf1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "Correctly INCONCLUSIVE: residential laptop, not the deployment region. F12 needs the same script on the AWS us-east-1 VM that P provisions (deploy/aws/provision.sh, docs/deploy.md); VM creation is blocked on the team AWS account. 68 HTTP 503 at concurrency 4 here: keep per-host concurrency <= 4 until the VM soak shows zero 503 (\u00a710.3).",
+ "date": "2026-11-07",
+ "code_digest_at_review": "5b15ae79becc4db4d2d2cfbb6304ceb4f2944db931c4d10483809f60243385a2"
+}

@@ -1,0 +1,52 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G3-pm-wise0855",
+ "level": "L3",
+ "verdict": "fail",
+ "metrics": {
+  "displacement_px": {
+   "value": 1.0029909520656253,
+   "threshold": "0.78 +/-0.3",
+   "pass": true
+  },
+  "pa_deg": {
+   "value": 304.5333858339147,
+   "threshold": "277 +/-20",
+   "pass": false
+  }
+ },
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "325c57328320"
+ ],
+ "inputs": [
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\wise0855-astrometry.json",
+   "sha256": "1c4f1d29eee5f951340b21f42db8328abe3c53ebeeb0f2a23a4f44c606b9b7fd"
+  }
+ ],
+ "input_frame_count": 35,
+ "runtime_s": 3.4,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_motion_diagnostics.py",
+  "backend/spherex/astrometry.py",
+  "scripts/verify/m_acceptance.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "70aea72f91da37626cb103f1549fc344cbb8a24157f00e291c9f36699c23264e",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-d6d2e45-superseded-5",
+ "date": "2026-11-08"
+}

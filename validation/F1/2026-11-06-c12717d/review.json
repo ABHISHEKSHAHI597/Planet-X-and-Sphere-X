@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F1",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "CWAVE is the science wavelength map; WCS-WAVE is a coarser visualization lookup. The reported localized 96 nm differences must not be removed by substituting the lookup. Orientation evidence is useful, but the approx 1 nm claim is not uniformly satisfied (p99 up to 2.5 nm). Keep the corrected authoritative fact and rerun the current locked maps with per-detector residual distributions. Legacy record remains stale.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "e482d638104a2ab154415eeed6f826bad11ce0216a6cdf745bb14245d7a01417"
+}

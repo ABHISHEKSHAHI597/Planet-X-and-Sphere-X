@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F14",
+ "record": "2026-11-07-7d55ed1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "Golden half confirmed independently: the server PNG path (backend/tests/app/test_platform_unit.py::test_png_orientation_against_golden) renders the golden north-up with the no-data tint at the sentinels, agreeing with F's four-way check. Still INCONCLUSIVE: F14 requires a real field beside Aladin 2MASS HiPS, run on staging with a pinned Barnard view once the VM exists (blocked: AWS account).",
+ "date": "2026-11-07",
+ "code_digest_at_review": "bce2a328082d91b74fa20b2d6399b564096f25cbec056bedbd039f881fbf5104"
+}

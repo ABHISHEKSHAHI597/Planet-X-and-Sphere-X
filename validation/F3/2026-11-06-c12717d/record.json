@@ -1,0 +1,149 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F3",
+ "level": "L2",
+ "verdict": "pass",
+ "metrics": {
+  "hdu": {
+   "value": "1 (EXTNAME CHANNEL_MAP)",
+   "threshold": "identified",
+   "pass": true
+  },
+  "values": {
+   "value": {
+    "0": 85817,
+    "1": 237551,
+    "2": 237531,
+    "3": 237669,
+    "4": 237531,
+    "5": 237663,
+    "6": 237539,
+    "7": 237643,
+    "8": 237559,
+    "9": 237633,
+    "10": 237567,
+    "11": 237613,
+    "12": 237569,
+    "13": 237621,
+    "14": 237593,
+    "15": 237577,
+    "16": 237613,
+    "17": 236008,
+    "18": 38303
+   },
+   "threshold": "0..18",
+   "pass": true
+  },
+  "D1_map_vs_cwave_exact": {
+   "value": 0.96,
+   "threshold": "> 0.9",
+   "pass": true
+  },
+  "D1_map_vs_cwave_within1": {
+   "value": 1.0,
+   "threshold": "> 0.999",
+   "pass": true
+  },
+  "D1_lnlambda_bin_dev_ch": {
+   "value": 0.07,
+   "threshold": "< 0.5 channel",
+   "pass": true
+  },
+  "D2_map_vs_cwave_exact": {
+   "value": 0.971,
+   "threshold": "> 0.9",
+   "pass": true
+  },
+  "D2_map_vs_cwave_within1": {
+   "value": 1.0,
+   "threshold": "> 0.999",
+   "pass": true
+  },
+  "D2_lnlambda_bin_dev_ch": {
+   "value": 0.05,
+   "threshold": "< 0.5 channel",
+   "pass": true
+  },
+  "D3_map_vs_cwave_exact": {
+   "value": 0.971,
+   "threshold": "> 0.9",
+   "pass": true
+  },
+  "D3_map_vs_cwave_within1": {
+   "value": 1.0,
+   "threshold": "> 0.999",
+   "pass": true
+  },
+  "D3_lnlambda_bin_dev_ch": {
+   "value": 0.13,
+   "threshold": "< 0.5 channel",
+   "pass": true
+  },
+  "D4_map_vs_cwave_exact": {
+   "value": 0.963,
+   "threshold": "> 0.9",
+   "pass": true
+  },
+  "D4_map_vs_cwave_within1": {
+   "value": 1.0,
+   "threshold": "> 0.999",
+   "pass": true
+  },
+  "D4_lnlambda_bin_dev_ch": {
+   "value": 0.24,
+   "threshold": "< 0.5 channel",
+   "pass": true
+  },
+  "D5_map_vs_cwave_exact": {
+   "value": 0.968,
+   "threshold": "> 0.9",
+   "pass": true
+  },
+  "D5_map_vs_cwave_within1": {
+   "value": 1.0,
+   "threshold": "> 0.999",
+   "pass": true
+  },
+  "D5_lnlambda_bin_dev_ch": {
+   "value": 0.25,
+   "threshold": "< 0.5 channel",
+   "pass": true
+  },
+  "D6_map_vs_cwave_exact": {
+   "value": 0.962,
+   "threshold": "> 0.9",
+   "pass": true
+  },
+  "D6_map_vs_cwave_within1": {
+   "value": 1.0,
+   "threshold": "> 0.999",
+   "pass": true
+  },
+  "D6_lnlambda_bin_dev_ch": {
+   "value": 0.2,
+   "threshold": "< 0.5 channel",
+   "pass": true
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "qr3/spectral_channels/cal-sch-v2-2026-229 + qr3/spectral_wcs/cal-swcs-v5-2026-191",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "qr3/spectral_channels/cal-sch-v2-2026-229/spectral_channels_spx_cal-sch-v2-2026-229.fits",
+  "qr3/spectral_wcs/cal-swcs-v5-2026-191 (CWAVE rows)"
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 8.6,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/calib.py",
+  "backend/spherex/cube.py"
+ ],
+ "caveats": [],
+ "date": "2026-11-06"
+}

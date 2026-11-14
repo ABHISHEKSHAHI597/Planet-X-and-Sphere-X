@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "I-L1-synthetic",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "Algorithm tests reproduced in complete repository run, but legacy evidence has no current digest and is stale. Re-record from current tree. Synthetic evidence cannot establish F4/F5 or real-target acceptance.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "5c00a03caed9c6e6faa570d52b005fdc99fcf1259a8d963e6e94bebaba0cbfac"
+}

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSXObject><Name>R Dra</Name><AUID>000-BBX-660</AUID><RA2000>248.16762</RA2000><Declination2000>66.75497</Declination2000><ProperMotionRA>-20.6800</ProperMotionRA><ProperMotionDec>7.0700</ProperMotionDec><VariabilityType>M</VariabilityType><Period>246.12</Period><Epoch>2457370</Epoch><RiseDuration>45</RiseDuration><MaxMag>6.7 V</MaxMag><MinMag>13.2 V</MinMag><SpectralType>M5e-M9eIII</SpectralType><Discoverer>Geelmuyden (1876)</Discoverer><Category>Variable</Category><OID>13673</OID><Constellation>Dra</Constellation><Data><![CDATA[JD,mag,uncert,band,by,comCode,compStar1,compStar2,charts,comment,transformed,airmass,val,cmag,kmag,starName,obsAffil,mtype,adsRef,digitizer,credit,obsID,fainterThan,obsType,software,obsName,obsCountry
+2460796.3618,7.4,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1310985740,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460796.4111,8.0,,Vis.,VFK,,"79","82","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1310899362,0,Visual,"EXCEL","Vohla, Frank",DE
+2460797.3438,7.4,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016673,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460797.42639,8.0,,Vis.,SSEF,,"72","85","X40131LA",,,,Z,,,R Dra,BAV,,,,,1311238037,0,Visual,,"Sinnecker, Sebastian",DE
+2460798.3472,7.9,,Vis.,VFK,,"79","82","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048044,0,Visual,"EXCEL","Vohla, Frank",DE
+2460799.413000,7.4000,"None",Vis.,ASW,,,,"AAVSO X23379GJI","0; 20x80B",,,Z,,,R DRA,,STD,,,BAAVSS,1323659334,0,Visual,,"Albrighton, S.",GB
+2460801.4,7.9,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1313020061,0,Visual,"EXCEL SPREADSHEET BY ERWIN VAN BALLEGOIJ","Wubbena, Eltjo",NL
+2460801.41042,7.5,,Vis.,MMH,,"72","75","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1311038130,0,Visual,,"Muciek, Marek",
+2460804.3681,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016674,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460804.6,7.5,,Vis.,MOW,,"72","75","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1312148069,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460805.4319,7.0,,Vis.,VFK,,"65","72","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048199,0,Visual,"EXCEL","Vohla, Frank",DE
+2460806.3583,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016676,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460806.475,7.5,,Vis.,VATA,"B","72","82","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1311143165,0,Visual,"EXCEL","Vicze, Attila",HU
+2460807.3569,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016677,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460807.357,7.9,,Vis.,KIS,,"NA",,"S/B",,,,Z,,,R DRA,BAV,,,,,1311726769,0,Visual,"VARSTARS (C) THORSTEN LANGE","Krisch, Gunther",DE
+2460807.39,7.8,,Vis.,PUJ,,"65","85","7671AU",,,,Z,,,R DRA,AAM,,,,,1312009263,0,Visual,,"Pujol, Francesc",ES
+2460808.375,7.2,,Vis.,SSEF,,"65","72","X40131LA",,,,Z,,,R Dra,BAV,,,,,1311252618,0,Visual,,"Sinnecker, Sebastian",DE
+2460808.3750,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016678,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460809.3569,7.4,,Vis.,VFK,,"72","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048230,0,Visual,"EXCEL","Vohla, Frank",DE
+2460809.3813,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016679,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460810.427000,7.5000,"None",Vis.,ASW,,,,"AAVSO X23379GJI","0; 20x80B",,,Z,,,R DRA,,STD,,,BAAVSS,1323660295,0,Visual,,"Albrighton, S.",GB
+2460811.3806,7.3,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016680,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460811.3979,7.6,,Vis.,GGU,,"72","82","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1311281549,0,Visual,"EXCEL","Gilein, Guus",NL
+2460811.4167,7.1,,Vis.,HOO,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1313019779,0,Visual,"EXCEL SPREADSHEET BY ERWIN VAN BALLEGOIJ","Hoogeveen, Geert",
+2460811.68889,7.5,,Vis.,CWP,,"7.2","8.2","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1311333651,0,Visual,,"Clarke, William",US
+2460812.3944,7.1,,Vis.,VFK,,"65","72","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048265,0,Visual,"EXCEL","Vohla, Frank",DE
+2460813.44167,7.7,,Vis.,FERA,,"6.5","8.5","X24705CU",,,,Z,,,R DRA,AAVSO,,,,,1311461181,0,Visual,,"FABRIGAT, Eric",
+2460815.38472,7.4,,Vis.,MMH,,"72","75","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1311589705,0,Visual,,"Muciek, Marek",
+2460815.4049,7.5,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016681,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460815.6,7.5,,Vis.,MOW,,"72","75","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1312147889,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460816.3479,7.5,,Vis.,VFK,,"72","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048314,0,Visual,"EXCEL","Vohla, Frank",DE
+2460816.42,7.8,,Vis.,BFO,,"75","82","X26015KN",,,,Z,,,R DRA,AAVSO,,,,,1313231871,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460816.42986,7.5,,Vis.,SSEF,,"72","85","X40131LA",,,,Z,,,R Dra,BAV,,,,,1311714119,0,Visual,,"Sinnecker, Sebastian",DE
+2460817.409,7.6,,Vis.,SDAB,"B","75","79","X25675CRZ",,0,,Z,,,R Dra,,STD,,,,1311774197,0,Visual,"EXCEL","Smales, David",
+2460818.4104,7.6,,Vis.,VFK,,"72","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048391,0,Visual,"EXCEL","Vohla, Frank",DE
+2460819.42,7.8,,Vis.,PUJ,,"65","85","7671AU",,,,Z,,,R DRA,AAM,,,,,1312009369,0,Visual,,"Pujol, Francesc",ES
+2460820.44028,7.7,,Vis.,VATA,,"72","82","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1311851273,0,Visual,"EXCEL","Vicze, Attila",HU
+2460822.49167,7.6,,Vis.,MMH,,"75","79","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1311894236,0,Visual,,"Muciek, Marek",
+2460822.6,8.0,,Vis.,BTY,,"7.2","8.5","13548IZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1311909501,0,Visual,,"Benner, Terry",US
+2460822.61389,7.2,,Vis.,MSS,,"7.2","6.5","x26328abw",,,,Z,,,r dra,AAVSO,,,,,1311892966,0,Visual,,"Mesics, Sandra",US
+2460823.67361,8.0,,Vis.,CWP,,"8.2","7.2","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1311933297,0,Visual,,"Clarke, William",US
+2460826.3868,7.9,,Vis.,VFK,,"79","82","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312048475,0,Visual,"EXCEL","Vohla, Frank",DE
+2460826.4153,8.1,,Vis.,RKE,,"74","83","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312016682,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460826.42,7.7,,V,WVOA,,"NA",,,,0,"1.1",Z,,,R DRA,BAV,STD,,,,1311996786,0,CCD,"ASTAP","Wickert, Volker",DE
+2460826.42431,8.0,,Vis.,SSEF,,"72","85","X40131LA",,,,Z,,,R Dra,BAV,,,,,1311997149,0,Visual,,"Sinnecker, Sebastian",DE
+2460827.8,8.0,,Vis.,MOW,,"75","82","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1312682762,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460830.3944,8.0,,Vis.,RKE,"Z","74","83","AAVSO",,,,Z,,,R DRA,BAV,,,,,1312689724,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2460831.6,8.0,,Vis.,BTY,"B","7.2","8.5","13548IZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1312083678,0,Visual,,"Benner, Terry",US
+2460833.39,8.0,,Vis.,PUJ,,"65","85","7671AU",,,,Z,,,R DRA,AAM,,,,,1312624265,0,Visual,,"Pujol, Francesc",ES
+2460834.36597,8.6,,Vis.,VATA,"B","85","88","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1312108777,0,Visual,"EXCEL","Vicze, Attila",HU
+2460837.6,8.5,,Vis.,MOW,,"82","85","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1312682763,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460838.43194,8.4,,Vis.,MMH,"B","82","85","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1312171665,0,Visual,,"Muciek, Marek",
+2460838.45139,8.0,,Vis.,SSEF,,"72","85","X40131LA",,,,Z,,,R Dra,BAV,,,,,1312153662,0,Visual,,"Sinnecker, Sebastian",DE
+2460840.37,8.5,,Vis.,PUJ,,"85","97","7671AU",,,,Z,,,R DRA,AAM,,,,,1312624451,0,Visual,,"Pujol, Francesc",ES
+2460840.67222,8.5,,Vis.,CWP,,"8.5","8.7","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1312182459,0,Visual,,"Clarke, William",US
+2460841.41042,8.8,,Vis.,VATA,,"85","95","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1312197282,0,Visual,"EXCEL","Vicze, Attila",HU
+2460841.68403,8.5,,Vis.,CWP,,"8.5","8.2","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1312200875,0,Visual,,"Clarke, William",US
+2460842.40556,8.6,,Vis.,TPAB,,"8.5","9.0","1009wij",,,,Z,,,R Dra,AAVSO,,,,,1312207645,0,Visual,,"Trybus, Pawel",PL
+2460843.43125,8.3,,Vis.,SSEF,,"82","85","X40319BPN",,,,Z,,,R Dra,BAV,,,,,1312286481,0,Visual,,"Sinnecker, Sebastian",DE
+2460845.3889,9.2,,Vis.,KHL,,"85","95","12652BDN",,,,Z,,,R DRA,AAVSO,,,,,1314833431,0,Visual,"EXCEL","Kohl, Mike",
+2460847.6,9.1,,Vis.,MOW,,"88","92","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1312682764,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460847.67917,8.7,,Vis.,CWP,,"8.7","8.5","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1312341857,0,Visual,,"Clarke, William",US
+2460848.44722,9.0,,Vis.,SSEF,,"88","92","X40319BPN",,,,Z,,,R Dra,BAV,,,,,1312361236,0,Visual,,"Sinnecker, Sebastian",DE
+2460848.66736,8.8,,Vis.,CWP,,"8.8","8.7","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1312358128,0,Visual,,"Clarke, William",US
+2460849.62917,9.0,,Vis.,MSS,,"8.5","9.5","x26328abw",,,,Z,,,r dra,AAVSO,,,,,1312374531,0,Visual,,"Mesics, Sandra",US
+2460850.44167,9.1,,Vis.,MMH,"B","88","92","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1312397083,0,Visual,,"Muciek, Marek",
+2460851.4306,8.2,,Vis.,VFK,,"79","82","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312605119,0,Visual,"EXCEL","Vohla, Frank",DE
+2460852.4292,9.1,,Vis.,VFK,,"88","95","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1312605162,0,Visual,"EXCEL","Vohla, Frank",DE
+2460855.38,9.4,,Vis.,BFO,,"88","95","X26015KN",,,,Z,,,R DRA,AAVSO,,,,,1313232085,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460855.43056,9.2,,Vis.,SSEF,,"88","95","X40131LA",,,,Z,,,R Dra,BAV,,,,,1312519408,0,Visual,,"Sinnecker, Sebastian",DE
+2460855.473611,9.9,,Vis.,FERA,,"8.5","10.9","X24705CS",,0,,Z,,,R Dra,AAVSO,STD,,,,1312513666,0,Visual,,"FABRIGAT, Eric",
+2460855.67014,9.3,,Vis.,CWP,,"9.5","8.8","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1312518981,0,Visual,,"Clarke, William",US
+2460856.4694,9.3,,Vis.,SDAB,"BU","88","95","X25675CSA","NOCTILUCENT CLOUDS - CIRRUS - HEAVY DEW",,,Z,,,R DRA,,,,,,1312707343,0,Visual,"EXCEL","Smales, David",
+2460856.59653,9.6,,Vis.,MSS,,"9.5","9.7","x26328abw",,,,Z,,,r dra,AAVSO,,,,,1312557369,0,Visual,,"Mesics, Sandra",US
+2460856.6,9.6,,Vis.,BTY,,"9.5","9.7","13548IZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1312540272,0,Visual,,"Benner, Terry",US
+2460857.33472,9.6,,Vis.,MVH,,"9.5","9.7","4677evl",,,,Z,,,R Dra,AAVSO,,,,,1312577780,0,Visual,,"Vladut, Mihai",RO
+2460857.3608,9.4,,Vis.,CSM,,"92","95","14710ATG",,,,Z,,,R DRA,MCSE,,,,,1312694715,0,Visual,"PLEIONE VERSION 4.3.1 BY MATYAS CSUKAS","Csukas, Matyas",RO
+2460857.37,9.9,,Vis.,PUJ,,"95","106","7671AU",,,,Z,,,R DRA,AAM,,,,,1312641044,0,Visual,,"Pujol, Francesc",ES
+2460858.4069,9.7,,Vis.,VFK,,"95","98","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1313693793,0,Visual,"EXCEL","Vohla, Frank",DE
+2460858.6,9.6,,Vis.,MOW,,"95","97","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1313951007,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460860.41944,9.5,,Vis.,MMH,"B","92","97","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1312654905,0,Visual,,"Muciek, Marek",
+2460860.63889,10.0,,Vis.,WLY,,"95","106","X27913VR",,,,Z,,,R DRA,AAVSO,,,,,1312657239,0,Visual,,"wade, larry",US
+2460861.42778,9.8,,Vis.,SSEF,,"97","10","X40131LA",,,,Z,,,R Dra,BAV,,,,,1312680721,0,Visual,,"Sinnecker, Sebastian",DE
+2460862.175,9.8,,V,TYGA,," ensemble",,"ASTROART8.0",,0,,Z,,,R DRA,AAVSO,STD,,,,1312694593,0,CCD,,"Tsao, Young Chiech",
+2460867.625,10.1,,Vis.,WLY,,"95","106","X27913VR",,,,Z,,,R DRA,AAVSO,,,,,1312864982,0,Visual,,"wade, larry",US
+2460868.4,10.2,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1316880893,0,Visual,"EXCEL","Wubbena, Eltjo",NL
+2460868.6,10.3,,Vis.,MOW,,"100","103","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1313951008,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460869.4951,9.8,,Vis.,SDAB,"BU","97","100","X25675CSB","TWILIGHT - MOON - PATCHY HIGH CLOUD",,,Z,,,R DRA,,,,,,1312967228,0,Visual,"EXCEL","Smales, David",
+2460874.44792,10.1,,Vis.,SSEF,,"97","106","X40131LA",,,,Z,,,R Dra,BAV,,,,,1313222919,0,Visual,,"Sinnecker, Sebastian",DE
+2460874.625,10.5,,Vis.,WLY,,"97","107","X27913VR",,,,Z,,,R DRA,AAVSO,,,,,1313154952,0,Visual,,"wade, larry",US
+2460875.6,10.2,,Vis.,BTY,,"9.7","10.6","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1313220792,0,Visual,,"Benner, Terry",US
+2460876.4125,10.1,,Vis.,MMH,,"97","103","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1313232369,0,Visual,,"Muciek, Marek",
+2460876.48,10.6,,Vis.,BFO,,"106",,"X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1313678369,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460878.6,10.8,,Vis.,MOW,,"107","109","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1313951009,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460879.413194,10.3,,Vis.,FERA,,"9.7","10.6","X24705CU",,0,,Z,,,R Dra,AAVSO,STD,,,,1313335107,0,Visual,,"FABRIGAT, Eric",
+2460880.4062,10.6,,Vis.,CSM,,"106","107","14710ATG",,,,Z,,,R DRA,MCSE,,,,,1313951258,0,Visual,"PLEIONE VERSION 4.3.1 BY MATYAS CSUKAS","Csukas, Matyas",RO
+2460880.65903,10.0,,Vis.,CWP,,"10.0","9.7","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1313465664,0,Visual,,"Clarke, William",US
+2460881.45972,10.4,,Vis.,DHEB,"B","10.3","10.6","X24423BEZ",,,,Z,,,R DRA,SAAF,,,,,1313461314,0,Visual,"CUSTOM SCRIPT","De Angelis, Hernán",SE
+2460881.66319,10.3,,Vis.,CWP,,"10.0","10.6","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1313465210,0,Visual,,"Clarke, William",US
+2460883.62153,10.8,,Vis.,WLY,,"97","116","X27913VR",,,,Z,,,R DRA,AAVSO,,,,,1313515361,0,Visual,,"wade, larry",US
+2460887.32083,10.2,,Vis.,VATA,,"97","106","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1313628465,0,Visual,"EXCEL","Vicze, Attila",HU
+2460889.509,10.8,,Vis.,SDAB,,"106","109","X25675CSB",,0,,Z,,,R Dra,,STD,,,,1313735167,0,Visual,"EXCEL","Smales, David",
+2460889.6,11.0,,Vis.,MOW,,"109","114","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1314939459,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460892.62153,11.0,,Vis.,WLY,,"106","114","X27913VR",,,,Z,,,R DRA,AAVSO,,,,,1313936483,0,Visual,,"wade, larry",US
+2460894.40347,10.7,,Vis.,MMH,"B","106","109","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1314045534,0,Visual,,"Muciek, Marek",
+2460896.3993,11.2,,Vis.,GGU,,"109","114","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1314112980,0,Visual,"EXCEL","Gilein, Guus",NL
+2460897.4,11.5,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1316880894,0,Visual,"EXCEL","Wubbena, Eltjo",NL
+2460898.41806,11.2,,Vis.,SSEF,,"109","114","X40131LA",,,,Z,,,R Dra,BAV,,,,,1314325028,0,Visual,,"Sinnecker, Sebastian",DE
+2460899.40764,11.0,,Vis.,MMH,"B","109","114","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1314229593,0,Visual,,"Muciek, Marek",
+2460900.4264,11.2,,Vis.,GGU,,"109","114","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1314326690,0,,"EXCEL","Gilein, Guus",NL
+2460900.6,11.3,,Vis.,MOW,,"109","114","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1314939460,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460903.38077,10.9931,"0.0207",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.142",Z,,"10.98342",R DRA,AAVSO,STD,,,,1314444222,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.381141,10.9993,"0.0206",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.143",Z,,"11.01544",R DRA,AAVSO,STD,,,,1314444223,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.381513,10.9817,"0.0206",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.143",Z,,"10.98202",R DRA,AAVSO,STD,,,,1314444224,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.381884,10.953,"0.0205",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.144",Z,,"10.99135",R DRA,AAVSO,STD,,,,1314444225,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.382255,10.9799,"0.0206",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.144",Z,,"10.97875",R DRA,AAVSO,STD,,,,1314444226,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.382626,10.9685,"0.0206",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.145",Z,,"10.98318",R DRA,AAVSO,STD,,,,1314444227,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.382997,10.9724,"0.0208",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.146",Z,,"10.98110",R DRA,AAVSO,STD,,,,1314444228,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.383369,10.9799,"0.0207",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.146",Z,,"10.97037",R DRA,AAVSO,STD,,,,1314444229,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.38374,10.9853,"0.0210",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.147",Z,,"10.98550",R DRA,AAVSO,STD,,,,1314444230,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460903.384111,10.9656,"0.0206",V,SJZA,,"ENSEMBLE","000-BBX-691","X40620CII","NONE",0,"1.147",Z,,"10.97634",R DRA,AAVSO,STD,,,,1314444231,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460905.5167,11.6,,Vis.,SDAB,"U","114","116","X25675CSB","PATCHY HIGH CLOUD",,,Z,,,R DRA,,,,,,1314393564,0,Visual,"EXCEL","Smales, David",
+2460906.39444,11.1,,Vis.,SSEF,,"109","114","X40131LA",,,,Z,,,R Dra,BAV,,,,,1314492433,0,Visual,,"Sinnecker, Sebastian",DE
+2460906.43,11.5,,Vis.,BFO,,"114","120","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1314651478,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460907.364535,11.1887,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.134",Z,,"11.20505",R DRA,AAVSO,STD,,,,1314444242,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.364907,11.1727,"0.0185",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.135",Z,,"11.25758",R DRA,AAVSO,STD,,,,1314444243,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.365279,11.2177,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.135",Z,,"11.22351",R DRA,AAVSO,STD,,,,1314444244,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.365649,11.2121,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.136",Z,,"11.20809",R DRA,AAVSO,STD,,,,1314444245,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.366021,11.2092,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.136",Z,,"11.22196",R DRA,AAVSO,STD,,,,1314444246,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.366393,11.1787,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.137",Z,,"11.19839",R DRA,AAVSO,STD,,,,1314444247,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.366764,11.1825,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.137",Z,,"11.19826",R DRA,AAVSO,STD,,,,1314444248,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.367136,11.2183,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.138",Z,,"11.21649",R DRA,AAVSO,STD,,,,1314444249,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.367508,11.1969,"0.0182",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.139",Z,,"11.22031",R DRA,AAVSO,STD,,,,1314444250,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.36788,11.195,"0.0183",V,SJZA,,"ENSEMBLE","000-BBX-659","X40620CII","NONE",0,"1.139",Z,,"11.21129",R DRA,AAVSO,STD,,,,1314444251,0,CCD,"C-MUNIPACK 2.1.37","Sławenta, Józef",PL
+2460907.39722,11.2,,Vis.,MMH,,"109","114","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1314421769,0,Visual,,"Muciek, Marek",
+2460909.5,11.6,,Vis.,BTY,,"11.4","12.0",,,0,,Z,,,R Dra,AAVSO,STD,,,,1314428377,0,Visual,,"Benner, Terry",US
+2460912.6,11.6,,Vis.,MOW,,"114","120","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1314939461,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460916.3653,11.8,,Vis.,GGU,,"114","120","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1314588066,0,Visual,"EXCEL","Gilein, Guus",NL
+2460916.4,12.1,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1316880895,0,Visual,"EXCEL","Wubbena, Eltjo",NL
+2460917.6514,11.3,,Vis.,EMAC,,"114",,"X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1314588114,0,Visual,"EXCEL","Ellison, Mark",US
+2460919.30833,11.6,,Vis.,MMH,,"114","120","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1314682366,0,Visual,,"Muciek, Marek",
+2460924.3743,12.1,,Vis.,GGU,,"120","126","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1314966816,0,Visual,"EXCEL","Gilein, Guus",NL
+2460924.41667,11.8,,Vis.,SSEF,,"116","120","X40131LA",,,,Z,,,R Dra,BAV,,,,,1315149577,0,Visual,,"Sinnecker, Sebastian",DE
+2460928.38333,11.8,,Vis.,MMH,"B","114","120","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1315082915,0,Visual,,"Muciek, Marek",
+2460933.6,12.1,,Vis.,MOW,,"120","121","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1316286025,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460937.6,12.3,,Vis.,BTY,,"120","125","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1315561590,0,Visual,,"Benner, Terry",US
+2460938.32083,11.8,,Vis.,SSEF,,"116","120","X40131LA",,,,Z,,,R Dra,BAV,,,,,1315588846,0,Visual,,"Sinnecker, Sebastian",DE
+2460939.32292,12.2,,Vis.,MMH,,"120","125","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1315596980,0,Visual,,"Muciek, Marek",
+2460939.336806,12.3,,Vis.,FERA,,"123",,"X24705CU",,0,,Z,,,R Dra,AAVSO,STD,,,,1315588848,1,Visual,,"FABRIGAT, Eric",
+2460941.29,12.4,,Vis.,BFO,,"120","125","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1316222621,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460941.3458,12.2,,Vis.,SDAB,,"121","123","X25675CSC",,0,,Z,,,R Dra,,STD,,,,1315621906,0,Visual,"EXCEL","Smales, David",
+2460942.3368,12.4,,Vis.,GGU,,"120","126","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1315686392,0,Visual,"EXCEL","Gilein, Guus",NL
+2460946.5,12.2,,Vis.,MOW,,"121","125","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1316286026,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460947.31667,12.2,,Vis.,SSEF,,"120","125","X40319BPN",,,,Z,,,R Dra,BAV,,,,,1316088758,0,Visual,,"Sinnecker, Sebastian",DE
+2460948.28403,12.1,,Vis.,MMH,,"120","123","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1316106186,0,Visual,,"Muciek, Marek",
+2460950.5,12.4,,Vis.,BTY,"B","120","125","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1316165396,0,Visual,,"Benner, Terry",US
+2460959.26667,12.3,,Vis.,KHL,,"121","125","12652BDP",,,,Z,,,R DRA,AAVSO,,,,,1316878704,0,Visual,,"Kohl, Mike",
+2460961.5,11.9,,Vis.,MOW,,"114","120","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1318422237,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460963.50,11.14,"0.0479",V,FRL,,"106","97","15067cjx",,1,"1.01",T,"-10.4023","-10.9649",r dra,AAVSO,STD,,,,1317796397,0,DSLR,,"Fournier, Ronald",US
+2460964.29722,11.8,,Vis.,MMH,,"116","120","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1316871910,0,Visual,,"Muciek, Marek",
+2460964.5,12.0,,Vis.,BTY,,"120","125","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1316932707,0,Visual,,"Benner, Terry",US
+2460975.4,12.0,,Vis.,BTY,,"114","120","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1317802549,0,Visual,,"Benner, Terry",US
+2460978.25,11.5,,Vis.,BFO,,"114","120","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1318304152,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460978.31667,11.2,,Vis.,MMH,"B","109","114","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1317919265,0,Visual,,"Muciek, Marek",
+2460978.4222,11.0,,Vis.,SDAB,"BL","109","114","X25675CSB","SLIGHT OBSTRUCTION - VEGETATION",,,Z,,,R DRA,,,,,,1317919687,0,Visual,"EXCEL","Smales, David",
+2460980.4250,11.2,,Vis.,GGU,,"109","114","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1318014089,0,Visual,"EXCEL","Gilein, Guus",NL
+2460986.20069,10.3,,Vis.,MMH,"B","100","106","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1318308835,0,Visual,,"Muciek, Marek",
+2460987.250,10.6,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647896,0,Visual,"EXCEL","Schippers, Robert",NL
+2460987.28,10.7,,Vis.,BFO,,"106","109","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1319844587,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2460988.56944,9.7,,Vis.,CWP,"B","9.7","9.5","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1318343090,0,Visual,,"Clarke, William",US
+2460994.5,10.2,,Vis.,MOW,,"100","103","15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1319580532,0,Visual,"TEXT EDIT","Morrison, Warren",
+2460994.5625,9.5,,Vis.,CWP,"B","9.5","9.7","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1318499888,0,Visual,,"Clarke, William",US
+2460995.19722,9.8,,Vis.,MMH,,"97","100","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1318531589,0,Visual,,"Muciek, Marek",
+2460996.2417,9.7,,Vis.,GGU,,"95","98","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1318623134,0,Visual,"EXCEL","Gilein, Guus",NL
+2460996.299,9.9,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647897,0,Visual,"EXCEL","Schippers, Robert",NL
+2460997.33819,9.6,,Vis.,SSEF,,"95","97","X40131LA",,,,Z,,,R Dra,BAV,,,,,1318660878,0,Visual,,"Sinnecker, Sebastian",DE
+2460999.3743,9.7,,Vis.,SDAB,,"95","97","X25675CSA",,,,Z,,,R DRA,,,,,,1318752588,0,Visual,"EXCEL","Smales, David",
+2461001.19167,9.4,,Vis.,MMH,,"92","95","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1318756171,0,Visual,,"Muciek, Marek",
+2461001.237,9.4,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647898,0,Visual,"EXCEL","Schippers, Robert",NL
+2461006.244,9.1,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647899,0,Visual,"EXCEL","Schippers, Robert",NL
+2461006.6,9.3,,Vis.,MOW,,"92","95","15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1319580533,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461007.65,8.9,,Vis.,BFO,,"88","95","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1319844588,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461011.23889,8.6,,Vis.,MMH,"B","85","88","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1319496371,0,Visual,,"Muciek, Marek",
+2461017.6,8.0,,Vis.,MOW,,"75","82","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1322435987,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461019.7125,7.7,,Vis.,VFK,,"75","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1321905107,0,Visual,"EXCEL","Vohla, Frank",DE
+2461023.208,8.1,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647900,0,Visual,"EXCEL","Schippers, Robert",NL
+2461024.7424,7.6,,Vis.,VFK,,"75","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1321905200,0,Visual,"EXCEL","Vohla, Frank",DE
+2461026.025,7.5,,Vis.,CWP,,"7.2","8.5","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1320266168,0,Visual,,"Clarke, William",US
+2461026.21458,7.1,,Vis.,MMH,,"68","72","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1320333639,0,Visual,,"Muciek, Marek",
+2461026.6431,7.4,,Vis.,VFK,,"72","75","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1321905278,0,Visual,"EXCEL","Vohla, Frank",DE
+2461027.5764,7.3,,Vis.,VFK,,"72","75","12834SNP","10X50",,,Z,,,R DRA,BAV,,,,,1321905311,0,Visual,"EXCEL","Vohla, Frank",DE
+2461027.72917,7.3,,Vis.,KHL,,"72","85","12652BDN",,,,Z,,,R DRA,AAVSO,,,,,1323162157,0,Visual,,"Kohl, Mike",
+2461031.238,7.4,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647901,0,Visual,"EXCEL","Schippers, Robert",NL
+2461031.3403,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1321874073,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461031.6743,7.4,,Vis.,VFK,,"72","75","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1321905377,0,Visual,"EXCEL","Vohla, Frank",DE
+2461034.19097,7.0,,Vis.,MMH,,"68","72","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1321677893,0,Visual,,"Muciek, Marek",
+2461034.41042,6.7,,Vis.,SSEF,,"65","72","X40131LA",,,,Z,,,R Dra,BAV,,,,,1321700684,0,Visual,,"Sinnecker, Sebastian",DE
+2461035.2375,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1321874074,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461036.250,7.3,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1323647902,0,Visual,"EXCEL","Schippers, Robert",NL
+2461036.4826,6.7,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1321874075,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461037.5500,7.0,,Vis.,VFK,,"65","72","12834SNP","10X50",,,Z,,,R DRA,BAV,,,,,1321905393,0,Visual,"EXCEL","Vohla, Frank",DE
+2461038.2049,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1321874076,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461038.44792,6.7,,Vis.,SSEF,,"65","72","X40131LA",,,,Z,,,R Dra,BAV,,,,,1321876588,0,Visual,,"Sinnecker, Sebastian",DE
+2461038.5278,6.9,,Vis.,VFK,,"65","72","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1321905441,0,Visual,"EXCEL","Vohla, Frank",DE
+2461038.55139,7.6,,Vis.,VATA,,"72","82","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1321795771,0,Visual,"EXCEL","Vicze, Attila",HU
+2461039.7083,7.0,,Vis.,VFK,,"65","72","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1321905460,0,Visual,"EXCEL","Vohla, Frank",DE
+2461040.2208,6.7,,Vis.,RKE,"Z","67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1321874077,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461040.50347,7.3,,Vis.,MVH,,"7.2","7.5","4677evl",,,,Z,,,R Dra,AAVSO,,,,,1321819502,0,Visual,,"Vladut, Mihai",RO
+2461041.0,7.2,,Vis.,MOW,,"65","72","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1322435988,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461044.44792,6.8,,Vis.,UAN,,"65","72","X41538QL",,,,Z,,,R DRA,AAVSO,,,,,1329309289,0,Visual,"EXCEL","Uhrin, Andras",HU
+2461045.235,6.7,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777822,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461047.5875,7.2,,Vis.,VFK,,"72","75","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323185968,0,Visual,"EXCEL","Vohla, Frank",DE
+2461048.25833,6.7,,Vis.,MMH,"B","65","72","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1322176581,0,Visual,,"Muciek, Marek",
+2461048.2611,7.1,,Vis.,RKE,"Z","67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237752,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461048.4292,7.2,,Vis.,VFK,,"65","72","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186114,0,Visual,"EXCEL","Vohla, Frank",DE
+2461051.3333,7.5,,Vis.,RKE,"Z","67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237753,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461051.37917,7.0,,Vis.,SSEF,,"65","73","X40131LA",,,,Z,,,R Dra,BAV,,,,,1322301884,0,Visual,,"Sinnecker, Sebastian",DE
+2461051.9,7.1,,Vis.,MOW,,"65","72","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1323266707,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461052.2083,7.1,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237754,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461052.63,6.6,,Vis.,BFO,,"65","72","X26015KN",,,,Z,,,R DRA,AAVSO,,,,,1324155249,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461057.2660,7.1,,Vis.,RKE,"Z","67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237755,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461057.4750,7.5,,Vis.,VFK,,"72","75","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186211,0,Visual,"EXCEL","Vohla, Frank",DE
+2461058.4444,7.5,,Vis.,VFK,,"72","75","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186256,0,Visual,"EXCEL","Vohla, Frank",DE
+2461059.19792,6.9,,Vis.,MMH,,"68","72","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1322753906,0,Visual,,"Muciek, Marek",
+2461059.2201,7.3,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237756,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461059.256,6.9,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777823,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461059.36875,6.8,,Vis.,SSEF,,"65","73","X40131LA",,,,Z,,,R Dra,BAV,,,,,1322995627,0,Visual,,"Sinnecker, Sebastian",DE
+2461059.392361,6.7,,Vis.,JMAK,,"65","72","X38340ALB",,0,,Z,,,R Dra,AAVSO,STD,,,,1325642961,0,Visual,,"Jurkiewicz, Magda",
+2461060.2569,7.3,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237757,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461060.4917,7.7,,Vis.,VFK,,"75","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186291,0,Visual,"EXCEL","Vohla, Frank",DE
+2461061.2660,7.3,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237758,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461061.64,7.0,,Vis.,BFO,,"65","72","X26015KN",,,,Z,,,R DRA,AAVSO,,,,,1324155250,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461061.6951,7.7,,Vis.,VFK,,"75","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186352,0,Visual,"EXCEL","Vohla, Frank",DE
+2461062.2236,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237759,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461062.6132,7.7,,Vis.,VFK,,"75","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186399,0,Visual,"EXCEL","Vohla, Frank",DE
+2461063.2639,7.4,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237760,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461063.5,7.3,,Vis.,MOW,,"72","75","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1323266708,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461063.6438,7.7,,Vis.,VFK,,"75","79","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1323186435,0,Visual,"EXCEL","Vohla, Frank",DE
+2461064.2250,7.2,,Vis.,RKE,,"67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237761,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461065.2403,7.6,,Vis.,RKE,"Z","67","74","AAVSO",,,,Z,,,R DRA,BAV,,,,,1323237762,0,Visual,"EXCEL","Raetz, Kerstin",DE
+2461068.38333,7.5,,Vis.,UAN,,"72","75","X41538QL",,,,Z,,,R DRA,AAVSO,,,,,1329309340,0,Visual,"EXCEL","Uhrin, Andras",HU
+2461070.73403,7.4,,Vis.,KHL,,"72","85","12652BDN",,,,Z,,,R DRA,AAVSO,,,,,1323162164,0,Visual,,"Kohl, Mike",
+2461070.7347,7.4,,Vis.,KHL,,"72","85","12652BDN",,,,Z,,,R DRA,AAVSO,,,,,1324044825,0,Visual,"EXCEL","Kohl, Mike",
+2461072.24097,7.5,,Vis.,MMH,"B","72","75","X36483CEB",,,,Z,,,R dra,AAVSO,,,,,1323181385,0,Visual,,"Muciek, Marek",
+2461073.8,7.9,,Vis.,MOW,,"75","82","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1324302039,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461076.38958,7.8,,Vis.,UAN,,"75","82","X41538QL",,,,Z,,,R DRA,AAVSO,,,,,1329309352,0,Visual,"EXCEL","Uhrin, Andras",HU
+2461080.35347,8.5,,Vis.,SSEF,,"85","88","X40131LA",,,,Z,,,R Dra,BAV,,,,,1323326696,0,Visual,,"Sinnecker, Sebastian",DE
+2461080.73611,8.0,,Vis.,CWP,,"8.2","7.2","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1323325802,0,Visual,,"Clarke, William",US
+2461083.45139,8.1,,Vis.,UAN,,"75","82","X41538QL",,,,Z,,,R DRA,AAVSO,,,,,1329309374,0,Visual,"EXCEL","Uhrin, Andras",HU
+2461083.71,8.3,,Vis.,PUJ,,"65","85","7671AU",,,,Z,,,R DRA,AAM,,,,,1324269043,0,Visual,,"Pujol, Francesc",ES
+2461084.8,8.4,,Vis.,MOW,,"82","85","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1324302040,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461086.251,8.2,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777824,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461087.24236,8.3,,Vis.,MMH,,"82","85","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1323631272,0,Visual,,"Muciek, Marek",
+2461090.34722,8.3,,Vis.,VATA,,"82","85","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1323887008,0,Visual,"EXCEL","Vicze, Attila",HU
+2461092.70139,8.5,,Vis.,CWP,"L","8.5","8.7","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1323922899,0,Visual,,"Clarke, William",US
+2461095.8,8.8,,Vis.,MOW,,"87","88","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1324302041,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461096.3833,8.8,,Vis.,NDQ,"K","83","94","AFOEV",,,,Z,,,R DRA,AFOEV,,,,,1324000905,0,Visual,"EXCEL","Naillon, Dominique",FR
+2461097.333,8.8,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777825,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461097.4,9.3,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1325778070,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Wubbena, Eltjo",NL
+2461097.4750,8.6,,Vis.,VFK,,"85","88","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1324105230,0,Visual,"EXCEL","Vohla, Frank",DE
+2461097.6750,9.1,,Vis.,KHL,,"85","95","12652BDN",,,,Z,,,R DRA,AAVSO,,,,,1324044794,0,Visual,"EXCEL","Kohl, Mike",
+2461099.30,9.3,,Vis.,BFO,,"88","95","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1324160781,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461099.37361,8.9,,Vis.,MMH,"B","88","92","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1324090309,0,Visual,,"Muciek, Marek",
+2461099.52431,9.0,,Vis.,VATA,,"85","97","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1324085715,0,Visual,"EXCEL","Vicze, Attila",HU
+2461099.6146,8.8,,Vis.,VFK,,"85","88","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1324105290,0,Visual,"EXCEL","Vohla, Frank",DE
+2461100.54583,8.9,,Vis.,JLZ,,"9.2","9.8","5616p",,,,Z,,,R Dra,MCSE,,,,,1324105460,0,Visual,,"Juhasz, Laszlo",HU
+2461101.37222,9.1,,Vis.,SSEF,,"88","95","X40131LA",,,,Z,,,R Dra,BAV,,,,,1324212114,0,Visual,,"Sinnecker, Sebastian",DE
+2461101.4014,8.9,,Vis.,VFK,,"88","95","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340405,0,Visual,"EXCEL","Vohla, Frank",DE
+2461102.285,8.9,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777826,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461103.4486,9.1,,Vis.,VFK,,"88","95","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340434,0,Visual,"EXCEL","Vohla, Frank",DE
+2461105.35069,9.3,,Vis.,SSEF,,"92","95","X40319BPN",,,,Z,,,R Dra,BAV,,,,,1324295667,0,Visual,,"Sinnecker, Sebastian",DE
+2461105.3590,9.2,,Vis.,VFK,,"88","95","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340485,0,Visual,"EXCEL","Vohla, Frank",DE
+2461106.37153,9.1,,Vis.,MMH,,"88","92","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1324295666,0,Visual,,"Muciek, Marek",
+2461106.37361,9.2,,Vis.,SBAH,,"88","92","11608CR",,,,Z,,,R Dra,AAVSO,,,,,1324512303,0,Visual,,"Salwiczek, Bartosz",PL
+2461106.4639,9.5,,Vis.,VFK,,"95","97","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340525,0,Visual,"EXCEL","Vohla, Frank",DE
+2461107.35,9.5,,Vis.,BFO,,"95",,"X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1325787654,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461107.4076,9.7,,Vis.,VFK,,"95","97","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340569,0,Visual,"EXCEL","Vohla, Frank",DE
+2461108.281,9.2,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777827,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461108.44827,9.188,"0.018",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-11.582|CMAGINS=-10.194|CREFMAG=10.576|CREFERR=0.023|KMAGINS=-8.424|KREFMAG=12.254|KREFERR=0.062",0,"1.523",Z,"-10.194","-8.424",R DRA,KNVWS,STD,,,,1324376638,0,CCD,"PHORANSO 1.1.2.2","van Ballegoij, Erwin",NL
+2461109.8,9.6,,Vis.,MOW,,"95","97","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1325431151,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461112.3819,9.8,,Vis.,VFK,,"97","100","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340647,0,Visual,"EXCEL","Vohla, Frank",DE
+2461115.37014,9.6,,Vis.,SSEF,,"95","97","X40131LA",,,,Z,,,R Dra,BAV,,,,,1324559487,0,Visual,,"Sinnecker, Sebastian",DE
+2461117.297,9.9,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777828,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461117.3236,9.7,,Vis.,NDQ,,"94","101","1986",,,,Z,,,R DRA,AFOEV,,,,,1324528880,0,Visual,"EXCEL","Naillon, Dominique",FR
+2461117.3833,10.0,,Vis.,VFK,,"97","100","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340708,0,Visual,"EXCEL","Vohla, Frank",DE
+2461117.49278,9.641,"0.014",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-11.582|CMAGINS=-10.647|CREFMAG=10.576|CREFERR=0.016|KMAGINS=-8.713|KREFMAG=12.254|KREFERR=0.039",0,"1.313",Z,"-10.647","-8.713",R DRA,KNVWS,STD,,,,1324536527,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461118.4868,10.1,,Vis.,SDAB,,"100","103","X25675CSA",,,,Z,,,R DRA,,,,,,1324688808,0,Visual,"EXCEL","Smales, David",
+2461119.64167,10.0,,Vis.,CWP,,"10.0","9.7","X22719CKM",,,,Z,,,r dra,AAVSO,,,,,1324576022,0,Visual,,"Clarke, William",US
+2461120.8,10.4,,Vis.,MOW,,"103","106","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1325431152,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461121.36111,10.0,,Vis.,MMH,,"97","103","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1324617864,0,Visual,,"Muciek, Marek",
+2461121.459722,9.7,,Vis.,JMAK,,"97","106","X38340ALB",,0,,Z,,,R Dra,AAVSO,STD,,,,1325642958,0,Visual,,"Jurkiewicz, Magda",
+2461121.4674,10.0,,Vis.,VFK,,"97","100","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340758,0,Visual,"EXCEL","Vohla, Frank",DE
+2461122.303,10.1,,Vis.,SRBR,,"NA",,"NA",,,,Z,,,R DRA,AAVSO,,,,,1325777829,0,Visual,"EXCEL SPREADSHEET MADE BY ERWIN VAN BALLEGOIJ","Schippers, Robert",NL
+2461127.40417,10.6,,Vis.,MMH,"B","103","107","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1324898637,0,Visual,,"Muciek, Marek",
+2461127.4931,10.6,,Vis.,VFK,,"106","107","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325340832,0,Visual,"EXCEL","Vohla, Frank",DE
+2461128.42083,10.7,,Vis.,SSEF,"B","106","109","X40131LA","4 inch refractor",,,Z,,,R Dra,BAV,,,,,1324904643,0,Visual,,"Sinnecker, Sebastian",DE
+2461130.48455,10.371,"0.014",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-11.022|CMAGINS=-10.817|CREFMAG=10.576|CREFERR=0.014|KMAGINS=-8.963|KREFMAG=12.254|KREFERR=0.032",0,"1.247",Z,"-10.817","-8.963",R DRA,KNVWS,STD,,,,1325292142,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461135.37361,11.0,,Vis.,SSEF,,"109","114","X40131LA",,,,Z,,,R Dra,BAV,,,,,1325445607,0,Visual,,"Sinnecker, Sebastian",DE
+2461136.32569,10.8,,Vis.,VATA,,"106","109","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1325410302,0,Visual,"EXCEL","Vicze, Attila",HU
+2461137.3646,11.0,,Vis.,VFK,,"109","114","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325771731,0,Visual,"EXCEL","Vohla, Frank",DE
+2461137.48332,10.804,"0.013",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-10.812|CMAGINS=-11.039|CREFMAG=10.576|CREFERR=0.013|KMAGINS=-9.265|KREFMAG=12.254|KREFERR=0.024",0,"1.208",Z,"-11.039","-9.265",R DRA,KNVWS,STD,,,,1325426243,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461137.4875,11.3,,Vis.,SDAB,,"109","114","X25675CSB",,,,Z,,,R DRA,,,,,,1325475146,0,Visual,"EXCEL","Smales, David",
+2461137.6,11.3,,Vis.,MOW,,"109","114","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1326088471,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461137.60,11.0,,Vis.,BFO,,"109","114","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1325787314,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461138.35417,11.0,,Vis.,MMH,,"109","114","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1325441775,0,Visual,,"Muciek, Marek",
+2461138.4,10.6,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1327735886,0,Visual,"EXCEL","Wubbena, Eltjo",NL
+2461138.4444,11.0,,Vis.,VFK,,"109","114","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325771785,0,Visual,"EXCEL","Vohla, Frank",DE
+2461138.63958,11.1,,Vis.,CWP,,"10.7","11.4","X15360EON",,,,Z,,,r dra,AAVSO,,,,,1325444605,0,Visual,,"Clarke, William",US
+2461138.80013,10.666,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.624|CMAGINS=-11.075|CREFMAG=13.215|KMAGINS=-10.127|KREFMAG=14.171|KREFERR=0.022",0,"1.485",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455124,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80083,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.670|CMAGINS=-11.126|CREFMAG=13.221|KMAGINS=-10.162|KREFMAG=14.171|KREFERR=0.021",0,"1.482",Z,,"14.184",R Dra,AAVSO,STD,,,,1325455125,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80154,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.672|CMAGINS=-11.130|CREFMAG=13.216|KMAGINS=-10.166|KREFMAG=14.171|KREFERR=0.021",0,"1.479",Z,,"14.18",R Dra,AAVSO,STD,,,,1325455126,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80225,10.685,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.671|CMAGINS=-11.139|CREFMAG=13.217|KMAGINS=-10.162|KREFMAG=14.171|KREFERR=0.021",0,"1.477",Z,,"14.193",R Dra,AAVSO,STD,,,,1325455127,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80295,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.659|CMAGINS=-11.121|CREFMAG=13.214|KMAGINS=-10.173|KREFMAG=14.171|KREFERR=0.020",0,"1.474",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455128,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80366,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.665|CMAGINS=-11.121|CREFMAG=13.216|KMAGINS=-10.165|KREFMAG=14.171|KREFERR=0.020",0,"1.471",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455129,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80436,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.682|CMAGINS=-11.137|CREFMAG=13.214|KMAGINS=-10.164|KREFMAG=14.171|KREFERR=0.022",0,"1.468",Z,,"14.187",R Dra,AAVSO,STD,,,,1325455130,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80507,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.679|CMAGINS=-11.134|CREFMAG=13.212|KMAGINS=-10.183|KREFMAG=14.171|KREFERR=0.022",0,"1.466",Z,,"14.164",R Dra,AAVSO,STD,,,,1325455131,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80578,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.673|CMAGINS=-11.135|CREFMAG=13.216|KMAGINS=-10.229|KREFMAG=14.171|KREFERR=0.021",0,"1.463",Z,,"14.123",R Dra,AAVSO,STD,,,,1325455132,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80648,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.675|CMAGINS=-11.136|CREFMAG=13.216|KMAGINS=-10.148|KREFMAG=14.171|KREFERR=0.021",0,"1.46",Z,,"14.205",R Dra,AAVSO,STD,,,,1325455133,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80719,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.669|CMAGINS=-11.134|CREFMAG=13.217|KMAGINS=-10.191|KREFMAG=14.171|KREFERR=0.020",0,"1.458",Z,,"14.16",R Dra,AAVSO,STD,,,,1325455134,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8079,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.681|CMAGINS=-11.135|CREFMAG=13.219|KMAGINS=-10.203|KREFMAG=14.171|KREFERR=0.021",0,"1.455",Z,,"14.151",R Dra,AAVSO,STD,,,,1325455135,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8086,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.671|CMAGINS=-11.129|CREFMAG=13.220|KMAGINS=-10.186|KREFMAG=14.171|KREFERR=0.020",0,"1.453",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455136,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.80931,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.672|CMAGINS=-11.133|CREFMAG=13.220|KMAGINS=-10.156|KREFMAG=14.171|KREFERR=0.020",0,"1.45",Z,,"14.197",R Dra,AAVSO,STD,,,,1325455137,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81002,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.686|CMAGINS=-11.147|CREFMAG=13.216|KMAGINS=-10.162|KREFMAG=14.171|KREFERR=0.023",0,"1.447",Z,,"14.201",R Dra,AAVSO,STD,,,,1325455138,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81072,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.671|CMAGINS=-11.131|CREFMAG=13.217|KMAGINS=-10.162|KREFMAG=14.171|KREFERR=0.021",0,"1.445",Z,,"14.185",R Dra,AAVSO,STD,,,,1325455139,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81143,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.665|CMAGINS=-11.123|CREFMAG=13.216|KMAGINS=-10.118|KREFMAG=14.171|KREFERR=0.021",0,"1.442",Z,,"14.221",R Dra,AAVSO,STD,,,,1325455140,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81213,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.672|CMAGINS=-11.131|CREFMAG=13.212|KMAGINS=-10.204|KREFMAG=14.171|KREFERR=0.019",0,"1.44",Z,,"14.139",R Dra,AAVSO,STD,,,,1325455141,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81284,10.667,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.690|CMAGINS=-11.141|CREFMAG=13.216|KMAGINS=-10.192|KREFMAG=14.171|KREFERR=0.021",0,"1.437",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455142,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81355,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.695|CMAGINS=-11.150|CREFMAG=13.218|KMAGINS=-10.153|KREFMAG=14.171|KREFERR=0.022",0,"1.435",Z,,"14.215",R Dra,AAVSO,STD,,,,1325455143,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81425,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.680|CMAGINS=-11.130|CREFMAG=13.222|KMAGINS=-10.174|KREFMAG=14.171|KREFERR=0.021",0,"1.432",Z,,"14.178",R Dra,AAVSO,STD,,,,1325455144,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81496,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.686|CMAGINS=-11.141|CREFMAG=13.220|KMAGINS=-10.190|KREFMAG=14.171|KREFERR=0.021",0,"1.43",Z,,"14.17",R Dra,AAVSO,STD,,,,1325455145,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81567,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.703|CMAGINS=-11.167|CREFMAG=13.217|KMAGINS=-10.177|KREFMAG=14.171|KREFERR=0.024",0,"1.427",Z,,"14.207",R Dra,AAVSO,STD,,,,1325455146,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81637,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.685|CMAGINS=-11.139|CREFMAG=13.219|KMAGINS=-10.185|KREFMAG=14.171|KREFERR=0.020",0,"1.425",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455147,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81708,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.694|CMAGINS=-11.156|CREFMAG=13.215|KMAGINS=-10.205|KREFMAG=14.171|KREFERR=0.021",0,"1.422",Z,,"14.167",R Dra,AAVSO,STD,,,,1325455148,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81778,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.691|CMAGINS=-11.146|CREFMAG=13.218|KMAGINS=-10.192|KREFMAG=14.171|KREFERR=0.020",0,"1.42",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455149,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.81849,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.685|CMAGINS=-11.138|CREFMAG=13.220|KMAGINS=-10.191|KREFMAG=14.171|KREFERR=0.021",0,"1.418",Z,,"14.168",R Dra,AAVSO,STD,,,,1325455150,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8192,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.676|CMAGINS=-11.130|CREFMAG=13.220|KMAGINS=-10.186|KREFMAG=14.171|KREFERR=0.020",0,"1.415",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455151,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8199,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.684|CMAGINS=-11.145|CREFMAG=13.220|KMAGINS=-10.202|KREFMAG=14.171|KREFERR=0.020",0,"1.413",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455152,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82061,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.685|CMAGINS=-11.134|CREFMAG=13.222|KMAGINS=-10.157|KREFMAG=14.171|KREFERR=0.020",0,"1.411",Z,,"14.199",R Dra,AAVSO,STD,,,,1325455153,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82132,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.688|CMAGINS=-11.149|CREFMAG=13.214|KMAGINS=-10.193|KREFMAG=14.171|KREFERR=0.020",0,"1.408",Z,,"14.17",R Dra,AAVSO,STD,,,,1325455154,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82202,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.705|CMAGINS=-11.166|CREFMAG=13.219|KMAGINS=-10.211|KREFMAG=14.171|KREFERR=0.022",0,"1.406",Z,,"14.174",R Dra,AAVSO,STD,,,,1325455155,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82273,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.691|CMAGINS=-11.148|CREFMAG=13.221|KMAGINS=-10.174|KREFMAG=14.171|KREFERR=0.020",0,"1.404",Z,,"14.195",R Dra,AAVSO,STD,,,,1325455156,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82344,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.694|CMAGINS=-11.154|CREFMAG=13.217|KMAGINS=-10.220|KREFMAG=14.171|KREFERR=0.021",0,"1.401",Z,,"14.151",R Dra,AAVSO,STD,,,,1325455157,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82414,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.690|CMAGINS=-11.154|CREFMAG=13.217|KMAGINS=-10.197|KREFMAG=14.171|KREFERR=0.020",0,"1.399",Z,,"14.174",R Dra,AAVSO,STD,,,,1325455158,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82485,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.684|CMAGINS=-11.148|CREFMAG=13.216|KMAGINS=-10.181|KREFMAG=14.171|KREFERR=0.020",0,"1.397",Z,,"14.183",R Dra,AAVSO,STD,,,,1325455159,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82556,10.67,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.699|CMAGINS=-11.154|CREFMAG=13.216|KMAGINS=-10.196|KREFMAG=14.171|KREFERR=0.021",0,"1.395",Z,,"14.174",R Dra,AAVSO,STD,,,,1325455160,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82626,10.67,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.693|CMAGINS=-11.143|CREFMAG=13.220|KMAGINS=-10.200|KREFMAG=14.171|KREFERR=0.020",0,"1.392",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455161,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82697,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.680|CMAGINS=-11.138|CREFMAG=13.221|KMAGINS=-10.198|KREFMAG=14.171|KREFERR=0.019",0,"1.39",Z,,"14.16",R Dra,AAVSO,STD,,,,1325455162,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82768,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.691|CMAGINS=-11.150|CREFMAG=13.221|KMAGINS=-10.215|KREFMAG=14.171|KREFERR=0.020",0,"1.388",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455163,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82838,10.667,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.702|CMAGINS=-11.155|CREFMAG=13.214|KMAGINS=-10.218|KREFMAG=14.171|KREFERR=0.020",0,"1.386",Z,,"14.15",R Dra,AAVSO,STD,,,,1325455164,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.82909,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.705|CMAGINS=-11.154|CREFMAG=13.224|KMAGINS=-10.228|KREFMAG=14.171|KREFERR=0.021",0,"1.384",Z,,"14.15",R Dra,AAVSO,STD,,,,1325455165,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8298,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.686|CMAGINS=-11.151|CREFMAG=13.217|KMAGINS=-10.198|KREFMAG=14.171|KREFERR=0.019",0,"1.381",Z,,"14.171",R Dra,AAVSO,STD,,,,1325455166,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8305,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.679|CMAGINS=-11.141|CREFMAG=13.216|KMAGINS=-10.177|KREFMAG=14.171|KREFERR=0.019",0,"1.379",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455167,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83121,10.685,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.691|CMAGINS=-11.160|CREFMAG=13.216|KMAGINS=-10.163|KREFMAG=14.171|KREFERR=0.020",0,"1.377",Z,,"14.213",R Dra,AAVSO,STD,,,,1325455168,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83191,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.693|CMAGINS=-11.150|CREFMAG=13.215|KMAGINS=-10.193|KREFMAG=14.171|KREFERR=0.020",0,"1.375",Z,,"14.171",R Dra,AAVSO,STD,,,,1325455169,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83262,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.692|CMAGINS=-11.147|CREFMAG=13.217|KMAGINS=-10.183|KREFMAG=14.171|KREFERR=0.020",0,"1.373",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455170,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83333,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.691|CMAGINS=-11.141|CREFMAG=13.222|KMAGINS=-10.206|KREFMAG=14.171|KREFERR=0.019",0,"1.371",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455171,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83403,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.696|CMAGINS=-11.147|CREFMAG=13.217|KMAGINS=-10.183|KREFMAG=14.171|KREFERR=0.020",0,"1.369",Z,,"14.18",R Dra,AAVSO,STD,,,,1325455172,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83474,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.688|CMAGINS=-11.146|CREFMAG=13.219|KMAGINS=-10.203|KREFMAG=14.171|KREFERR=0.020",0,"1.367",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455173,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83545,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.696|CMAGINS=-11.167|CREFMAG=13.211|KMAGINS=-10.223|KREFMAG=14.171|KREFERR=0.021",0,"1.365",Z,,"14.155",R Dra,AAVSO,STD,,,,1325455174,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83615,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.691|CMAGINS=-11.140|CREFMAG=13.223|KMAGINS=-10.170|KREFMAG=14.171|KREFERR=0.020",0,"1.363",Z,,"14.193",R Dra,AAVSO,STD,,,,1325455175,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83686,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.679|CMAGINS=-11.134|CREFMAG=13.221|KMAGINS=-10.218|KREFMAG=14.171|KREFERR=0.019",0,"1.361",Z,,"14.138",R Dra,AAVSO,STD,,,,1325455176,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83757,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.677|CMAGINS=-11.128|CREFMAG=13.221|KMAGINS=-10.178|KREFMAG=14.171|KREFERR=0.020",0,"1.359",Z,,"14.171",R Dra,AAVSO,STD,,,,1325455177,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83827,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.664|CMAGINS=-11.121|CREFMAG=13.219|KMAGINS=-10.182|KREFMAG=14.171|KREFERR=0.019",0,"1.357",Z,,"14.158",R Dra,AAVSO,STD,,,,1325455178,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83898,10.67,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.679|CMAGINS=-11.133|CREFMAG=13.217|KMAGINS=-10.188|KREFMAG=14.171|KREFERR=0.020",0,"1.355",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455179,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.83969,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.682|CMAGINS=-11.140|CREFMAG=13.220|KMAGINS=-10.174|KREFMAG=14.171|KREFERR=0.020",0,"1.353",Z,,"14.186",R Dra,AAVSO,STD,,,,1325455180,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84039,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.698|CMAGINS=-11.160|CREFMAG=13.218|KMAGINS=-10.205|KREFMAG=14.171|KREFERR=0.022",0,"1.351",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455181,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8411,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.688|CMAGINS=-11.153|CREFMAG=13.214|KMAGINS=-10.195|KREFMAG=14.171|KREFERR=0.021",0,"1.349",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455182,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8418,10.685,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.688|CMAGINS=-11.155|CREFMAG=13.217|KMAGINS=-10.210|KREFMAG=14.171|KREFERR=0.020",0,"1.347",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455183,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84251,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.681|CMAGINS=-11.140|CREFMAG=13.224|KMAGINS=-10.200|KREFMAG=14.171|KREFERR=0.020",0,"1.345",Z,,"14.164",R Dra,AAVSO,STD,,,,1325455184,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84322,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.685|CMAGINS=-11.140|CREFMAG=13.221|KMAGINS=-10.182|KREFMAG=14.171|KREFERR=0.021",0,"1.343",Z,,"14.178",R Dra,AAVSO,STD,,,,1325455185,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84392,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.678|CMAGINS=-11.131|CREFMAG=13.221|KMAGINS=-10.184|KREFMAG=14.171|KREFERR=0.020",0,"1.341",Z,,"14.168",R Dra,AAVSO,STD,,,,1325455186,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84463,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.685|CMAGINS=-11.142|CREFMAG=13.218|KMAGINS=-10.204|KREFMAG=14.171|KREFERR=0.020",0,"1.34",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455187,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84533,10.685,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.684|CMAGINS=-11.150|CREFMAG=13.219|KMAGINS=-10.175|KREFMAG=14.171|KREFERR=0.021",0,"1.338",Z,,"14.194",R Dra,AAVSO,STD,,,,1325455188,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84604,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.668|CMAGINS=-11.132|CREFMAG=13.215|KMAGINS=-10.180|KREFMAG=14.171|KREFERR=0.019",0,"1.336",Z,,"14.167",R Dra,AAVSO,STD,,,,1325455189,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84675,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.672|CMAGINS=-11.132|CREFMAG=13.221|KMAGINS=-10.167|KREFMAG=14.171|KREFERR=0.019",0,"1.334",Z,,"14.186",R Dra,AAVSO,STD,,,,1325455190,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84745,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.683|CMAGINS=-11.141|CREFMAG=13.220|KMAGINS=-10.181|KREFMAG=14.171|KREFERR=0.020",0,"1.332",Z,,"14.18",R Dra,AAVSO,STD,,,,1325455191,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84816,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.673|CMAGINS=-11.136|CREFMAG=13.218|KMAGINS=-10.160|KREFMAG=14.171|KREFERR=0.019",0,"1.33",Z,,"14.195",R Dra,AAVSO,STD,,,,1325455192,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84887,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.675|CMAGINS=-11.131|CREFMAG=13.217|KMAGINS=-10.150|KREFMAG=14.171|KREFERR=0.020",0,"1.329",Z,,"14.198",R Dra,AAVSO,STD,,,,1325455193,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.84957,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.679|CMAGINS=-11.135|CREFMAG=13.217|KMAGINS=-10.165|KREFMAG=14.171|KREFERR=0.019",0,"1.327",Z,,"14.187",R Dra,AAVSO,STD,,,,1325455194,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85028,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.679|CMAGINS=-11.140|CREFMAG=13.220|KMAGINS=-10.173|KREFMAG=14.171|KREFERR=0.019",0,"1.325",Z,,"14.188",R Dra,AAVSO,STD,,,,1325455195,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85099,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.676|CMAGINS=-11.129|CREFMAG=13.217|KMAGINS=-10.166|KREFMAG=14.171|KREFERR=0.019",0,"1.323",Z,,"14.18",R Dra,AAVSO,STD,,,,1325455196,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85169,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.676|CMAGINS=-11.134|CREFMAG=13.215|KMAGINS=-10.143|KREFMAG=14.171|KREFERR=0.019",0,"1.322",Z,,"14.206",R Dra,AAVSO,STD,,,,1325455197,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8524,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.685|CMAGINS=-11.143|CREFMAG=13.218|KMAGINS=-10.164|KREFMAG=14.171|KREFERR=0.020",0,"1.32",Z,,"14.197",R Dra,AAVSO,STD,,,,1325455198,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85311,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.672|CMAGINS=-11.132|CREFMAG=13.216|KMAGINS=-10.172|KREFMAG=14.171|KREFERR=0.019",0,"1.318",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455199,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85381,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.675|CMAGINS=-11.128|CREFMAG=13.221|KMAGINS=-10.196|KREFMAG=14.171|KREFERR=0.019",0,"1.317",Z,,"14.154",R Dra,AAVSO,STD,,,,1325455200,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85452,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.677|CMAGINS=-11.126|CREFMAG=13.223|KMAGINS=-10.169|KREFMAG=14.171|KREFERR=0.019",0,"1.315",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455201,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85523,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.680|CMAGINS=-11.134|CREFMAG=13.220|KMAGINS=-10.172|KREFMAG=14.171|KREFERR=0.020",0,"1.313",Z,,"14.182",R Dra,AAVSO,STD,,,,1325455202,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85593,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.683|CMAGINS=-11.136|CREFMAG=13.221|KMAGINS=-10.212|KREFMAG=14.171|KREFERR=0.019",0,"1.312",Z,,"14.145",R Dra,AAVSO,STD,,,,1325455203,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85664,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.684|CMAGINS=-11.144|CREFMAG=13.217|KMAGINS=-10.189|KREFMAG=14.171|KREFERR=0.019",0,"1.31",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455204,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85735,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.668|CMAGINS=-11.123|CREFMAG=13.217|KMAGINS=-10.179|KREFMAG=14.171|KREFERR=0.019",0,"1.308",Z,,"14.161",R Dra,AAVSO,STD,,,,1325455205,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85805,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.665|CMAGINS=-11.122|CREFMAG=13.224|KMAGINS=-10.177|KREFMAG=14.171|KREFERR=0.019",0,"1.307",Z,,"14.169",R Dra,AAVSO,STD,,,,1325455206,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85876,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.665|CMAGINS=-11.118|CREFMAG=13.216|KMAGINS=-10.170|KREFMAG=14.171|KREFERR=0.019",0,"1.305",Z,,"14.164",R Dra,AAVSO,STD,,,,1325455207,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.85946,10.664,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.663|CMAGINS=-11.104|CREFMAG=13.222|KMAGINS=-10.151|KREFMAG=14.171|KREFERR=0.018",0,"1.304",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455208,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86017,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.676|CMAGINS=-11.125|CREFMAG=13.222|KMAGINS=-10.174|KREFMAG=14.171|KREFERR=0.019",0,"1.302",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455209,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86088,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.665|CMAGINS=-11.128|CREFMAG=13.218|KMAGINS=-10.165|KREFMAG=14.171|KREFERR=0.018",0,"1.3",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455210,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86158,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.674|CMAGINS=-11.129|CREFMAG=13.221|KMAGINS=-10.172|KREFMAG=14.171|KREFERR=0.019",0,"1.299",Z,,"14.178",R Dra,AAVSO,STD,,,,1325455211,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86229,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.690|CMAGINS=-11.153|CREFMAG=13.218|KMAGINS=-10.189|KREFMAG=14.171|KREFERR=0.021",0,"1.297",Z,,"14.182",R Dra,AAVSO,STD,,,,1325455212,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.863,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.662|CMAGINS=-11.124|CREFMAG=13.219|KMAGINS=-10.161|KREFMAG=14.171|KREFERR=0.019",0,"1.296",Z,,"14.182",R Dra,AAVSO,STD,,,,1325455213,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8637,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.646|CMAGINS=-11.101|CREFMAG=13.220|KMAGINS=-10.148|KREFMAG=14.171|KREFERR=0.018",0,"1.294",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455214,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86441,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.667|CMAGINS=-11.128|CREFMAG=13.222|KMAGINS=-10.188|KREFMAG=14.171|KREFERR=0.019",0,"1.293",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455215,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86512,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.675|CMAGINS=-11.130|CREFMAG=13.218|KMAGINS=-10.171|KREFMAG=14.171|KREFERR=0.020",0,"1.291",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455216,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86582,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.658|CMAGINS=-11.118|CREFMAG=13.220|KMAGINS=-10.159|KREFMAG=14.171|KREFERR=0.019",0,"1.29",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455217,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86653,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.665|CMAGINS=-11.119|CREFMAG=13.221|KMAGINS=-10.175|KREFMAG=14.171|KREFERR=0.019",0,"1.288",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455218,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86724,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.675|CMAGINS=-11.133|CREFMAG=13.221|KMAGINS=-10.163|KREFMAG=14.171|KREFERR=0.020",0,"1.287",Z,,"14.191",R Dra,AAVSO,STD,,,,1325455219,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86794,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.690|CMAGINS=-11.148|CREFMAG=13.223|KMAGINS=-10.157|KREFMAG=14.171|KREFERR=0.023",0,"1.285",Z,,"14.214",R Dra,AAVSO,STD,,,,1325455220,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86865,10.67,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.656|CMAGINS=-11.108|CREFMAG=13.218|KMAGINS=-10.143|KREFMAG=14.171|KREFERR=0.019",0,"1.284",Z,,"14.184",R Dra,AAVSO,STD,,,,1325455221,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.86935,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.666|CMAGINS=-11.129|CREFMAG=13.215|KMAGINS=-10.161|KREFMAG=14.171|KREFERR=0.020",0,"1.282",Z,,"14.183",R Dra,AAVSO,STD,,,,1325455222,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87006,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.649|CMAGINS=-11.109|CREFMAG=13.221|KMAGINS=-10.167|KREFMAG=14.171|KREFERR=0.018",0,"1.281",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455223,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87077,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.663|CMAGINS=-11.119|CREFMAG=13.220|KMAGINS=-10.150|KREFMAG=14.171|KREFERR=0.019",0,"1.28",Z,,"14.189",R Dra,AAVSO,STD,,,,1325455224,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87147,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.671|CMAGINS=-11.116|CREFMAG=13.224|KMAGINS=-10.184|KREFMAG=14.171|KREFERR=0.020",0,"1.278",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455225,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87218,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.672|CMAGINS=-11.128|CREFMAG=13.221|KMAGINS=-10.178|KREFMAG=14.171|KREFERR=0.020",0,"1.277",Z,,"14.171",R Dra,AAVSO,STD,,,,1325455226,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87288,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.654|CMAGINS=-11.108|CREFMAG=13.226|KMAGINS=-10.150|KREFMAG=14.171|KREFERR=0.020",0,"1.276",Z,,"14.184",R Dra,AAVSO,STD,,,,1325455227,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87359,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.659|CMAGINS=-11.115|CREFMAG=13.223|KMAGINS=-10.158|KREFMAG=14.171|KREFERR=0.019",0,"1.274",Z,,"14.18",R Dra,AAVSO,STD,,,,1325455228,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8743,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.640|CMAGINS=-11.099|CREFMAG=13.220|KMAGINS=-10.144|KREFMAG=14.171|KREFERR=0.018",0,"1.273",Z,,"14.176",R Dra,AAVSO,STD,,,,1325455229,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.875,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.656|CMAGINS=-11.114|CREFMAG=13.221|KMAGINS=-10.180|KREFMAG=14.171|KREFERR=0.018",0,"1.271",Z,,"14.154",R Dra,AAVSO,STD,,,,1325455230,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87571,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.666|CMAGINS=-11.130|CREFMAG=13.215|KMAGINS=-10.160|KREFMAG=14.171|KREFERR=0.020",0,"1.27",Z,,"14.185",R Dra,AAVSO,STD,,,,1325455231,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87642,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.666|CMAGINS=-11.113|CREFMAG=13.222|KMAGINS=-10.158|KREFMAG=14.171|KREFERR=0.019",0,"1.269",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455232,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87712,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.657|CMAGINS=-11.117|CREFMAG=13.219|KMAGINS=-10.157|KREFMAG=14.171|KREFERR=0.019",0,"1.268",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455233,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87783,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.649|CMAGINS=-11.111|CREFMAG=13.217|KMAGINS=-10.161|KREFMAG=14.171|KREFERR=0.018",0,"1.266",Z,,"14.167",R Dra,AAVSO,STD,,,,1325455234,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87853,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.646|CMAGINS=-11.110|CREFMAG=13.218|KMAGINS=-10.128|KREFMAG=14.171|KREFERR=0.019",0,"1.265",Z,,"14.201",R Dra,AAVSO,STD,,,,1325455235,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87924,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.646|CMAGINS=-11.104|CREFMAG=13.220|KMAGINS=-10.169|KREFMAG=14.171|KREFERR=0.019",0,"1.264",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455236,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.87995,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.634|CMAGINS=-11.095|CREFMAG=13.220|KMAGINS=-10.151|KREFMAG=14.171|KREFERR=0.019",0,"1.262",Z,,"14.164",R Dra,AAVSO,STD,,,,1325455237,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88065,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.609|CMAGINS=-11.063|CREFMAG=13.222|KMAGINS=-10.100|KREFMAG=14.171|KREFERR=0.019",0,"1.261",Z,,"14.185",R Dra,AAVSO,STD,,,,1325455238,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88136,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.601|CMAGINS=-11.055|CREFMAG=13.221|KMAGINS=-10.113|KREFMAG=14.171|KREFERR=0.021",0,"1.26",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455239,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88206,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.586|CMAGINS=-11.043|CREFMAG=13.218|KMAGINS=-10.082|KREFMAG=14.171|KREFERR=0.019",0,"1.259",Z,,"14.178",R Dra,AAVSO,STD,,,,1325455240,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88277,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.607|CMAGINS=-11.062|CREFMAG=13.217|KMAGINS=-10.088|KREFMAG=14.171|KREFERR=0.021",0,"1.258",Z,,"14.19",R Dra,AAVSO,STD,,,,1325455241,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88348,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.626|CMAGINS=-11.095|CREFMAG=13.213|KMAGINS=-10.143|KREFMAG=14.171|KREFERR=0.021",0,"1.256",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455242,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88418,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.634|CMAGINS=-11.091|CREFMAG=13.219|KMAGINS=-10.142|KREFMAG=14.171|KREFERR=0.019",0,"1.255",Z,,"14.169",R Dra,AAVSO,STD,,,,1325455243,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88489,10.685,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.643|CMAGINS=-11.105|CREFMAG=13.223|KMAGINS=-10.115|KREFMAG=14.171|KREFERR=0.020",0,"1.254",Z,,"14.213",R Dra,AAVSO,STD,,,,1325455244,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88559,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.620|CMAGINS=-11.077|CREFMAG=13.221|KMAGINS=-10.139|KREFMAG=14.171|KREFERR=0.018",0,"1.253",Z,,"14.159",R Dra,AAVSO,STD,,,,1325455245,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8863,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.637|CMAGINS=-11.092|CREFMAG=13.224|KMAGINS=-10.106|KREFMAG=14.171|KREFERR=0.020",0,"1.252",Z,,"14.21",R Dra,AAVSO,STD,,,,1325455246,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88701,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.635|CMAGINS=-11.098|CREFMAG=13.221|KMAGINS=-10.147|KREFMAG=14.171|KREFERR=0.020",0,"1.251",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455247,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88771,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.635|CMAGINS=-11.091|CREFMAG=13.221|KMAGINS=-10.120|KREFMAG=14.171|KREFERR=0.019",0,"1.249",Z,,"14.191",R Dra,AAVSO,STD,,,,1325455248,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88842,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.635|CMAGINS=-11.096|CREFMAG=13.213|KMAGINS=-10.131|KREFMAG=14.171|KREFERR=0.019",0,"1.248",Z,,"14.178",R Dra,AAVSO,STD,,,,1325455249,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88913,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.631|CMAGINS=-11.090|CREFMAG=13.218|KMAGINS=-10.132|KREFMAG=14.171|KREFERR=0.019",0,"1.247",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455250,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.88983,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.630|CMAGINS=-11.093|CREFMAG=13.217|KMAGINS=-10.108|KREFMAG=14.171|KREFERR=0.020",0,"1.246",Z,,"14.202",R Dra,AAVSO,STD,,,,1325455251,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89054,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.636|CMAGINS=-11.102|CREFMAG=13.214|KMAGINS=-10.149|KREFMAG=14.171|KREFERR=0.020",0,"1.245",Z,,"14.167",R Dra,AAVSO,STD,,,,1325455252,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89124,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.632|CMAGINS=-11.098|CREFMAG=13.217|KMAGINS=-10.121|KREFMAG=14.171|KREFERR=0.020",0,"1.244",Z,,"14.195",R Dra,AAVSO,STD,,,,1325455253,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89195,10.686,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.638|CMAGINS=-11.110|CREFMAG=13.214|KMAGINS=-10.148|KREFMAG=14.171|KREFERR=0.020",0,"1.243",Z,,"14.176",R Dra,AAVSO,STD,,,,1325455254,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89266,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.634|CMAGINS=-11.094|CREFMAG=13.219|KMAGINS=-10.131|KREFMAG=14.171|KREFERR=0.020",0,"1.242",Z,,"14.182",R Dra,AAVSO,STD,,,,1325455255,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89336,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.626|CMAGINS=-11.085|CREFMAG=13.218|KMAGINS=-10.136|KREFMAG=14.171|KREFERR=0.019",0,"1.241",Z,,"14.168",R Dra,AAVSO,STD,,,,1325455256,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89407,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.620|CMAGINS=-11.072|CREFMAG=13.220|KMAGINS=-10.123|KREFMAG=14.171|KREFERR=0.019",0,"1.24",Z,,"14.169",R Dra,AAVSO,STD,,,,1325455257,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89477,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.635|CMAGINS=-11.090|CREFMAG=13.221|KMAGINS=-10.122|KREFMAG=14.171|KREFERR=0.019",0,"1.239",Z,,"14.19",R Dra,AAVSO,STD,,,,1325455258,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89548,10.667,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.653|CMAGINS=-11.095|CREFMAG=13.225|KMAGINS=-10.139|KREFMAG=14.171|KREFERR=0.021",0,"1.238",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455259,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89619,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.631|CMAGINS=-11.088|CREFMAG=13.219|KMAGINS=-10.138|KREFMAG=14.171|KREFERR=0.019",0,"1.237",Z,,"14.169",R Dra,AAVSO,STD,,,,1325455260,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89689,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.635|CMAGINS=-11.096|CREFMAG=13.216|KMAGINS=-10.120|KREFMAG=14.171|KREFERR=0.020",0,"1.236",Z,,"14.192",R Dra,AAVSO,STD,,,,1325455261,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8976,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.609|CMAGINS=-11.061|CREFMAG=13.220|KMAGINS=-10.082|KREFMAG=14.171|KREFERR=0.019",0,"1.235",Z,,"14.199",R Dra,AAVSO,STD,,,,1325455262,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.8983,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.624|CMAGINS=-11.080|CREFMAG=13.222|KMAGINS=-10.136|KREFMAG=14.171|KREFERR=0.020",0,"1.234",Z,,"14.166",R Dra,AAVSO,STD,,,,1325455263,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89901,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.620|CMAGINS=-11.073|CREFMAG=13.217|KMAGINS=-10.125|KREFMAG=14.171|KREFERR=0.019",0,"1.233",Z,,"14.166",R Dra,AAVSO,STD,,,,1325455264,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.89972,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.613|CMAGINS=-11.078|CREFMAG=13.218|KMAGINS=-10.128|KREFMAG=14.171|KREFERR=0.019",0,"1.232",Z,,"14.167",R Dra,AAVSO,STD,,,,1325455265,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90042,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.619|CMAGINS=-11.079|CREFMAG=13.218|KMAGINS=-10.136|KREFMAG=14.171|KREFERR=0.020",0,"1.231",Z,,"14.16",R Dra,AAVSO,STD,,,,1325455266,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90113,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.607|CMAGINS=-11.068|CREFMAG=13.215|KMAGINS=-10.108|KREFMAG=14.171|KREFERR=0.020",0,"1.23",Z,,"14.176",R Dra,AAVSO,STD,,,,1325455267,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90183,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.607|CMAGINS=-11.057|CREFMAG=13.221|KMAGINS=-10.116|KREFMAG=14.171|KREFERR=0.019",0,"1.229",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455268,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90254,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.600|CMAGINS=-11.057|CREFMAG=13.222|KMAGINS=-10.103|KREFMAG=14.171|KREFERR=0.019",0,"1.228",Z,,"14.176",R Dra,AAVSO,STD,,,,1325455269,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90325,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.622|CMAGINS=-11.077|CREFMAG=13.223|KMAGINS=-10.115|KREFMAG=14.171|KREFERR=0.020",0,"1.227",Z,,"14.184",R Dra,AAVSO,STD,,,,1325455270,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90395,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.605|CMAGINS=-11.055|CREFMAG=13.224|KMAGINS=-10.107|KREFMAG=14.171|KREFERR=0.019",0,"1.226",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455271,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90466,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.601|CMAGINS=-11.065|CREFMAG=13.218|KMAGINS=-10.120|KREFMAG=14.171|KREFERR=0.019",0,"1.225",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455272,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90537,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.613|CMAGINS=-11.081|CREFMAG=13.216|KMAGINS=-10.108|KREFMAG=14.171|KREFERR=0.021",0,"1.224",Z,,"14.189",R Dra,AAVSO,STD,,,,1325455273,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90607,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.603|CMAGINS=-11.065|CREFMAG=13.217|KMAGINS=-10.119|KREFMAG=14.171|KREFERR=0.019",0,"1.224",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455274,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90678,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.595|CMAGINS=-11.053|CREFMAG=13.221|KMAGINS=-10.112|KREFMAG=14.171|KREFERR=0.019",0,"1.223",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455275,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90748,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.595|CMAGINS=-11.055|CREFMAG=13.224|KMAGINS=-10.111|KREFMAG=14.171|KREFERR=0.019",0,"1.222",Z,,"14.168",R Dra,AAVSO,STD,,,,1325455276,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.90819,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.610|CMAGINS=-11.067|CREFMAG=13.218|KMAGINS=-10.119|KREFMAG=14.171|KREFERR=0.020",0,"1.221",Z,,"14.166",R Dra,AAVSO,STD,,,,1325455277,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9089,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.592|CMAGINS=-11.051|CREFMAG=13.219|KMAGINS=-10.097|KREFMAG=14.171|KREFERR=0.019",0,"1.22",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455278,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9096,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.600|CMAGINS=-11.052|CREFMAG=13.221|KMAGINS=-10.096|KREFMAG=14.171|KREFERR=0.019",0,"1.219",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455279,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91031,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.594|CMAGINS=-11.049|CREFMAG=13.220|KMAGINS=-10.064|KREFMAG=14.171|KREFERR=0.020",0,"1.219",Z,,"14.205",R Dra,AAVSO,STD,,,,1325455280,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91102,10.688,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.621|CMAGINS=-11.092|CREFMAG=13.216|KMAGINS=-10.143|KREFMAG=14.171|KREFERR=0.020",0,"1.218",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455281,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91172,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.619|CMAGINS=-11.070|CREFMAG=13.224|KMAGINS=-10.153|KREFMAG=14.171|KREFERR=0.021",0,"1.217",Z,,"14.141",R Dra,AAVSO,STD,,,,1325455282,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91243,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.599|CMAGINS=-11.058|CREFMAG=13.220|KMAGINS=-10.106|KREFMAG=14.171|KREFERR=0.019",0,"1.216",Z,,"14.172",R Dra,AAVSO,STD,,,,1325455283,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91313,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.592|CMAGINS=-11.042|CREFMAG=13.222|KMAGINS=-10.099|KREFMAG=14.171|KREFERR=0.019",0,"1.215",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455284,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91384,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.612|CMAGINS=-11.071|CREFMAG=13.221|KMAGINS=-10.113|KREFMAG=14.171|KREFERR=0.020",0,"1.215",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455285,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91455,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.592|CMAGINS=-11.056|CREFMAG=13.217|KMAGINS=-10.115|KREFMAG=14.171|KREFERR=0.019",0,"1.214",Z,,"14.158",R Dra,AAVSO,STD,,,,1325455286,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91525,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.595|CMAGINS=-11.059|CREFMAG=13.220|KMAGINS=-10.094|KREFMAG=14.171|KREFERR=0.019",0,"1.213",Z,,"14.185",R Dra,AAVSO,STD,,,,1325455287,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91596,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.589|CMAGINS=-11.047|CREFMAG=13.223|KMAGINS=-10.077|KREFMAG=14.171|KREFERR=0.019",0,"1.212",Z,,"14.193",R Dra,AAVSO,STD,,,,1325455288,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91667,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.588|CMAGINS=-11.052|CREFMAG=13.217|KMAGINS=-10.094|KREFMAG=14.171|KREFERR=0.019",0,"1.212",Z,,"14.176",R Dra,AAVSO,STD,,,,1325455289,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91737,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.587|CMAGINS=-11.041|CREFMAG=13.220|KMAGINS=-10.083|KREFMAG=14.171|KREFERR=0.019",0,"1.211",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455290,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91808,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.612|CMAGINS=-11.065|CREFMAG=13.222|KMAGINS=-10.141|KREFMAG=14.171|KREFERR=0.019",0,"1.21",Z,,"14.145",R Dra,AAVSO,STD,,,,1325455291,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91878,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.617|CMAGINS=-11.066|CREFMAG=13.222|KMAGINS=-10.127|KREFMAG=14.171|KREFERR=0.020",0,"1.21",Z,,"14.161",R Dra,AAVSO,STD,,,,1325455292,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.91949,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.609|CMAGINS=-11.064|CREFMAG=13.220|KMAGINS=-10.114|KREFMAG=14.171|KREFERR=0.020",0,"1.209",Z,,"14.17",R Dra,AAVSO,STD,,,,1325455293,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9202,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.586|CMAGINS=-11.050|CREFMAG=13.216|KMAGINS=-10.103|KREFMAG=14.171|KREFERR=0.019",0,"1.208",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455294,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9209,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.598|CMAGINS=-11.053|CREFMAG=13.220|KMAGINS=-10.111|KREFMAG=14.171|KREFERR=0.019",0,"1.208",Z,,"14.162",R Dra,AAVSO,STD,,,,1325455295,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92161,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.592|CMAGINS=-11.049|CREFMAG=13.222|KMAGINS=-10.114|KREFMAG=14.171|KREFERR=0.019",0,"1.207",Z,,"14.157",R Dra,AAVSO,STD,,,,1325455296,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92231,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.577|CMAGINS=-11.028|CREFMAG=13.222|KMAGINS=-10.077|KREFMAG=14.171|KREFERR=0.019",0,"1.206",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455297,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92302,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.598|CMAGINS=-11.058|CREFMAG=13.220|KMAGINS=-10.118|KREFMAG=14.171|KREFERR=0.020",0,"1.206",Z,,"14.16",R Dra,AAVSO,STD,,,,1325455298,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92373,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.601|CMAGINS=-11.058|CREFMAG=13.220|KMAGINS=-10.099|KREFMAG=14.171|KREFERR=0.020",0,"1.205",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455299,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92443,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.578|CMAGINS=-11.038|CREFMAG=13.218|KMAGINS=-10.057|KREFMAG=14.171|KREFERR=0.019",0,"1.204",Z,,"14.198",R Dra,AAVSO,STD,,,,1325455300,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92514,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.576|CMAGINS=-11.032|CREFMAG=13.222|KMAGINS=-10.065|KREFMAG=14.171|KREFERR=0.019",0,"1.204",Z,,"14.189",R Dra,AAVSO,STD,,,,1325455301,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92585,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.593|CMAGINS=-11.043|CREFMAG=13.226|KMAGINS=-10.076|KREFMAG=14.171|KREFERR=0.020",0,"1.203",Z,,"14.193",R Dra,AAVSO,STD,,,,1325455302,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92655,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.586|CMAGINS=-11.039|CREFMAG=13.218|KMAGINS=-10.079|KREFMAG=14.171|KREFERR=0.020",0,"1.203",Z,,"14.178",R Dra,AAVSO,STD,,,,1325455303,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92726,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.608|CMAGINS=-11.066|CREFMAG=13.222|KMAGINS=-10.122|KREFMAG=14.171|KREFERR=0.020",0,"1.202",Z,,"14.166",R Dra,AAVSO,STD,,,,1325455304,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92797,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.587|CMAGINS=-11.052|CREFMAG=13.219|KMAGINS=-10.093|KREFMAG=14.171|KREFERR=0.019",0,"1.202",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455305,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92867,10.668,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.597|CMAGINS=-11.046|CREFMAG=13.219|KMAGINS=-10.094|KREFMAG=14.171|KREFERR=0.019",0,"1.201",Z,,"14.171",R Dra,AAVSO,STD,,,,1325455306,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.92938,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.578|CMAGINS=-11.043|CREFMAG=13.219|KMAGINS=-10.078|KREFMAG=14.171|KREFERR=0.019",0,"1.2",Z,,"14.184",R Dra,AAVSO,STD,,,,1325455307,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93009,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.578|CMAGINS=-11.029|CREFMAG=13.223|KMAGINS=-10.099|KREFMAG=14.171|KREFERR=0.018",0,"1.2",Z,,"14.153",R Dra,AAVSO,STD,,,,1325455308,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93079,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.619|CMAGINS=-11.070|CREFMAG=13.223|KMAGINS=-10.112|KREFMAG=14.171|KREFERR=0.022",0,"1.199",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455309,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9315,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.579|CMAGINS=-11.038|CREFMAG=13.222|KMAGINS=-10.072|KREFMAG=14.171|KREFERR=0.019",0,"1.199",Z,,"14.188",R Dra,AAVSO,STD,,,,1325455310,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9322,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.594|CMAGINS=-11.056|CREFMAG=13.218|KMAGINS=-10.109|KREFMAG=14.171|KREFERR=0.019",0,"1.198",Z,,"14.165",R Dra,AAVSO,STD,,,,1325455311,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93291,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.582|CMAGINS=-11.040|CREFMAG=13.222|KMAGINS=-10.079|KREFMAG=14.171|KREFERR=0.019",0,"1.198",Z,,"14.182",R Dra,AAVSO,STD,,,,1325455312,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93362,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.597|CMAGINS=-11.057|CREFMAG=13.218|KMAGINS=-10.063|KREFMAG=14.171|KREFERR=0.020",0,"1.197",Z,,"14.211",R Dra,AAVSO,STD,,,,1325455313,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93432,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.589|CMAGINS=-11.047|CREFMAG=13.218|KMAGINS=-10.083|KREFMAG=14.171|KREFERR=0.021",0,"1.197",Z,,"14.183",R Dra,AAVSO,STD,,,,1325455314,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93503,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.595|CMAGINS=-11.041|CREFMAG=13.228|KMAGINS=-10.073|KREFMAG=14.171|KREFERR=0.021",0,"1.196",Z,,"14.196",R Dra,AAVSO,STD,,,,1325455315,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93573,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.585|CMAGINS=-11.042|CREFMAG=13.218|KMAGINS=-10.086|KREFMAG=14.171|KREFERR=0.020",0,"1.196",Z,,"14.174",R Dra,AAVSO,STD,,,,1325455316,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93644,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.574|CMAGINS=-11.027|CREFMAG=13.220|KMAGINS=-10.084|KREFMAG=14.171|KREFERR=0.020",0,"1.196",Z,,"14.164",R Dra,AAVSO,STD,,,,1325455317,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93715,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.526|CMAGINS=-10.981|CREFMAG=13.223|KMAGINS=-10.028|KREFMAG=14.171|KREFERR=0.019",0,"1.195",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455318,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93785,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.551|CMAGINS=-11.012|CREFMAG=13.217|KMAGINS=-10.047|KREFMAG=14.171|KREFERR=0.019",0,"1.195",Z,,"14.183",R Dra,AAVSO,STD,,,,1325455319,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93856,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.584|CMAGINS=-11.043|CREFMAG=13.220|KMAGINS=-10.088|KREFMAG=14.171|KREFERR=0.020",0,"1.194",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455320,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93927,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.568|CMAGINS=-11.032|CREFMAG=13.219|KMAGINS=-10.063|KREFMAG=14.171|KREFERR=0.019",0,"1.194",Z,,"14.188",R Dra,AAVSO,STD,,,,1325455321,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.93997,10.667,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.561|CMAGINS=-11.007|CREFMAG=13.221|KMAGINS=-10.068|KREFMAG=14.171|KREFERR=0.019",0,"1.193",Z,,"14.16",R Dra,AAVSO,STD,,,,1325455322,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94068,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.552|CMAGINS=-11.007|CREFMAG=13.225|KMAGINS=-10.047|KREFMAG=14.171|KREFERR=0.019",0,"1.193",Z,,"14.185",R Dra,AAVSO,STD,,,,1325455323,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94139,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.538|CMAGINS=-11.003|CREFMAG=13.216|KMAGINS=-10.052|KREFMAG=14.171|KREFERR=0.019",0,"1.193",Z,,"14.168",R Dra,AAVSO,STD,,,,1325455324,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94209,10.686,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.508|CMAGINS=-10.970|CREFMAG=13.224|KMAGINS=-10.001|KREFMAG=14.171|KREFERR=0.020",0,"1.192",Z,,"14.192",R Dra,AAVSO,STD,,,,1325455325,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9428,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.532|CMAGINS=-10.989|CREFMAG=13.221|KMAGINS=-10.057|KREFMAG=14.171|KREFERR=0.020",0,"1.192",Z,,"14.153",R Dra,AAVSO,STD,,,,1325455326,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9435,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.525|CMAGINS=-10.978|CREFMAG=13.222|KMAGINS=-10.025|KREFMAG=14.171|KREFERR=0.020",0,"1.192",Z,,"14.176",R Dra,AAVSO,STD,,,,1325455327,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94421,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.532|CMAGINS=-10.991|CREFMAG=13.221|KMAGINS=-10.022|KREFMAG=14.171|KREFERR=0.020",0,"1.191",Z,,"14.19",R Dra,AAVSO,STD,,,,1325455328,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94492,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.527|CMAGINS=-10.982|CREFMAG=13.223|KMAGINS=-10.018|KREFMAG=14.171|KREFERR=0.021",0,"1.191",Z,,"14.188",R Dra,AAVSO,STD,,,,1325455329,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94562,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.506|CMAGINS=-10.958|CREFMAG=13.221|KMAGINS=-9.997|KREFMAG=14.171|KREFERR=0.020",0,"1.191",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455330,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94633,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.516|CMAGINS=-10.983|CREFMAG=13.216|KMAGINS=-10.006|KREFMAG=14.171|KREFERR=0.020",0,"1.19",Z,,"14.192",R Dra,AAVSO,STD,,,,1325455331,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94704,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.548|CMAGINS=-11.004|CREFMAG=13.224|KMAGINS=-10.054|KREFMAG=14.171|KREFERR=0.020",0,"1.19",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455332,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94774,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.535|CMAGINS=-10.992|CREFMAG=13.221|KMAGINS=-10.043|KREFMAG=14.171|KREFERR=0.020",0,"1.19",Z,,"14.17",R Dra,AAVSO,STD,,,,1325455333,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94845,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.528|CMAGINS=-10.993|CREFMAG=13.216|KMAGINS=-10.020|KREFMAG=14.171|KREFERR=0.019",0,"1.189",Z,,"14.189",R Dra,AAVSO,STD,,,,1325455334,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94915,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.531|CMAGINS=-10.992|CREFMAG=13.220|KMAGINS=-10.021|KREFMAG=14.171|KREFERR=0.020",0,"1.189",Z,,"14.192",R Dra,AAVSO,STD,,,,1325455335,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.94986,10.683,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.546|CMAGINS=-11.015|CREFMAG=13.214|KMAGINS=-10.077|KREFMAG=14.171|KREFERR=0.020",0,"1.189",Z,,"14.153",R Dra,AAVSO,STD,,,,1325455336,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95057,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.541|CMAGINS=-11.000|CREFMAG=13.222|KMAGINS=-10.012|KREFMAG=14.171|KREFERR=0.020",0,"1.188",Z,,"14.209",R Dra,AAVSO,STD,,,,1325455337,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95127,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.544|CMAGINS=-11.002|CREFMAG=13.215|KMAGINS=-10.072|KREFMAG=14.171|KREFERR=0.020",0,"1.188",Z,,"14.145",R Dra,AAVSO,STD,,,,1325455338,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95198,10.673,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.556|CMAGINS=-11.007|CREFMAG=13.223|KMAGINS=-10.056|KREFMAG=14.171|KREFERR=0.020",0,"1.188",Z,,"14.173",R Dra,AAVSO,STD,,,,1325455339,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95269,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.553|CMAGINS=-11.017|CREFMAG=13.218|KMAGINS=-10.088|KREFMAG=14.171|KREFERR=0.020",0,"1.188",Z,,"14.148",R Dra,AAVSO,STD,,,,1325455340,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95339,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.549|CMAGINS=-11.006|CREFMAG=13.220|KMAGINS=-10.075|KREFMAG=14.171|KREFERR=0.020",0,"1.187",Z,,"14.151",R Dra,AAVSO,STD,,,,1325455341,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9541,10.687,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.551|CMAGINS=-11.018|CREFMAG=13.219|KMAGINS=-10.079|KREFMAG=14.171|KREFERR=0.020",0,"1.187",Z,,"14.159",R Dra,AAVSO,STD,,,,1325455342,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9548,10.688,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.552|CMAGINS=-11.018|CREFMAG=13.222|KMAGINS=-10.049|KREFMAG=14.171|KREFERR=0.021",0,"1.187",Z,,"14.19",R Dra,AAVSO,STD,,,,1325455343,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95551,10.676,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.537|CMAGINS=-10.990|CREFMAG=13.223|KMAGINS=-10.000|KREFMAG=14.171|KREFERR=0.021",0,"1.187",Z,,"14.213",R Dra,AAVSO,STD,,,,1325455344,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95622,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.528|CMAGINS=-10.990|CREFMAG=13.217|KMAGINS=-9.993|KREFMAG=14.171|KREFERR=0.021",0,"1.187",Z,,"14.214",R Dra,AAVSO,STD,,,,1325455345,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95692,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.524|CMAGINS=-10.987|CREFMAG=13.217|KMAGINS=-10.027|KREFMAG=14.171|KREFERR=0.020",0,"1.186",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455346,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95763,10.676,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.547|CMAGINS=-11.001|CREFMAG=13.221|KMAGINS=-10.043|KREFMAG=14.171|KREFERR=0.022",0,"1.186",Z,,"14.18",R Dra,AAVSO,STD,,,,1325455347,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95834,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.531|CMAGINS=-10.990|CREFMAG=13.222|KMAGINS=-10.016|KREFMAG=14.171|KREFERR=0.021",0,"1.186",Z,,"14.196",R Dra,AAVSO,STD,,,,1325455348,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95904,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.530|CMAGINS=-10.994|CREFMAG=13.219|KMAGINS=-10.008|KREFMAG=14.171|KREFERR=0.020",0,"1.186",Z,,"14.205",R Dra,AAVSO,STD,,,,1325455349,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.95975,10.687,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.550|CMAGINS=-11.019|CREFMAG=13.218|KMAGINS=-10.042|KREFMAG=14.171|KREFERR=0.021",0,"1.186",Z,,"14.195",R Dra,AAVSO,STD,,,,1325455350,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96045,10.675,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.537|CMAGINS=-10.994|CREFMAG=13.218|KMAGINS=-10.051|KREFMAG=14.171|KREFERR=0.020",0,"1.186",Z,,"14.161",R Dra,AAVSO,STD,,,,1325455351,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96116,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.551|CMAGINS=-11.013|CREFMAG=13.220|KMAGINS=-10.058|KREFMAG=14.171|KREFERR=0.021",0,"1.186",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455352,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96187,10.671,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.543|CMAGINS=-10.992|CREFMAG=13.222|KMAGINS=-10.075|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.139",R Dra,AAVSO,STD,,,,1325455353,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96257,10.672,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.569|CMAGINS=-11.022|CREFMAG=13.219|KMAGINS=-10.048|KREFMAG=14.171|KREFERR=0.022",0,"1.185",Z,,"14.194",R Dra,AAVSO,STD,,,,1325455354,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96328,10.678,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.543|CMAGINS=-10.998|CREFMAG=13.222|KMAGINS=-10.066|KREFMAG=14.171|KREFERR=0.019",0,"1.185",Z,,"14.155",R Dra,AAVSO,STD,,,,1325455355,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96398,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.549|CMAGINS=-11.006|CREFMAG=13.222|KMAGINS=-10.072|KREFMAG=14.171|KREFERR=0.019",0,"1.185",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455356,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96469,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.563|CMAGINS=-11.028|CREFMAG=13.219|KMAGINS=-10.079|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.169",R Dra,AAVSO,STD,,,,1325455357,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9654,10.68,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.532|CMAGINS=-10.991|CREFMAG=13.221|KMAGINS=-10.003|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.209",R Dra,AAVSO,STD,,,,1325455358,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9661,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.557|CMAGINS=-11.022|CREFMAG=13.219|KMAGINS=-10.031|KREFMAG=14.171|KREFERR=0.022",0,"1.185",Z,,"14.209",R Dra,AAVSO,STD,,,,1325455359,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96681,10.681,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.565|CMAGINS=-11.028|CREFMAG=13.217|KMAGINS=-10.040|KREFMAG=14.171|KREFERR=0.021",0,"1.185",Z,,"14.205",R Dra,AAVSO,STD,,,,1325455360,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96752,10.682,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.549|CMAGINS=-11.014|CREFMAG=13.218|KMAGINS=-10.072|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.16",R Dra,AAVSO,STD,,,,1325455361,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96822,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.549|CMAGINS=-11.013|CREFMAG=13.219|KMAGINS=-10.055|KREFMAG=14.171|KREFERR=0.021",0,"1.185",Z,,"14.177",R Dra,AAVSO,STD,,,,1325455362,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96893,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.553|CMAGINS=-11.011|CREFMAG=13.219|KMAGINS=-10.048|KREFMAG=14.171|KREFERR=0.021",0,"1.185",Z,,"14.182",R Dra,AAVSO,STD,,,,1325455363,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.96964,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.539|CMAGINS=-10.995|CREFMAG=13.221|KMAGINS=-10.050|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.166",R Dra,AAVSO,STD,,,,1325455364,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.97034,10.674,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.536|CMAGINS=-10.993|CREFMAG=13.217|KMAGINS=-10.058|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.152",R Dra,AAVSO,STD,,,,1325455365,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.97105,10.679,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.540|CMAGINS=-11.002|CREFMAG=13.218|KMAGINS=-10.027|KREFMAG=14.171|KREFERR=0.021",0,"1.185",Z,,"14.193",R Dra,AAVSO,STD,,,,1325455366,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.97175,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.536|CMAGINS=-11.002|CREFMAG=13.218|KMAGINS=-10.023|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.197",R Dra,AAVSO,STD,,,,1325455367,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.97246,10.677,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.543|CMAGINS=-11.000|CREFMAG=13.220|KMAGINS=-10.054|KREFMAG=14.171|KREFERR=0.021",0,"1.185",Z,,"14.167",R Dra,AAVSO,STD,,,,1325455368,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.97317,10.689,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.537|CMAGINS=-11.006|CREFMAG=13.220|KMAGINS=-10.063|KREFMAG=14.171|KREFERR=0.021",0,"1.185",Z,,"14.163",R Dra,AAVSO,STD,,,,1325455369,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.97387,10.684,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.529|CMAGINS=-10.992|CREFMAG=13.220|KMAGINS=-10.042|KREFMAG=14.171|KREFERR=0.020",0,"1.185",Z,,"14.17",R Dra,AAVSO,STD,,,,1325455370,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.98963,10.669,"0.006",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.521|CMAGINS=-10.970|CREFMAG=13.220|KMAGINS=-10.012|KREFMAG=14.171|KREFERR=0.020",0,"1.189",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455371,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99034,10.671,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.540|CMAGINS=-10.998|CREFMAG=13.213|KMAGINS=-10.009|KREFMAG=14.171|KREFERR=0.023",0,"1.19",Z,,"14.201",R Dra,AAVSO,STD,,,,1325455372,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99104,10.672,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.522|CMAGINS=-10.981|CREFMAG=13.213|KMAGINS=-10.026|KREFMAG=14.171|KREFERR=0.021",0,"1.19",Z,,"14.168",R Dra,AAVSO,STD,,,,1325455373,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99175,10.671,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.523|CMAGINS=-10.982|CREFMAG=13.212|KMAGINS=-10.075|KREFMAG=14.171|KREFERR=0.021",0,"1.19",Z,,"14.119",R Dra,AAVSO,STD,,,,1325455374,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99246,10.67,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.526|CMAGINS=-10.981|CREFMAG=13.216|KMAGINS=-10.050|KREFMAG=14.171|KREFERR=0.023",0,"1.19",Z,,"14.146",R Dra,AAVSO,STD,,,,1325455375,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99316,10.679,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.525|CMAGINS=-10.989|CREFMAG=13.215|KMAGINS=-10.058|KREFMAG=14.171|KREFERR=0.022",0,"1.191",Z,,"14.146",R Dra,AAVSO,STD,,,,1325455376,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99387,10.677,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.519|CMAGINS=-10.985|CREFMAG=13.210|KMAGINS=-10.039|KREFMAG=14.171|KREFERR=0.022",0,"1.191",Z,,"14.156",R Dra,AAVSO,STD,,,,1325455377,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99457,10.682,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.525|CMAGINS=-10.990|CREFMAG=13.217|KMAGINS=-10.042|KREFMAG=14.171|KREFERR=0.023",0,"1.191",Z,,"14.166",R Dra,AAVSO,STD,,,,1325455378,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99528,10.68,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.518|CMAGINS=-10.978|CREFMAG=13.220|KMAGINS=-10.023|KREFMAG=14.171|KREFERR=0.024",0,"1.192",Z,,"14.175",R Dra,AAVSO,STD,,,,1325455379,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99599,10.672,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.515|CMAGINS=-10.968|CREFMAG=13.219|KMAGINS=-10.040|KREFMAG=14.171|KREFERR=0.023",0,"1.192",Z,,"14.147",R Dra,AAVSO,STD,,,,1325455380,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99669,10.672,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.518|CMAGINS=-10.980|CREFMAG=13.210|KMAGINS=-10.038|KREFMAG=14.171|KREFERR=0.023",0,"1.192",Z,,"14.152",R Dra,AAVSO,STD,,,,1325455381,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.9974,10.679,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.525|CMAGINS=-10.991|CREFMAG=13.213|KMAGINS=-10.012|KREFMAG=14.171|KREFERR=0.024",0,"1.193",Z,,"14.192",R Dra,AAVSO,STD,,,,1325455382,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99811,10.67,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.515|CMAGINS=-10.972|CREFMAG=13.213|KMAGINS=-10.033|KREFMAG=14.171|KREFERR=0.022",0,"1.193",Z,,"14.152",R Dra,AAVSO,STD,,,,1325455383,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99881,10.677,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.523|CMAGINS=-10.986|CREFMAG=13.213|KMAGINS=-10.052|KREFMAG=14.171|KREFERR=0.023",0,"1.193",Z,,"14.148",R Dra,AAVSO,STD,,,,1325455384,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461138.99952,10.686,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.516|CMAGINS=-10.986|CREFMAG=13.216|KMAGINS=-10.023|KREFMAG=14.171|KREFERR=0.024",0,"1.194",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455385,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00023,10.675,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.520|CMAGINS=-10.978|CREFMAG=13.216|KMAGINS=-10.059|KREFMAG=14.171|KREFERR=0.023",0,"1.194",Z,,"14.136",R Dra,AAVSO,STD,,,,1325455386,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00093,10.668,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.512|CMAGINS=-10.963|CREFMAG=13.217|KMAGINS=-10.001|KREFMAG=14.171|KREFERR=0.023",0,"1.195",Z,,"14.179",R Dra,AAVSO,STD,,,,1325455387,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00164,10.679,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.525|CMAGINS=-10.993|CREFMAG=13.210|KMAGINS=-10.080|KREFMAG=14.171|KREFERR=0.023",0,"1.195",Z,,"14.124",R Dra,AAVSO,STD,,,,1325455388,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00235,10.673,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.510|CMAGINS=-10.964|CREFMAG=13.218|KMAGINS=-10.062|KREFMAG=14.171|KREFERR=0.022",0,"1.195",Z,,"14.121",R Dra,AAVSO,STD,,,,1325455389,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00305,10.676,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.521|CMAGINS=-10.976|CREFMAG=13.221|KMAGINS=-10.047|KREFMAG=14.171|KREFERR=0.023",0,"1.196",Z,,"14.15",R Dra,AAVSO,STD,,,,1325455390,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00376,10.68,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.517|CMAGINS=-10.988|CREFMAG=13.209|KMAGINS=-10.010|KREFMAG=14.171|KREFERR=0.024",0,"1.196",Z,,"14.187",R Dra,AAVSO,STD,,,,1325455391,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00446,10.68,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.515|CMAGINS=-10.974|CREFMAG=13.220|KMAGINS=-10.048|KREFMAG=14.171|KREFERR=0.022",0,"1.197",Z,,"14.146",R Dra,AAVSO,STD,,,,1325455392,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00517,10.672,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.514|CMAGINS=-10.971|CREFMAG=13.215|KMAGINS=-10.005|KREFMAG=14.171|KREFERR=0.023",0,"1.197",Z,,"14.181",R Dra,AAVSO,STD,,,,1325455393,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00588,10.671,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.508|CMAGINS=-10.967|CREFMAG=13.212|KMAGINS=-10.022|KREFMAG=14.171|KREFERR=0.022",0,"1.198",Z,,"14.157",R Dra,AAVSO,STD,,,,1325455394,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00658,10.671,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.520|CMAGINS=-10.972|CREFMAG=13.220|KMAGINS=-10.049|KREFMAG=14.171|KREFERR=0.024",0,"1.198",Z,,"14.142",R Dra,AAVSO,STD,,,,1325455395,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00729,10.672,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.507|CMAGINS=-10.966|CREFMAG=13.214|KMAGINS=-10.034|KREFMAG=14.171|KREFERR=0.023",0,"1.198",Z,,"14.146",R Dra,AAVSO,STD,,,,1325455396,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.008,10.673,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.515|CMAGINS=-10.977|CREFMAG=13.211|KMAGINS=-10.040|KREFMAG=14.171|KREFERR=0.023",0,"1.199",Z,,"14.147",R Dra,AAVSO,STD,,,,1325455397,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.0087,10.683,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.498|CMAGINS=-10.969|CREFMAG=13.213|KMAGINS=-9.957|KREFMAG=14.171|KREFERR=0.023",0,"1.199",Z,,"14.225",R Dra,AAVSO,STD,,,,1325455398,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.00941,10.676,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.521|CMAGINS=-10.987|CREFMAG=13.210|KMAGINS=-10.087|KREFMAG=14.171|KREFERR=0.024",0,"1.2",Z,,"14.11",R Dra,AAVSO,STD,,,,1325455399,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.01011,10.677,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.516|CMAGINS=-10.978|CREFMAG=13.214|KMAGINS=-10.033|KREFMAG=14.171|KREFERR=0.023",0,"1.2",Z,,"14.159",R Dra,AAVSO,STD,,,,1325455400,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.01082,10.674,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.513|CMAGINS=-10.973|CREFMAG=13.214|KMAGINS=-10.003|KREFMAG=14.171|KREFERR=0.023",0,"1.201",Z,,"14.184",R Dra,AAVSO,STD,,,,1325455401,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.01153,10.681,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.521|CMAGINS=-10.988|CREFMAG=13.213|KMAGINS=-10.014|KREFMAG=14.171|KREFERR=0.024",0,"1.202",Z,,"14.188",R Dra,AAVSO,STD,,,,1325455402,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.01223,10.674,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.510|CMAGINS=-10.971|CREFMAG=13.213|KMAGINS=-10.059|KREFMAG=14.171|KREFERR=0.023",0,"1.202",Z,,"14.126",R Dra,AAVSO,STD,,,,1325455403,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.01294,10.671,"0.007",V,LPAC,,"ENSEMBLE","000-BBX-678","X42126ABR","|VMAGINS=-13.516|CMAGINS=-10.972|CREFMAG=13.215|KMAGINS=-10.052|KREFMAG=14.171|KREFERR=0.023",0,"1.203",Z,,"14.135",R Dra,AAVSO,STD,,,,1325455404,0,CCD,"Phoranso 1.1.2.3","Lewin, Pablo",US
+2461139.3688,11.2,,Vis.,VFK,,"109","114","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325771830,0,Visual,"EXCEL","Vohla, Frank",DE
+2461139.4535,11.5,,Vis.,KHL,,"114","120","12652BDP",,,,Z,,,R DRA,AAVSO,,,,,1325471432,0,Visual,"EXCEL","Kohl, Mike",
+2461139.5,11.6,,Vis.,BTY,,"114","120","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1325461088,0,Visual,,"Benner, Terry",US
+2461140.3458,11.2,,Vis.,VFK,,"109","114","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325771882,0,Visual,"EXCEL","Vohla, Frank",DE
+2461141.4222,11.3,,Vis.,VFK,,"109","114","12834SNP","108/440",,,Z,,,R DRA,BAV,,,,,1325771914,0,Visual,"EXCEL","Vohla, Frank",DE
+2461145.37014,11.2,,Vis.,SSEF,,"109","114","X40131LA",,,,Z,,,R Dra,BAV,,,,,1325586954,0,Visual,,"Sinnecker, Sebastian",DE
+2461148.50278,11.1,,Vis.,MMH,,"109","114","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1325613199,0,Visual,,"Muciek, Marek",
+2461149.4924,11.6,,Vis.,SDAB,,"114","116","X25675CSB",,,,Z,,,R DRA,,,,,,1325645585,0,Visual,"EXCEL","Smales, David",
+2461150.36319,11.9,,Vis.,SSEF,,"116","120","X40131LA",,,,Z,,,R Dra,BAV,,,,,1325632759,0,Visual,,"Sinnecker, Sebastian",DE
+2461150.6,11.9,,Vis.,MOW,,"114","120","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1326088472,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461152.46361,11.322,"0.010",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-11.233|CMAGINS=-11.979|CREFMAG=10.576|CREFERR=0.008|KMAGINS=-10.119|KREFMAG=12.254|KREFERR=0.017",0,"1.168",Z,"-11.979","-10.119",R DRA,KNVWS,STD,,,,1325650488,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461153.4,12.4,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1327735887,0,Visual,"EXCEL","Wubbena, Eltjo",NL
+2461154.31944,12.0,,Vis.,VATA,,"116","120","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1325701923,0,Visual,"EXCEL","Vicze, Attila",HU
+2461154.7,12.2,,Vis.,BTY,"U","120","125","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1325696898,0,Visual,,"Benner, Terry",US
+2461155.47708,12.2,,Vis.,HMAJ,,"121","125","X42148MW","MEADE LX90 12-INCH",,,Z,,,R DRA,AAVSO,,,,,1325701864,0,Visual,,"Hardaker, Mark",
+2461156.44,12.1,,Vis.,BFO,,"120","125","X26015KO",,,,Z,,,R DRA,AAVSO,,,,,1325787315,0,Visual,"VOBS VERSION 3.0.0 BETA [WINDOWS]","Bakos, Janos",HU
+2461157.36736,12.1,,Vis.,SSEF,"B","120","121","X40131LA",,,,Z,,,R Dra,BAV,,,,,1325718104,0,Visual,,"Sinnecker, Sebastian",DE
+2461157.58117,11.241,"0.021",V,HTY,,"ENSEMBLE","000-BBX-671","X42816AAZ","Filter used TG|Ens 000-BBX-565,000-BBX-624,000-BBX-570,000-BBX-636,000-BBX-691,000-BBX-659,000-BJW-329,000-BBX-651|ens B-V 0.668|target B-V 1.543|formal 0.0210, comp scatter 0.0208",1,"1.479",Z,,"12.66",R Dra,,STD,,,,1328114162,0,DSLR,"AstroImageJ 3-channel photometry; filler_to_aavso.py","Hager, Timothy",US
+2461158.58942,11.31,"0.0171",V,HTY,,"ENSEMBLE","000-BBX-671","X42816AAZ","Filter used TG|Ens 000-BBX-565,000-BBX-624,000-BBX-570,000-BBX-636,000-BBX-691,000-BBX-659,000-BJW-329,000-BBX-651|ens B-V 0.668|target B-V 1.555|formal 0.0171, comp scatter 0.0114",1,"1.438",Z,,"12.671",R Dra,,STD,,,,1328114093,0,DSLR,"AstroImageJ 3-channel photometry; filler_to_aavso.py","Hager, Timothy",US
+2461159.39028,12.0,,Vis.,MMH,"B","116","120","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1325737733,0,Visual,,"Muciek, Marek",
+2461159.4583,12.0,,Vis.,HOO,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1327703198,0,Visual,"EXCEL","Hoogeveen, Geert",
+2461159.51764,11.597,"0.011",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-11.079|CMAGINS=-12.100|CREFMAG=10.576|CREFERR=0.008|KMAGINS=-10.236|KREFMAG=12.254|KREFERR=0.016",0,"1.072",Z,"-12.100","-10.236",R DRA,KNVWS,STD,,,,1325747822,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461165.32778,11.6,,Vis.,VATA,,"116","0","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1325845396,1,Visual,"EXCEL","Vicze, Attila",HU
+2461167.6,12.4,,Vis.,MOW,,"121","125","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1326977226,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461170.53813,11.902,"0.013",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-10.557|CMAGINS=-11.883|CREFMAG=10.576|CREFERR=0.009|KMAGINS=-10.129|KREFMAG=12.254|KREFERR=0.017",0,"1.041",Z,"-11.883","-10.129",R DRA,KNVWS,STD,,,,1326024528,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461171.46042,12.4,,Vis.,MMH,,"123","125","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1326030657,0,Visual,,"Muciek, Marek",
+2461172.4910,12.4,,Vis.,SDAB,,"120","125","X25675CSC",,,,Z,,,R DRA,,,,,,1326099052,0,Visual,"EXCEL","Smales, David",
+2461173.44653,12.2,,Vis.,HMAJ,,"121","125","X42148MW","MEADE LX90 12 INCH",,,Z,,,R DRA,AAVSO,,,,,1326092667,0,Visual,,"Hardaker, Mark",
+2461176.8,12.3,,Vis.,BTY,,"120","125","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1326226814,0,Visual,,"Benner, Terry",US
+2461181.40,12.5,,Vis.,PUJ,,"114","125","7671AU",,,,Z,,,R DRA,AAM,,,,,1326924504,0,Visual,,"Pujol, Francesc",ES
+2461182.41667,12.7,,Vis.,SSEF,,"125","129","X40131LA",,,,Z,,,R Dra,BAV,,,,,1326323404,0,Visual,,"Sinnecker, Sebastian",DE
+2461182.49758,12.235,"0.014",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-10.367|CMAGINS=-12.025|CREFMAG=10.576|CREFERR=0.008|KMAGINS=-10.207|KREFMAG=12.254|KREFERR=0.016",0,"1.044",Z,"-12.025","-10.207",R DRA,KNVWS,STD,,,,1326320683,0,CCD,"PHORANSO 1.1.2.3","van Ballegoij, Erwin",NL
+2461182.6,12.6,,Vis.,MOW,,"125","129","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1326977227,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461183.43333,12.5,,Vis.,MMH,"B","123","125","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1326326972,0,Visual,,"Muciek, Marek",
+2461184.42,12.6,,Vis.,BFO,,"125","129","X26015KO",,0,,Z,,,R Dra,AAVSO,STD,,,,1329544406,0,Visual,"VObs, version 3.0.0 beta [Windows]","Bakos, Janos",HU
+2461185.4,12.7,,Vis.,WUB,,"NA",,"NA",,,,Z,,,R DRA,KNVWS,,,,,1327735888,0,Visual,"EXCEL","Wubbena, Eltjo",NL
+2461185.4375,12.6,,Vis.,SDAB,"B","125","129","X25675CSC","MOON; TWILIGHT",,,Z,,,R DRA,,,,,,1326421564,0,Visual,"EXCEL","Smales, David",
+2461186.37,12.7,,Vis.,PUJ,,"125","134","7671AU",,,,Z,,,R DRA,AAM,,,,,1326925018,0,Visual,,"Pujol, Francesc",ES
+2461187.4,12.6,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1327297621,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461189.6,13.2,,Vis.,BTY,"B","125","137","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1326621571,0,Visual,,"Benner, Terry",US
+2461193.42361,12.7,,Vis.,MMH,"B","125","129","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1326883700,0,Visual,,"Muciek, Marek",
+2461194.38,13.0,,Vis.,PUJ,,"125","137","7671AU",,,,Z,,,R DRA,AAM,,,,,1327533494,0,Visual,,"Pujol, Francesc",ES
+2461195.6,12.5,,Vis.,MOW,,"123","125","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1327632811,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461195.61597,12.0,,Vis.,MSS,,"12.0",,"x26328abw",,,,Z,,,r dra,AAVSO,,,,,1326926928,1,Visual,,"Mesics, Sandra",US
+2461196.6,13.0,,Vis.,BTY,,"125","137","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1326964566,0,Visual,,"Benner, Terry",US
+2461198.5,12.7,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1327464802,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461201.46389,12.7,,Vis.,MMH,"B","125","129","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1327026789,0,Visual,,"Muciek, Marek",
+2461205.43681,12.7,,Vis.,MPTA,"U","125","136","not AAVSO; Revue des","T200mm/ 205x",,,Z,,,R Dra,AAVSO,,,,,1327086541,0,Visual,,"Pteancu, Mircea",
+2461206.7,12.5,,Vis.,MOW,,"123","125","x15658fzg",,0,,Z,,,R Dra,AAVSO,STD,,,,1327632812,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461207.5,12.5,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1327479443,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461207.6,12.6,,Vis.,BTY,,"125","137","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1327106075,0,Visual,,"Benner, Terry",US
+2461210.3965,12.6,,Vis.,KHL,,"125","129","12652BDP",,,,Z,,,R DRA,AAVSO,,,,,1327217816,0,Visual,"EXCEL","Kohl, Mike",
+2461211.35,12.5,,Vis.,PUJ,,"114","125","7671AU",,,,Z,,,R DRA,AAM,,,,,1327542615,0,Visual,,"Pujol, Francesc",ES
+2461213.48814,11.994,"0.014",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-10.475|CMAGINS=-11.892|CREFMAG=10.576|CREFERR=0.009|KMAGINS=-10.064|KREFMAG=12.254|KREFERR=0.018",0,"1.041",Z,"-11.892","-10.064",R DRA,KNVWS,STD,,,,1327253720,0,CCD,"PHORANSO 1.1.2.6","van Ballegoij, Erwin",NL
+2461215.40486,12.7,,Vis.,MMH,"B","125","129","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1327394980,0,Visual,,"Muciek, Marek",
+2461217.52,12.3,,Vis.,BFO,,"120","125","X26015KO",,0,,Z,,,R Dra,AAVSO,STD,,,,1329544624,0,Visual,"VObs, version 3.0.0 beta [Windows]","Bakos, Janos",HU
+2461223.44563,11.419,"0.01",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-11.210|CMAGINS=-12.053|CREFMAG=10.576|CREFERR=0.008|KMAGINS=-10.231|KREFMAG=12.254|KREFERR=0.017",0,"1.037",Z,"-12.053","-10.231",R Dra,KNVWS,STD,,,,1327480623,0,CCD,"Phoranso 1.1.2.6","van Ballegoij, Erwin",NL
+2461224.4674,11.8,,Vis.,SDAB,"BU","114","120","X25675CSB","TWILIGHT; MOON ~92% ILLUM BUT LOW IN SKY; SOME THIN HIGH CLOUD",,,Z,,,R DRA,,,,,,1327619826,0,Visual,"EXCEL","Smales, David",
+2461224.59444,10.9,,Vis.,MSS,,"10.9",,"x26328abw",,,,Z,,,r dra,AAVSO,,,,,1327495373,1,Visual,,"Mesics, Sandra",US
+2461226.4,11.5,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1329483585,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461226.50694,10.0,,Vis.,HMAJ,"B","97",,"X42142MO","10 X 70 BINOCULARS",,,Z,,,R DRA,AAVSO,,,,,1327546102,1,Visual,,"Hardaker, Mark",
+2461228.37,11.6,,Vis.,PUJ,,"109","12","7671AU",,,,Z,,,R DRA,AAM,,,,,1328932591,0,Visual,,"Pujol, Francesc",ES
+2461229.6,11.2,,Vis.,MOW,,"109","114","X15658FZG",,,,Z,,,R DRA,AAVSO,,,,,1328269863,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461229.76,11.007,"0.008",V,DJX,,"ENSEMBLE","000-BBX-636","X42745YN","Average and StDev of 5 images",1,"1.0584",Z,,"10.533",R Dra,RASC,STD,,,,1328168794,0,CCD,"MAXIM DL + Sextractor + Excel","de Jong, Mark",CA
+2461231.45139,11.1,,Vis.,SSEF,,"109","114","X40131LA",,,,Z,,,R Dra,BAV,,,,,1327644086,0,Visual,,"Sinnecker, Sebastian",DE
+2461235.42361,10.6,,Vis.,MMH,,"103","109","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1327702187,0,Visual,,"Muciek, Marek",
+2461236.4,10.9,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1329493443,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461236.4208,10.7,,Vis.,GGU,,"106","109","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1327736145,0,Visual,"EXCEL","Gilein, Guus",NL
+2461236.4979,10.8,,Vis.,SDAB,"BU","106","109","X25675CSB","ASTRO TWILIGHT; PATCHES MID/HIGH LEVEL CLOUD",,,Z,,,R DRA,,,,,,1327736185,0,Visual,"EXCEL","Smales, David",
+2461241.6,10.5,,Vis.,BTY,"U","97","109","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1327807502,0,Visual,,"Benner, Terry",US
+2461241.7,10.3,,Vis.,MOW,,"100","103","X15658FV",,,,Z,,,R DRA,AAVSO,,,,,1328269864,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461242.51353,10.151,"0.008",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-12.375|CMAGINS=-11.951|CREFMAG=10.576|CREFERR=0.008|KMAGINS=-10.095|KREFMAG=12.254|KREFERR=0.017",0,"1.19",Z,"-11.951","-10.095",R Dra,KNVWS,STD,,,,1327820405,0,CCD,"Phoranso 1.1.3.1","van Ballegoij, Erwin",NL
+2461243.47083,10.1,,Vis.,MMH,,"100","103","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1327838834,0,Visual,,"Muciek, Marek",
+2461244.429167,11.1,,Vis.,SSEF,,"109","114","X40131LA",,0,,Z,,,R Dra,BAV,STD,,,,1327877063,0,Visual,,"Sinnecker, Sebastian",DE
+2461246.4833,10.2,,Vis.,SDAB,"U","100","103","X25675CSA","PATCHES MID/HIGH CLOUD",0,,Z,,,R Dra,,STD,,,,1328040222,0,Visual,"EXCEL","Smales, David",
+2461247.49,10.2,,Vis.,BFO,,"100","106","X26015KO",,0,,Z,,,R Dra,AAVSO,STD,,,,1329544886,0,Visual,"VObs, version 3.0.0 beta [Windows]","Bakos, Janos",HU
+2461250.40625,10.0,,Vis.,SSEF,"B","97","103","X40131LA",,,,Z,,,R Dra,BAV,,,,,1328046411,0,Visual,,"Sinnecker, Sebastian",DE
+2461251.38,10.5,,Vis.,BFO,,"100","106","X26015KO",,0,,Z,,,R Dra,AAVSO,STD,,,,1329544887,0,Visual,"VObs, version 3.0.0 beta [Windows]","Bakos, Janos",HU
+2461251.411111,9.9,,Vis.,MVH,,"9.7","10.0","4677evl",,0,,Z,,,R Dra,AAVSO,STD,,,,1329411271,0,Visual,"WORD","Vladut, Mihai",RO
+2461251.43498,9.9,,Vis.,MISB,"B","97","103","X24412DCS",,0,,Z,,,R Dra,MCSE,STD,,,,1328114322,0,Visual,"Observation Log 3.4.3","Mátis, István",RO
+2461252.6,10.3,,Vis.,MOW,,"100","103","X15658FV",,,,Z,,,R DRA,AAVSO,,,,,1328269865,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461253.6,10.5,,Vis.,BTY,"B","87","105","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1328114105,0,Visual,,"Benner, Terry",US
+2461255.38819,10.2,,Vis.,VATA,,"97","106","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1328147193,0,Visual,"EXCEL","Vicze, Attila",HU
+2461255.40278,10.1,,Vis.,SSEF,,"97","103","X40131LA",,,,Z,,,R Dra,BAV,,,,,1328257712,0,Visual,,"Sinnecker, Sebastian",DE
+2461259.458333,10.5,,Vis.,FERA,,"97","105","X24705CU",,0,,Z,,,R Dra,AAVSO,STD,,,,1328247002,0,Visual,,"FABRIGAT, Eric",
+2461259.7076,9.8,,Vis.,EMAC,,"97",,"X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1328250625,0,Visual,"EXCEL","Ellison, Mark",US
+2461260.36736,9.7,,Vis.,MMH,,"95","100","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1328263809,0,Visual,,"Muciek, Marek",
+2461260.4222,9.7,,Vis.,GGU,,"95","98","ggu-21207",,0,,Z,,,R Dra,KNVWS,STD,,,,1328311464,0,Visual,"EXCEL","Gilein, Guus",NL
+2461260.43194,10.2,,Vis.,SSEF,,"100","106","X40131LA",,,,Z,,,R Dra,BAV,,,,,1328269001,0,Visual,,"Sinnecker, Sebastian",DE
+2461260.45417,10.0,,Vis.,HMAJ,,"95","97","X42148MO","10 X 70 BINOCULARS",,,Z,,,R DRA,AAVSO,,,,,1328271700,0,Visual,,"Hardaker, Mark",
+2461260.4819,9.6,,Vis.,SDAB,,"95","97","X25675CSA",,0,,Z,,,R Dra,,STD,,,,1328275182,0,Visual,"EXCEL","Smales, David",
+2461261.44444,10.0,,Vis.,VATA,,"97","103","X36506BDI",,,,Z,,,R DRA,MCSE,,,,,1328280456,0,Visual,"EXCEL","Vicze, Attila",HU
+2461263.4,9.6,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1329875345,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461263.6,9.8,,Vis.,MOW,,"97","100","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1329556026,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461266.4299,9.3,,Vis.,GGU,,"90","95","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1328508873,0,Visual,"EXCEL","Gilein, Guus",NL
+2461266.472222,9.5,,Vis.,AAN,,"95","97","5247gqu",,0,,Z,,,R Dra,AAVSO,STD,,,,1331138572,0,Visual,,"Abe, Andreas",DE
+2461268.34583,9.2,,Vis.,MMH,,"92","95","X36483CKJ",,,,Z,,,r dra,AAVSO,,,,,1328848978,0,Visual,,"Muciek, Marek",
+2461269.4,9.2,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1329899451,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461273.6,8.9,,Vis.,MOW,,"88","92","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1329556027,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461274.7582,8.402,"0.009",V,DJX,,"ENSEMBLE","000-BBX-636","X42745YN","Average and StDev of 5 images",1,"1.2295",Z,,"10.587",R Dra,RASC,STD,,,,1329276482,0,CCD,"MAXIM DL + Sextractor + Excel","de Jong, Mark",CA
+2461276.4194,8.4,,Vis.,SDAB,"B","82","85","X25675CSA","TWILIGHT, MOON 83%",0,,Z,,,R Dra,,STD,,,,1329326839,0,Visual,"EXCEL","Smales, David",
+2461276.42556,8.553,"0.008",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-13.354|CMAGINS=-11.331|CREFMAG=10.576|CREFERR=0.011|KMAGINS=-9.474|KREFMAG=12.254|KREFERR=0.021",0,"1.2",Z,"-11.331","-9.474",R Dra,KNVWS,STD,,,,1329121760,0,CCD,"Phoranso 1.1.3.6","van Ballegoij, Erwin",NL
+2461277.3819,8.4,,Vis.,GGU,,"82","85","GGU-21207",,,,Z,,,R DRA,KNVWS,,,,,1329149647,0,Visual,"EXCEL","Gilein, Guus",NL
+2461281.7481,7.855,"0.012",V,DJX,,"ENSEMBLE","000-BBX-636","X42745YN","Average and StDev of 5 images",1,"1.2492",Z,,"10.531",R Dra,RASC,STD,,,,1330571626,0,CCD,"MAXIM DL + Sextractor + Excel","de Jong, Mark",CA
+2461282.5,8.1,,Vis.,BTY,"B","72","85","13431EPZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1329222829,0,Visual,,"Benner, Terry",US
+2461283.35903,8.1,,Vis.,MMH,"B","79","82","X36483CEB",,,,Z,,,r dra,AAVSO,,,,,1329280791,0,Visual,,"Muciek, Marek",
+2461284.293056,8.1,,Vis.,MVH,,,,"4677evl",,0,,Z,"7.5","8.2",R Dra,AAVSO,STD,,,,1329411275,0,Visual,"WORD","Vladut, Mihai",RO
+2461285.4,8.0,,Vis.,GZN,,,,"8914SC",,0,,Z,,,R Dra,AAVSO,STD,,,,1329974616,0,Visual,"PLEIONE","Glez-Herrera, Alfredo",
+2461286.8,7.7,,Vis.,MOW,,"75","82","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1330165612,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461289.339583,7.7,,Vis.,FERA,,"65","85","X24705CU",,0,,Z,,,R Dra,AAVSO,STD,,,,1329484190,0,Visual,,"FABRIGAT, Eric",
+2461291.345139,7.3,,Vis.,MMH,,"72","75","X36483CEB",,0,,Z,,,R Dra,AAVSO,STD,,,,1329528652,0,Visual,,"Muciek, Marek",
+2461294.377083,7.9,,Vis.,SSEF,,"75","82","X40319BPN",,0,,Z,,,R Dra,BAV,STD,,,,1329579997,0,Visual,,"Sinnecker, Sebastian",DE
+2461295.38736,7.421,"0.009",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-13.895|CMAGINS=-10.740|CREFMAG=10.576|CREFERR=0.012|KMAGINS=-9.009|KREFMAG=12.254|KREFERR=0.023",0,"1.228",Z,"-10.740","-9.009",R Dra,KNVWS,STD,,,,1329594391,0,CCD,"Phoranso 1.1.3.6","van Ballegoij, Erwin",NL
+2461296.3,7.6,,Vis.,BFO,,"86","82","X26015KN",,0,,Z,,,R Dra,AAVSO,STD,,,,1330715567,0,Visual,"VObs, version 3.0.0 beta [Windows]","Bakos, Janos",HU
+2461296.383333,7.5,,Vis.,FERA,,"65","85","X24705CU",,0,,Z,,,R Dra,AAVSO,STD,,,,1329623214,0,Visual,,"FABRIGAT, Eric",
+2461297.6,7.5,,Vis.,MOW,,"72","75","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1330165613,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461299.3375,7.4,,Vis.,SSEF,,"72","75","X40319BPN",,0,,Z,,,R Dra,BAV,STD,,,,1329672256,0,Visual,,"Sinnecker, Sebastian",DE
+2461299.3993,7.5,,Vis.,SDAB,"U","72","75","X25675CRZ","ISOL PATCHES LOW CLOUD",0,,Z,,,R Dra,,STD,,,,1329836636,0,Visual,"EXCEL","Smales, David",
+2461303.334722,7.3,,Vis.,FERA,,"65","85","X24705CU",,0,,Z,,,R Dra,AAVSO,STD,,,,1329782631,0,Visual,,"FABRIGAT, Eric",
+2461305.331944,7.3,,Vis.,MMH,"B","72","75","X36483CEB",,0,,Z,,,R Dra,AAVSO,STD,,,,1329832885,0,Visual,,"Muciek, Marek",
+2461305.40933,7.421,"0.008",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-14.144|CMAGINS=-10.989|CREFMAG=10.576|CREFERR=0.011|KMAGINS=-9.285|KREFMAG=12.254|KREFERR=0.020",0,"1.349",Z,"-10.989","-9.285",R Dra,KNVWS,STD,,,,1329852560,0,CCD,"Phoranso 1.1.3.6","van Ballegoij, Erwin",NL
+2461306.364583,7.8,,Vis.,SSEF,"B","72","79","X40319BPN",,0,,Z,,,R Dra,BAV,STD,,,,1329903082,0,Visual,,"Sinnecker, Sebastian",DE
+2461307.5,7.6,,Vis.,MOW,,"75","82","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1330165614,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461307.5611,7.9,,Vis.,EMAC,"B","72","85","X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1329873743,0,Visual,"EXCEL","Ellison, Mark",US
+2461312.5625,7.8,,Vis.,EMAC,"B","72","85","X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1329995866,0,Visual,"EXCEL","Ellison, Mark",US
+2461314.328472,7.5,,Vis.,MMH,"B","72","75","X36483CEB",,0,,Z,,,R Dra,AAVSO,STD,,,,1330039586,0,Visual,,"Muciek, Marek",
+2461314.5667,7.8,,Vis.,EMAC,,"85",,"X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1330039911,0,Visual,"EXCEL","Ellison, Mark",US
+2461315.6125,7.6,,Vis.,CWP,,"72","82","X22719CKM",,0,,Z,,,R Dra,AAVSO,STD,,,,1330053949,0,Visual,,"Clarke, William",US
+2461317.325694,7.4,,Vis.,SSEF,,"72","75","X40319BPN",,0,,Z,,,R Dra,BAV,STD,,,,1330095359,0,Visual,,"Sinnecker, Sebastian",DE
+2461317.6,8.0,,Vis.,MOW,,"75","82","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1331138281,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461319.5444,7.8,,Vis.,EMAC,,"85",,"X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1330130770,0,Visual,"EXCEL","Ellison, Mark",US
+2461320.5,8.2,,Vis.,BTY,,"72","85","13548IZ",,0,,Z,,,R Dra,AAVSO,STD,,,,1330162744,0,Visual,,"Benner, Terry",US
+2461321.328472,7.8,,Vis.,MMH,,"75","79","X36483CEB",,0,,Z,,,R Dra,AAVSO,STD,,,,1330186241,0,Visual,,"Muciek, Marek",
+2461321.3681,7.9,,Vis.,SDAB,"U","75","82","X25675CRZ","PATCHES MID/HIGH CLOUD PASSING IN FRESH BREEZE",0,,Z,,,R Dra,,STD,,,,1330173161,0,Visual,"EXCEL","Smales, David",
+2461322.381944,8.1,,Vis.,SSEF,,"72","88","X40319BPN",,0,,Z,,,R Dra,BAV,STD,,,,1330184151,0,Visual,,"Sinnecker, Sebastian",DE
+2461328.29375,8.2,,Vis.,MMH,,"79","85","X36483CKJ",,0,,Z,,,R Dra,AAVSO,STD,,,,1330350787,0,Visual,,"Muciek, Marek",
+2461328.338889,8.2,,Vis.,SSEF,,"79","82","X40319BPN",,0,,Z,,,R Dra,BAV,STD,,,,1330374703,0,Visual,,"Sinnecker, Sebastian",DE
+2461328.599306,8.1,,Vis.,CWP,"B","82","75","X22719CKM",,0,,Z,,,R Dra,AAVSO,STD,,,,1330360072,0,Visual,,"Clarke, William",US
+2461330.414583,8.3,,Vis.,HMAJ,,"85",,"X42148MO","10 X 70 BINOCULARS",0,,Z,,,R Dra,AAVSO,STD,,,,1330604034,0,Visual,,"Hardaker, Mark",
+2461331.6,8.6,,Vis.,MOW,,"85","87","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1331138282,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461333.33105,8.201,"0.047",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-9.913|CMAGINS=-7.538|CREFMAG=10.576|CREFERR=0.065|KMAGINS=-5.954|KREFMAG=12.254|KREFERR=0.143",0,"1.345",Z,"-7.538","-5.954",R Dra,KNVWS,STD,,,,1330641321,0,CCD,"Phoranso 1.1.3.7","van Ballegoij, Erwin",NL
+2461336.5375,8.4,,Vis.,EMAC,"B","85",,"X36436HP",,0,,Z,,,R Dra,AAVSO,STD,,,,1330702882,0,Visual,"EXCEL","Ellison, Mark",US
+2461341.275,8.7,,Vis.,MMH,"B","85","87","X36483CKJ",,0,,Z,,,R Dra,AAVSO,STD,,,,1330832270,0,Visual,,"Muciek, Marek",
+2461341.5,9.2,,Vis.,MOW,,"88","92","x15658fv",,0,,Z,,,R Dra,AAVSO,STD,,,,1331138283,0,Visual,"TEXT EDIT","Morrison, Warren",
+2461344.267361,9.2,,Vis.,SSEF,,"88","95","X40131LA",,0,,Z,,,R Dra,BAV,STD,,,,1330933806,0,Visual,,"Sinnecker, Sebastian",DE
+2461348.29159,9.101,"0.023",V,BVE,,"000-BBX-636","000-BBX-586","X41993TO","|VMAGINS=-10.456|CMAGINS=-8.981|CREFMAG=10.576|CREFERR=0.029|KMAGINS=-7.002|KREFMAG=12.254|KREFERR=0.063",0,"1.349",Z,"-8.981","-7.002",R Dra,KNVWS,STD,,,,1331027831,0,CCD,"Phoranso 1.1.3.8","van Ballegoij, Erwin",NL
+2461348.616667,9.1,,Vis.,CWP,"B","85","95","X15360EON",,0,,Z,,,R Dra,AAVSO,STD,,,,1331028592,0,Visual,,"Clarke, William",US
+]]></Data></VSXObject>

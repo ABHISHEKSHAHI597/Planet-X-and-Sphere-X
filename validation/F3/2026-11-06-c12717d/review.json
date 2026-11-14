@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F3",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Independently inspected locked CHANNEL_MAP and calibration headers: one DETECTOR=ALL map, 1..17 physical channels, 0/18 out of band. Interpretation approved; invalid channels must be excluded from measurement grouping. Legacy record staleness still prevents gate acceptance.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "13cbdb9b98cc422fbd5f2dc548e63b629dbe9195858f86da481910dd3aa1d61e"
+}

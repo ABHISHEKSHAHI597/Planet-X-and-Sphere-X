@@ -1,0 +1,99 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "G1-time-model",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {
+  "barnard_full_visits_band6": {
+   "value": 3,
+   "threshold": "\u2265 2 (P0-3)",
+   "pass": true
+  },
+  "epsindb_full_visits_band6": {
+   "value": 4,
+   "threshold": "\u2265 2 (P0-3)",
+   "pass": true
+  },
+  "wise0855_full_visits_band6": {
+   "value": 2,
+   "threshold": "\u2265 2 (P0-3)",
+   "pass": true
+  },
+  "rwaur_full_visits_band6": {
+   "value": 3,
+   "threshold": "\u2265 2 (P0-3)",
+   "pass": true
+  },
+  "rdra_occupied_bins": {
+   "value": {
+    "1": 16,
+    "2": 6,
+    "3": 16,
+    "4": 16,
+    "5": 6,
+    "6": 16
+   },
+   "threshold": "\u2265 20 per band for the periodogram (G5.lc, M)",
+   "pass": null
+  },
+  "wise0855_band6_2full_2partial": {
+   "value": [
+    [
+     "partial",
+     3
+    ],
+    [
+     "full",
+     16
+    ],
+    [
+     "partial",
+     3
+    ],
+    [
+     "full",
+     21
+    ]
+   ],
+   "threshold": "partial 3, full 16, partial 3, full 21",
+   "pass": true
+  },
+  "barnard_surveys": {
+   "value": [
+    [
+     2
+    ],
+    [
+     1
+    ],
+    [
+     4
+    ]
+   ],
+   "threshold": "S2 \u2192 S1 \u2192 S4 (understanding.md \u00a73.3)",
+   "pass": true
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "backend/tests/data/real/frames_5targets.json"
+ ],
+ "input_frame_count": 3878,
+ "runtime_s": 0.1,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/epochs.py"
+ ],
+ "caveats": [
+  "survey numbers are derived (PA + date), not read from a survey keyword (F9, owner M)",
+  "frame lists from SIA2 at r = 0.001\u00b0, not D's pins"
+ ],
+ "date": "2026-11-06"
+}

@@ -1,0 +1,5120 @@
+{
+ "components": {
+  "schemas": {
+   "AstroCatalogue": {
+    "additionalProperties": false,
+    "properties": {
+     "mu": {
+      "title": "Mu",
+      "type": "number"
+     },
+     "pa_deg": {
+      "title": "Pa Deg",
+      "type": "number"
+     },
+     "pmdec": {
+      "title": "Pmdec",
+      "type": "number"
+     },
+     "pmra": {
+      "title": "Pmra",
+      "type": "number"
+     },
+     "source": {
+      "title": "Source",
+      "type": "string"
+     }
+    },
+    "required": [
+     "source",
+     "mu",
+     "pa_deg",
+     "pmra",
+     "pmdec"
+    ],
+    "title": "AstroCatalogue",
+    "type": "object"
+   },
+   "AstroFit": {
+    "additionalProperties": false,
+    "properties": {
+     "chi2": {
+      "title": "Chi2",
+      "type": "number"
+     },
+     "delta_chi2": {
+      "title": "Delta Chi2",
+      "type": "number"
+     },
+     "dof": {
+      "title": "Dof",
+      "type": "integer"
+     },
+     "e_mu": {
+      "title": "E Mu",
+      "type": "number"
+     },
+     "e_pmdec": {
+      "title": "E Pmdec",
+      "type": "number"
+     },
+     "e_pmra": {
+      "title": "E Pmra",
+      "type": "number"
+     },
+     "mu": {
+      "title": "Mu",
+      "type": "number"
+     },
+     "pa_deg": {
+      "title": "Pa Deg",
+      "type": "number"
+     },
+     "plx_fixed": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Fixed catalogue parallax in milliarcseconds; internal motion fitting uses arcseconds",
+      "title": "Plx Fixed"
+     },
+     "pmdec": {
+      "title": "Pmdec",
+      "type": "number"
+     },
+     "pmra": {
+      "title": "Pmra",
+      "type": "number"
+     }
+    },
+    "required": [
+     "pmra",
+     "pmdec",
+     "e_pmra",
+     "e_pmdec",
+     "mu",
+     "e_mu",
+     "pa_deg",
+     "plx_fixed",
+     "chi2",
+     "dof",
+     "delta_chi2"
+    ],
+    "title": "AstroFit",
+    "type": "object"
+   },
+   "AstroPoint": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "cov_xi_eta": {
+      "default": 0,
+      "title": "Cov Xi Eta",
+      "type": "number"
+     },
+     "eta": {
+      "title": "Eta",
+      "type": "number"
+     },
+     "fit_included": {
+      "default": true,
+      "title": "Fit Included",
+      "type": "boolean"
+     },
+     "flux_snr": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Flux Snr"
+     },
+     "frame_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Frame Id"
+     },
+     "method": {
+      "default": "native-frame",
+      "title": "Method",
+      "type": "string"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "native_xy": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "number"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Native Xy"
+     },
+     "rchi2": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Rchi2"
+     },
+     "s_eta": {
+      "title": "S Eta",
+      "type": "number"
+     },
+     "s_xi": {
+      "title": "S Xi",
+      "type": "number"
+     },
+     "visit": {
+      "title": "Visit",
+      "type": "string"
+     },
+     "xi": {
+      "title": "Xi",
+      "type": "number"
+     }
+    },
+    "required": [
+     "visit",
+     "mjd",
+     "xi",
+     "eta",
+     "s_xi",
+     "s_eta",
+     "band"
+    ],
+    "title": "AstroPoint",
+    "type": "object"
+   },
+   "AstrometryResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "catalogue": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/AstroCatalogue"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "fit": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/AstroFit"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "joint_fits": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Joint Fits",
+      "type": "array"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "native_frames": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Native Frames",
+      "type": "array"
+     },
+     "notes": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+     },
+     "pin": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pin"
+     },
+     "points": {
+      "items": {
+       "$ref": "#/components/schemas/AstroPoint"
+      },
+      "title": "Points",
+      "type": "array"
+     },
+     "registration": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Registration",
+      "type": "array"
+     },
+     "skipped": {
+      "items": {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "title": "Skipped",
+      "type": "array"
+     },
+     "tangent_origin": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "number"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tangent Origin"
+     },
+     "validity": {
+      "enum": [
+       "accepted",
+       "unvalidated"
+      ],
+      "title": "Validity",
+      "type": "string"
+     }
+    },
+    "required": [
+     "name",
+     "points",
+     "fit",
+     "catalogue",
+     "validity"
+    ],
+    "title": "AstrometryResponse",
+    "type": "object"
+   },
+   "AutoCheck": {
+    "additionalProperties": false,
+    "properties": {
+     "detail": {
+      "title": "Detail",
+      "type": "string"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "passed": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Passed"
+     }
+    },
+    "required": [
+     "name",
+     "passed",
+     "detail"
+    ],
+    "title": "AutoCheck",
+    "type": "object"
+   },
+   "Blink25Epoch": {
+    "additionalProperties": false,
+    "properties": {
+     "date": {
+      "title": "Date",
+      "type": "string"
+     },
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "label": {
+      "title": "Label",
+      "type": "string"
+     },
+     "n_images": {
+      "title": "N Images",
+      "type": "integer"
+     },
+     "note": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Note"
+     },
+     "pairs_with_band": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pairs With Band"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "url": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Url"
+     },
+     "year": {
+      "title": "Year",
+      "type": "number"
+     }
+    },
+    "required": [
+     "label",
+     "year",
+     "date",
+     "pairs_with_band",
+     "n_images",
+     "ra",
+     "dec",
+     "url"
+    ],
+    "title": "Blink25Epoch",
+    "type": "object"
+   },
+   "Blink25Response": {
+    "additionalProperties": false,
+    "properties": {
+     "epochs": {
+      "items": {
+       "$ref": "#/components/schemas/Blink25Epoch"
+      },
+      "title": "Epochs",
+      "type": "array"
+     },
+     "expected_jumps_arcmin": {
+      "additionalProperties": {
+       "type": "number"
+      },
+      "title": "Expected Jumps Arcmin",
+      "type": "object"
+     },
+     "format": {
+      "title": "Format",
+      "type": "string"
+     },
+     "fov_needed_arcmin": {
+      "title": "Fov Needed Arcmin",
+      "type": "number"
+     },
+     "grid": {
+      "$ref": "#/components/schemas/GridInfo"
+     },
+     "key": {
+      "title": "Key",
+      "type": "string"
+     },
+     "label": {
+      "title": "Label",
+      "type": "string"
+     },
+     "pos_source": {
+      "title": "Pos Source",
+      "type": "string"
+     },
+     "twomass_match": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Twomass Match"
+     },
+     "view_fov_arcmin": {
+      "title": "View Fov Arcmin",
+      "type": "number"
+     },
+     "view_fov_for_full_coverage_arcmin": {
+      "title": "View Fov For Full Coverage Arcmin",
+      "type": "number"
+     }
+    },
+    "required": [
+     "key",
+     "label",
+     "format",
+     "grid",
+     "view_fov_arcmin",
+     "fov_needed_arcmin",
+     "view_fov_for_full_coverage_arcmin",
+     "expected_jumps_arcmin",
+     "twomass_match",
+     "pos_source",
+     "epochs"
+    ],
+    "title": "Blink25Response",
+    "type": "object"
+   },
+   "CandidateGallery": {
+    "additionalProperties": false,
+    "properties": {
+     "banner": {
+      "title": "Banner",
+      "type": "string"
+     },
+     "candidates": {
+      "items": {
+       "$ref": "#/components/schemas/CandidateRecord"
+      },
+      "title": "Candidates",
+      "type": "array"
+     }
+    },
+    "required": [
+     "banner",
+     "candidates"
+    ],
+    "title": "CandidateGallery",
+    "type": "object"
+   },
+   "CandidateRecord": {
+    "additionalProperties": false,
+    "properties": {
+     "auto_checks": {
+      "items": {
+       "$ref": "#/components/schemas/AutoCheck"
+      },
+      "title": "Auto Checks",
+      "type": "array"
+     },
+     "created_at": {
+      "title": "Created At",
+      "type": "string"
+     },
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "kind": {
+      "enum": [
+       "mover",
+       "variable",
+       "transient",
+       "artifact",
+       "other"
+      ],
+      "title": "Kind",
+      "type": "string"
+     },
+     "note": {
+      "title": "Note",
+      "type": "string"
+     },
+     "pin": {
+      "title": "Pin",
+      "type": "string"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "status": {
+      "title": "Status",
+      "type": "string"
+     },
+     "view_key": {
+      "title": "View Key",
+      "type": "string"
+     },
+     "visits": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Visits",
+      "type": "array"
+     },
+     "votes": {
+      "title": "Votes",
+      "type": "integer"
+     }
+    },
+    "required": [
+     "id",
+     "created_at",
+     "ra",
+     "dec",
+     "view_key",
+     "pin",
+     "visits",
+     "kind",
+     "note",
+     "auto_checks",
+     "votes",
+     "status"
+    ],
+    "title": "CandidateRecord",
+    "type": "object"
+   },
+   "CandidateRequest": {
+    "additionalProperties": false,
+    "properties": {
+     "dec": {
+      "maximum": 90.0,
+      "minimum": -90.0,
+      "title": "Dec",
+      "type": "number"
+     },
+     "kind": {
+      "enum": [
+       "mover",
+       "variable",
+       "transient",
+       "artifact",
+       "other"
+      ],
+      "title": "Kind",
+      "type": "string"
+     },
+     "note": {
+      "default": "",
+      "maxLength": 1000,
+      "title": "Note",
+      "type": "string"
+     },
+     "pin": {
+      "default": "",
+      "pattern": "^([0-9a-f]{12})?$",
+      "title": "Pin",
+      "type": "string"
+     },
+     "ra": {
+      "exclusiveMaximum": 360.0,
+      "minimum": 0.0,
+      "title": "Ra",
+      "type": "number"
+     },
+     "view_key": {
+      "maxLength": 64,
+      "minLength": 8,
+      "pattern": "^[0-9a-f]+$",
+      "title": "View Key",
+      "type": "string"
+     },
+     "visits": {
+      "items": {
+       "type": "string"
+      },
+      "maxItems": 64,
+      "title": "Visits",
+      "type": "array"
+     }
+    },
+    "required": [
+     "ra",
+     "dec",
+     "view_key",
+     "kind"
+    ],
+    "title": "CandidateRequest",
+    "type": "object"
+   },
+   "CandidateResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "auto_checks": {
+      "items": {
+       "$ref": "#/components/schemas/AutoCheck"
+      },
+      "title": "Auto Checks",
+      "type": "array"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "auto_checks"
+    ],
+    "title": "CandidateResponse",
+    "type": "object"
+   },
+   "Coverage": {
+    "additionalProperties": false,
+    "properties": {
+     "axis": {
+      "title": "Axis",
+      "type": "string"
+     },
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "fov": {
+      "title": "Fov",
+      "type": "number"
+     },
+     "freshness": {
+      "$ref": "#/components/schemas/ReleaseState"
+     },
+     "n_frames": {
+      "title": "N Frames",
+      "type": "integer"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "releases": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Releases",
+      "type": "array"
+     },
+     "visits": {
+      "items": {
+       "$ref": "#/components/schemas/CoverageVisit"
+      },
+      "title": "Visits",
+      "type": "array"
+     }
+    },
+    "required": [
+     "ra",
+     "dec",
+     "fov",
+     "n_frames",
+     "axis",
+     "visits",
+     "releases",
+     "freshness"
+    ],
+    "title": "Coverage",
+    "type": "object"
+   },
+   "CoverageVisit": {
+    "additionalProperties": false,
+    "properties": {
+     "frames_per_band": {
+      "additionalProperties": {
+       "type": "integer"
+      },
+      "title": "Frames Per Band",
+      "type": "object"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "mjd_max": {
+      "title": "Mjd Max",
+      "type": "number"
+     },
+     "mjd_min": {
+      "title": "Mjd Min",
+      "type": "number"
+     },
+     "releases": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Releases",
+      "type": "array"
+     },
+     "status": {
+      "enum": [
+       "full",
+       "partial",
+       "bin",
+       "survey",
+       "exposure"
+      ],
+      "title": "Status",
+      "type": "string"
+     },
+     "surveys": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "integer"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "title": "Surveys",
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "status",
+     "mjd_min",
+     "mjd_max",
+     "surveys",
+     "frames_per_band",
+     "releases"
+    ],
+    "title": "CoverageVisit",
+    "type": "object"
+   },
+   "DiffAnnotation": {
+    "additionalProperties": false,
+    "properties": {
+     "agrees_with_track": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Agrees With Track"
+     },
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "kind": {
+      "enum": [
+       "dipole",
+       "monopole"
+      ],
+      "title": "Kind",
+      "type": "string"
+     },
+     "label": {
+      "title": "Label",
+      "type": "string"
+     },
+     "pa_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pa Deg"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "shift_arcsec": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Shift Arcsec"
+     },
+     "shift_px": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Shift Px"
+     },
+     "sign": {
+      "anyOf": [
+       {
+        "enum": [
+         "brightened",
+         "faded"
+        ],
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Sign"
+     },
+     "to_dec": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "To Dec"
+     },
+     "to_ra": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "To Ra"
+     }
+    },
+    "required": [
+     "kind",
+     "ra",
+     "dec",
+     "label"
+    ],
+    "title": "DiffAnnotation",
+    "type": "object"
+   },
+   "DiffInfo": {
+    "additionalProperties": false,
+    "properties": {
+     "a": {
+      "title": "A",
+      "type": "string"
+     },
+     "annotations": {
+      "items": {
+       "$ref": "#/components/schemas/DiffAnnotation"
+      },
+      "title": "Annotations",
+      "type": "array"
+     },
+     "b": {
+      "title": "B",
+      "type": "string"
+     },
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "clip_sigma": {
+      "title": "Clip Sigma",
+      "type": "number"
+     },
+     "format": {
+      "title": "Format",
+      "type": "string"
+     },
+     "k": {
+      "title": "K",
+      "type": "number"
+     },
+     "photometric_match": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/PhotometricMatch"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "url": {
+      "title": "Url",
+      "type": "string"
+     },
+     "validity": {
+      "enum": [
+       "accepted",
+       "unvalidated"
+      ],
+      "title": "Validity",
+      "type": "string"
+     }
+    },
+    "required": [
+     "a",
+     "b",
+     "band",
+     "format",
+     "k",
+     "clip_sigma",
+     "annotations",
+     "validity",
+     "url"
+    ],
+    "title": "DiffInfo",
+    "type": "object"
+   },
+   "EpochHint": {
+    "additionalProperties": false,
+    "properties": {
+     "direction": {
+      "title": "Direction",
+      "type": "string"
+     },
+     "epoch": {
+      "title": "Epoch",
+      "type": "number"
+     },
+     "moved_arcmin": {
+      "title": "Moved Arcmin",
+      "type": "number"
+     },
+     "now_dec": {
+      "title": "Now Dec",
+      "type": "number"
+     },
+     "now_ra": {
+      "title": "Now Ra",
+      "type": "number"
+     },
+     "object": {
+      "title": "Object",
+      "type": "string"
+     },
+     "sep_arcsec": {
+      "title": "Sep Arcsec",
+      "type": "number"
+     }
+    },
+    "required": [
+     "object",
+     "epoch",
+     "sep_arcsec",
+     "now_ra",
+     "now_dec",
+     "moved_arcmin",
+     "direction"
+    ],
+    "title": "EpochHint",
+    "type": "object"
+   },
+   "EvDiffReady": {
+    "additionalProperties": false,
+    "properties": {
+     "a": {
+      "title": "A",
+      "type": "string"
+     },
+     "b": {
+      "title": "B",
+      "type": "string"
+     },
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "type": {
+      "const": "diff_ready",
+      "default": "diff_ready",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "a",
+     "b",
+     "band"
+    ],
+    "title": "EvDiffReady",
+    "type": "object"
+   },
+   "EvDone": {
+    "additionalProperties": false,
+    "properties": {
+     "key": {
+      "title": "Key",
+      "type": "string"
+     },
+     "type": {
+      "const": "done",
+      "default": "done",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "key"
+    ],
+    "title": "EvDone",
+    "type": "object"
+   },
+   "EvError": {
+    "additionalProperties": false,
+    "properties": {
+     "message": {
+      "title": "Message",
+      "type": "string"
+     },
+     "type": {
+      "const": "error",
+      "default": "error",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "message"
+    ],
+    "title": "EvError",
+    "type": "object"
+   },
+   "EvFetched": {
+    "additionalProperties": false,
+    "properties": {
+     "i": {
+      "title": "I",
+      "type": "integer"
+     },
+     "n": {
+      "title": "N",
+      "type": "integer"
+     },
+     "type": {
+      "const": "fetched",
+      "default": "fetched",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "i",
+     "n"
+    ],
+    "title": "EvFetched",
+    "type": "object"
+   },
+   "EvPlanned": {
+    "additionalProperties": false,
+    "properties": {
+     "n": {
+      "title": "N",
+      "type": "integer"
+     },
+     "type": {
+      "const": "planned",
+      "default": "planned",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "n"
+    ],
+    "title": "EvPlanned",
+    "type": "object"
+   },
+   "EvStackReady": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "bin": {
+      "title": "Bin",
+      "type": "string"
+     },
+     "type": {
+      "const": "stack_ready",
+      "default": "stack_ready",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "bin",
+     "band"
+    ],
+    "title": "EvStackReady",
+    "type": "object"
+   },
+   "EvWarning": {
+    "additionalProperties": false,
+    "properties": {
+     "code": {
+      "title": "Code",
+      "type": "string"
+     },
+     "message": {
+      "title": "Message",
+      "type": "string"
+     },
+     "type": {
+      "const": "warning",
+      "default": "warning",
+      "title": "Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "code",
+     "message"
+    ],
+    "title": "EvWarning",
+    "type": "object"
+   },
+   "FlagsInfo": {
+    "additionalProperties": false,
+    "properties": {
+     "bits": {
+      "additionalProperties": {
+       "type": "integer"
+      },
+      "title": "Bits",
+      "type": "object"
+     },
+     "format": {
+      "title": "Format",
+      "type": "string"
+     },
+     "info": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "title": "Info",
+      "type": "object"
+     }
+    },
+    "required": [
+     "bits",
+     "info",
+     "format"
+    ],
+    "title": "FlagsInfo",
+    "type": "object"
+   },
+   "FlipFrame": {
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "lam_um": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Lam Um"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "url": {
+      "title": "Url",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "mjd",
+     "lam_um",
+     "url"
+    ],
+    "title": "FlipFrame",
+    "type": "object"
+   },
+   "Formats": {
+    "additionalProperties": false,
+    "properties": {
+     "flags": {
+      "title": "Flags",
+      "type": "string"
+     },
+     "science": {
+      "title": "Science",
+      "type": "string"
+     },
+     "stack": {
+      "title": "Stack",
+      "type": "string"
+     }
+    },
+    "required": [
+     "stack",
+     "science",
+     "flags"
+    ],
+    "title": "Formats",
+    "type": "object"
+   },
+   "FrameMeta": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "bin": {
+      "title": "Bin",
+      "type": "string"
+     },
+     "collection": {
+      "title": "Collection",
+      "type": "string"
+     },
+     "detector": {
+      "title": "Detector",
+      "type": "integer"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "obsid": {
+      "title": "Obsid",
+      "type": "string"
+     },
+     "pipeline": {
+      "title": "Pipeline",
+      "type": "string"
+     },
+     "qa": {
+      "additionalProperties": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "integer"
+        },
+        {
+         "type": "boolean"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "title": "Qa",
+      "type": "object"
+     },
+     "release": {
+      "title": "Release",
+      "type": "string"
+     },
+     "skipped": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Skipped"
+     },
+     "survey": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Survey"
+     }
+    },
+    "required": [
+     "id",
+     "band",
+     "detector",
+     "bin",
+     "mjd",
+     "survey",
+     "obsid",
+     "release",
+     "collection",
+     "pipeline",
+     "qa",
+     "skipped"
+    ],
+    "title": "FrameMeta",
+    "type": "object"
+   },
+   "FramesResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "format": {
+      "title": "Format",
+      "type": "string"
+     },
+     "frames": {
+      "items": {
+       "$ref": "#/components/schemas/FlipFrame"
+      },
+      "title": "Frames",
+      "type": "array"
+     },
+     "key": {
+      "title": "Key",
+      "type": "string"
+     },
+     "label": {
+      "title": "Label",
+      "type": "string"
+     },
+     "sort": {
+      "enum": [
+       "time",
+       "lambda"
+      ],
+      "title": "Sort",
+      "type": "string"
+     }
+    },
+    "required": [
+     "key",
+     "band",
+     "sort",
+     "label",
+     "format",
+     "frames"
+    ],
+    "title": "FramesResponse",
+    "type": "object"
+   },
+   "GridInfo": {
+    "additionalProperties": false,
+    "properties": {
+     "cdelt": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "number"
+       }
+      ],
+      "title": "Cdelt",
+      "type": "array"
+     },
+     "crpix": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "number"
+       }
+      ],
+      "title": "Crpix",
+      "type": "array"
+     },
+     "crval": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "number"
+       }
+      ],
+      "title": "Crval",
+      "type": "array"
+     },
+     "ctype": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "title": "Ctype",
+      "type": "array"
+     },
+     "native": {
+      "title": "Native",
+      "type": "boolean"
+     },
+     "pix_arcsec": {
+      "title": "Pix Arcsec",
+      "type": "number"
+     },
+     "shape": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "integer"
+       }
+      ],
+      "title": "Shape",
+      "type": "array"
+     }
+    },
+    "required": [
+     "ctype",
+     "crval",
+     "crpix",
+     "cdelt",
+     "shape",
+     "pix_arcsec",
+     "native"
+    ],
+    "title": "GridInfo",
+    "type": "object"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "title": "Detail",
+      "type": "array"
+     }
+    },
+    "title": "HTTPValidationError",
+    "type": "object"
+   },
+   "Health": {
+    "additionalProperties": false,
+    "properties": {
+     "api_version": {
+      "default": "0.1.0",
+      "title": "Api Version",
+      "type": "string"
+     },
+     "calibration": {
+      "title": "Calibration",
+      "type": "string"
+     },
+     "environment": {
+      "title": "Environment",
+      "type": "string"
+     },
+     "git_sha": {
+      "title": "Git Sha",
+      "type": "string"
+     },
+     "mode": {
+      "enum": [
+       "live",
+       "snapshot",
+       "mock",
+       "fixture"
+      ],
+      "title": "Mode",
+      "type": "string"
+     },
+     "ok": {
+      "title": "Ok",
+      "type": "boolean"
+     },
+     "probes": {
+      "items": {
+       "$ref": "#/components/schemas/HealthProbe"
+      },
+      "title": "Probes",
+      "type": "array"
+     }
+    },
+    "required": [
+     "ok",
+     "mode",
+     "environment",
+     "git_sha",
+     "calibration",
+     "probes"
+    ],
+    "title": "Health",
+    "type": "object"
+   },
+   "HealthProbe": {
+    "additionalProperties": false,
+    "properties": {
+     "detail": {
+      "default": "",
+      "title": "Detail",
+      "type": "string"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "ok": {
+      "title": "Ok",
+      "type": "boolean"
+     },
+     "seconds": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Seconds"
+     }
+    },
+    "required": [
+     "name",
+     "ok"
+    ],
+    "title": "HealthProbe",
+    "type": "object"
+   },
+   "JobEventDoc": {
+    "description": "Documents the SSE event payloads in /openapi.json (each SSE `data:` is one of these minus `type`).",
+    "properties": {
+     "event": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/EvPlanned"
+       },
+       {
+        "$ref": "#/components/schemas/EvFetched"
+       },
+       {
+        "$ref": "#/components/schemas/EvStackReady"
+       },
+       {
+        "$ref": "#/components/schemas/EvDiffReady"
+       },
+       {
+        "$ref": "#/components/schemas/EvWarning"
+       },
+       {
+        "$ref": "#/components/schemas/EvDone"
+       },
+       {
+        "$ref": "#/components/schemas/EvError"
+       }
+      ],
+      "title": "Event"
+     }
+    },
+    "required": [
+     "event"
+    ],
+    "title": "JobEventDoc",
+    "type": "object"
+   },
+   "LCPoint": {
+    "additionalProperties": false,
+    "properties": {
+     "bin": {
+      "title": "Bin",
+      "type": "string"
+     },
+     "err": {
+      "title": "Err",
+      "type": "number"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "rel": {
+      "title": "Rel",
+      "type": "number"
+     }
+    },
+    "required": [
+     "mjd",
+     "rel",
+     "err",
+     "bin"
+    ],
+    "title": "LCPoint",
+    "type": "object"
+   },
+   "LightCurveResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "bands": {
+      "additionalProperties": {
+       "items": {
+        "$ref": "#/components/schemas/LCPoint"
+       },
+       "type": "array"
+      },
+      "title": "Bands",
+      "type": "object"
+     },
+     "covariance": {
+      "items": {
+       "items": {
+        "type": "number"
+       },
+       "type": "array"
+      },
+      "title": "Covariance",
+      "type": "array"
+     },
+     "covariance_order": {
+      "items": {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "title": "Covariance Order",
+      "type": "array"
+     },
+     "label": {
+      "title": "Label",
+      "type": "string"
+     },
+     "method": {
+      "enum": [
+       "psf",
+       "annulus"
+      ],
+      "title": "Method",
+      "type": "string"
+     },
+     "native_frames": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Native Frames",
+      "type": "array"
+     },
+     "periodogram": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/Periodogram"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "photometric_scales": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Photometric Scales",
+      "type": "array"
+     },
+     "pin": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pin"
+     },
+     "reference_spectrum": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Reference Spectrum",
+      "type": "array"
+     },
+     "skipped": {
+      "items": {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "title": "Skipped",
+      "type": "array"
+     },
+     "uncertainty": {
+      "default": "",
+      "title": "Uncertainty",
+      "type": "string"
+     },
+     "validity": {
+      "enum": [
+       "accepted",
+       "unvalidated"
+      ],
+      "title": "Validity",
+      "type": "string"
+     }
+    },
+    "required": [
+     "bands",
+     "method",
+     "label",
+     "validity"
+    ],
+    "title": "LightCurveResponse",
+    "type": "object"
+   },
+   "Limits": {
+    "additionalProperties": false,
+    "properties": {
+     "hi": {
+      "title": "Hi",
+      "type": "number"
+     },
+     "lim": {
+      "title": "Lim",
+      "type": "string"
+     },
+     "lo": {
+      "title": "Lo",
+      "type": "number"
+     }
+    },
+    "required": [
+     "lo",
+     "hi",
+     "lim"
+    ],
+    "title": "Limits",
+    "type": "object"
+   },
+   "MoverCandidate": {
+    "additionalProperties": false,
+    "properties": {
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "distance_au": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Distance Au"
+     },
+     "distance_error_au": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Distance Error Au"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "known": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Known"
+     },
+     "pa_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pa Deg"
+     },
+     "pm_arcsec_yr": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pm Arcsec Yr"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "score": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Score"
+     },
+     "visits": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Visits",
+      "type": "array"
+     },
+     "why": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Why",
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "ra",
+     "dec",
+     "visits"
+    ],
+    "title": "MoverCandidate",
+    "type": "object"
+   },
+   "MoversResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "candidates": {
+      "items": {
+       "$ref": "#/components/schemas/MoverCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+     },
+     "key": {
+      "title": "Key",
+      "type": "string"
+     },
+     "orphans": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Orphans",
+      "type": "array"
+     },
+     "skipped": {
+      "items": {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "title": "Skipped",
+      "type": "array"
+     },
+     "tracked": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Tracked",
+      "type": "array"
+     },
+     "validity": {
+      "enum": [
+       "accepted",
+       "unvalidated"
+      ],
+      "title": "Validity",
+      "type": "string"
+     }
+    },
+    "required": [
+     "key",
+     "candidates",
+     "validity"
+    ],
+    "title": "MoversResponse",
+    "type": "object"
+   },
+   "OverlayResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "catalogue": {
+      "enum": [
+       "gaia",
+       "catwise",
+       "allwise",
+       "simbad",
+       "sso"
+      ],
+      "title": "Catalogue",
+      "type": "string"
+     },
+     "epoch": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Epoch"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "skipped": {
+      "items": {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "title": "Skipped",
+      "type": "array"
+     },
+     "sources": {
+      "items": {
+       "$ref": "#/components/schemas/OverlaySource"
+      },
+      "title": "Sources",
+      "type": "array"
+     }
+    },
+    "required": [
+     "catalogue",
+     "mjd",
+     "sources"
+    ],
+    "title": "OverlayResponse",
+    "type": "object"
+   },
+   "OverlaySource": {
+    "additionalProperties": false,
+    "properties": {
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "label": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Label"
+     },
+     "mag": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Mag"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     }
+    },
+    "required": [
+     "id",
+     "ra",
+     "dec"
+    ],
+    "title": "OverlaySource",
+    "type": "object"
+   },
+   "Periodogram": {
+    "additionalProperties": false,
+    "properties": {
+     "best_days": {
+      "title": "Best Days",
+      "type": "number"
+     },
+     "covariance_rank": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Covariance Rank"
+     },
+     "fap": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fap"
+     },
+     "fap_exceedances": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fap Exceedances"
+     },
+     "fap_resolution": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fap Resolution"
+     },
+     "fap_seed": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fap Seed"
+     },
+     "fap_trials": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fap Trials"
+     },
+     "method": {
+      "default": "",
+      "title": "Method",
+      "type": "string"
+     },
+     "period_days": {
+      "items": {
+       "type": "number"
+      },
+      "title": "Period Days",
+      "type": "array"
+     },
+     "power": {
+      "items": {
+       "type": "number"
+      },
+      "title": "Power",
+      "type": "array"
+     }
+    },
+    "required": [
+     "period_days",
+     "power",
+     "best_days",
+     "fap"
+    ],
+    "title": "Periodogram",
+    "type": "object"
+   },
+   "PhotometricMatch": {
+    "additionalProperties": false,
+    "description": "How visit B was put on visit A's photometric scale (decision record 0008, workflow.md §11.2).\napplied=False on a same-release pair: the numbers are a calibration diagnostic only. cross_release=True:\npositions and motions are valid, brightness changes are not interpreted until F4 is resolved.",
+    "properties": {
+     "applied": {
+      "title": "Applied",
+      "type": "boolean"
+     },
+     "bins": {
+      "default": [],
+      "items": {
+       "$ref": "#/components/schemas/PhotometricMatchBin"
+      },
+      "title": "Bins",
+      "type": "array"
+     },
+     "cross_release": {
+      "title": "Cross Release",
+      "type": "boolean"
+     },
+     "dof_flat": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Dof Flat"
+     },
+     "method": {
+      "title": "Method",
+      "type": "string"
+     },
+     "n_pix": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "N Pix"
+     },
+     "n_sources": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "N Sources"
+     },
+     "note": {
+      "title": "Note",
+      "type": "string"
+     },
+     "offset": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Offset"
+     },
+     "offset_err": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Offset Err"
+     },
+     "q_flat": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Q Flat"
+     },
+     "residual_scale": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Residual Scale"
+     },
+     "scale": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scale"
+     },
+     "scale_err": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scale Err"
+     },
+     "scales_a": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Scales A",
+      "type": "array"
+     },
+     "scales_b": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Scales B",
+      "type": "array"
+     },
+     "static_z_after": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Static Z After"
+     },
+     "static_z_before": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Static Z Before"
+     },
+     "tau": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tau"
+     }
+    },
+    "required": [
+     "applied",
+     "cross_release",
+     "scales_a",
+     "scales_b",
+     "method",
+     "note"
+    ],
+    "title": "PhotometricMatch",
+    "type": "object"
+   },
+   "PhotometricMatchBin": {
+    "additionalProperties": false,
+    "description": "One λ bin of the in-situ photometric match (spherex.cube.fit_relative_scale): B·scale + offset ≈ A.",
+    "properties": {
+     "err": {
+      "title": "Err",
+      "type": "number"
+     },
+     "lam": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Lam"
+     },
+     "n_pix": {
+      "title": "N Pix",
+      "type": "integer"
+     },
+     "n_sources": {
+      "title": "N Sources",
+      "type": "integer"
+     },
+     "offset": {
+      "title": "Offset",
+      "type": "number"
+     },
+     "pooled": {
+      "title": "Pooled",
+      "type": "boolean"
+     },
+     "raw": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Raw"
+     },
+     "raw_err": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Raw Err"
+     },
+     "scale": {
+      "title": "Scale",
+      "type": "number"
+     },
+     "shrink": {
+      "title": "Shrink",
+      "type": "number"
+     }
+    },
+    "required": [
+     "scale",
+     "err",
+     "shrink",
+     "offset",
+     "n_pix",
+     "n_sources",
+     "pooled"
+    ],
+    "title": "PhotometricMatchBin",
+    "type": "object"
+   },
+   "PropagatedNow": {
+    "additionalProperties": false,
+    "properties": {
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "epoch": {
+      "title": "Epoch",
+      "type": "number"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     }
+    },
+    "required": [
+     "ra",
+     "dec",
+     "epoch"
+    ],
+    "title": "PropagatedNow",
+    "type": "object"
+   },
+   "ReleaseState": {
+    "additionalProperties": false,
+    "properties": {
+     "checked_at": {
+      "title": "Checked At",
+      "type": "string"
+     },
+     "newest_period": {
+      "title": "Newest Period",
+      "type": "string"
+     },
+     "release_state": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "title": "Release State",
+      "type": "object"
+     }
+    },
+    "required": [
+     "release_state",
+     "newest_period",
+     "checked_at"
+    ],
+    "title": "ReleaseState",
+    "type": "object"
+   },
+   "ReleasesResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "api_version": {
+      "default": "0.1.0",
+      "title": "Api Version",
+      "type": "string"
+     },
+     "checked_at": {
+      "title": "Checked At",
+      "type": "string"
+     },
+     "environment": {
+      "enum": [
+       "local",
+       "staging",
+       "production",
+       "snapshot",
+       "mock"
+      ],
+      "title": "Environment",
+      "type": "string"
+     },
+     "features": {
+      "additionalProperties": {
+       "enum": [
+        "off",
+        "dev",
+        "staging",
+        "on"
+       ],
+       "type": "string"
+      },
+      "title": "Features",
+      "type": "object"
+     },
+     "newest_period": {
+      "title": "Newest Period",
+      "type": "string"
+     },
+     "release_state": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "title": "Release State",
+      "type": "object"
+     },
+     "snapshot": {
+      "title": "Snapshot",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "release_state",
+     "newest_period",
+     "checked_at",
+     "features",
+     "environment",
+     "snapshot"
+    ],
+    "title": "ReleasesResponse",
+    "type": "object"
+   },
+   "ResolveResult": {
+    "additionalProperties": false,
+    "properties": {
+     "astrometry_source": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Astrometry Source"
+     },
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "epoch": {
+      "title": "Epoch",
+      "type": "number"
+     },
+     "epoch_hint": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/EpochHint"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "kind": {
+      "enum": [
+       "star",
+       "sso",
+       "coords"
+      ],
+      "title": "Kind",
+      "type": "string"
+     },
+     "label_hint": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Label Hint"
+     },
+     "main_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Main Id"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "otype": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Otype"
+     },
+     "plx": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Plx"
+     },
+     "pm": {
+      "anyOf": [
+       {
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+         {
+          "type": "number"
+         },
+         {
+          "type": "number"
+         }
+        ],
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pm"
+     },
+     "propagated_now": {
+      "$ref": "#/components/schemas/PropagatedNow"
+     },
+     "query": {
+      "title": "Query",
+      "type": "string"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "rv": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Rv"
+     },
+     "spt": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Spt"
+     }
+    },
+    "required": [
+     "query",
+     "kind",
+     "name",
+     "ra",
+     "dec",
+     "epoch",
+     "propagated_now"
+    ],
+    "title": "ResolveResult",
+    "type": "object"
+   },
+   "SpectrumIndices": {
+    "additionalProperties": false,
+    "properties": {
+     "methane_rel": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Methane Rel"
+     },
+     "w1w2_syn": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "W1W2 Syn"
+     }
+    },
+    "title": "SpectrumIndices",
+    "type": "object"
+   },
+   "SpectrumResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "indices": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/SpectrumIndices"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "indices_by_visit": {
+      "additionalProperties": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Indices By Visit",
+      "type": "object"
+     },
+     "native_frames": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Native Frames",
+      "type": "array"
+     },
+     "notes": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+     },
+     "photometric_scales": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Photometric Scales",
+      "type": "array"
+     },
+     "pin": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pin"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "rows": {
+      "items": {
+       "$ref": "#/components/schemas/SpectrumRow"
+      },
+      "title": "Rows",
+      "type": "array"
+     },
+     "skipped": {
+      "items": {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "title": "Skipped",
+      "type": "array"
+     },
+     "templates": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "title": "Templates",
+      "type": "array"
+     },
+     "validity": {
+      "enum": [
+       "accepted",
+       "unvalidated"
+      ],
+      "title": "Validity",
+      "type": "string"
+     }
+    },
+    "required": [
+     "ra",
+     "dec",
+     "rows",
+     "validity",
+     "notes"
+    ],
+    "title": "SpectrumResponse",
+    "type": "object"
+   },
+   "SpectrumRow": {
+    "additionalProperties": false,
+    "properties": {
+     "contaminated": {
+      "title": "Contaminated",
+      "type": "boolean"
+     },
+     "detector": {
+      "title": "Detector",
+      "type": "integer"
+     },
+     "dlam": {
+      "title": "Dlam",
+      "type": "number"
+     },
+     "err": {
+      "title": "Err",
+      "type": "number"
+     },
+     "flags": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Flags",
+      "type": "array"
+     },
+     "flux": {
+      "title": "Flux",
+      "type": "number"
+     },
+     "frame_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Frame Id"
+     },
+     "lam": {
+      "title": "Lam",
+      "type": "number"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "quality": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Quality"
+     },
+     "rchi2": {
+      "title": "Rchi2",
+      "type": "number"
+     },
+     "release": {
+      "title": "Release",
+      "type": "string"
+     },
+     "visit": {
+      "title": "Visit",
+      "type": "string"
+     }
+    },
+    "required": [
+     "lam",
+     "dlam",
+     "flux",
+     "err",
+     "mjd",
+     "visit",
+     "detector",
+     "flags",
+     "rchi2",
+     "contaminated",
+     "release"
+    ],
+    "title": "SpectrumRow",
+    "type": "object"
+   },
+   "SsoPoint": {
+    "additionalProperties": false,
+    "properties": {
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     }
+    },
+    "required": [
+     "mjd",
+     "ra",
+     "dec"
+    ],
+    "title": "SsoPoint",
+    "type": "object"
+   },
+   "SsoResponse": {
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "observer": {
+      "title": "Observer",
+      "type": "string"
+     },
+     "points": {
+      "items": {
+       "$ref": "#/components/schemas/SsoPoint"
+      },
+      "title": "Points",
+      "type": "array"
+     }
+    },
+    "required": [
+     "name",
+     "observer",
+     "points"
+    ],
+    "title": "SsoResponse",
+    "type": "object"
+   },
+   "StackInfo": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "bin": {
+      "title": "Bin",
+      "type": "string"
+     },
+     "filled": {
+      "title": "Filled",
+      "type": "boolean"
+     },
+     "format": {
+      "title": "Format",
+      "type": "string"
+     },
+     "frame_ids": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Frame Ids",
+      "type": "array"
+     },
+     "nhits_max": {
+      "title": "Nhits Max",
+      "type": "integer"
+     },
+     "ready": {
+      "title": "Ready",
+      "type": "boolean"
+     },
+     "skipped": {
+      "items": {
+       "maxItems": 2,
+       "minItems": 2,
+       "prefixItems": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "string"
+        }
+       ],
+       "type": "array"
+      },
+      "title": "Skipped",
+      "type": "array"
+     },
+     "transients": {
+      "default": [],
+      "items": {
+       "$ref": "#/components/schemas/Transient"
+      },
+      "title": "Transients",
+      "type": "array"
+     }
+    },
+    "required": [
+     "bin",
+     "band",
+     "ready",
+     "format",
+     "nhits_max",
+     "filled",
+     "skipped",
+     "frame_ids"
+    ],
+    "title": "StackInfo",
+    "type": "object"
+   },
+   "TimeBinInfo": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "label": {
+      "title": "Label",
+      "type": "string"
+     },
+     "mjd_max": {
+      "title": "Mjd Max",
+      "type": "number"
+     },
+     "mjd_mean": {
+      "title": "Mjd Mean",
+      "type": "number"
+     },
+     "mjd_min": {
+      "title": "Mjd Min",
+      "type": "number"
+     },
+     "n_frames": {
+      "title": "N Frames",
+      "type": "integer"
+     },
+     "n_visit_frames": {
+      "title": "N Visit Frames",
+      "type": "integer"
+     },
+     "status": {
+      "enum": [
+       "full",
+       "partial",
+       "bin",
+       "survey",
+       "exposure"
+      ],
+      "title": "Status",
+      "type": "string"
+     },
+     "surveys": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "integer"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "title": "Surveys",
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "band",
+     "status",
+     "mjd_mean",
+     "mjd_min",
+     "mjd_max",
+     "surveys",
+     "label",
+     "n_frames",
+     "n_visit_frames"
+    ],
+    "title": "TimeBinInfo",
+    "type": "object"
+   },
+   "TrackPoint": {
+    "additionalProperties": false,
+    "properties": {
+     "band": {
+      "title": "Band",
+      "type": "integer"
+     },
+     "bin": {
+      "title": "Bin",
+      "type": "string"
+     },
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "mjd": {
+      "title": "Mjd",
+      "type": "number"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     }
+    },
+    "required": [
+     "bin",
+     "band",
+     "mjd",
+     "ra",
+     "dec"
+    ],
+    "title": "TrackPoint",
+    "type": "object"
+   },
+   "Transient": {
+    "additionalProperties": false,
+    "description": "A per-exposure transient on empty sky (implementation.md §4.5: asteroid candidate before vetting, P2-5).\nGrid pixel position (0-based) and sky position; `frame` is the exposure it appeared in.",
+    "properties": {
+     "dec": {
+      "title": "Dec",
+      "type": "number"
+     },
+     "frame": {
+      "title": "Frame",
+      "type": "string"
+     },
+     "npix": {
+      "title": "Npix",
+      "type": "integer"
+     },
+     "ra": {
+      "title": "Ra",
+      "type": "number"
+     },
+     "x": {
+      "title": "X",
+      "type": "number"
+     },
+     "y": {
+      "title": "Y",
+      "type": "number"
+     }
+    },
+    "required": [
+     "frame",
+     "x",
+     "y",
+     "ra",
+     "dec",
+     "npix"
+    ],
+    "title": "Transient",
+    "type": "object"
+   },
+   "ValidationError": {
+    "properties": {
+     "ctx": {
+      "title": "Context",
+      "type": "object"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "title": "Location",
+      "type": "array"
+     },
+     "msg": {
+      "title": "Message",
+      "type": "string"
+     },
+     "type": {
+      "title": "Error Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError",
+    "type": "object"
+   },
+   "ViewManifest": {
+    "additionalProperties": false,
+    "properties": {
+     "axis": {
+      "title": "Axis",
+      "type": "string"
+     },
+     "bands": {
+      "items": {
+       "type": "integer"
+      },
+      "title": "Bands",
+      "type": "array"
+     },
+     "bins": {
+      "additionalProperties": {
+       "items": {
+        "$ref": "#/components/schemas/TimeBinInfo"
+       },
+       "type": "array"
+      },
+      "title": "Bins",
+      "type": "object"
+     },
+     "data_source": {
+      "enum": [
+       "live",
+       "snapshot",
+       "mock"
+      ],
+      "title": "Data Source",
+      "type": "string"
+     },
+     "flags": {
+      "$ref": "#/components/schemas/FlagsInfo"
+     },
+     "formats": {
+      "$ref": "#/components/schemas/Formats"
+     },
+     "frames": {
+      "items": {
+       "$ref": "#/components/schemas/FrameMeta"
+      },
+      "title": "Frames",
+      "type": "array"
+     },
+     "grid": {
+      "$ref": "#/components/schemas/GridInfo"
+     },
+     "key": {
+      "title": "Key",
+      "type": "string"
+     },
+     "limits": {
+      "additionalProperties": {
+       "$ref": "#/components/schemas/Limits"
+      },
+      "title": "Limits",
+      "type": "object"
+     },
+     "newer_pin": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Newer Pin"
+     },
+     "params": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "title": "Params",
+      "type": "object"
+     },
+     "pin": {
+      "title": "Pin",
+      "type": "string"
+     },
+     "release": {
+      "$ref": "#/components/schemas/ReleaseState"
+     },
+     "schema_version": {
+      "default": "0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+     },
+     "stacks": {
+      "items": {
+       "$ref": "#/components/schemas/StackInfo"
+      },
+      "title": "Stacks",
+      "type": "array"
+     },
+     "target": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ResolveResult"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "track": {
+      "items": {
+       "$ref": "#/components/schemas/TrackPoint"
+      },
+      "title": "Track",
+      "type": "array"
+     },
+     "warnings": {
+      "items": {
+       "$ref": "#/components/schemas/ViewWarning"
+      },
+      "title": "Warnings",
+      "type": "array"
+     }
+    },
+    "required": [
+     "key",
+     "pin",
+     "params",
+     "target",
+     "grid",
+     "axis",
+     "bands",
+     "bins",
+     "stacks",
+     "limits",
+     "frames",
+     "track",
+     "flags",
+     "formats",
+     "release",
+     "warnings",
+     "data_source"
+    ],
+    "title": "ViewManifest",
+    "type": "object"
+   },
+   "ViewQueued": {
+    "additionalProperties": false,
+    "properties": {
+     "job_id": {
+      "title": "Job Id",
+      "type": "string"
+     },
+     "key": {
+      "title": "Key",
+      "type": "string"
+     },
+     "status": {
+      "const": "queued",
+      "title": "Status",
+      "type": "string"
+     }
+    },
+    "required": [
+     "status",
+     "job_id",
+     "key"
+    ],
+    "title": "ViewQueued",
+    "type": "object"
+   },
+   "ViewReady": {
+    "additionalProperties": false,
+    "properties": {
+     "manifest": {
+      "$ref": "#/components/schemas/ViewManifest"
+     },
+     "status": {
+      "const": "ready",
+      "title": "Status",
+      "type": "string"
+     }
+    },
+    "required": [
+     "status",
+     "manifest"
+    ],
+    "title": "ViewReady",
+    "type": "object"
+   },
+   "ViewWarning": {
+    "additionalProperties": false,
+    "properties": {
+     "code": {
+      "title": "Code",
+      "type": "string"
+     },
+     "message": {
+      "title": "Message",
+      "type": "string"
+     },
+     "severity": {
+      "enum": [
+       "info",
+       "warn"
+      ],
+      "title": "Severity",
+      "type": "string"
+     }
+    },
+    "required": [
+     "code",
+     "message",
+     "severity"
+    ],
+    "title": "ViewWarning",
+    "type": "object"
+   }
+  }
+ },
+ "info": {
+  "description": "SPHEREx blink tool API (implementation.md §5). HTTP contract: CONTRACTS.md.",
+  "title": "ParallaX API",
+  "version": "0.1.0"
+ },
+ "openapi": "3.1.0",
+ "paths": {
+  "/api/v1/astrometry": {
+   "get": {
+    "operationId": "astrometry_api_v1_astrometry_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "ra",
+      "required": true,
+      "schema": {
+       "exclusiveMaximum": 360,
+       "minimum": 0,
+       "title": "Ra",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dec",
+      "required": true,
+      "schema": {
+       "maximum": 90,
+       "minimum": -90,
+       "title": "Dec",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "name",
+      "required": false,
+      "schema": {
+       "default": "",
+       "title": "Name",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "key",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/AstrometryResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Astrometry",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/candidates": {
+   "get": {
+    "operationId": "gallery_api_v1_candidates_get",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/CandidateGallery"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Gallery",
+    "tags": [
+     "candidates"
+    ]
+   },
+   "post": {
+    "operationId": "candidates_api_v1_candidates_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/CandidateRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/CandidateResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Candidates",
+    "tags": [
+     "candidates"
+    ]
+   }
+  },
+  "/api/v1/coverage": {
+   "get": {
+    "operationId": "coverage_api_v1_coverage_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "ra",
+      "required": true,
+      "schema": {
+       "exclusiveMaximum": 360,
+       "minimum": 0,
+       "title": "Ra",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dec",
+      "required": true,
+      "schema": {
+       "maximum": 90,
+       "minimum": -90,
+       "title": "Dec",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "fov",
+      "required": false,
+      "schema": {
+       "default": 6.0,
+       "maximum": 60,
+       "minimum": 2,
+       "title": "Fov",
+       "type": "number"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Coverage"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Coverage",
+    "tags": [
+     "core"
+    ]
+   }
+  },
+  "/api/v1/export/{fmt}": {
+   "get": {
+    "operationId": "export_api_v1_export__fmt__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "fmt",
+      "required": true,
+      "schema": {
+       "title": "Fmt",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "band",
+      "required": true,
+      "schema": {
+       "maximum": 6,
+       "minimum": 1,
+       "title": "Band",
+       "type": "integer"
+      }
+     },
+     {
+      "in": "query",
+      "name": "bins",
+      "required": false,
+      "schema": {
+       "default": "",
+       "title": "Bins",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "stretch",
+      "required": false,
+      "schema": {
+       "default": "asinh:8",
+       "title": "Stretch",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "cmap",
+      "required": false,
+      "schema": {
+       "default": "gray",
+       "title": "Cmap",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "fps",
+      "required": false,
+      "schema": {
+       "default": 2.0,
+       "exclusiveMinimum": 0,
+       "maximum": 30,
+       "title": "Fps",
+       "type": "number"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/fits": {},
+       "application/json": {
+        "schema": {}
+       },
+       "image/apng": {},
+       "image/gif": {},
+       "text/csv": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Export",
+    "tags": [
+     "export"
+    ]
+   }
+  },
+  "/api/v1/jobs/{job_id}/events": {
+   "get": {
+    "operationId": "job_events_api_v1_jobs__job_id__events_get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "job_id",
+      "required": true,
+      "schema": {
+       "title": "Job Id",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/JobEventDoc"
+        }
+       },
+       "text/event-stream": {}
+      },
+      "description": "SSE: event name = type; data = the event without `type`"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Job Events",
+    "tags": [
+     "views"
+    ]
+   }
+  },
+  "/api/v1/lightcurve": {
+   "get": {
+    "operationId": "lightcurve_api_v1_lightcurve_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "ra",
+      "required": true,
+      "schema": {
+       "exclusiveMaximum": 360,
+       "minimum": 0,
+       "title": "Ra",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dec",
+      "required": true,
+      "schema": {
+       "maximum": 90,
+       "minimum": -90,
+       "title": "Dec",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "bin",
+      "required": false,
+      "schema": {
+       "default": "14d",
+       "title": "Bin",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "bands",
+      "required": false,
+      "schema": {
+       "default": "",
+       "title": "Bands",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "method",
+      "required": false,
+      "schema": {
+       "default": "psf",
+       "pattern": "^(psf|annulus)$",
+       "title": "Method",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "release",
+      "required": false,
+      "schema": {
+       "default": "",
+       "pattern": "^(|qr2|qr3)$",
+       "title": "Release",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "key",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LightCurveResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Lightcurve",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/movers": {
+   "get": {
+    "operationId": "movers_api_v1_movers_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "mode",
+      "required": false,
+      "schema": {
+       "default": "stellar",
+       "pattern": "^(stellar|planetx)$",
+       "title": "Mode",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "mu_max",
+      "required": false,
+      "schema": {
+       "default": 10.0,
+       "exclusiveMinimum": 0,
+       "maximum": 1000,
+       "title": "Mu Max",
+       "type": "number"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/MoversResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Movers",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/overlays/{cat}": {
+   "get": {
+    "operationId": "overlays_api_v1_overlays__cat__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "cat",
+      "required": true,
+      "schema": {
+       "title": "Cat",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "ra",
+      "required": true,
+      "schema": {
+       "exclusiveMaximum": 360,
+       "minimum": 0,
+       "title": "Ra",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dec",
+      "required": true,
+      "schema": {
+       "maximum": 90,
+       "minimum": -90,
+       "title": "Dec",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "r",
+      "required": false,
+      "schema": {
+       "default": 0.1,
+       "exclusiveMinimum": 0,
+       "maximum": 0.5,
+       "title": "R",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "mjd",
+      "required": true,
+      "schema": {
+       "title": "Mjd",
+       "type": "number"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/OverlayResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Overlays",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/releases": {
+   "get": {
+    "operationId": "releases_api_v1_releases_get",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ReleasesResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Releases",
+    "tags": [
+     "core"
+    ]
+   }
+  },
+  "/api/v1/resolve": {
+   "get": {
+    "operationId": "resolve_api_v1_resolve_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "q",
+      "required": true,
+      "schema": {
+       "maxLength": 200,
+       "minLength": 1,
+       "title": "Q",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ResolveResult"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Resolve",
+    "tags": [
+     "core"
+    ]
+   }
+  },
+  "/api/v1/spectrum": {
+   "get": {
+    "operationId": "spectrum_api_v1_spectrum_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "ra",
+      "required": true,
+      "schema": {
+       "exclusiveMaximum": 360,
+       "minimum": 0,
+       "title": "Ra",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "dec",
+      "required": true,
+      "schema": {
+       "maximum": 90,
+       "minimum": -90,
+       "title": "Dec",
+       "type": "number"
+      }
+     },
+     {
+      "in": "query",
+      "name": "track",
+      "required": false,
+      "schema": {
+       "default": 1,
+       "title": "Track",
+       "type": "integer"
+      }
+     },
+     {
+      "in": "query",
+      "name": "visits",
+      "required": false,
+      "schema": {
+       "default": "all",
+       "title": "Visits",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "key",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/SpectrumResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Spectrum",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/sso": {
+   "get": {
+    "operationId": "sso_api_v1_sso_get",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "mjd",
+      "required": true,
+      "schema": {
+       "title": "Mjd",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/SsoResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Sso",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views": {
+   "post": {
+    "operationId": "create_view_api_v1_views_post",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "anyOf": [
+          {
+           "$ref": "#/components/schemas/ViewReady"
+          },
+          {
+           "$ref": "#/components/schemas/ViewQueued"
+          }
+         ],
+         "title": "Response Create View Api V1 Views Post"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "202": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ViewQueued"
+        }
+       }
+      },
+      "description": "Accepted"
+     }
+    },
+    "summary": "Create View",
+    "tags": [
+     "views"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/blink25": {
+   "get": {
+    "description": "25-year blink (P2-1, G5.25yr): 2MASS → AllWISE → NEOWISE → SPHEREx, positions only.",
+    "operationId": "blink25_api_v1_views__key__blink25_get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Blink25Response"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Blink25",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/blink25/{name}": {
+   "get": {
+    "operationId": "blink25_payload_api_v1_views__key__blink25__name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "application/octet-stream": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Blink25 Payload",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/cube/{bin_id}/{name}": {
+   "get": {
+    "operationId": "cube_api_v1_views__key__cube__bin_id___name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "bin_id",
+      "required": true,
+      "schema": {
+       "title": "Bin Id",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "application/octet-stream": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Cube",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/diff": {
+   "get": {
+    "description": "G4a: off in every release until accepted (workflow.md §11.2). Never a naive visit subtraction.",
+    "operationId": "diff_api_v1_views__key__diff_get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "a",
+      "required": true,
+      "schema": {
+       "title": "A",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "b",
+      "required": true,
+      "schema": {
+       "title": "B",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "band",
+      "required": true,
+      "schema": {
+       "maximum": 6,
+       "minimum": 1,
+       "title": "Band",
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/DiffInfo"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Diff",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/diff/{a}/{b}/{name}": {
+   "get": {
+    "operationId": "diff_payload_api_v1_views__key__diff__a___b___name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "a",
+      "required": true,
+      "schema": {
+       "title": "A",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "b",
+      "required": true,
+      "schema": {
+       "title": "B",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "application/octet-stream": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Diff Payload",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/frames": {
+   "get": {
+    "operationId": "frames_api_v1_views__key__frames_get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "band",
+      "required": true,
+      "schema": {
+       "maximum": 6,
+       "minimum": 1,
+       "title": "Band",
+       "type": "integer"
+      }
+     },
+     {
+      "in": "query",
+      "name": "sort",
+      "required": false,
+      "schema": {
+       "default": "lambda",
+       "pattern": "^(time|lambda)$",
+       "title": "Sort",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/FramesResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Frames",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/frames/{band}/{name}": {
+   "get": {
+    "description": "One gridded exposure of the flipbook (f16, same format and grid as the visit stacks).",
+    "operationId": "frame_payload_api_v1_views__key__frames__band___name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "band",
+      "required": true,
+      "schema": {
+       "title": "Band",
+       "type": "integer"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "application/octet-stream": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Frame Payload",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/manifest": {
+   "get": {
+    "operationId": "get_manifest_api_v1_views__key__manifest_get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ViewManifest"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Get Manifest",
+    "tags": [
+     "views"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/png/{bin_id}/{name}": {
+   "get": {
+    "description": "P0-8 fallback viewer. `lim=manual:lo,hi` (the client sends the manifest's shared limits); any\nother value uses the manifest's shared limits for the band. Never per-frame limits.",
+    "operationId": "png_api_v1_views__key__png__bin_id___name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "bin_id",
+      "required": true,
+      "schema": {
+       "title": "Bin Id",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "stretch",
+      "required": false,
+      "schema": {
+       "default": "asinh:8",
+       "title": "Stretch",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "lim",
+      "required": false,
+      "schema": {
+       "default": "",
+       "title": "Lim",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "cmap",
+      "required": false,
+      "schema": {
+       "default": "gray",
+       "title": "Cmap",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "raw",
+      "required": false,
+      "schema": {
+       "default": false,
+       "title": "Raw",
+       "type": "boolean"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "image/png": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Png",
+    "tags": [
+     "views"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/rgb/{bin_id}/{name}": {
+   "get": {
+    "description": "RGB preset composite (implementation.md §7): 3 × ny × nx f16, R, G, B planes from per-pixel λ.",
+    "operationId": "rgb_api_v1_views__key__rgb__bin_id___name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "bin_id",
+      "required": true,
+      "schema": {
+       "title": "Bin Id",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "application/octet-stream": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Rgb",
+    "tags": [
+     "science"
+    ]
+   }
+  },
+  "/api/v1/views/{key}/stack/{bin_id}/{name}": {
+   "get": {
+    "operationId": "stack_payload_api_v1_views__key__stack__bin_id___name__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "key",
+      "required": true,
+      "schema": {
+       "title": "Key",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "bin_id",
+      "required": true,
+      "schema": {
+       "title": "Bin Id",
+       "type": "string"
+      }
+     },
+     {
+      "in": "path",
+      "name": "name",
+      "required": true,
+      "schema": {
+       "title": "Name",
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "raw",
+      "required": false,
+      "schema": {
+       "default": false,
+       "title": "Raw",
+       "type": "boolean"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {}
+       },
+       "application/octet-stream": {}
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Stack Payload",
+    "tags": [
+     "views"
+    ]
+   }
+  },
+  "/healthz": {
+   "get": {
+    "operationId": "healthz_healthz_get",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Health"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Healthz",
+    "tags": [
+     "ops"
+    ]
+   }
+  },
+  "/metrics": {
+   "get": {
+    "operationId": "metrics_metrics_get",
+    "responses": {
+     "200": {
+      "content": {
+       "text/plain": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Metrics",
+    "tags": [
+     "ops"
+    ]
+   }
+  }
+ }
+}

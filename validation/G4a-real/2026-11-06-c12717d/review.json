@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "G4a-real",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "M review: reject proposed replacement of the documented <3-sigma static-star requirement with a post-hoc rate <=2x sky-box rate. The QR3/QR2 residuals fail; F4 remains unresolved empirically. Decision 0003 systematics are simulation-supported engineering estimates, not accepted real-data error calibration. The scale-free self-template shift is diagnostic only until independent native astrometry agrees; saturated masks, free scale and reused pixels require covariance or independent trials. Preserve all failed evidence; do not enable diff.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "5f042e4296b8a5bafea76f56b6d64c03fbe5cdcd56b66fa890d0d27d59d397db"
+}

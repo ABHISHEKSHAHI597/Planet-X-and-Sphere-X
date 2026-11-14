@@ -1,0 +1,91 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "P-platform-L2",
+ "level": "L2",
+ "verdict": "pass",
+ "metrics": {
+  "events_order": {
+   "value": "planned \u2026 done (386 events)",
+   "threshold": "planned first, done last",
+   "pass": true
+  },
+  "planned_frames": {
+   "value": 359,
+   "threshold": "= pin size 359",
+   "pass": true
+  },
+  "first_stack_band": {
+   "value": 6,
+   "threshold": "selected band (6) first",
+   "pass": true
+  },
+  "stacked_frames": {
+   "value": 1,
+   "threshold": "= committed fixture frames (1)",
+   "pass": true
+  },
+  "skipped_with_reason": {
+   "value": 358,
+   "threshold": "every other frame listed with a reason",
+   "pass": true
+  },
+  "payload_sizes": {
+   "value": "2 payloads, grid 59\u00d759",
+   "threshold": "bytes = ny\u00b7nx\u00b7itemsize",
+   "pass": true
+  },
+  "png": {
+   "value": "HTTP 200 4368 B",
+   "threshold": "200",
+   "pass": true
+  },
+  "warm_second_request": {
+   "value": "ready in 123 ms",
+   "threshold": "ready, \u2264 300 ms (in-process)",
+   "pass": true
+  },
+  "repro_fixture": {
+   "value": "identical",
+   "threshold": "two cold builds byte-identical (fixture frames only)",
+   "pass": true
+  },
+  "snapshot_index": {
+   "value": "1 view(s), pin\u2192key True",
+   "threshold": "packaged and addressable by pin",
+   "pass": true
+  }
+ },
+ "git_sha": "40e3c21",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "21a7689afc4b"
+ ],
+ "inputs": [
+  "backend/tests/data/real/f2 (committed fixture frames)",
+  "backend/tests/data/real/recorded/coverage",
+  "config/pins/21a7689afc4b"
+ ],
+ "input_frame_count": 1,
+ "runtime_s": 9.2,
+ "author": "P",
+ "reviewer": "pending (D, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/app",
+  "scripts/make_snapshot.py"
+ ],
+ "code_digest": "5fcfef458e226af55561267cbe20cae069ce410e484df98ac398e7ddf710d023",
+ "caveats": [
+  "fixture-backed: 1 real frame stacked, 358 skipped by design; not real-target evidence",
+  "runtime 4.6 s",
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-07"
+}

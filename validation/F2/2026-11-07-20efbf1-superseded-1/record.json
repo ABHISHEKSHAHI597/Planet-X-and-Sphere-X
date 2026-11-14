@@ -1,0 +1,155 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F2",
+ "level": "L2",
+ "verdict": "fail",
+ "metrics": {
+  "barnard_qr3_d6_origin": {
+   "value": "cutout [607, 1888] / s3 [607, 1888] / section hdr [607, 1888]",
+   "threshold": "equal",
+   "pass": true
+  },
+  "barnard_qr3_d6_shape": {
+   "value": "[91, 91] / [90, 90]",
+   "threshold": "equal",
+   "pass": false
+  },
+  "barnard_qr3_d6_IMAGE": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=6",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "barnard_qr3_d6_FLAGS": {
+   "value": "identical=True dtypes=['int64', 'int64'] n=8281 nan=0",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "barnard_qr3_d6_VARIANCE": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=6",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "barnard_qr3_d6_ZODI": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=0",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "barnard_qr3_d6_wcs_max_sep_arcsec": {
+   "value": 0.0,
+   "threshold": "< 1e-6",
+   "pass": true
+  },
+  "barnard_qr3_d6_header_wcs_diffs": {
+   "value": "none",
+   "threshold": "none",
+   "pass": true
+  },
+  "wise0855_qr2_d6_origin": {
+   "value": "cutout [1730, 924] / s3 [1731, 925] / section hdr [1730, 924]",
+   "threshold": "equal",
+   "pass": false
+  },
+  "wise0855_qr2_d6_shape": {
+   "value": "[91, 91] / [90, 90]",
+   "threshold": "equal",
+   "pass": false
+  },
+  "wise0855_qr2_d6_IMAGE": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=3",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "wise0855_qr2_d6_FLAGS": {
+   "value": "identical=True dtypes=['int64', 'int64'] n=8281 nan=0",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "wise0855_qr2_d6_VARIANCE": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=3",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "wise0855_qr2_d6_ZODI": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=0",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "wise0855_qr2_d6_wcs_max_sep_arcsec": {
+   "value": 0.0,
+   "threshold": "< 1e-6",
+   "pass": true
+  },
+  "wise0855_qr2_d6_header_wcs_diffs": {
+   "value": "none",
+   "threshold": "none",
+   "pass": true
+  },
+  "rdra_qr2deep_origin": {
+   "value": "cutout [884, 9] / s3 [884, 9] / section hdr [884, 9]",
+   "threshold": "equal",
+   "pass": true
+  },
+  "rdra_qr2deep_shape": {
+   "value": "[91, 91] / [90, 90]",
+   "threshold": "equal",
+   "pass": false
+  },
+  "rdra_qr2deep_IMAGE": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=13",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "rdra_qr2deep_FLAGS": {
+   "value": "identical=True dtypes=['int64', 'int64'] n=8281 nan=0",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "rdra_qr2deep_VARIANCE": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=13",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "rdra_qr2deep_ZODI": {
+   "value": "identical=True dtypes=['float32', 'float32'] n=8281 nan=0",
+   "threshold": "bit-identical",
+   "pass": true
+  },
+  "rdra_qr2deep_wcs_max_sep_arcsec": {
+   "value": 0.0,
+   "threshold": "< 1e-6",
+   "pass": true
+  },
+  "rdra_qr2deep_header_wcs_diffs": {
+   "value": "none",
+   "threshold": "none",
+   "pass": true
+  }
+ },
+ "git_sha": "20efbf1",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "not used: this check reads no calibration file (lock 94e18b883fdc9b28 exists)",
+ "pins": "not applicable: frames listed in inputs",
+ "inputs": {
+  "frames": [
+   "qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits",
+   "qr2/level2/2026W17_1B/l2b-v24-2026-115/6/level2_2026W17_1B_0634_4D6_spx_l2b-v24-2026-115.fits",
+   "qr2/level2/2026W06_2A/l2b-v23-2026-040/3/level2_2026W06_2A_0609_1D3_spx_l2b-v23-2026-040.fits"
+  ],
+  "fixtures": "backend/tests/data/real/f2"
+ },
+ "input_frame_count": 3,
+ "runtime_s": 87.1,
+ "author": "D",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/access/fitsstream.py",
+  "backend/spherex/access/s3sections.py",
+  "backend/spherex/access/fitsio.py",
+  "backend/spherex/calib.py"
+ ],
+ "caveats": [],
+ "date": "2026-11-07"
+}

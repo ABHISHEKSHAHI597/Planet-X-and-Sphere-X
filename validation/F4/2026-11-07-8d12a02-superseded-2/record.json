@@ -1,0 +1,38 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "F4",
+ "level": "L0",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "8d12a02",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "config/calibration.lock"
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 1.1,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/targets.py",
+  "backend/spherex/astrometry.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/photometry.py",
+  "backend/spherex/ephem.py",
+  "scripts/verify/m_foundations.py"
+ ],
+ "code_digest": "e22ea3a684d0cfda2bfe11c667620998c1023c2e9fa170f5ed97170107b6898f",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "Windows developer checkout; not deployment performance",
+ "supersedes": "2026-11-07-8d12a02-superseded-1",
+ "date": "2026-11-07"
+}

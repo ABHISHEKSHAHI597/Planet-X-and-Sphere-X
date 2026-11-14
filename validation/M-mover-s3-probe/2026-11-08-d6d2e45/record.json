@@ -1,0 +1,35 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-mover-s3-probe",
+ "level": "L2",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W38_2A/l2b-v27-2026-264/6/level2_2026W38_2A_0334_3D6_spx_l2b-v27-2026-264.fits"
+ ],
+ "input_frame_count": 1,
+ "runtime_s": 46.6,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_mover_s3_probe.py",
+  "backend/spherex/access/s3sections.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "2a1dc2a0078598c801cedfe009e3422d5d3328b93c086ff3c980cf560857b083",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

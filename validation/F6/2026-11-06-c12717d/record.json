@@ -1,0 +1,121 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F6",
+ "level": "L2",
+ "verdict": "pass",
+ "metrics": {
+  "part1_mismatched_planes": {
+   "value": "none",
+   "threshold": "none",
+   "pass": true
+  },
+  "part1_missing_planes_by_version": {
+   "value": {
+    "7.0.5": {
+     "('PHANTOM', 'REFERENCE', 'SATELLITE_HALO')": 28,
+     "('PHANTOM', 'REFERENCE', 'SATELLITE_HALO', 'SNOWBALL')": 2
+    },
+    "6.4+psffix1": {
+     "('BLOOM', 'CROSSTALK', 'GHOST', 'GHOST_EXT', 'GHOST_FPA', 'HALO', 'SATELLITE_HALO', 'SNOWBALL', 'STREAK')": 126
+    },
+    "6.5.6": {
+     "('CROSSTALK', 'SATELLITE_HALO', 'STREAK')": 119,
+     "('CROSSTALK', 'SATELLITE_HALO', 'SNOWBALL', 'STREAK')": 5
+    }
+   },
+   "threshold": "reported",
+   "pass": null
+  },
+  "band1_SOURCE_at_predicted": {
+   "value": 0.966,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band1_SOURCE_at_wise_era": {
+   "value": 0.285,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band2_SOURCE_at_predicted": {
+   "value": 1.0,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band2_SOURCE_at_wise_era": {
+   "value": 0.479,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band3_SOURCE_at_predicted": {
+   "value": 1.0,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band3_SOURCE_at_wise_era": {
+   "value": 0.524,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band4_SOURCE_at_predicted": {
+   "value": 1.0,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band4_SOURCE_at_wise_era": {
+   "value": 0.595,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band5_SOURCE_at_predicted": {
+   "value": 1.0,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band5_SOURCE_at_wise_era": {
+   "value": 0.782,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band6_SOURCE_at_predicted": {
+   "value": 1.0,
+   "threshold": "measured",
+   "pass": null
+  },
+  "band6_SOURCE_at_wise_era": {
+   "value": 1.0,
+   "threshold": "measured",
+   "pass": null
+  },
+  "bands1to3_SOURCE_pred_vs_era_vs_field": {
+   "value": [
+    0.99,
+    0.44,
+    0.39
+   ],
+   "threshold": "predicted > 0.9, WISE-era at field level",
+   "pass": true
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "backend/tests/data/real/barnard_qr3_d6_29x29_hdu0-4.fits",
+  "~/.cache/parallax-verify/cutouts (279 real cutouts)"
+ ],
+ "input_frame_count": 280,
+ "runtime_s": 8.8,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/flags.py"
+ ],
+ "caveats": [
+  "pos(t) from a temporary adapter of implementation.md \u00a74.1 (owner M); a 1.5 px radius makes the result insensitive to sub-pixel errors"
+ ],
+ "date": "2026-11-06"
+}

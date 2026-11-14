@@ -1,0 +1,18 @@
+# workflow.md §7.2: every pinned link in the README, slides and video is a URL fixture tested in CI.
+# One canonical query string per line (what toSearch() produces). The pinned lines are what the home page
+# opens (content/missions.ts, config/pins/index.json); the unpinned ones remain valid links.
+?q=Barnard's%20Star
+?q=eps%20Ind%20B&bands=4
+?q=WISE%200855-0714
+?q=RW%20Aur&bands=3
+?q=R%20Dra&bands=3
+?ra=08:55:10.831&dec=-07:14:42.53
+?q=Barnard's%20Star&fov=12&mode=side&ov=track,vec&flags=OVERFLOW
+?q=WISE%200855-0714&partial=1&t=V2&ui=expert
+?q=Barnard's%20Star&pin=21a7689afc4b
+?q=eps%20Ind%20B&bands=4&pin=3addc0f80339
+?q=WISE%200855-0714&pin=325c57328320
+?q=RW%20Aur&bands=3&pin=177ce03ed2a6
+?q=R%20Dra&bands=3&pin=152b410215da
+?ra=08:55:10.831&dec=-07:14:42.53&fov=12&pin=325c57328320
+?q=WISE%200855-0714&fov=12&pin=325c57328320

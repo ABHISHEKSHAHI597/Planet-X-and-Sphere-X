@@ -1,0 +1,74 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G5.25yr-jumps",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {
+  "barnard_jump_arcmin": {
+   "value": 4.540483889983,
+   "threshold": "4.55 \u00b1 0.1 (implementation.md \u00a710.2, 2MASS Ks \u2192 SPHEREx)",
+   "pass": true
+  },
+  "barnard_predicted_jump_arcmin": {
+   "value": 4.540229035116677,
+   "threshold": "pos(t) at the actual epochs (informational)",
+   "pass": null
+  },
+  "epsindb_jump_arcmin": {
+   "value": 2.084800448347547,
+   "threshold": "2.1 \u00b1 0.1 (implementation.md \u00a74.13 (\u2248), 2MASS Ks \u2192 SPHEREx)",
+   "pass": true
+  },
+  "epsindb_predicted_jump_arcmin": {
+   "value": 2.100831075023958,
+   "threshold": "pos(t) at the actual epochs (informational)",
+   "pass": null
+  },
+  "wise0855_jump_arcmin": {
+   "value": null,
+   "threshold": "2.2 \u00b1 0.1 (implementation.md \u00a74.13 (\u2248), AllWISE W2 \u2192 SPHEREx)",
+   "pass": false
+  },
+  "wise0855_predicted_jump_arcmin": {
+   "value": 2.152555253325212,
+   "threshold": "pos(t) at the actual epochs (informational)",
+   "pass": null
+  }
+ },
+ "git_sha": "3ae8487",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "none (positions only)",
+ "pins": [
+  "21a7689afc4b",
+  "3addc0f80339",
+  "325c57328320"
+ ],
+ "inputs": [
+  "/home/abhishek/Code/Nasa-Space-Apps-2026/backend/../config/pins/index.json"
+ ],
+ "input_frame_count": 74,
+ "runtime_s": 0.0,
+ "author": "I",
+ "reviewer": "pending (M, workflow.md \u00a79.4)",
+ "code_paths": [
+  "/home/abhishek/Code/Nasa-Space-Apps-2026/backend/../backend/spherex/blink25.py",
+  "/home/abhishek/Code/Nasa-Space-Apps-2026/backend/../backend/spherex/access/blink25.py",
+  "/home/abhishek/Code/Nasa-Space-Apps-2026/backend/../backend/spherex/grid.py",
+  "/home/abhishek/Code/Nasa-Space-Apps-2026/backend/../backend/spherex/stack.py",
+  "/home/abhishek/Code/Nasa-Space-Apps-2026/backend/../scripts/verify/g5_25yr_jumps.py"
+ ],
+ "code_digest": "8ef382fec29e92abd618ea2ae9c10d045aa15014271230c0d1ac1e771ce4ffe5",
+ "caveats": [
+  "Archival and SPHEREx fluxes are not compared (positions only).",
+  "The \u00a74.13 \u03b5 Ind B and WISE 0855 expectations are approximate (\u2248) and computed for Aug 2026; the predicted jump at the actual epochs is listed beside each measurement.",
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "linux local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

@@ -1,0 +1,122 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "F7",
+ "level": "L2",
+ "verdict": "inconclusive",
+ "metrics": {
+  "D1_onset_K50": {
+   "value": null,
+   "threshold": "measured (\u22487\u201310 expected, bands 1\u20133)",
+   "pass": null
+  },
+  "D1_faintest_flagged_K": {
+   "value": null,
+   "threshold": "measured",
+   "pass": null
+  },
+  "D1_barnard_K4.5_overflow": {
+   "value": "2/2",
+   "threshold": "measured",
+   "pass": null
+  },
+  "D2_onset_K50": {
+   "value": 9.5,
+   "threshold": "measured (\u22487\u201310 expected, bands 1\u20133)",
+   "pass": null
+  },
+  "D2_faintest_flagged_K": {
+   "value": 9.6,
+   "threshold": "measured",
+   "pass": null
+  },
+  "D2_barnard_K4.5_overflow": {
+   "value": "2/2",
+   "threshold": "measured",
+   "pass": null
+  },
+  "D3_onset_K50": {
+   "value": 9.5,
+   "threshold": "measured (\u22487\u201310 expected, bands 1\u20133)",
+   "pass": null
+  },
+  "D3_faintest_flagged_K": {
+   "value": 9.42,
+   "threshold": "measured",
+   "pass": null
+  },
+  "D3_barnard_K4.5_overflow": {
+   "value": "2/2",
+   "threshold": "measured",
+   "pass": null
+  },
+  "D4_onset_K50": {
+   "value": null,
+   "threshold": "measured (\u22487\u201310 expected, bands 1\u20133)",
+   "pass": null
+  },
+  "D4_faintest_flagged_K": {
+   "value": 15.29,
+   "threshold": "measured",
+   "pass": null
+  },
+  "D4_barnard_K4.5_overflow": {
+   "value": "2/2",
+   "threshold": "measured",
+   "pass": null
+  },
+  "D5_onset_K50": {
+   "value": null,
+   "threshold": "measured (\u22487\u201310 expected, bands 1\u20133)",
+   "pass": null
+  },
+  "D5_faintest_flagged_K": {
+   "value": null,
+   "threshold": "measured",
+   "pass": null
+  },
+  "D5_barnard_K4.5_overflow": {
+   "value": "2/2",
+   "threshold": "measured",
+   "pass": null
+  },
+  "D6_onset_K50": {
+   "value": null,
+   "threshold": "measured (\u22487\u201310 expected, bands 1\u20133)",
+   "pass": null
+  },
+  "D6_faintest_flagged_K": {
+   "value": null,
+   "threshold": "measured",
+   "pass": null
+  },
+  "D6_barnard_K4.5_overflow": {
+   "value": "2/2",
+   "threshold": "measured",
+   "pass": null
+  }
+ },
+ "git_sha": "c12717d",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "none: config/calibration.lock not yet created (owner D); files used are listed in inputs",
+ "pins": "none: config/pins not yet created (owner D); frame lists in inputs",
+ "inputs": [
+  "~/.cache/parallax-verify/cutouts/barnard12 (12 real QR3 cutouts)",
+  "IRSA TAP fp_psc r=0.16\u00b0 @ 269.4461,4.7707"
+ ],
+ "input_frame_count": 12,
+ "runtime_s": 2.4,
+ "author": "I",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/flags.py",
+  "backend/spherex/stack.py"
+ ],
+ "caveats": [
+  "one field, 2 frames per detector, QR3 only; the onset depends on the channel (\u03bb) within a band and on the PSF's peak fraction, so treat it as \u00b10.5 mag",
+  "2MASS K compared for all bands; for bands 4\u20136 the relevant colour (K \u2212 W1/W2) adds scatter"
+ ],
+ "date": "2026-11-06"
+}

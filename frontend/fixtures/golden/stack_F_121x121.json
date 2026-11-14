@@ -1,0 +1,7 @@
+{
+ "format": "f16le-row0south-nodata-65504@1",
+ "shape": [121, 121],
+ "encoder": "backend/spherex/render.py: to_f16(golden_F(121)); regenerate and compare in tests/unit/test_render.py",
+ "meaning": "north-up, east-left grid; row 0 = south edge, column 0 = east edge. An upright 'F' (value 100) sits in the north-east corner (high rows, low columns); a ramp 0..50 runs along row 0 (brighter to the west); no-data sentinel (-65504) at rows 0-2 x columns 118-120 (south-west corner) and at the centre pixel (60, 60). Background 0.",
+ "decoder_check": "the viewer must show the F upright in the top-left of the canvas, the sentinel tint in the bottom-right corner, and the ramp brightening to the right along the bottom edge (workflow.md §7.3, F14)"
+}

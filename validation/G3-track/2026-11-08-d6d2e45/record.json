@@ -1,0 +1,47 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G3-track",
+ "level": "L3",
+ "verdict": "fail",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\barnard-astrometry.json",
+   "sha256": "0026b2dceec790c9a0df68df95f1a008721db7f8ec2199352fa634ed4ed14cb7"
+  },
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\epsindb-astrometry.json",
+   "sha256": "4ba44685376d411b50464b2079da8bbb0ff0b6f9f7e0db4443cb3fe6b4396ccb"
+  },
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\wise0855-astrometry.json",
+   "sha256": "4b7439844d47f16c3cddc2254d618421f0f9091a9d39202ec35238b3ee211d76"
+  }
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 1.2,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_motion_reference.py",
+  "backend/spherex/targets.py",
+  "backend/spherex/astrometry.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "51e9abbeda57c9f34315473208ec7d124eccb490cf261b2dcda5fe8be00c3169",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

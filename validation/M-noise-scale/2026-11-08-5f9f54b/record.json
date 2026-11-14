@@ -1,0 +1,113 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-noise-scale",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {
+  "D1_median_rchi2_range": {
+   "value": [
+    2.0788653571752977,
+    3.9825577853208878
+   ],
+   "threshold": "<= 3 under every estimator (m_native.py F5 rule)",
+   "pass": null
+  },
+  "D2_median_rchi2_range": {
+   "value": [
+    1.2343033072703737,
+    2.620023857378682
+   ],
+   "threshold": "<= 3 under every estimator (m_native.py F5 rule)",
+   "pass": true
+  },
+  "D3_median_rchi2_range": {
+   "value": [
+    1.4811127567758047,
+    2.4099325764907102
+   ],
+   "threshold": "<= 3 under every estimator (m_native.py F5 rule)",
+   "pass": true
+  },
+  "D4_median_rchi2_range": {
+   "value": [
+    1.7465516421777654,
+    3.2508168265961093
+   ],
+   "threshold": "<= 3 under every estimator (m_native.py F5 rule)",
+   "pass": null
+  },
+  "D5_median_rchi2_range": {
+   "value": [
+    1.2288733732526296,
+    1.4541868460354364
+   ],
+   "threshold": "<= 3 under every estimator (m_native.py F5 rule)",
+   "pass": true
+  },
+  "D6_median_rchi2_range": {
+   "value": [
+    1.0684931892324507,
+    1.1533512183134755
+   ],
+   "threshold": "<= 3 under every estimator (m_native.py F5 rule)",
+   "pass": true
+  },
+  "replicated_antisymmetry_detectors": {
+   "value": [],
+   "threshold": "none (p < 0.01 in both fields)",
+   "pass": true
+  }
+ },
+ "git_sha": "5f9f54b",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/1/level2_2025W40_1A_0441_1D1_spx_l2b-v20-2025-277.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0375_1D1_spx_l2b-v27-2026-243.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_2A/l2b-v24-2026-094/2/level2_2026W11_2A_0501_1D2_spx_l2b-v24-2026-094.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/2/level2_2026W34_2A_0233_1D2_spx_l2b-v27-2026-243.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_1A/l2b-v24-2026-082/3/level2_2026W12_1A_0598_4D3_spx_l2b-v24-2026-082.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/3/level2_2026W34_1A_0308_1D3_spx_l2b-v27-2026-243.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/4/level2_2025W40_1A_0441_1D4_spx_l2b-v20-2025-277.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0375_1D4_spx_l2b-v27-2026-243.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_2A/l2b-v24-2026-094/5/level2_2026W11_2A_0501_1D5_spx_l2b-v24-2026-094.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/5/level2_2026W34_2A_0233_2D5_spx_l2b-v27-2026-243.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_1A/l2b-v24-2026-082/6/level2_2026W12_1A_0598_4D6_spx_l2b-v24-2026-082.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/6/level2_2026W34_1A_0308_1D6_spx_l2b-v27-2026-243.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W46_1A/l2b-v20-2025-318/1/level2_2025W46_1A_0287_1D1_spx_l2b-v20-2025-318.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/2/level2_2025W40_1A_0661_1D2_spx_l2b-v20-2025-277.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W40_1A/l2b-v27-2026-276/2/level2_2026W40_1A_0721_2D2_spx_l2b-v27-2026-276.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/3/level2_2025W40_1A_0067_2D3_spx_l2b-v20-2025-277.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W39_2A/l2b-v27-2026-271/3/level2_2026W39_2A_0398_1D3_spx_l2b-v27-2026-271.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W46_1A/l2b-v20-2025-318/4/level2_2025W46_1A_0348_1D4_spx_l2b-v20-2025-318.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/5/level2_2025W40_1A_0661_3D5_spx_l2b-v20-2025-277.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W40_1A/l2b-v27-2026-276/5/level2_2026W40_1A_0721_2D5_spx_l2b-v27-2026-276.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/6/level2_2025W40_1A_0067_3D6_spx_l2b-v20-2025-277.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W39_2A/l2b-v27-2026-271/6/level2_2026W39_2A_0398_1D6_spx_l2b-v27-2026-271.fits"
+ ],
+ "input_frame_count": 22,
+ "runtime_s": 0.1,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/preprocess.py",
+  "backend/spherex/epsf.py",
+  "scripts/verify/m_noise_scale.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "efa4b4da037d3bc690e2122e77d096841ea2e622004a6c6481263719b8241b14",
+ "caveats": [
+  "Revision 2 after a reviewer aid found the r1 verdict depended on the block size and on a miscalibrated antisymmetry yardstick; the r1 record is kept as superseded.",
+  "Two fields only; D4 has few sky blocks in 12\u2032 cutouts.",
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "linux local",
+ "supersedes": null,
+ "date": "2026-11-08"
+}

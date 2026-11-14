@@ -1,0 +1,2144 @@
+# G3-pm-fits — INCONCLUSIVE (L3)
+
+# Native target acceptance
+Complete measurements and rejected frames:
+```json
+{
+  "name": "NAME Barnard's star",
+  "points": [
+    {
+      "visit": "V1",
+      "mjd": 60902.86836524,
+      "xi": -4.029085706883946,
+      "eta": -3.8533404117386385,
+      "s_xi": 0.46296653881645056,
+      "s_eta": 0.37740009379819467,
+      "band": 3
+    },
+    {
+      "visit": "V1",
+      "mjd": 60908.982594812,
+      "xi": 0.389128114046782,
+      "eta": -7.263797472269697,
+      "s_xi": 0.2766253230463508,
+      "s_eta": 0.21124815059229343,
+      "band": 5
+    },
+    {
+      "visit": "V1",
+      "mjd": 60911.492762798,
+      "xi": 0.8616440802033528,
+      "eta": -4.357087573669763,
+      "s_xi": 0.31564577565858926,
+      "s_eta": 0.28039311052836613,
+      "band": 5
+    },
+    {
+      "visit": "V1",
+      "mjd": 60911.494255043,
+      "xi": -7.735489634293024,
+      "eta": -1.1151994567112307,
+      "s_xi": 0.9944846059663377,
+      "s_eta": 0.9801996809228444,
+      "band": 2
+    },
+    {
+      "visit": "V1",
+      "mjd": 60911.494255043,
+      "xi": 2.0015814904112603,
+      "eta": -6.657292258032414,
+      "s_xi": 0.23361047506278115,
+      "s_eta": 0.25369378416767374,
+      "band": 5
+    },
+    {
+      "visit": "V1",
+      "mjd": 60912.036583053,
+      "xi": -7.537798886717731,
+      "eta": -7.603190716241464,
+      "s_xi": 0.808081587565818,
+      "s_eta": 0.6628413943708937,
+      "band": 3
+    },
+    {
+      "visit": "V1",
+      "mjd": 60912.716305055,
+      "xi": 1.5016936141925163,
+      "eta": -6.847365196828602,
+      "s_xi": 0.18086708836259172,
+      "s_eta": 0.16178364789830466,
+      "band": 5
+    },
+    {
+      "visit": "V1",
+      "mjd": 60914.213196455,
+      "xi": -1.2204632859048727,
+      "eta": -1.055649850984602,
+      "s_xi": 0.5195220038529864,
+      "s_eta": 0.47407755893820763,
+      "band": 1
+    },
+    {
+      "visit": "V1",
+      "mjd": 60914.276937069,
+      "xi": -9.568464770234273,
+      "eta": 0.5934819489018067,
+      "s_xi": 2.0929801062302147,
+      "s_eta": 4.157035553367082,
+      "band": 2
+    },
+    {
+      "visit": "V1",
+      "mjd": 60914.278429326,
+      "xi": 8.1579233777,
+      "eta": -13.196277331191553,
+      "s_xi": 10.748120739918642,
+      "s_eta": 5.93850238217212,
+      "band": 2
+    },
+    {
+      "visit": "V1",
+      "mjd": 60915.431800136,
+      "xi": 2.808337614150933,
+      "eta": -11.016133804106222,
+      "s_xi": 0.8507702053416643,
+      "s_eta": 0.9476436239376347,
+      "band": 1
+    },
+    {
+      "visit": "V1",
+      "mjd": 60915.433292393,
+      "xi": 2.3884711222358503,
+      "eta": -12.589460300606458,
+      "s_xi": 0.7434687862060593,
+      "s_eta": 1.9409204122804185,
+      "band": 1
+    },
+    {
+      "visit": "V1",
+      "mjd": 60915.434784638,
+      "xi": -3.095628769476672,
+      "eta": -2.587521546076928,
+      "s_xi": 0.487322922491051,
+      "s_eta": 0.4685465001282556,
+      "band": 1
+    },
+    {
+      "visit": "V1",
+      "mjd": 60915.436276907,
+      "xi": 2.305072909439383,
+      "eta": 0.5576352788991855,
+      "s_xi": 1.9453775420337196,
+      "s_eta": 1.4660567444867754,
+      "band": 1
+    },
+    {
+      "visit": "V1",
+      "mjd": 60916.656728076,
+      "xi": -4.149247036326546,
+      "eta": -11.170086067953985,
+      "s_xi": 1.068465317173163,
+      "s_eta": 0.8679162513241222,
+      "band": 2
+    },
+    {
+      "visit": "V1",
+      "mjd": 60916.658238111,
+      "xi": -3.0492216663419467,
+      "eta": 0.8762530350289324,
+      "s_xi": 0.9534016084772707,
+      "s_eta": 1.197802582023014,
+      "band": 2
+    },
+    {
+      "visit": "V1",
+      "mjd": 60916.659730356,
+      "xi": -6.753007070981166,
+      "eta": -0.46139416628727087,
+      "s_xi": 1.0228747687477695,
+      "s_eta": 0.9078721714314181,
+      "band": 2
+    },
+    {
+      "visit": "V1",
+      "mjd": 60916.722636004,
+      "xi": 1.8192098796524985,
+      "eta": -13.333396303313817,
+      "s_xi": 0.8821311926232284,
+      "s_eta": 0.6301725461787409,
+      "band": 1
+    },
+    {
+      "visit": "V1",
+      "mjd": 60916.724146016,
+      "xi": -8.149531968485674,
+      "eta": -14.541279339298159,
+      "s_xi": 88400950.50073928,
+      "s_eta": 9683050349.208597,
+      "band": 4
+    },
+    {
+      "visit": "V2",
+      "mjd": 60948.58600568,
+      "xi": 4.87530812040343,
+      "eta": -10.61251731501585,
+      "s_xi": 1.050232190366931,
+      "s_eta": 0.9315906599125582,
+      "band": 1
+    },
+    {
+      "visit": "V2",
+      "mjd": 60948.653903284,
+      "xi": -4.4158461884750695,
+      "eta": -3.3327194074283653,
+      "s_xi": 0.6090753661222251,
+      "s_eta": 0.5630497938313305,
+      "band": 1
+    },
+    {
+      "visit": "V2",
+      "mjd": 60948.994883516,
+      "xi": 4.193338912138257,
+      "eta": -5.56879416952959,
+      "s_xi": 1.1267950051508175,
+      "s_eta": 0.6022322747566631,
+      "band": 1
+    },
+    {
+      "visit": "V3",
+      "mjd": 61110.09505362,
+      "xi": 1.702337765212429,
+      "eta": -4.337838028487688,
+      "s_xi": 0.32363607917834186,
+      "s_eta": 0.3378889073812841,
+      "band": 1
+    },
+    {
+      "visit": "V3",
+      "mjd": 61114.101721953,
+      "xi": 5.570128309481239,
+      "eta": -8.32857245436287,
+      "s_xi": 2.0848872197911543,
+      "s_eta": 3.6160317391930152,
+      "band": 2
+    },
+    {
+      "visit": "V3",
+      "mjd": 61114.101721953,
+      "xi": 0.6062802028082321,
+      "eta": 5.141527421464818,
+      "s_xi": 0.5979083172934124,
+      "s_eta": 0.5812647898467388,
+      "band": 5
+    },
+    {
+      "visit": "V3",
+      "mjd": 61116.682309673,
+      "xi": 2.686198408621788,
+      "eta": 0.04441481212145454,
+      "s_xi": 0.39124680254619765,
+      "s_eta": 0.28386147529405475,
+      "band": 5
+    },
+    {
+      "visit": "V3",
+      "mjd": 61118.311389719,
+      "xi": 5.366464133909733,
+      "eta": 1.2054928498849435,
+      "s_xi": 0.7792806047721635,
+      "s_eta": 0.5098401327669118,
+      "band": 3
+    },
+    {
+      "visit": "V3",
+      "mjd": 61120.549753666,
+      "xi": -4.149519533602388,
+      "eta": 6.820381395017319,
+      "s_xi": 2.234281551318501,
+      "s_eta": 2.8168421315319647,
+      "band": 5
+    },
+    {
+      "visit": "V3",
+      "mjd": 61120.554230425,
+      "xi": 3.6731430930261832,
+      "eta": -4.090380469431429,
+      "s_xi": 0.8026796265889006,
+      "s_eta": 1.107494353776949,
+      "band": 5
+    },
+    {
+      "visit": "V3",
+      "mjd": 61121.22887156,
+      "xi": 7.195395797604928,
+      "eta": 0.4584698123787757,
+      "s_xi": 2.442809546123911,
+      "s_eta": 0.7230458048556466,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61270.86778171,
+      "xi": -3.914108409560354,
+      "eta": -2.0113977455885372,
+      "s_xi": 1.09568402568752,
+      "s_eta": 1.0976961483715406,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61270.869273955,
+      "xi": 1.0740287736061274,
+      "eta": 6.391357210352525,
+      "s_xi": 0.23772481292838815,
+      "s_eta": 0.23736810348760118,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61273.383829997,
+      "xi": 3.373769883303269,
+      "eta": 11.88995842371996,
+      "s_xi": 0.7630989006145393,
+      "s_eta": 1.4185446367722092,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61273.518505992,
+      "xi": 5.68022397928815,
+      "eta": 11.098201298414669,
+      "s_xi": 2.461908864315187,
+      "s_eta": 7.435530997768456,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61273.651476548,
+      "xi": 2.185080459290017,
+      "eta": 11.570064090180688,
+      "s_xi": 1.909747253970047,
+      "s_eta": 2.378135461723149,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61273.654461062,
+      "xi": -4.618289734130589,
+      "eta": 7.117717380369822,
+      "s_xi": 0.3209077219322728,
+      "s_eta": 0.2634764997504029,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61273.720351201,
+      "xi": 2.7397909888734686,
+      "eta": 0.1608787170646523,
+      "s_xi": 0.641793236245779,
+      "s_eta": 0.6756434888825343,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61273.723335726,
+      "xi": 3.435694774492781,
+      "eta": 1.0423203419226101,
+      "s_xi": 1.4168291286662102,
+      "s_eta": 1.2130013160961766,
+      "band": 5
+    },
+    {
+      "visit": "V5",
+      "mjd": 61276.233841027,
+      "xi": 1.5562324542490626,
+      "eta": 11.425587235628576,
+      "s_xi": 0.4386309205873375,
+      "s_eta": 0.8735997136630332,
+      "band": 1
+    },
+    {
+      "visit": "V5",
+      "mjd": 61276.366616155,
+      "xi": 3.7553426492332598,
+      "eta": 11.622644980212954,
+      "s_xi": 2.217913957952975,
+      "s_eta": 3.2776337713508337,
+      "band": 1
+    },
+    {
+      "visit": "V5",
+      "mjd": 61277.252376062,
+      "xi": -8.84844255729283,
+      "eta": 5.646572765611281,
+      "s_xi": 1.5780174190132945,
+      "s_eta": 0.6501914917436603,
+      "band": 1
+    }
+  ],
+  "fit": {
+    "pmra": -0.3372534019016839,
+    "pmdec": 12.200602135081006,
+    "e_pmra": 0.9977729046637617,
+    "e_pmdec": 0.945647337157763,
+    "mu": 12.205262484503866,
+    "e_mu": 0.9456882318890478,
+    "pa_deg": 358.4166128049205,
+    "plx_fixed": 0.5469759000000001,
+    "chi2": 2225.2052405365343,
+    "dof": 78,
+    "delta_chi2": 4752.012437556794
+  },
+  "catalogue": {
+    "source": "manifest catalogue",
+    "pmra": -0.801551,
+    "pmdec": 10.362394,
+    "mu": 10.393348518010786,
+    "pa_deg": 355.576869477875
+  },
+  "validity": "unvalidated",
+  "skipped": [
+    [
+      "level2_2025W33_2C_0321_1D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W33_2C_0321_1D6_spx_l2b-v20-2025-266.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W33_2C_0321_2D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W33_2C_0321_2D6_spx_l2b-v20-2025-266.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W33_2C_0321_3D6_spx_l2b-v20-2025-266.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W33_2C_0386_3D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W33_2C_0386_3D6_spx_l2b-v20-2025-266.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W33_2C_0386_4D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W33_2C_0386_4D6_spx_l2b-v20-2025-266.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_1B_0164_1D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_1B_0164_1D6_spx_l2b-v20-2025-267.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_1B_0164_2D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_1B_0164_2D6_spx_l2b-v20-2025-267.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_1B_0164_3D3_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_1B_0164_3D6_spx_l2b-v20-2025-267.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_2B_0030_1D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0030_1D6_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_2B_0030_2D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0030_2D6_spx_l2b-v20-2025-267.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_2B_0030_3D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0030_3D6_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_2B_0030_4D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0030_4D6_spx_l2b-v20-2025-267.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W34_2B_0090_4D2_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0557_1D2_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0557_1D5_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0557_2D2_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0557_4D2_spx_l2b-v20-2025-267.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W34_2B_0557_4D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0008_1D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0008_1D6_spx_l2b-v20-2025-270.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0008_2D6_spx_l2b-v20-2025-270.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0008_3D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0008_3D6_spx_l2b-v20-2025-270.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0008_4D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0008_4D6_spx_l2b-v20-2025-270.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0146_1D2_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0146_1D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0146_2D2_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0146_3D2_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0146_3D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0146_4D2_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0146_4D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0432_4D4_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0444_1D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0444_2D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0444_3D2_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0444_3D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0444_4D2_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0444_4D5_spx_l2b-v20-2025-269.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0484_1D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0484_1D6_spx_l2b-v20-2025-270.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0484_2D3_spx_l2b-v20-2025-269.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0484_2D6_spx_l2b-v20-2025-270.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_1A_0658_1D4_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0658_2D4_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0658_3D4_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_1A_0658_4D4_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0221_1D5_spx_l2b-v20-2025-271.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_2A_0221_2D5_spx_l2b-v20-2025-271.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_2A_0221_3D5_spx_l2b-v20-2025-271.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_2A_0221_4D2_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0221_4D5_spx_l2b-v20-2025-271.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_2A_0233_1D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0233_2D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0233_3D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0233_3D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0233_4D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0233_4D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0418_1D2_spx_l2b-v20-2025-270.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0418_1D5_spx_l2b-v20-2025-271.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2025W35_2A_0474_1D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0474_1D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0474_2D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0474_2D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0474_3D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0474_3D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0474_4D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_1D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_1D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_2D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_2D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_3D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_3D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_4D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W35_2A_0611_4D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W36_1A_0024_1D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W36_1A_0024_1D4_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W36_2B_0123_1D1_spx_l2b-v20-2025-271.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W36_2B_0123_1D4_spx_l2b-v20-2025-272.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0353_1D4_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0367_1D4_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0441_1D4_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0471_1D1_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0471_1D4_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0500_1D1_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2025W40_1A_0500_1D4_spx_l2b-v20-2025-277.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0430_2D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0430_2D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0430_3D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0430_3D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0430_4D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0444_1D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0444_1D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_1D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_1D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_2D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_2D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_3D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_3D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_4D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0511_4D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_1D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_1D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_2D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_2D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_3D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_3D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_4D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0539_4D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_1D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_1D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_2D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_2D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_3D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_3D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_4D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0556_4D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0570_1D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0570_1D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0587_1D1_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_1A_0587_1D4_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0501_1D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0501_1D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W11_2A_0501_2D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0501_2D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W11_2A_0501_3D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0501_3D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W11_2A_0501_4D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0501_4D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W11_2A_0513_1D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0513_1D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W11_2A_0513_3D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0513_3D5_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0513_4D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0513_4D5_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0550_1D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0550_1D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W11_2A_0550_2D2_spx_l2b-v24-2026-094.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W11_2A_0550_2D5_spx_l2b-v24-2026-094.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0311_1D2_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0311_1D5_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0311_2D2_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0311_3D2_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0311_3D5_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0311_4D2_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0311_4D5_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0598_1D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0598_1D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0598_2D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0598_3D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0598_3D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0598_4D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0598_4D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0610_1D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0610_1D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0610_2D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0610_2D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0610_3D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0610_3D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_1A_0610_4D3_spx_l2b-v24-2026-082.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_1A_0610_4D6_spx_l2b-v24-2026-082.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0324_1D3_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0324_1D6_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0324_2D3_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0324_2D6_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0371_2D2_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0371_2D5_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0371_3D2_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0371_3D5_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0371_4D2_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0496_1D2_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0520_1D3_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0520_1D6_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0520_2D3_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0520_2D6_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0520_3D3_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0520_3D6_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W12_2A_0520_4D3_spx_l2b-v24-2026-083.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W12_2A_0520_4D6_spx_l2b-v24-2026-083.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W13_1A_0129_1D3_spx_l2b-v24-2026-088.fits",
+      "frame QA"
+    ],
+    [
+      "level2_2026W13_1A_0129_1D6_spx_l2b-v24-2026-088.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W13_1A_0129_2D3_spx_l2b-v24-2026-088.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W13_1A_0129_2D6_spx_l2b-v24-2026-088.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W13_1A_0129_3D3_spx_l2b-v24-2026-088.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W13_1A_0129_3D6_spx_l2b-v24-2026-088.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W13_1A_0129_4D3_spx_l2b-v24-2026-088.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W13_1A_0129_4D6_spx_l2b-v24-2026-088.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W13_1A_0549_1D3_spx_l2b-v24-2026-088.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W13_1A_0549_1D6_spx_l2b-v24-2026-088.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W15_2A_0137_1D3_spx_l2b-v24-2026-105.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W15_2A_0137_1D6_spx_l2b-v24-2026-105.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W19_1A_0046_1D3_spx_l2b-v24-2026-131.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W19_1A_0046_1D6_spx_l2b-v24-2026-131.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W19_1A_0216_1D3_spx_l2b-v24-2026-131.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W19_1A_0216_1D6_spx_l2b-v24-2026-131.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W19_1A_0326_1D3_spx_l2b-v24-2026-131.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W19_1A_0326_1D6_spx_l2b-v24-2026-131.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W19_1A_0403_1D3_spx_l2b-v24-2026-131.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W19_1A_0403_1D6_spx_l2b-v24-2026-131.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W33_2A_0594_4D3_spx_l2b-v27-2026-241.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0007_1D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0007_1D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0007_2D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0007_2D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0007_3D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0007_3D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0007_4D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0007_4D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0176_1D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0176_1D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0176_2D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0176_2D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0238_1D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0238_1D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0308_1D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0308_1D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0308_2D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0308_2D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0308_3D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0308_3D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0308_4D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0308_4D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0363_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0363_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0363_3D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0363_3D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0431_1D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0431_1D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0431_2D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0431_2D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0431_3D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0431_3D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0431_4D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0431_4D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0456_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_1A_0456_1D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_1A_0456_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0081_1D3_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0081_1D6_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0178_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0178_2D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0178_3D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0178_3D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0178_4D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0206_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0206_1D5_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0206_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0206_2D5_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0206_3D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0206_3D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0206_4D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0233_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0233_1D5_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0233_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0233_3D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0233_3D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0233_4D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0249_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0249_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0249_2D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0249_3D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0264_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0264_1D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0264_2D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0264_2D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W34_2A_0757_1D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0757_1D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0757_2D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0757_2D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0757_3D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0038_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0038_1D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W35_1A_0053_1D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_1D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_1D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_2D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_3D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_3D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_4D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0079_4D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0092_1D2_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0092_1D5_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W35_1A_0249_4D4_spx_l2b-v27-2026-243.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W35_1A_0375_1D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_1D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_2D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_2D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_3D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_3D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_4D1_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_1A_0375_4D4_spx_l2b-v27-2026-243.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0126_1D2_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0126_1D5_spx_l2b-v27-2026-246.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ],
+    [
+      "level2_2026W35_2A_0412_1D1_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_1D4_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_2D1_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_2D4_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_3D1_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_3D4_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_4D1_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W35_2A_0412_4D4_spx_l2b-v27-2026-246.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W36_1A_0510_1D1_spx_l2b-v27-2026-252.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W36_1A_0510_1D4_spx_l2b-v27-2026-252.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W39_1A_0371_1D2_spx_l2b-v27-2026-268.fits",
+      "target native centroid unconstrained"
+    ],
+    [
+      "level2_2026W39_1A_0371_1D5_spx_l2b-v27-2026-268.fits",
+      "fewer than five isolated unsaturated registration stars"
+    ]
+  ],
+  "registration": [
+    {
+      "frame": "level2_2025W33_2C_0321_3D3_spx_l2b-v20-2025-267.fits",
+      "before": [
+        0.309317910546252,
+        0.13991580319018426
+      ],
+      "after": [
+        0.3140776853852499,
+        0.1417343133855297
+      ]
+    },
+    {
+      "frame": "level2_2025W34_2B_0090_4D5_spx_l2b-v20-2025-267.fits",
+      "before": [
+        0.20197640726585653,
+        0.32618256592846584
+      ],
+      "after": [
+        0.22914484204423166,
+        0.2945017322920497
+      ]
+    },
+    {
+      "frame": "level2_2025W34_2B_0557_2D5_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.2990845560333387,
+        0.3029922118738455
+      ],
+      "after": [
+        0.3080925826592098,
+        0.2837112674022062
+      ]
+    },
+    {
+      "frame": "level2_2025W34_2B_0557_3D2_spx_l2b-v20-2025-267.fits",
+      "before": [
+        0.20258657231048643,
+        0.2588361050001101
+      ],
+      "after": [
+        0.1906439234030257,
+        0.2492481681328468
+      ]
+    },
+    {
+      "frame": "level2_2025W34_2B_0557_3D5_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.16525934259982675,
+        0.166190211650533
+      ],
+      "after": [
+        0.17449412369360376,
+        0.16476636707872946
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0008_2D3_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.28171281128584913,
+        0.28352458308950546
+      ],
+      "after": [
+        0.2817884197634944,
+        0.2775504146743455
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0146_2D5_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.2628627209503202,
+        0.13004115054688975
+      ],
+      "after": [
+        0.26953775777727135,
+        0.13376731040634762
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0432_4D1_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.25555114414968394,
+        0.20393470434585195
+      ],
+      "after": [
+        0.2551714652942337,
+        0.20255728151065389
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0444_1D2_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.21640036583495412,
+        0.20281240548598686
+      ],
+      "after": [
+        0.21392697231121544,
+        0.18400353161041333
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0444_2D2_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.15728035198404616,
+        0.188194529384279
+      ],
+      "after": [
+        0.16549233319455922,
+        0.16747175109987356
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0658_1D1_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.19496298880148116,
+        0.23360810870829007
+      ],
+      "after": [
+        0.18719093233324033,
+        0.22758576321353682
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0658_2D1_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.17619857233299374,
+        0.2949748072895053
+      ],
+      "after": [
+        0.17477412966040423,
+        0.30018847218845063
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0658_3D1_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.20358430039725647,
+        0.14304597177131262
+      ],
+      "after": [
+        0.18724528881752853,
+        0.14300772296900746
+      ]
+    },
+    {
+      "frame": "level2_2025W35_1A_0658_4D1_spx_l2b-v20-2025-269.fits",
+      "before": [
+        0.18501697453682056,
+        0.22725628030986622
+      ],
+      "after": [
+        0.16819312311264217,
+        0.22731558508311508
+      ]
+    },
+    {
+      "frame": "level2_2025W35_2A_0221_1D2_spx_l2b-v20-2025-270.fits",
+      "before": [
+        0.26989094480315867,
+        0.182512257602433
+      ],
+      "after": [
+        0.2576853098729722,
+        0.1435851474447972
+      ]
+    },
+    {
+      "frame": "level2_2025W35_2A_0221_2D2_spx_l2b-v20-2025-270.fits",
+      "before": [
+        0.2423092584780599,
+        0.19377266096750118
+      ],
+      "after": [
+        0.2339960301517778,
+        0.1852612318845732
+      ]
+    },
+    {
+      "frame": "level2_2025W35_2A_0221_3D2_spx_l2b-v20-2025-270.fits",
+      "before": [
+        0.1661105721427661,
+        0.21382139364594804
+      ],
+      "after": [
+        0.14701102001336674,
+        0.19659693260803437
+      ]
+    },
+    {
+      "frame": "level2_2025W35_2A_0233_1D1_spx_l2b-v20-2025-271.fits",
+      "before": [
+        0.40498142502998474,
+        0.31047143583526243
+      ],
+      "after": [
+        0.40508702125486645,
+        0.31105393110981655
+      ]
+    },
+    {
+      "frame": "level2_2025W35_2A_0233_2D4_spx_l2b-v20-2025-271.fits",
+      "before": [
+        0.16200902628790537,
+        0.16846016503779734
+      ],
+      "after": [
+        0.16196908118493505,
+        0.15383110507958542
+      ]
+    },
+    {
+      "frame": "level2_2025W40_1A_0353_1D1_spx_l2b-v20-2025-277.fits",
+      "before": [
+        0.22327228371918761,
+        0.2320576216021967
+      ],
+      "after": [
+        0.22256207718547347,
+        0.23107275859992182
+      ]
+    },
+    {
+      "frame": "level2_2025W40_1A_0367_1D1_spx_l2b-v20-2025-277.fits",
+      "before": [
+        0.17831918192097337,
+        0.1646432397348487
+      ],
+      "after": [
+        0.17265788716068386,
+        0.16579763632570632
+      ]
+    },
+    {
+      "frame": "level2_2025W40_1A_0441_1D1_spx_l2b-v20-2025-277.fits",
+      "before": [
+        0.24798881046281576,
+        0.24840234694938068
+      ],
+      "after": [
+        0.22117178463637321,
+        0.24712048348643467
+      ]
+    },
+    {
+      "frame": "level2_2026W11_1A_0430_4D1_spx_l2b-v24-2026-094.fits",
+      "before": [
+        0.28600105408566395,
+        0.23574757121843057
+      ],
+      "after": [
+        0.27969539532942617,
+        0.2423254275451983
+      ]
+    },
+    {
+      "frame": "level2_2026W11_2A_0513_2D2_spx_l2b-v24-2026-094.fits",
+      "before": [
+        0.27382339783551485,
+        0.35040022645148494
+      ],
+      "after": [
+        0.22697781354954974,
+        0.34059817527352165
+      ]
+    },
+    {
+      "frame": "level2_2026W11_2A_0513_2D5_spx_l2b-v24-2026-094.fits",
+      "before": [
+        0.20709786997920518,
+        0.30816214960118976
+      ],
+      "after": [
+        0.07288750883415933,
+        0.3211091831999689
+      ]
+    },
+    {
+      "frame": "level2_2026W12_1A_0311_2D5_spx_l2b-v24-2026-082.fits",
+      "before": [
+        0.29064915745820824,
+        0.1968786318264505
+      ],
+      "after": [
+        0.22235875977596312,
+        0.15038089989698253
+      ]
+    },
+    {
+      "frame": "level2_2026W12_1A_0598_2D3_spx_l2b-v24-2026-082.fits",
+      "before": [
+        0.28688905015259625,
+        0.15387139541858139
+      ],
+      "after": [
+        0.2809959016044515,
+        0.15573142948657845
+      ]
+    },
+    {
+      "frame": "level2_2026W12_2A_0371_1D5_spx_l2b-v24-2026-083.fits",
+      "before": [
+        0.2916109983062365,
+        0.19712129389583252
+      ],
+      "after": [
+        0.2538916130015951,
+        0.10461493510710905
+      ]
+    },
+    {
+      "frame": "level2_2026W12_2A_0371_4D5_spx_l2b-v24-2026-083.fits",
+      "before": [
+        0.3985793704636223,
+        0.21362374153883654
+      ],
+      "after": [
+        0.23385783306279137,
+        0.16912770934548543
+      ]
+    },
+    {
+      "frame": "level2_2026W12_2A_0496_1D5_spx_l2b-v24-2026-083.fits",
+      "before": [
+        0.31267320827123823,
+        0.18005150534254402
+      ],
+      "after": [
+        0.2978843666508979,
+        0.18523654358755862
+      ]
+    },
+    {
+      "frame": "level2_2026W34_1A_0363_1D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.3019227583516721,
+        0.22297969280802807
+      ],
+      "after": [
+        0.16247995008024496,
+        0.12249626950884356
+      ]
+    },
+    {
+      "frame": "level2_2026W34_1A_0363_2D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.26582502900369037,
+        0.1909163806786825
+      ],
+      "after": [
+        0.2669865209440562,
+        0.14513638716432573
+      ]
+    },
+    {
+      "frame": "level2_2026W34_2A_0178_4D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.20626787835686508,
+        0.18357366057792995
+      ],
+      "after": [
+        0.17123491007921565,
+        0.13372413275774508
+      ]
+    },
+    {
+      "frame": "level2_2026W34_2A_0206_4D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.20475328300040388,
+        0.3081511983943428
+      ],
+      "after": [
+        0.22451294114825468,
+        0.2696176826961787
+      ]
+    },
+    {
+      "frame": "level2_2026W34_2A_0233_2D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.24097587068085774,
+        0.20438758599751344
+      ],
+      "after": [
+        0.24931962482447248,
+        0.20022021802505904
+      ]
+    },
+    {
+      "frame": "level2_2026W34_2A_0233_4D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.3085043260800609,
+        0.23049792462300495
+      ],
+      "after": [
+        0.29493746310105556,
+        0.12992659104208099
+      ]
+    },
+    {
+      "frame": "level2_2026W34_2A_0249_1D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.15073922955753258,
+        0.1658794238025566
+      ],
+      "after": [
+        0.09516487611218158,
+        0.17376985615308888
+      ]
+    },
+    {
+      "frame": "level2_2026W34_2A_0249_3D5_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.11049500188025936,
+        0.18265029249864498
+      ],
+      "after": [
+        0.09926565418486805,
+        0.20746861349642814
+      ]
+    },
+    {
+      "frame": "level2_2026W35_1A_0053_1D1_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.215688666640142,
+        0.17138590019155692
+      ],
+      "after": [
+        0.19866646481288813,
+        0.15854510678153597
+      ]
+    },
+    {
+      "frame": "level2_2026W35_1A_0079_2D1_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.23878342189645443,
+        0.231930985559246
+      ],
+      "after": [
+        0.19157394376754563,
+        0.20856816076506454
+      ]
+    },
+    {
+      "frame": "level2_2026W35_1A_0249_4D1_spx_l2b-v27-2026-243.fits",
+      "before": [
+        0.30064488748025536,
+        0.2934423055300598
+      ],
+      "after": [
+        0.32290257872765304,
+        0.23273206459992207
+      ]
+    }
+  ]
+}
+```
+A passing numerical sample is still subject to foundations, external comparison and I review.
+
+## Metrics
+
+| metric | value | threshold | pass |
+|---|---|---|---|
+
+## Caveats
+
+- recorded on a dirty working tree: code_digest identifies the exact code
+
+## Figures
+
+![measurements.png](figures/measurements.png)
+
+git 8d12a02 (dirty) · contracts {'spherex.types': '0.1.0', 'http-api': '0.1.0'} · calibration 94e18b883fdc9b28 · author M · reviewer pending

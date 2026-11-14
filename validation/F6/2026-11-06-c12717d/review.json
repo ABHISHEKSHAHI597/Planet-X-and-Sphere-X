@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F6",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Recorded real FLAGS-header tests reproduce both MP_ and MSKN/MSKM layouts and release-dependent missing planes. Never mask SOURCE/OUTLIER/STREAK in discovery. The source footprint association is not evidence of detection in blue bands. Current production position model replaces the temporary adapter; stale legacy evidence needs rerun for acceptance.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "9077fcc4982aa3237ae9f2cebc0003863d737cca1b14aab39f1d4e0f1e1852d1"
+}

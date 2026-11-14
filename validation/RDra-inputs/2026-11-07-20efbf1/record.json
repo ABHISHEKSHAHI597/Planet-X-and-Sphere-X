@@ -1,0 +1,83 @@
+{
+ "schema": "parallax-evidence@0-temporary",
+ "check_id": "RDra-inputs",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {
+  "frames": {
+   "value": 2483,
+   "threshold": "\u22482,480 (understanding.md \u00a73.4)",
+   "pass": true
+  },
+  "deep_frames": {
+   "value": 1947,
+   "threshold": "\u22481,950",
+   "pass": true
+  },
+  "header_errors": {
+   "value": 0,
+   "threshold": "0",
+   "pass": true
+  },
+  "target_off_detector": {
+   "value": 5,
+   "threshold": "reported (circle overlaps, pixel centre outside)",
+   "pass": null
+  },
+  "outside_band_ch0_or_18": {
+   "value": 68,
+   "threshold": "reported",
+   "pass": null
+  },
+  "qa_pass_frames": {
+   "value": 2483,
+   "threshold": "reported (F8)",
+   "pass": null
+  },
+  "channel_groups": {
+   "value": 102,
+   "threshold": "reported; \u2264 102",
+   "pass": true
+  },
+  "frames_per_group_min_median": {
+   "value": [
+    4,
+    31
+   ],
+   "threshold": "reported (annulus method needs \u2265 2 per group)",
+   "pass": true
+  },
+  "by_collection": {
+   "value": {
+    "spherex_qr2": 536,
+    "spherex_qr2_deep": 1224,
+    "spherex_qr3_deep": 723
+   },
+   "threshold": "reported",
+   "pass": null
+  }
+ },
+ "git_sha": "20efbf1",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "152b410215da"
+ ],
+ "inputs": {
+  "output": "backend/tests/data/real/rdra_frame_inputs.json.gz",
+  "pin": "152b410215da"
+ },
+ "input_frame_count": 2483,
+ "runtime_s": 0.0,
+ "author": "D",
+ "reviewer": "pending (M for science checks, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/access/deepfield.py",
+  "scripts/rdra_inputs.py"
+ ],
+ "caveats": [],
+ "date": "2026-11-07"
+}

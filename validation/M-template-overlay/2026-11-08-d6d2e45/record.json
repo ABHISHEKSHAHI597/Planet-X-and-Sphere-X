@@ -1,0 +1,40 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-template-overlay",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "3addc0f80339"
+ ],
+ "inputs": [
+  {
+   "url": "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\epsindb-spectrum.json",
+   "sha256": "272b4b422329ac6cac30a851351faf9b47cd4696439384666c3672e855cb17a6"
+  }
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 1.9,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_template_overlay.py",
+  "backend/spherex/templates.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "d0a159755d0679bb9755b4429ddcf89880d134a81f2ff1dd5fdcb6bb9ae232e8",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-d6d2e45-superseded-2",
+ "date": "2026-11-08"
+}

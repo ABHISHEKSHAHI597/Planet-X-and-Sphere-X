@@ -1,0 +1,3751 @@
+{
+ "axis": "visit",
+ "bands": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "bins": {
+  "1": [
+   {
+    "band": 1,
+    "id": "V1",
+    "label": "V1 · MOCK · S2 · 72 frames",
+    "mjd_max": 60913.8,
+    "mjd_mean": 60907.0,
+    "mjd_min": 60900.2,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     2
+    ]
+   },
+   {
+    "band": 1,
+    "id": "V2",
+    "label": "V2 · MOCK · S1 · 72 frames",
+    "mjd_max": 61096.1,
+    "mjd_mean": 61088.25,
+    "mjd_min": 61080.4,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     1
+    ]
+   },
+   {
+    "band": 1,
+    "id": "V3",
+    "label": "V3 · MOCK · S4 · partial (3 in band 1)",
+    "mjd_max": 61263.1,
+    "mjd_mean": 61262.55,
+    "mjd_min": 61262.0,
+    "n_frames": 3,
+    "n_visit_frames": 18,
+    "status": "partial",
+    "surveys": [
+     4
+    ]
+   }
+  ],
+  "2": [
+   {
+    "band": 2,
+    "id": "V1",
+    "label": "V1 · MOCK · S2 · 72 frames",
+    "mjd_max": 60913.8,
+    "mjd_mean": 60907.0,
+    "mjd_min": 60900.2,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     2
+    ]
+   },
+   {
+    "band": 2,
+    "id": "V2",
+    "label": "V2 · MOCK · S1 · 72 frames",
+    "mjd_max": 61096.1,
+    "mjd_mean": 61088.25,
+    "mjd_min": 61080.4,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     1
+    ]
+   },
+   {
+    "band": 2,
+    "id": "V3",
+    "label": "V3 · MOCK · S4 · partial (3 in band 2)",
+    "mjd_max": 61263.1,
+    "mjd_mean": 61262.55,
+    "mjd_min": 61262.0,
+    "n_frames": 3,
+    "n_visit_frames": 18,
+    "status": "partial",
+    "surveys": [
+     4
+    ]
+   }
+  ],
+  "3": [
+   {
+    "band": 3,
+    "id": "V1",
+    "label": "V1 · MOCK · S2 · 72 frames",
+    "mjd_max": 60913.8,
+    "mjd_mean": 60907.0,
+    "mjd_min": 60900.2,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     2
+    ]
+   },
+   {
+    "band": 3,
+    "id": "V2",
+    "label": "V2 · MOCK · S1 · 72 frames",
+    "mjd_max": 61096.1,
+    "mjd_mean": 61088.25,
+    "mjd_min": 61080.4,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     1
+    ]
+   },
+   {
+    "band": 3,
+    "id": "V3",
+    "label": "V3 · MOCK · S4 · partial (3 in band 3)",
+    "mjd_max": 61263.1,
+    "mjd_mean": 61262.55,
+    "mjd_min": 61262.0,
+    "n_frames": 3,
+    "n_visit_frames": 18,
+    "status": "partial",
+    "surveys": [
+     4
+    ]
+   }
+  ],
+  "4": [
+   {
+    "band": 4,
+    "id": "V1",
+    "label": "V1 · MOCK · S2 · 72 frames",
+    "mjd_max": 60913.8,
+    "mjd_mean": 60907.0,
+    "mjd_min": 60900.2,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     2
+    ]
+   },
+   {
+    "band": 4,
+    "id": "V2",
+    "label": "V2 · MOCK · S1 · 72 frames",
+    "mjd_max": 61096.1,
+    "mjd_mean": 61088.25,
+    "mjd_min": 61080.4,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     1
+    ]
+   },
+   {
+    "band": 4,
+    "id": "V3",
+    "label": "V3 · MOCK · S4 · partial (3 in band 4)",
+    "mjd_max": 61263.1,
+    "mjd_mean": 61262.55,
+    "mjd_min": 61262.0,
+    "n_frames": 3,
+    "n_visit_frames": 18,
+    "status": "partial",
+    "surveys": [
+     4
+    ]
+   }
+  ],
+  "5": [
+   {
+    "band": 5,
+    "id": "V1",
+    "label": "V1 · MOCK · S2 · 72 frames",
+    "mjd_max": 60913.8,
+    "mjd_mean": 60907.0,
+    "mjd_min": 60900.2,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     2
+    ]
+   },
+   {
+    "band": 5,
+    "id": "V2",
+    "label": "V2 · MOCK · S1 · 72 frames",
+    "mjd_max": 61096.1,
+    "mjd_mean": 61088.25,
+    "mjd_min": 61080.4,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     1
+    ]
+   },
+   {
+    "band": 5,
+    "id": "V3",
+    "label": "V3 · MOCK · S4 · partial (3 in band 5)",
+    "mjd_max": 61263.1,
+    "mjd_mean": 61262.55,
+    "mjd_min": 61262.0,
+    "n_frames": 3,
+    "n_visit_frames": 18,
+    "status": "partial",
+    "surveys": [
+     4
+    ]
+   }
+  ],
+  "6": [
+   {
+    "band": 6,
+    "id": "V1",
+    "label": "V1 · MOCK · S2 · 72 frames",
+    "mjd_max": 60913.8,
+    "mjd_mean": 60907.0,
+    "mjd_min": 60900.2,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     2
+    ]
+   },
+   {
+    "band": 6,
+    "id": "V2",
+    "label": "V2 · MOCK · S1 · 72 frames",
+    "mjd_max": 61096.1,
+    "mjd_mean": 61088.25,
+    "mjd_min": 61080.4,
+    "n_frames": 12,
+    "n_visit_frames": 72,
+    "status": "full",
+    "surveys": [
+     1
+    ]
+   },
+   {
+    "band": 6,
+    "id": "V3",
+    "label": "V3 · MOCK · S4 · partial (3 in band 6)",
+    "mjd_max": 61263.1,
+    "mjd_mean": 61262.55,
+    "mjd_min": 61262.0,
+    "n_frames": 3,
+    "n_visit_frames": 18,
+    "status": "partial",
+    "surveys": [
+     4
+    ]
+   }
+  ]
+ },
+ "data_source": "mock",
+ "flags": {
+  "bits": {
+   "BLOOM": 26,
+   "COLD": 11,
+   "CROSSTALK": 20,
+   "DICHROIC": 7,
+   "FULLSAMPLE": 12,
+   "GHOST": 22,
+   "GHOST_EXT": 24,
+   "GHOST_FPA": 23,
+   "HALO": 28,
+   "HOT": 10,
+   "MISSING_DATA": 9,
+   "NONFUNC": 6,
+   "NONLINEAR": 15,
+   "OUTLIER": 19,
+   "OVERFLOW": 1,
+   "PERSIST": 17,
+   "PHANMISS": 14,
+   "PHANTOM": 4,
+   "REFERENCE": 5,
+   "SATELLITE_HALO": 29,
+   "SNOWBALL": 27,
+   "SOURCE": 21,
+   "STREAK": 25,
+   "SUR_ERROR": 2,
+   "TRANSIENT": 0
+  },
+  "format": "u32le-row0south-flags-canonical@1",
+  "info": {
+   "BLOOM": "charge bloom",
+   "COLD": "cold pixel",
+   "CROSSTALK": "electrical crosstalk echo",
+   "DICHROIC": "low throughput at the band 3/4 edge",
+   "FULLSAMPLE": "informational",
+   "GHOST": "optical ghost",
+   "GHOST_EXT": "optical ghost (external)",
+   "GHOST_FPA": "optical ghost (focal plane)",
+   "HALO": "halo",
+   "HOT": "hot pixel",
+   "MISSING_DATA": "lost in downlink",
+   "NONFUNC": "dead pixel",
+   "NONLINEAR": "no reliable nonlinearity correction",
+   "OUTLIER": "isolated outlier outside known sources: could be an uncatalogued source",
+   "OVERFLOW": "reached about half full well (bright star); cores that overflowed early are blank",
+   "PERSIST": "persistence from an earlier bright exposure (mimics transients)",
+   "PHANMISS": "not correctable",
+   "PHANTOM": "phantom pixel (QR2 plane)",
+   "REFERENCE": "reference pixel, not light-sensitive (QR2 plane)",
+   "SATELLITE_HALO": "satellite halo",
+   "SNOWBALL": "snowball",
+   "SOURCE": "pixel of a known catalogue source",
+   "STREAK": "linear streak (satellite or fast asteroid)",
+   "SUR_ERROR": "onboard ramp-fit error",
+   "TRANSIENT": "cosmic ray or bloom onset on the ramp"
+  }
+ },
+ "formats": {
+  "flags": "u32le-row0south-flags-canonical@1",
+  "science": "f32le-row0south-nodata-nan@1",
+  "stack": "f16le-row0south-nodata-65504@1"
+ },
+ "frames": [
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_00.fits",
+   "mjd": 60900.2,
+   "obsid": "mockV100",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_01.fits",
+   "mjd": 60901.43636363636,
+   "obsid": "mockV101",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_02.fits",
+   "mjd": 60902.67272727272,
+   "obsid": "mockV102",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_03.fits",
+   "mjd": 60903.90909090909,
+   "obsid": "mockV103",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_04.fits",
+   "mjd": 60905.145454545454,
+   "obsid": "mockV104",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_05.fits",
+   "mjd": 60906.38181818182,
+   "obsid": "mockV105",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_06.fits",
+   "mjd": 60907.61818181818,
+   "obsid": "mockV106",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_07.fits",
+   "mjd": 60908.854545454546,
+   "obsid": "mockV107",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_08.fits",
+   "mjd": 60910.09090909091,
+   "obsid": "mockV108",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_09.fits",
+   "mjd": 60911.32727272728,
+   "obsid": "mockV109",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_10.fits",
+   "mjd": 60912.56363636364,
+   "obsid": "mockV110",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V1_D1_11.fits",
+   "mjd": 60913.8,
+   "obsid": "mockV111",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 2
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_00.fits",
+   "mjd": 61080.4,
+   "obsid": "mockV200",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_01.fits",
+   "mjd": 61081.82727272727,
+   "obsid": "mockV201",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_02.fits",
+   "mjd": 61083.25454545455,
+   "obsid": "mockV202",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_03.fits",
+   "mjd": 61084.681818181816,
+   "obsid": "mockV203",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_04.fits",
+   "mjd": 61086.10909090909,
+   "obsid": "mockV204",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_05.fits",
+   "mjd": 61087.53636363636,
+   "obsid": "mockV205",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_06.fits",
+   "mjd": 61088.96363636364,
+   "obsid": "mockV206",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_07.fits",
+   "mjd": 61090.39090909091,
+   "obsid": "mockV207",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_08.fits",
+   "mjd": 61091.818181818184,
+   "obsid": "mockV208",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_09.fits",
+   "mjd": 61093.24545454545,
+   "obsid": "mockV209",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_10.fits",
+   "mjd": 61094.67272727273,
+   "obsid": "mockV210",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V2_D1_11.fits",
+   "mjd": 61096.1,
+   "obsid": "mockV211",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 1
+  },
+  {
+   "band": 1,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V3_D1_00.fits",
+   "mjd": 61262.0,
+   "obsid": "mockV300",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 1,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V3_D1_01.fits",
+   "mjd": 61262.55,
+   "obsid": "mockV301",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 1,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 1,
+   "id": "mock_V3_D1_02.fits",
+   "mjd": 61263.1,
+   "obsid": "mockV302",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_00.fits",
+   "mjd": 60900.2,
+   "obsid": "mockV100",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_01.fits",
+   "mjd": 60901.43636363636,
+   "obsid": "mockV101",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_02.fits",
+   "mjd": 60902.67272727272,
+   "obsid": "mockV102",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_03.fits",
+   "mjd": 60903.90909090909,
+   "obsid": "mockV103",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_04.fits",
+   "mjd": 60905.145454545454,
+   "obsid": "mockV104",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_05.fits",
+   "mjd": 60906.38181818182,
+   "obsid": "mockV105",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_06.fits",
+   "mjd": 60907.61818181818,
+   "obsid": "mockV106",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_07.fits",
+   "mjd": 60908.854545454546,
+   "obsid": "mockV107",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_08.fits",
+   "mjd": 60910.09090909091,
+   "obsid": "mockV108",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_09.fits",
+   "mjd": 60911.32727272728,
+   "obsid": "mockV109",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_10.fits",
+   "mjd": 60912.56363636364,
+   "obsid": "mockV110",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V1_D2_11.fits",
+   "mjd": 60913.8,
+   "obsid": "mockV111",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 2
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_00.fits",
+   "mjd": 61080.4,
+   "obsid": "mockV200",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_01.fits",
+   "mjd": 61081.82727272727,
+   "obsid": "mockV201",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_02.fits",
+   "mjd": 61083.25454545455,
+   "obsid": "mockV202",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_03.fits",
+   "mjd": 61084.681818181816,
+   "obsid": "mockV203",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_04.fits",
+   "mjd": 61086.10909090909,
+   "obsid": "mockV204",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_05.fits",
+   "mjd": 61087.53636363636,
+   "obsid": "mockV205",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_06.fits",
+   "mjd": 61088.96363636364,
+   "obsid": "mockV206",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_07.fits",
+   "mjd": 61090.39090909091,
+   "obsid": "mockV207",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_08.fits",
+   "mjd": 61091.818181818184,
+   "obsid": "mockV208",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_09.fits",
+   "mjd": 61093.24545454545,
+   "obsid": "mockV209",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_10.fits",
+   "mjd": 61094.67272727273,
+   "obsid": "mockV210",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V2_D2_11.fits",
+   "mjd": 61096.1,
+   "obsid": "mockV211",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 1
+  },
+  {
+   "band": 2,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V3_D2_00.fits",
+   "mjd": 61262.0,
+   "obsid": "mockV300",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 2,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V3_D2_01.fits",
+   "mjd": 61262.55,
+   "obsid": "mockV301",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 2,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 2,
+   "id": "mock_V3_D2_02.fits",
+   "mjd": 61263.1,
+   "obsid": "mockV302",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_00.fits",
+   "mjd": 60900.2,
+   "obsid": "mockV100",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_01.fits",
+   "mjd": 60901.43636363636,
+   "obsid": "mockV101",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_02.fits",
+   "mjd": 60902.67272727272,
+   "obsid": "mockV102",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_03.fits",
+   "mjd": 60903.90909090909,
+   "obsid": "mockV103",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_04.fits",
+   "mjd": 60905.145454545454,
+   "obsid": "mockV104",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_05.fits",
+   "mjd": 60906.38181818182,
+   "obsid": "mockV105",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_06.fits",
+   "mjd": 60907.61818181818,
+   "obsid": "mockV106",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_07.fits",
+   "mjd": 60908.854545454546,
+   "obsid": "mockV107",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_08.fits",
+   "mjd": 60910.09090909091,
+   "obsid": "mockV108",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_09.fits",
+   "mjd": 60911.32727272728,
+   "obsid": "mockV109",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_10.fits",
+   "mjd": 60912.56363636364,
+   "obsid": "mockV110",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V1_D3_11.fits",
+   "mjd": 60913.8,
+   "obsid": "mockV111",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 2
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_00.fits",
+   "mjd": 61080.4,
+   "obsid": "mockV200",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_01.fits",
+   "mjd": 61081.82727272727,
+   "obsid": "mockV201",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_02.fits",
+   "mjd": 61083.25454545455,
+   "obsid": "mockV202",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_03.fits",
+   "mjd": 61084.681818181816,
+   "obsid": "mockV203",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_04.fits",
+   "mjd": 61086.10909090909,
+   "obsid": "mockV204",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_05.fits",
+   "mjd": 61087.53636363636,
+   "obsid": "mockV205",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_06.fits",
+   "mjd": 61088.96363636364,
+   "obsid": "mockV206",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_07.fits",
+   "mjd": 61090.39090909091,
+   "obsid": "mockV207",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_08.fits",
+   "mjd": 61091.818181818184,
+   "obsid": "mockV208",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_09.fits",
+   "mjd": 61093.24545454545,
+   "obsid": "mockV209",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_10.fits",
+   "mjd": 61094.67272727273,
+   "obsid": "mockV210",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V2_D3_11.fits",
+   "mjd": 61096.1,
+   "obsid": "mockV211",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 1
+  },
+  {
+   "band": 3,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V3_D3_00.fits",
+   "mjd": 61262.0,
+   "obsid": "mockV300",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 3,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V3_D3_01.fits",
+   "mjd": 61262.55,
+   "obsid": "mockV301",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 3,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 3,
+   "id": "mock_V3_D3_02.fits",
+   "mjd": 61263.1,
+   "obsid": "mockV302",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_00.fits",
+   "mjd": 60900.2,
+   "obsid": "mockV100",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_01.fits",
+   "mjd": 60901.43636363636,
+   "obsid": "mockV101",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_02.fits",
+   "mjd": 60902.67272727272,
+   "obsid": "mockV102",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_03.fits",
+   "mjd": 60903.90909090909,
+   "obsid": "mockV103",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_04.fits",
+   "mjd": 60905.145454545454,
+   "obsid": "mockV104",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_05.fits",
+   "mjd": 60906.38181818182,
+   "obsid": "mockV105",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_06.fits",
+   "mjd": 60907.61818181818,
+   "obsid": "mockV106",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_07.fits",
+   "mjd": 60908.854545454546,
+   "obsid": "mockV107",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_08.fits",
+   "mjd": 60910.09090909091,
+   "obsid": "mockV108",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_09.fits",
+   "mjd": 60911.32727272728,
+   "obsid": "mockV109",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_10.fits",
+   "mjd": 60912.56363636364,
+   "obsid": "mockV110",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V1_D4_11.fits",
+   "mjd": 60913.8,
+   "obsid": "mockV111",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 2
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_00.fits",
+   "mjd": 61080.4,
+   "obsid": "mockV200",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_01.fits",
+   "mjd": 61081.82727272727,
+   "obsid": "mockV201",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_02.fits",
+   "mjd": 61083.25454545455,
+   "obsid": "mockV202",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_03.fits",
+   "mjd": 61084.681818181816,
+   "obsid": "mockV203",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_04.fits",
+   "mjd": 61086.10909090909,
+   "obsid": "mockV204",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_05.fits",
+   "mjd": 61087.53636363636,
+   "obsid": "mockV205",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_06.fits",
+   "mjd": 61088.96363636364,
+   "obsid": "mockV206",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_07.fits",
+   "mjd": 61090.39090909091,
+   "obsid": "mockV207",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_08.fits",
+   "mjd": 61091.818181818184,
+   "obsid": "mockV208",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_09.fits",
+   "mjd": 61093.24545454545,
+   "obsid": "mockV209",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_10.fits",
+   "mjd": 61094.67272727273,
+   "obsid": "mockV210",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V2_D4_11.fits",
+   "mjd": 61096.1,
+   "obsid": "mockV211",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 1
+  },
+  {
+   "band": 4,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V3_D4_00.fits",
+   "mjd": 61262.0,
+   "obsid": "mockV300",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 4,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V3_D4_01.fits",
+   "mjd": 61262.55,
+   "obsid": "mockV301",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 4,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 4,
+   "id": "mock_V3_D4_02.fits",
+   "mjd": 61263.1,
+   "obsid": "mockV302",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_00.fits",
+   "mjd": 60900.2,
+   "obsid": "mockV100",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_01.fits",
+   "mjd": 60901.43636363636,
+   "obsid": "mockV101",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_02.fits",
+   "mjd": 60902.67272727272,
+   "obsid": "mockV102",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_03.fits",
+   "mjd": 60903.90909090909,
+   "obsid": "mockV103",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_04.fits",
+   "mjd": 60905.145454545454,
+   "obsid": "mockV104",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_05.fits",
+   "mjd": 60906.38181818182,
+   "obsid": "mockV105",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_06.fits",
+   "mjd": 60907.61818181818,
+   "obsid": "mockV106",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_07.fits",
+   "mjd": 60908.854545454546,
+   "obsid": "mockV107",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_08.fits",
+   "mjd": 60910.09090909091,
+   "obsid": "mockV108",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_09.fits",
+   "mjd": 60911.32727272728,
+   "obsid": "mockV109",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_10.fits",
+   "mjd": 60912.56363636364,
+   "obsid": "mockV110",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V1_D5_11.fits",
+   "mjd": 60913.8,
+   "obsid": "mockV111",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 2
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_00.fits",
+   "mjd": 61080.4,
+   "obsid": "mockV200",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_01.fits",
+   "mjd": 61081.82727272727,
+   "obsid": "mockV201",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_02.fits",
+   "mjd": 61083.25454545455,
+   "obsid": "mockV202",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_03.fits",
+   "mjd": 61084.681818181816,
+   "obsid": "mockV203",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_04.fits",
+   "mjd": 61086.10909090909,
+   "obsid": "mockV204",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_05.fits",
+   "mjd": 61087.53636363636,
+   "obsid": "mockV205",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_06.fits",
+   "mjd": 61088.96363636364,
+   "obsid": "mockV206",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_07.fits",
+   "mjd": 61090.39090909091,
+   "obsid": "mockV207",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_08.fits",
+   "mjd": 61091.818181818184,
+   "obsid": "mockV208",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_09.fits",
+   "mjd": 61093.24545454545,
+   "obsid": "mockV209",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_10.fits",
+   "mjd": 61094.67272727273,
+   "obsid": "mockV210",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V2_D5_11.fits",
+   "mjd": 61096.1,
+   "obsid": "mockV211",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 1
+  },
+  {
+   "band": 5,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V3_D5_00.fits",
+   "mjd": 61262.0,
+   "obsid": "mockV300",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 5,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V3_D5_01.fits",
+   "mjd": 61262.55,
+   "obsid": "mockV301",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 5,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 5,
+   "id": "mock_V3_D5_02.fits",
+   "mjd": 61263.1,
+   "obsid": "mockV302",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_00.fits",
+   "mjd": 60900.2,
+   "obsid": "mockV100",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_01.fits",
+   "mjd": 60901.43636363636,
+   "obsid": "mockV101",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_02.fits",
+   "mjd": 60902.67272727272,
+   "obsid": "mockV102",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_03.fits",
+   "mjd": 60903.90909090909,
+   "obsid": "mockV103",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_04.fits",
+   "mjd": 60905.145454545454,
+   "obsid": "mockV104",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_05.fits",
+   "mjd": 60906.38181818182,
+   "obsid": "mockV105",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_06.fits",
+   "mjd": 60907.61818181818,
+   "obsid": "mockV106",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_07.fits",
+   "mjd": 60908.854545454546,
+   "obsid": "mockV107",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_08.fits",
+   "mjd": 60910.09090909091,
+   "obsid": "mockV108",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_09.fits",
+   "mjd": 60911.32727272728,
+   "obsid": "mockV109",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_10.fits",
+   "mjd": 60912.56363636364,
+   "obsid": "mockV110",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V1_D6_11.fits",
+   "mjd": 60913.8,
+   "obsid": "mockV111",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 2
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_00.fits",
+   "mjd": 61080.4,
+   "obsid": "mockV200",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_01.fits",
+   "mjd": 61081.82727272727,
+   "obsid": "mockV201",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_02.fits",
+   "mjd": 61083.25454545455,
+   "obsid": "mockV202",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_03.fits",
+   "mjd": 61084.681818181816,
+   "obsid": "mockV203",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_04.fits",
+   "mjd": 61086.10909090909,
+   "obsid": "mockV204",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_05.fits",
+   "mjd": 61087.53636363636,
+   "obsid": "mockV205",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_06.fits",
+   "mjd": 61088.96363636364,
+   "obsid": "mockV206",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_07.fits",
+   "mjd": 61090.39090909091,
+   "obsid": "mockV207",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_08.fits",
+   "mjd": 61091.818181818184,
+   "obsid": "mockV208",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_09.fits",
+   "mjd": 61093.24545454545,
+   "obsid": "mockV209",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_10.fits",
+   "mjd": 61094.67272727273,
+   "obsid": "mockV210",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V2_D6_11.fits",
+   "mjd": 61096.1,
+   "obsid": "mockV211",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": "MOCK: fetch failed: HTTP 503 after 4 tries",
+   "survey": 1
+  },
+  {
+   "band": 6,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V3_D6_00.fits",
+   "mjd": 61262.0,
+   "obsid": "mockV300",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 6,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V3_D6_01.fits",
+   "mjd": 61262.55,
+   "obsid": "mockV301",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  },
+  {
+   "band": 6,
+   "bin": "V3",
+   "collection": "spherex_qr3",
+   "detector": 6,
+   "id": "mock_V3_D6_02.fits",
+   "mjd": 61263.1,
+   "obsid": "mockV302",
+   "pipeline": "v27",
+   "qa": {
+    "FINAST": 0,
+    "L1DQAFLG": "Pass",
+    "L2DQAFLG": "Pass"
+   },
+   "release": "qr3",
+   "skipped": null,
+   "survey": 4
+  }
+ ],
+ "grid": {
+  "cdelt": [
+   -0.0008333333333333334,
+   0.0008333333333333334
+  ],
+  "crpix": [
+   61.0,
+   61.0
+  ],
+  "crval": [
+   269.4461,
+   4.7707
+  ],
+  "ctype": [
+   "RA---TAN",
+   "DEC--TAN"
+  ],
+  "native": false,
+  "pix_arcsec": 3.0,
+  "shape": [
+   121,
+   121
+  ]
+ },
+ "key": "000069680afaefa17da6c02d",
+ "limits": {
+  "1": {
+   "hi": 100.0,
+   "lim": "zscale",
+   "lo": 0.0
+  },
+  "2": {
+   "hi": 100.0,
+   "lim": "zscale",
+   "lo": 0.0
+  },
+  "3": {
+   "hi": 100.0,
+   "lim": "zscale",
+   "lo": 0.0
+  },
+  "4": {
+   "hi": 100.0,
+   "lim": "zscale",
+   "lo": 0.0
+  },
+  "5": {
+   "hi": 100.0,
+   "lim": "zscale",
+   "lo": 0.0
+  },
+  "6": {
+   "hi": 100.0,
+   "lim": "zscale",
+   "lo": 0.0
+  }
+ },
+ "newer_pin": null,
+ "params": {
+  "bands": "6",
+  "fov": "6",
+  "px": "3",
+  "q": "Barnard's Star"
+ },
+ "pin": "000000000000",
+ "release": {
+  "checked_at": "2026-11-07T00:00:00+00:00",
+  "newest_period": "2026W40_2A",
+  "release_state": {
+   "qr2": "2026W17_1B",
+   "qr3": "2026W40_2A"
+  }
+ },
+ "schema_version": "0.1.0",
+ "stacks": [
+  {
+   "band": 1,
+   "bin": "V1",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V1_D1_00.fits",
+    "mock_V1_D1_01.fits",
+    "mock_V1_D1_02.fits",
+    "mock_V1_D1_03.fits",
+    "mock_V1_D1_04.fits",
+    "mock_V1_D1_05.fits",
+    "mock_V1_D1_06.fits",
+    "mock_V1_D1_07.fits",
+    "mock_V1_D1_08.fits",
+    "mock_V1_D1_09.fits",
+    "mock_V1_D1_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V1_D1_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 1,
+   "bin": "V2",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V2_D1_00.fits",
+    "mock_V2_D1_01.fits",
+    "mock_V2_D1_02.fits",
+    "mock_V2_D1_03.fits",
+    "mock_V2_D1_04.fits",
+    "mock_V2_D1_05.fits",
+    "mock_V2_D1_06.fits",
+    "mock_V2_D1_07.fits",
+    "mock_V2_D1_08.fits",
+    "mock_V2_D1_09.fits",
+    "mock_V2_D1_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V2_D1_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 1,
+   "bin": "V3",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V3_D1_00.fits",
+    "mock_V3_D1_01.fits",
+    "mock_V3_D1_02.fits"
+   ],
+   "nhits_max": 3,
+   "ready": true,
+   "skipped": []
+  },
+  {
+   "band": 2,
+   "bin": "V1",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V1_D2_00.fits",
+    "mock_V1_D2_01.fits",
+    "mock_V1_D2_02.fits",
+    "mock_V1_D2_03.fits",
+    "mock_V1_D2_04.fits",
+    "mock_V1_D2_05.fits",
+    "mock_V1_D2_06.fits",
+    "mock_V1_D2_07.fits",
+    "mock_V1_D2_08.fits",
+    "mock_V1_D2_09.fits",
+    "mock_V1_D2_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V1_D2_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 2,
+   "bin": "V2",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V2_D2_00.fits",
+    "mock_V2_D2_01.fits",
+    "mock_V2_D2_02.fits",
+    "mock_V2_D2_03.fits",
+    "mock_V2_D2_04.fits",
+    "mock_V2_D2_05.fits",
+    "mock_V2_D2_06.fits",
+    "mock_V2_D2_07.fits",
+    "mock_V2_D2_08.fits",
+    "mock_V2_D2_09.fits",
+    "mock_V2_D2_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V2_D2_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 2,
+   "bin": "V3",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V3_D2_00.fits",
+    "mock_V3_D2_01.fits",
+    "mock_V3_D2_02.fits"
+   ],
+   "nhits_max": 3,
+   "ready": true,
+   "skipped": []
+  },
+  {
+   "band": 3,
+   "bin": "V1",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V1_D3_00.fits",
+    "mock_V1_D3_01.fits",
+    "mock_V1_D3_02.fits",
+    "mock_V1_D3_03.fits",
+    "mock_V1_D3_04.fits",
+    "mock_V1_D3_05.fits",
+    "mock_V1_D3_06.fits",
+    "mock_V1_D3_07.fits",
+    "mock_V1_D3_08.fits",
+    "mock_V1_D3_09.fits",
+    "mock_V1_D3_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V1_D3_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 3,
+   "bin": "V2",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V2_D3_00.fits",
+    "mock_V2_D3_01.fits",
+    "mock_V2_D3_02.fits",
+    "mock_V2_D3_03.fits",
+    "mock_V2_D3_04.fits",
+    "mock_V2_D3_05.fits",
+    "mock_V2_D3_06.fits",
+    "mock_V2_D3_07.fits",
+    "mock_V2_D3_08.fits",
+    "mock_V2_D3_09.fits",
+    "mock_V2_D3_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V2_D3_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 3,
+   "bin": "V3",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V3_D3_00.fits",
+    "mock_V3_D3_01.fits",
+    "mock_V3_D3_02.fits"
+   ],
+   "nhits_max": 3,
+   "ready": true,
+   "skipped": []
+  },
+  {
+   "band": 4,
+   "bin": "V1",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V1_D4_00.fits",
+    "mock_V1_D4_01.fits",
+    "mock_V1_D4_02.fits",
+    "mock_V1_D4_03.fits",
+    "mock_V1_D4_04.fits",
+    "mock_V1_D4_05.fits",
+    "mock_V1_D4_06.fits",
+    "mock_V1_D4_07.fits",
+    "mock_V1_D4_08.fits",
+    "mock_V1_D4_09.fits",
+    "mock_V1_D4_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V1_D4_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 4,
+   "bin": "V2",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V2_D4_00.fits",
+    "mock_V2_D4_01.fits",
+    "mock_V2_D4_02.fits",
+    "mock_V2_D4_03.fits",
+    "mock_V2_D4_04.fits",
+    "mock_V2_D4_05.fits",
+    "mock_V2_D4_06.fits",
+    "mock_V2_D4_07.fits",
+    "mock_V2_D4_08.fits",
+    "mock_V2_D4_09.fits",
+    "mock_V2_D4_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V2_D4_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 4,
+   "bin": "V3",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V3_D4_00.fits",
+    "mock_V3_D4_01.fits",
+    "mock_V3_D4_02.fits"
+   ],
+   "nhits_max": 3,
+   "ready": true,
+   "skipped": []
+  },
+  {
+   "band": 5,
+   "bin": "V1",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V1_D5_00.fits",
+    "mock_V1_D5_01.fits",
+    "mock_V1_D5_02.fits",
+    "mock_V1_D5_03.fits",
+    "mock_V1_D5_04.fits",
+    "mock_V1_D5_05.fits",
+    "mock_V1_D5_06.fits",
+    "mock_V1_D5_07.fits",
+    "mock_V1_D5_08.fits",
+    "mock_V1_D5_09.fits",
+    "mock_V1_D5_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V1_D5_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 5,
+   "bin": "V2",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V2_D5_00.fits",
+    "mock_V2_D5_01.fits",
+    "mock_V2_D5_02.fits",
+    "mock_V2_D5_03.fits",
+    "mock_V2_D5_04.fits",
+    "mock_V2_D5_05.fits",
+    "mock_V2_D5_06.fits",
+    "mock_V2_D5_07.fits",
+    "mock_V2_D5_08.fits",
+    "mock_V2_D5_09.fits",
+    "mock_V2_D5_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V2_D5_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 5,
+   "bin": "V3",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V3_D5_00.fits",
+    "mock_V3_D5_01.fits",
+    "mock_V3_D5_02.fits"
+   ],
+   "nhits_max": 3,
+   "ready": true,
+   "skipped": []
+  },
+  {
+   "band": 6,
+   "bin": "V1",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V1_D6_00.fits",
+    "mock_V1_D6_01.fits",
+    "mock_V1_D6_02.fits",
+    "mock_V1_D6_03.fits",
+    "mock_V1_D6_04.fits",
+    "mock_V1_D6_05.fits",
+    "mock_V1_D6_06.fits",
+    "mock_V1_D6_07.fits",
+    "mock_V1_D6_08.fits",
+    "mock_V1_D6_09.fits",
+    "mock_V1_D6_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V1_D6_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 6,
+   "bin": "V2",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V2_D6_00.fits",
+    "mock_V2_D6_01.fits",
+    "mock_V2_D6_02.fits",
+    "mock_V2_D6_03.fits",
+    "mock_V2_D6_04.fits",
+    "mock_V2_D6_05.fits",
+    "mock_V2_D6_06.fits",
+    "mock_V2_D6_07.fits",
+    "mock_V2_D6_08.fits",
+    "mock_V2_D6_09.fits",
+    "mock_V2_D6_10.fits"
+   ],
+   "nhits_max": 12,
+   "ready": true,
+   "skipped": [
+    [
+     "mock_V2_D6_11.fits",
+     "MOCK: fetch failed: HTTP 503 after 4 tries"
+    ]
+   ]
+  },
+  {
+   "band": 6,
+   "bin": "V3",
+   "filled": false,
+   "format": "f16le-row0south-nodata-65504@1",
+   "frame_ids": [
+    "mock_V3_D6_00.fits",
+    "mock_V3_D6_01.fits",
+    "mock_V3_D6_02.fits"
+   ],
+   "nhits_max": 3,
+   "ready": true,
+   "skipped": []
+  }
+ ],
+ "target": null,
+ "track": [],
+ "warnings": [
+  {
+   "code": "mock",
+   "message": "MOCK data: the golden test pattern, not the sky",
+   "severity": "warn"
+  }
+ ]
+}

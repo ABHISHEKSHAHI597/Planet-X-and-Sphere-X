@@ -1,0 +1,9317 @@
+{
+"singles": {
+"s3": [
+{
+"frame": "level2_2026W34_2A_0206_3D5_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 20.486841808999998,
+"ttfb_s": null,
+"bytes": 2769143,
+"shape": [
+90,
+90
+],
+"origin": [
+996,
+1401
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_4D5_spx_l2b-v20-2025-271.fits",
+"ok": true,
+"total_s": 14.637749606999932,
+"ttfb_s": null,
+"bytes": 3101440,
+"shape": [
+90,
+90
+],
+"origin": [
+1098,
+535
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_2D1_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 12.696472833999906,
+"ttfb_s": null,
+"bytes": 2778006,
+"shape": [
+90,
+90
+],
+"origin": [
+466,
+276
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits",
+"ok": false,
+"error": "SourceFailure",
+"detail": "s3-section: gave up after 1 tries: RemoteProtocolError('Server disconnected without sending a response.')",
+"total_s": 0.13010140799997316,
+"bytes": 0
+},
+{
+"frame": "level2_2025W36_1A_0024_1D1_spx_l2b-v20-2025-271.fits",
+"ok": true,
+"total_s": 14.13314518900006,
+"ttfb_s": null,
+"bytes": 3101440,
+"shape": [
+90,
+90
+],
+"origin": [
+1472,
+418
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_4D4_spx_l2b-v20-2025-270.fits",
+"ok": true,
+"total_s": 14.43349603300021,
+"ttfb_s": null,
+"bytes": 3101440,
+"shape": [
+90,
+90
+],
+"origin": [
+1503,
+1440
+]
+}
+],
+"cutout": [
+{
+"frame": "level2_2026W34_2A_0206_3D5_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 2.2525774629998523,
+"ttfb_s": null,
+"bytes": 212680,
+"shape": [
+91,
+91
+],
+"origin": [
+996,
+1400
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_4D5_spx_l2b-v20-2025-271.fits",
+"ok": true,
+"total_s": 2.2625781500000812,
+"ttfb_s": null,
+"bytes": 212650,
+"shape": [
+91,
+91
+],
+"origin": [
+1097,
+535
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_2D1_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 4.404902070999924,
+"ttfb_s": null,
+"bytes": 212648,
+"shape": [
+91,
+91
+],
+"origin": [
+465,
+275
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 3.137405967000177,
+"ttfb_s": null,
+"bytes": 204480,
+"shape": [
+91,
+91
+],
+"origin": [
+1387,
+1493
+]
+},
+{
+"frame": "level2_2025W36_1A_0024_1D1_spx_l2b-v20-2025-271.fits",
+"ok": true,
+"total_s": 2.662605423000059,
+"ttfb_s": null,
+"bytes": 212709,
+"shape": [
+91,
+91
+],
+"origin": [
+1472,
+418
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_4D4_spx_l2b-v20-2025-270.fits",
+"ok": true,
+"total_s": 3.3592239550002887,
+"ttfb_s": null,
+"bytes": 212687,
+"shape": [
+91,
+91
+],
+"origin": [
+1502,
+1440
+]
+}
+],
+"s3_conc8": [
+{
+"frame": "level2_2026W34_2A_0206_3D5_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 40.17110302099991,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_2A_0221_4D5_spx_l2b-v20-2025-271.fits",
+"ok": true,
+"total_s": 33.612256721999984,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0375_2D1_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 24.6032624999998,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits",
+"ok": true,
+"total_s": 40.983609909999814,
+"bytes": 0
+},
+{
+"frame": "level2_2025W36_1A_0024_1D1_spx_l2b-v20-2025-271.fits",
+"ok": true,
+"total_s": 43.02977251300035,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0658_4D4_spx_l2b-v20-2025-270.fits",
+"ok": true,
+"total_s": 37.70543708900004,
+"bytes": 0
+}
+],
+"s3_conc8_wall_s": 43.03132010199988,
+"s3_conc8_bytes": 17649871
+},
+"soak": [
+{
+"frame": "level2_2026W34_2A_0206_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033819.781332,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2143858790000195,
+"total_s": 2.234098910999819,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_4D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794033819.7818563,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.21588895900004,
+"total_s": 2.648409026000081,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794033819.782433,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2143832619999557,
+"total_s": 2.750807037999948,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_1A_0024_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033822.0155714,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2331853960004082,
+"total_s": 2.5685740620001525,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_4D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794033822.430414,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.23127737599998,
+"total_s": 2.2561286780000955,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_3D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794033822.5334554,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.223494042999846,
+"total_s": 2.251926439000272,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_2D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033819.7821615,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2164377489998515,
+"total_s": 5.718078601999878,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033824.6867418,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2243484139999055,
+"total_s": 2.1504780839995874,
+"bytes": 190080,
+"shape": [
+86,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_2D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033824.7856107,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5354969619997973,
+"total_s": 2.461077413000112,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_3D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794033827.2468803,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2235779300003742,
+"total_s": 2.245350965000398,
+"bytes": 198720,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_1D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794033825.5004764,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6404762249999294,
+"total_s": 4.0943894249999175,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_4D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794033829.4924378,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/2/level2_2025W35_1A_0146_4D2_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 1.0366794990000017,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0264_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033826.8374043,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.170520163999754,
+"total_s": 4.4037495889997444,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_3D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794033829.5950997,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6411041880000994,
+"total_s": 2.5662406100000226,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_3D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794033832.1615353,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0375_3D4_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9214599849997285,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0444_1D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033830.5291488,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2192110609998963,
+"total_s": 3.1685803979999037,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_2D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033833.0830264,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.336211576000096,
+"total_s": 2.8670511219997934,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033831.2413132,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.374124929000118,
+"total_s": 4.910919797000133,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0367_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794033824.584333,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.39522740800021,
+"total_s": 11.783704894000039,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033833.697796,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2274755110001934,
+"total_s": 3.0729617800002416,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_2D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794033836.7709382,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_2A/l2b-v24-2026-083/3/level2_2026W12_2A_0324_2D3_spx_l2b-v24-2026-083.fits?center=269.",
+"total_s": 1.0180733729998792,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits",
+"t0": 1794033836.1523285,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2323933899997428,
+"total_s": 2.153056939999715,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_4D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794033835.9502802,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.8610248999998475,
+"total_s": 3.897130143999675,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033837.7890406,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2336862649999603,
+"total_s": 2.462685780999891,
+"bytes": 198720,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033836.3682635,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.2403523939997285,
+"total_s": 6.342560804999721,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_4D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794033839.8476198,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.859090993999871,
+"total_s": 3.884407440999894,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_2D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794033840.2519238,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.7608636959998876,
+"total_s": 4.299603098999796,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_4D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033838.3055818,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6369889840002543,
+"total_s": 6.343391838000116,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0500_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794033844.6491575,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6643214690002424,
+"total_s": 3.6925831730000027,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_4D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794033843.7322145,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.195938500000011,
+"total_s": 5.523387189000005,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_3D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794033842.7110264,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1680242510001335,
+"total_s": 7.165362338999785,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_3D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033844.5517433,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5568951319996813,
+"total_s": 6.654042075999769,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033849.8765748,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5336506320004446,
+"total_s": 2.4852821670001504,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W36_1A_0510_1D4_spx_l2b-v27-2026-252.fits",
+"t0": 1794033848.3419366,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.273471918999803,
+"total_s": 4.303459050000129,
+"bytes": 204480,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033849.2557244,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.0520720970002913,
+"total_s": 3.905526631000157,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0353_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794033852.6455958,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6553695360003076,
+"total_s": 3.88973433900037,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_2D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033851.2060468,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6355573910000203,
+"total_s": 6.043009768000047,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W36_1A_0510_1D1_spx_l2b-v27-2026-252.fits",
+"t0": 1794033853.1614275,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.267669595999905,
+"total_s": 4.497442088999833,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_4D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033852.362076,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.941966667000088,
+"total_s": 6.937412408,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033857.2492876,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.532717993999995,
+"total_s": 2.4552768300000025,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0418_1D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794033857.6591349,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6365867319996141,
+"total_s": 2.5579227209996134,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033856.5355449,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1659310810000534,
+"total_s": 5.112344007000047,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0418_1D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794033859.7047746,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7410791880001852,
+"total_s": 2.971556916999816,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_3D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794033859.2996743,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2243885329999102,
+"total_s": 3.6825631819997398,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_4D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794033861.6481261,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2289580729998306,
+"total_s": 2.357054349000009,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_3D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033862.9824715,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.22745983599998,
+"total_s": 2.459887686000002,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_1D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794033860.2172222,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6612825619999967,
+"total_s": 5.733422443999643,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_1D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794033862.6765308,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.226533715000187,
+"total_s": 3.582995839999967,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_2D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794033864.0053964,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.8426360690000365,
+"total_s": 2.8669379469997693,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_2D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794033866.259772,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_2A/l2b-v24-2026-083/5/level2_2026W12_2A_0371_2D5_spx_l2b-v24-2026-083.fits?center=269.",
+"total_s": 1.24045609399991,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_2A_0501_4D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794033865.4425573,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5319006019999506,
+"total_s": 2.659568319999835,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033867.5002615,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.0365309740000157,
+"total_s": 2.9594599239999297,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_3D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033865.9508693,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.2726572260003195,
+"total_s": 4.613462581000022,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_3D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794033868.1023607,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3313617359999625,
+"total_s": 2.870434209999985,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_4D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033866.872462,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.3754877209998995,
+"total_s": 4.919240906000141,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_2D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794033870.9730132,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W13_1A/l2b-v24-2026-088/6/level2_2026W13_1A_0129_2D6_spx_l2b-v24-2026-088.fits?center=269.",
+"total_s": 0.932398669000122,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0079_4D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794033871.905442,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0079_4D4_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 1.2109795129999839,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0264_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033870.4599645,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6318894080000064,
+"total_s": 2.8612720129999616,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0471_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794033871.7919645,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.839049138000064,
+"total_s": 3.1764244420000978,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033873.116451,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7438776209996831,
+"total_s": 2.6664181090000056,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033870.5645812,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0694416689998434,
+"total_s": 5.93401545200004,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_1D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794033874.9684677,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5257881719999205,
+"total_s": 2.6593323580000288,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_1D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794033873.321405,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2337097459999313,
+"total_s": 4.918826784999965,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_3D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794033875.783061,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6361204530003306,
+"total_s": 2.869923679000294,
+"bytes": 187200,
+"shape": [
+81,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_4D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794033876.4988153,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.231109923999611,
+"total_s": 2.361213588999817,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033877.6280315,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7363604440001836,
+"total_s": 2.9670610839998517,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033878.2404444,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5346743469999637,
+"total_s": 2.466943727999933,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0090_4D5_spx_l2b-v20-2025-267.fits",
+"t0": 1794033878.8601177,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W34_2B/l2b-v20-2025-267/5/level2_2025W34_2B_0090_4D5_spx_l2b-v20-2025-267.fits?center=269.",
+"total_s": 2.6562128519999533,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_2A_0233_4D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033880.7075772,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7277729409997846,
+"total_s": 2.857535794999876,
+"bytes": 175680,
+"shape": [
+75,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_1D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794033880.5952315,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4324289289997978,
+"total_s": 3.184135339000022,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0403_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794033878.6531937,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.400668158999906,
+"total_s": 6.033667414999854,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_3D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794033883.7796202,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.52080048300013,
+"total_s": 3.064807342000222,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033881.5163608,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.4578968820001137,
+"total_s": 5.329956063000282,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_4D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794033883.5653176,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.9709434609999334,
+"total_s": 4.838883566999812,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W15_2A_0137_1D6_spx_l2b-v24-2026-105.fits",
+"t0": 1794033884.6871388,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.177555558000222,
+"total_s": 4.104442731999825,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_3D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794033886.8464925,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5286126229998445,
+"total_s": 2.5579919470001187,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0456_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033886.8446343,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.147298770999896,
+"total_s": 3.172839787999692,
+"bytes": 161280,
+"shape": [
+57,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033889.4047425,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5325983549996636,
+"total_s": 2.458758120999846,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_4D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033890.0177343,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7348257419998845,
+"total_s": 3.2769304359999296,
+"bytes": 187200,
+"shape": [
+85,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_1D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794033891.86366,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.732431949000329,
+"total_s": 2.6548506330000237,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_2D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794033888.7917454,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.581996289000017,
+"total_s": 6.449024039000051,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_2D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794033893.2949743,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2362358190002851,
+"total_s": 2.9705760880001435,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033888.4042804,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.785486900000251,
+"total_s": 8.162285876000169,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_4D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794033896.265724,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6349830459998884,
+"total_s": 2.559498984000129,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_3D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033894.5186634,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.2800077070000953,
+"total_s": 4.509006962000058,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_4D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033895.2409694,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.561117948000174,
+"total_s": 3.9915263050002068,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_2D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033896.5667841,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.561571952999657,
+"total_s": 3.5878260179997596,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_3D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794033898.8254104,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.864683455999966,
+"total_s": 4.097122550999757,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0126_1D5_spx_l2b-v27-2026-246.fits",
+"t0": 1794033899.0279593,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.9694394319999446,
+"total_s": 5.222292875000221,
+"bytes": 181440,
+"shape": [
+78,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033900.1548364,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.2755819690000862,
+"total_s": 4.912055671999951,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033902.9227343,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.7637242720002178,
+"total_s": 3.6865275780000957,
+"bytes": 201600,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_3D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033899.232726,
+"status": 200,
+"ok": true,
+"ttfb_s": 6.147734530999969,
+"total_s": 7.993396824000229,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_2B_0123_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033904.2504883,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.8661576320000677,
+"total_s": 3.795591969999805,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_4D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033905.0671203,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.640094212999884,
+"total_s": 3.1781715540000732,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_4D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033908.2455232,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/2/level2_2026W34_2A_0178_4D2_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9270452629998545,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_2A_0520_4D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794033907.2263575,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6315955439999925,
+"total_s": 2.558802003999972,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_4D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033909.1725814,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/5/level2_2026W34_2A_0233_4D5_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9160880710001038,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0363_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033906.6094706,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0678605100001732,
+"total_s": 4.916948822999984,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033910.0886993,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5373616349997974,
+"total_s": 2.4600093340000058,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033908.0463405,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.575932561999707,
+"total_s": 5.012698559,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033911.5266616,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2242226679995838,
+"total_s": 2.357140676999734,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794033909.7852094,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0653604910003196,
+"total_s": 4.707997111000168,
+"bytes": 204480,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_1D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794033913.059289,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6356867199997396,
+"total_s": 2.5659398379998493,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033912.5489547,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1697053779998896,
+"total_s": 4.097434391000206,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0441_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794033913.8840256,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.551372364999679,
+"total_s": 3.4751829449996876,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_1D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794033914.493431,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.766426080999736,
+"total_s": 3.894395257999804,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_2D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794033915.6253946,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2243606440001713,
+"total_s": 3.9884490389999883,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_4D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794033917.3594348,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6364210779997848,
+"total_s": 2.5616554110001744,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_3D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794033919.921328,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2246445700002369,
+"total_s": 2.152688863000094,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033916.6465719,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.909191775999716,
+"total_s": 6.242051463999815,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033919.6140807,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5333659230000194,
+"total_s": 3.376668375999998,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0081_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033918.3880768,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.2703996339996593,
+"total_s": 5.529521334999572,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033922.074227,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.259901596000418,
+"total_s": 3.479257988000427,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_2D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794033922.8888662,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7461565080002401,
+"total_s": 2.97618884800022,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_1D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794033923.9177778,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5292466380001315,
+"total_s": 2.4722557580003013,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_1D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794033925.8652525,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1929047999997238,
+"total_s": 2.150738874000126,
+"bytes": 144000,
+"shape": [
+51,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_2D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794033922.9910088,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6550408769999194,
+"total_s": 5.12733695299994,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_3D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794033925.5536852,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4831015129998377,
+"total_s": 2.593812498999796,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_4D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033928.0162704,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/6/level2_2026W34_1A_0007_4D6_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9225249410001197,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0431_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033926.3902266,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7251901169997836,
+"total_s": 2.6475504099998943,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0238_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033928.1185443,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/3/level2_2026W34_1A_0238_1D3_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 1.4294655750004495,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0484_2D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794033928.1477425,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6012580540000272,
+"total_s": 2.527943693999987,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033928.9388251,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9364300189999994,
+"total_s": 2.8622733990000597,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_1D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794033929.0380297,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6315356479999537,
+"total_s": 2.8629689240001426,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_1A_0024_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033930.6758797,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.633107511000162,
+"total_s": 2.559521659999973,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_4D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033929.5480406,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5586142950000976,
+"total_s": 4.507950194999921,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0570_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033931.9012659,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5334890439999072,
+"total_s": 2.460927008999988,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_3D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033933.2355673,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.32825513600028,
+"total_s": 2.350501818000339,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_1D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033934.0562165,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W34_2B/l2b-v20-2025-269/5/level2_2025W34_2B_0557_1D5_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 1.944041338000261,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_2A_0520_1D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794033931.8013186,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.0514115679998213,
+"total_s": 5.11506908399997,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033936.0002909,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/2/level2_2026W34_2A_0249_1D2_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9222043720001238,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0484_1D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794033935.586333,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6377588089999335,
+"total_s": 2.767245854000066,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_2D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794033934.3624227,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.656094011999812,
+"total_s": 4.194770259000052,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033938.35379,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/6/level2_2026W34_1A_0308_1D6_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9200231079998957,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_2A_0221_1D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794033936.9164767,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.539311490000273,
+"total_s": 2.4591795030000867,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033938.557437,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5333422870003233,
+"total_s": 2.4629700710002,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_4D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794033936.9225209,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2232788299997992,
+"total_s": 4.604668911999852,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_2D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794033939.2738404,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7404408249999506,
+"total_s": 2.662730085000021,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033939.375932,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.0196887629999765,
+"total_s": 2.9715279950000877,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_2B_0123_1D4_spx_l2b-v20-2025-272.fits",
+"t0": 1794033941.0205398,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W36_2B/l2b-v20-2025-272/4/level2_2025W36_2B_0123_1D4_spx_l2b-v20-2025-272.fits?center=269.",
+"total_s": 2.0467729789997975,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_1A_0598_4D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794033941.5273912,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.841107464000288,
+"total_s": 2.765824249000161,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_3D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794033942.347692,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7370009569999638,
+"total_s": 3.2796169590001227,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_2D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794033943.0673392,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6338924149999912,
+"total_s": 2.8667160760001025,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_4D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794033941.9367633,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.171063984999819,
+"total_s": 4.916066528000101,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_1D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794033944.2934434,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6374038039998595,
+"total_s": 2.562558457999785,
+"bytes": 155520,
+"shape": [
+61,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033945.9342756,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_1A/l2b-v24-2026-094/1/level2_2026W11_1A_0430_4D1_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 1.2508731219995752,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W33_2C_0321_2D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794033945.6275175,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6323411030002717,
+"total_s": 2.556036628000129,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_3D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794033946.8530872,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2249883260001297,
+"total_s": 2.564845994999814,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_3D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033946.856194,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.8610760189999382,
+"total_s": 3.787044010000045,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033948.1837482,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5369268069998725,
+"total_s": 4.60596333400008,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033949.4181721,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.854936953000106,
+"total_s": 3.99961707500006,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033947.185175,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.06737548000001,
+"total_s": 6.52108896100026,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0081_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033952.7900453,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7359326549999423,
+"total_s": 2.969946615000026,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_4D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033955.7602146,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/3/level2_2026W34_1A_0007_4D3_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 1.0089999379997607,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0249_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033953.4180398,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6437940229998276,
+"total_s": 3.5708966619999956,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_2D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794033953.7064123,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5650578489999134,
+"total_s": 3.6948680699997567,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0444_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033956.7692406,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_1A/l2b-v24-2026-094/4/level2_2026W11_1A_0444_1D4_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 1.2447678859998632,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_2A_0412_1D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794033950.6434526,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.580667905000155,
+"total_s": 8.699239299000055,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033957.4013817,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.145959155000128,
+"total_s": 3.3754056910001964,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_3D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794033958.0140355,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3278047060002791,
+"total_s": 4.09651182000016,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794033956.989155,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.171340232000148,
+"total_s": 5.938414899999771,
+"bytes": 169920,
+"shape": [
+66,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0326_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794033959.3428214,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.968315115999758,
+"total_s": 4.199437956999645,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_1D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794033962.1107574,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_1A/l2b-v24-2026-082/5/level2_2026W12_1A_0311_1D5_spx_l2b-v24-2026-082.fits?center=269.",
+"total_s": 2.1475844640003743,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_2A_0371_3D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794033960.7770278,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.555479419999756,
+"total_s": 3.482851154999935,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033963.5425198,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_1A/l2b-v24-2026-094/4/level2_2026W11_1A_0539_1D4_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 3.0910864600000423,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_2A_0324_2D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794033962.9277744,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.3836311790000764,
+"total_s": 4.303245350999987,
+"bytes": 178560,
+"shape": [
+79,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033964.2600822,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2264358679999532,
+"total_s": 3.685411552000005,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_4D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794033966.633637,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2075181059999522,
+"total_s": 2.7456715640000766,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_2D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794033967.231231,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6350636719998874,
+"total_s": 2.871224878999783,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_3D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794033967.9457288,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5347123120000106,
+"total_s": 2.463692875000106,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_2D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794033964.258368,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.4802523610001117,
+"total_s": 6.964111114999923,
+"bytes": 204480,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_2D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794033970.1026635,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6307431949999227,
+"total_s": 2.5562304370000675,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0496_1D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794033971.2227323,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.735933525999826,
+"total_s": 2.891563622999911,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033970.4096003,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.654671266999685,
+"total_s": 3.7866927289996966,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_1D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794033969.3795037,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6382071329999235,
+"total_s": 5.017220053000074,
+"bytes": 178560,
+"shape": [
+75,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_1D6_spx_l2b-v20-2025-269.fits",
+"t0": 1794033974.1145163,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1997814659998767,
+"total_s": 2.33334779300003,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_2D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794033972.6590774,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5345946850002292,
+"total_s": 4.604791533000025,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0484_2D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794033974.3969913,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2283998719999545,
+"total_s": 2.9691115000000536,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_1D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794033974.1965683,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1690262219999568,
+"total_s": 5.010321551999823,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033976.4481006,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5350791289997687,
+"total_s": 2.9679966290000266,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_4D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794033979.207136,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6403096379999624,
+"total_s": 2.8686987619998945,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_2D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033977.3662276,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5381858440000542,
+"total_s": 5.531297693999932,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033977.264134,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.4766818480002257,
+"total_s": 7.474598405000052,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033982.8977733,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.226460158000009,
+"total_s": 2.4606482270000924,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W33_2A_0594_4D3_spx_l2b-v27-2026-241.fits",
+"t0": 1794033979.4163146,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.4560144070001115,
+"total_s": 6.553108961999897,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_1D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794033985.3585029,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0658_1D4_spx_l2b-v20-2025-270.fits?center=269.",
+"total_s": 0.9141680469997482,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0430_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794033985.9696493,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2262677450003139,
+"total_s": 2.4569315890003054,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_4D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033984.7389219,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.275835179000296,
+"total_s": 5.534684258000198,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794033982.0760052,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.813584644999992,
+"total_s": 9.523680007999701,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033986.2727013,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.996788590000051,
+"total_s": 6.146754332,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033988.426806,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.2746933200000967,
+"total_s": 4.403999022999869,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_2D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794033992.41968,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2291637389998868,
+"total_s": 2.2617047869998714,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794033991.5998914,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6621965009999258,
+"total_s": 4.098339764999764,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033990.2738457,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6316525120000733,
+"total_s": 6.238799986999766,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794033992.8310676,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.763062898000044,
+"total_s": 4.811557512000036,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_2D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794033995.6984808,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2258416829999987,
+"total_s": 2.4579822050000075,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_4D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794033994.6816208,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.267222490000222,
+"total_s": 4.500043110000206,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_3D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794033996.5128925,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2301103029999467,
+"total_s": 3.0747932000003857,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_4D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794033997.6428459,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6394053670001085,
+"total_s": 2.5593219799998224,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794033998.156679,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6339211099998465,
+"total_s": 2.6604020049999235,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_1D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034000.8172178,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W34_1B/l2b-v20-2025-267/3/level2_2025W34_1B_0164_1D3_spx_l2b-v20-2025-267.fits?center=269.",
+"total_s": 1.0250556229998438,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W13_1A_0129_4D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794033999.5879176,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6374228959998618,
+"total_s": 2.8675160689999757,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_3D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794033999.1818144,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.737008815000081,
+"total_s": 3.2750667780001095,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_2D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034001.8423073,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/6/level2_2025W35_1A_0008_2D6_spx_l2b-v20-2025-270.fits?center=269.",
+"total_s": 1.95717167399971,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0539_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034002.4555993,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.736263572000098,
+"total_s": 2.8673714840001594,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034002.4570935,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6614457410000796,
+"total_s": 3.5883580059999076,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_2D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034003.799505,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7237045710003258,
+"total_s": 4.188955063000321,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_3D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034006.0455754,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_1A/l2b-v24-2026-082/3/level2_2026W12_1A_0598_3D3_spx_l2b-v24-2026-082.fits?center=269.",
+"total_s": 3.2669785140001295,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0431_4D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034005.3231928,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.17262907300028,
+"total_s": 6.351155844999994,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_3D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034009.312585,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.642671862000043,
+"total_s": 2.5631625690002693,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_4D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794034000.2022512,
+"status": 200,
+"ok": true,
+"ttfb_s": 8.39646730200002,
+"total_s": 11.775618699000006,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0216_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034007.9886553,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.907377523999912,
+"total_s": 6.141828320000059,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_4D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034011.875986,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5312177340001654,
+"total_s": 2.4637852300002123,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_1D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034011.6745691,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.3491559009999037,
+"total_s": 4.093289550000009,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_1D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034014.1307232,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228122047999932,
+"total_s": 2.1526621520001754,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0264_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034011.9780748,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0719413980000354,
+"total_s": 4.3340650980003375,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_4D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034014.3399765,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.37291041699973,
+"total_s": 4.604401450999831,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_4D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034016.3123662,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6052620850000494,
+"total_s": 2.6524171169999136,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0092_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034016.2835732,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.862111243000072,
+"total_s": 4.807849282999996,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034015.7681065,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.4809310630002983,
+"total_s": 6.246520506000252,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_3D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034018.9446511,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2266534030000003,
+"total_s": 3.1711918559999503,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_1D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034021.091667,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6389068460002818,
+"total_s": 2.766263266000351,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0038_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034018.9651985,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.867766457000016,
+"total_s": 5.304806757999813,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0249_4D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034022.0148764,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.4561274969996703,
+"total_s": 3.4837226639997425,
+"bytes": 204480,
+"shape": [
+88,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0549_1D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034022.11608,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2308993609999561,
+"total_s": 4.610506755000188,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0549_1D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034025.498819,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2255573950001235,
+"total_s": 2.146477326999957,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034024.270204,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.9622953859998233,
+"total_s": 3.6831302949999554,
+"bytes": 149760,
+"shape": [
+55,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034023.8581693,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.072280329000023,
+"total_s": 4.200185826000052,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034027.6454623,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228587515000072,
+"total_s": 3.075013260000105,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_4D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794034028.058563,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.222002398999848,
+"total_s": 2.762411470999723,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0353_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034026.7268476,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.1483464209995873,
+"total_s": 6.343944663000002,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0038_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034027.953568,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.8388228379999418,
+"total_s": 5.2227717209998445,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_3D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034030.8212163,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5346057570000085,
+"total_s": 2.6652262349998637,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034030.7207112,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.659426333000283,
+"total_s": 3.6868912570002976,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_2D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034033.0710723,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5380716820000089,
+"total_s": 2.460611670000162,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0367_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034033.4866955,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6306712280002102,
+"total_s": 2.662658974000351,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_4D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034034.4078124,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5319186770002489,
+"total_s": 2.557727401000193,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034033.1766167,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.866353633000017,
+"total_s": 4.299002144000042,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_3D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034036.1495492,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.531471496999984,
+"total_s": 2.458420018000197,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034035.531942,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.4558934900001077,
+"total_s": 3.790939164000065,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_2D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034037.475938,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.536168550000184,
+"total_s": 3.9971527210000204,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_1D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034038.6081295,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_2A/l2b-v24-2026-094/2/level2_2026W11_2A_0550_1D2_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 2.962957378000283,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0079_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034041.473312,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0079_1D1_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9310528309997608,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0430_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034039.3231144,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.1687769810000646,
+"total_s": 3.1745312350003587,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_3D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034036.9657955,
+"status": 200,
+"ok": true,
+"ttfb_s": 5.225056917999609,
+"total_s": 10.756637704999775,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_2D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034042.4043956,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9327404230002685,
+"total_s": 5.622331193000264,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_4D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034041.5711164,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.462269874999947,
+"total_s": 7.272870199999943,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034048.8442075,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/2/level2_2026W34_2A_0178_3D2_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 1.228632146000109,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0146_1D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034047.722718,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5424599769999077,
+"total_s": 2.578457144999902,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_3D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034042.497848,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.3765661410002394,
+"total_s": 8.08654529100022,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034048.0269794,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6367550449999726,
+"total_s": 2.560505378000016,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_1D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034050.0728698,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6383468429999084,
+"total_s": 2.565228056000251,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_2D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034050.301368,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2069146430003457,
+"total_s": 2.437924404000114,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0126_1D2_spx_l2b-v27-2026-246.fits",
+"t0": 1794034052.7395396,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/2/level2_2026W35_2A_0126_1D2_spx_l2b-v27-2026-246.fits?center=269.",
+"total_s": 1.0450841719998607,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0375_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034050.5845447,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0733356850000746,
+"total_s": 4.610858315999849,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0496_1D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794034052.638307,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6323523129999558,
+"total_s": 3.3773269039998013,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_4D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034055.1956713,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_2A/l2b-v24-2026-094/2/level2_2026W11_2A_0513_4D2_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 1.0210101530001339,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W39_1A_0371_1D5_spx_l2b-v27-2026-268.fits",
+"t0": 1794034050.587573,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.9677330319996145,
+"total_s": 6.346528553999633,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_1D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034053.7846546,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.020279777000269,
+"total_s": 4.787494720000268,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0456_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034056.0159569,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/5/level2_2026W34_1A_0456_1D5_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 2.654806187000304,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_1A_0598_3D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034056.2167122,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2286790009998185,
+"total_s": 2.475474094999754,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0471_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034058.6923857,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2099403659999552,
+"total_s": 2.1348429179997765,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034056.9343395,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0686130229996706,
+"total_s": 5.323745413999859,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_3D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034060.8274708,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3286592119998204,
+"total_s": 2.253025353999874,
+"bytes": 198720,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_4D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034058.6707919,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.486671634999766,
+"total_s": 5.227052832000027,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0053_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034062.2583232,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9455224250000356,
+"total_s": 2.867287885999758,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0090_4D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034063.0807278,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.531146871999681,
+"total_s": 3.0697391199996673,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034063.898119,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2255186449997382,
+"total_s": 3.4808313599996836,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_4D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034065.1258397,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2284054130000186,
+"total_s": 2.8642984600001,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0441_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034058.5724056,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3312988609995955,
+"total_s": 9.729687135999939,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_3D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034067.3791788,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/1/level2_2025W35_1A_0658_3D1_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9243924819998028,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W19_1A_0216_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034066.150693,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.76234446799981,
+"total_s": 3.9939270979998582,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0587_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034068.3023257,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2352439739997862,
+"total_s": 2.6617980749997514,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_2D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034067.9903927,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5483053570001175,
+"total_s": 3.4843252410000787,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0432_4D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034071.4749975,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2313683369998216,
+"total_s": 2.358230679999906,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_1D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034070.9643662,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6370614900001783,
+"total_s": 4.8143236589999105,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_3D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034073.8334546,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6347399829996903,
+"total_s": 2.566695344999971,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_2D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034068.30359,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2326134509999065,
+"total_s": 8.599566321999646,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034070.1448538,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.909643747000246,
+"total_s": 7.982420388000264,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_3D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034075.7789488,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2249190200000157,
+"total_s": 2.4565142000001288,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_2D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034076.9033916,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5347411459997602,
+"total_s": 2.4603320880000865,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034076.4003935,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.4718876609999825,
+"total_s": 4.702876763999939,
+"bytes": 204480,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_2D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034078.2356772,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.8397498320000523,
+"total_s": 3.072442963999947,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0444_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034079.3639493,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2212824049997835,
+"total_s": 2.169595702999686,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_2D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034078.1275635,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6419086959999731,
+"total_s": 3.4910326039998836,
+"bytes": 198720,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_3D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034081.103588,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6362915950003298,
+"total_s": 2.625709403000201,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_2D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034081.5337713,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.714310437000222,
+"total_s": 2.6417337030002273,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_3D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034081.3083844,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6350407049999376,
+"total_s": 3.197301185000015,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_3D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034081.6187906,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6508285019999676,
+"total_s": 4.604278715999953,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_2D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034083.7295263,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6714218560000518,
+"total_s": 2.589969127999666,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_3D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034086.2232354,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0079_3D4_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.920918496000013,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0431_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034084.1757052,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.6837238090001847,
+"total_s": 4.605952300999888,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0587_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034084.5058925,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.3566139670001576,
+"total_s": 6.732682085000306,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_2D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034088.781919,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.53811678799957,
+"total_s": 2.7663273509997452,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W39_1A_0371_1D2_spx_l2b-v27-2026-268.fits",
+"t0": 1794034087.1441808,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.4551061140000456,
+"total_s": 4.606462530000044,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0053_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034086.319697,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.400289507999787,
+"total_s": 6.250311882000005,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_4D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034091.7509396,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/3/level2_2025W35_1A_0008_4D3_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9216088060002221,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_1A_0610_3D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034091.2388062,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.14948976200003,
+"total_s": 3.0846905879998303,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_1D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034092.5703106,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5354746990001331,
+"total_s": 3.071619240000018,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_2D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034091.548414,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.864244673999565,
+"total_s": 4.298578186999748,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_1D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034092.6725757,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6374816190000274,
+"total_s": 3.483478811000168,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034094.3236768,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6483045019999736,
+"total_s": 3.8793901809999625,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034095.642164,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.943622323999989,
+"total_s": 3.58410049000031,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_4D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034096.1562848,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.8643208569997114,
+"total_s": 4.108120398999745,
+"bytes": 198720,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_2D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034098.2032433,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4343597880001653,
+"total_s": 2.357957519000138,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_3D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034100.561398,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6296998859997984,
+"total_s": 2.587655234000067,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_3D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794034099.2264717,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.278861897999832,
+"total_s": 4.402944988999934,
+"bytes": 198720,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2026W34_2A_0264_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034100.2646575,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.569693437999831,
+"total_s": 4.801834306999808,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034095.847234,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.404897311999775,
+"total_s": 9.524499763999756,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0570_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034103.6296418,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5365026350000335,
+"total_s": 2.4632917449998786,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_1D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034105.3719904,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0221_1D5_spx_l2b-v20-2025-271.fits?center=269.",
+"total_s": 1.2368647539997255,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0206_4D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034103.1493156,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.0400827700000264,
+"total_s": 3.960350271000152,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_3D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034105.0666988,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6345310470001095,
+"total_s": 2.5536558030003107,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_3D6_spx_l2b-v20-2025-269.fits",
+"t0": 1794034106.608864,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5261630879999757,
+"total_s": 3.065310939000028,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034107.109893,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.8677376719997483,
+"total_s": 4.097339752999687,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_3D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794034107.6205115,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.9721102230000724,
+"total_s": 4.303807114999927,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_3D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034106.0930517,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.0893621949999215,
+"total_s": 6.037810548999914,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W15_2A_0137_1D3_spx_l2b-v24-2026-105.fits",
+"t0": 1794034109.6743002,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.148632934000034,
+"total_s": 3.991782329999751,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0046_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034111.2074826,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.1505756019996625,
+"total_s": 3.379904912999791,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0403_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034112.1311166,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6593456209998294,
+"total_s": 3.88849092800001,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034111.924582,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.763642271000208,
+"total_s": 4.406160732999979,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_1D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034113.6662624,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2220392979997996,
+"total_s": 3.071715902000051,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_2D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034114.5876129,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/1/level2_2025W35_1A_0658_2D1_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 2.357134087000304,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W19_1A_0326_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034116.3309634,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.14630306700019,
+"total_s": 3.0723368349999873,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_2D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034116.9447756,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7378408459999264,
+"total_s": 3.0754936319999615,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_2D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034116.0197945,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.765412921999996,
+"total_s": 4.001360907000162,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_2D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034116.738192,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.300147176999872,
+"total_s": 5.528812184999879,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0092_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034119.4035478,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.453168786000333,
+"total_s": 3.8869416140000794,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034120.0204206,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2213581640003213,
+"total_s": 3.372401482999976,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_4D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034122.2672489,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2275578799999494,
+"total_s": 2.3569351520000055,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_1D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034123.2906423,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.535397009999997,
+"total_s": 2.4594694859997617,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0456_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034120.0212412,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.908414225999877,
+"total_s": 6.239705957999831,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_2D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034123.3930993,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6337883810001586,
+"total_s": 3.8923068710000734,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_2D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034124.6244063,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2215824499999144,
+"total_s": 3.6862230040001123,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_2D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034125.7503614,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6367096230001152,
+"total_s": 3.170502481999847,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_1D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034128.310893,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7376071960002264,
+"total_s": 2.9655884349999724,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0238_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034126.2611983,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5582414799996513,
+"total_s": 5.633072657999946,
+"bytes": 204480,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_3D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034127.2856486,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6375156469998728,
+"total_s": 5.226735505999841,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0046_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034128.9211435,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.585742357000072,
+"total_s": 4.815663521999795,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034131.2767162,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7414133850002145,
+"total_s": 2.664618224000151,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_3D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794034132.512474,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6322681980000198,
+"total_s": 2.5567916469999545,
+"bytes": 201600,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0484_1D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034133.7370653,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3297019779997754,
+"total_s": 2.260151064999718,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_4D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034131.894508,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.6838807780000025,
+"total_s": 6.344767103999857,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0249_4D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034133.9414861,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.091216396999698,
+"total_s": 5.222804077999626,
+"bytes": 184320,
+"shape": [
+75,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_2D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034135.9974573,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7317078109999784,
+"total_s": 3.266681002000041,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034135.0694923,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.990797147000194,
+"total_s": 4.91419483000027,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034139.2643602,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.639249689999815,
+"total_s": 2.664808690999962,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_4D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034139.164546,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9451781330003541,
+"total_s": 2.9894120730000395,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0500_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034138.2394338,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.438305240000318,
+"total_s": 5.326705965000201,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_4D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034139.9838767,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.070170135000353,
+"total_s": 4.006645067000136,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_3D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034141.9294062,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9424248549998993,
+"total_s": 3.1747635529995932,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0432_4D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794034142.154224,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.8210823159997744,
+"total_s": 3.3593612380000195,
+"bytes": 198720,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_4D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794034143.990789,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7296723529998417,
+"total_s": 2.652726792000067,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_4D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034145.1044242,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5324160800000755,
+"total_s": 2.457098801000029,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034147.5617323,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6383438020002359,
+"total_s": 2.768196855000042,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_3D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034145.5138228,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.479794607999793,
+"total_s": 5.733404769999652,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_3D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794034146.6436646,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.631866299000194,
+"total_s": 5.6281584289999955,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_1D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794034143.566258,
+"status": 200,
+"ok": true,
+"ttfb_s": 5.529284888000348,
+"total_s": 9.216937455000334,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034150.3301327,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6340473029999885,
+"total_s": 2.976468180000211,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034151.2474852,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2268388519996734,
+"total_s": 2.2527494289997776,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034153.306855,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0757_3D4_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 1.0126660230002926,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0375_2D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034152.7834644,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2274337209996702,
+"total_s": 2.358698233999803,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_1A_0024_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034153.500523,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2182183679997252,
+"total_s": 2.2555313670000032,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_4D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794034154.319552,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2238034560000415,
+"total_s": 2.1485833540000385,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_4D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034152.2720778,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.329786084999796,
+"total_s": 5.629859663999923,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0367_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034155.7562404,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2257513220001783,
+"total_s": 2.1470177880000847,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034156.4683263,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2291290319999462,
+"total_s": 2.2559488339998097,
+"bytes": 190080,
+"shape": [
+86,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_1D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034157.9033594,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2270767199997863,
+"total_s": 2.4546268670001155,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_2D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034157.902176,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2294187559996317,
+"total_s": 2.867750777999845,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0264_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034158.724498,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4301953330000288,
+"total_s": 2.3565442010003608,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_3D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034155.142311,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.783635276000041,
+"total_s": 7.982831734000229,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_3D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034160.358217,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5354759669999112,
+"total_s": 2.7681189309996626,
+"bytes": 198720,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_3D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034161.0812814,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.17003183099996,
+"total_s": 4.70920235199992,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034163.126468,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2267859899998257,
+"total_s": 2.7642970350002543,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_1D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034163.125312,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229544996000186,
+"total_s": 2.9721169670001473,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_4D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034160.7701738,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1738967230003254,
+"total_s": 6.45334949700009,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_2D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034165.8910432,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2305818550003096,
+"total_s": 2.255433667000034,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034166.0976903,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2264169780000884,
+"total_s": 2.7622920740000154,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits",
+"t0": 1794034168.1466775,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/6/level2_2026W33_2A_0594_4D6_spx_l2b-v27-2026-241.fits?center=269.",
+"total_s": 0.9256095719997575,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0375_3D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034165.7907152,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5319056599996657,
+"total_s": 3.4788366559996575,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034168.860188,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2237534350001624,
+"total_s": 2.3589986480001244,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_2D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034169.0723183,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2249236000002384,
+"total_s": 2.349999150000258,
+"bytes": 201600,
+"shape": [
+88,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_4D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034167.2237267,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.172745199000019,
+"total_s": 4.40299955699993,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_4D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034171.2193959,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W34_2B/l2b-v20-2025-269/5/level2_2025W34_2B_0557_4D5_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9135452109999278,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_2A_0611_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034169.2698417,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.230960906999826,
+"total_s": 3.376632882999729,
+"bytes": 198720,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_3D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034172.1329727,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2334835350002322,
+"total_s": 2.7723428770000282,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_4D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034172.646679,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3331274890001623,
+"total_s": 2.26019949800002,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_2D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794034171.6269612,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2254402130001836,
+"total_s": 3.378393162000066,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_4D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034171.422548,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2217828359998748,
+"total_s": 3.5847709949998716,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0500_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034174.9070532,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2228259960002106,
+"total_s": 2.24348767399988,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034175.0075068,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.68263588300033,
+"total_s": 4.606943869000133,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W36_1A_0510_1D4_spx_l2b-v27-2026-252.fits",
+"t0": 1794034175.0055873,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2254041859996505,
+"total_s": 5.3238871409998865,
+"bytes": 204480,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_2D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034179.6146822,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2126861209999333,
+"total_s": 2.2510173089999626,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_3D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034174.9054873,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.27243222099969,
+"total_s": 7.47157061300004,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_4D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034180.3297215,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2222205680000116,
+"total_s": 2.765395417000036,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034177.1507702,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.712841475000005,
+"total_s": 7.479949727000076,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W36_1A_0510_1D1_spx_l2b-v27-2026-252.fits",
+"t0": 1794034182.3773007,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3303551009998955,
+"total_s": 3.17764582000018,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034183.0952835,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2292875260000073,
+"total_s": 2.870759904999886,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0353_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034181.8658757,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1731093550001788,
+"total_s": 5.326511050000136,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0418_1D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794034185.55517,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2261089599996922,
+"total_s": 2.1520413839998582,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_3D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034185.9662702,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.22814642000003,
+"total_s": 2.6594657860000552,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0418_1D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034187.1926453,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.226920457000233,
+"total_s": 2.160126257000229,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_4D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034188.6259506,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2268402179997793,
+"total_s": 2.1282108619998326,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_1D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034187.7073154,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7358041620000222,
+"total_s": 3.5813906930002304,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_1D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034189.3529906,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2171309919999658,
+"total_s": 2.140694704999987,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_4D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034191.493929,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2278107870001804,
+"total_s": 2.354358343000058,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_2D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794034191.2889674,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3280997809997643,
+"total_s": 2.872928008999679,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_3D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034190.7543688,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.4048385289997896,
+"total_s": 4.63142494900012,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034184.6309912,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.716732442000193,
+"total_s": 11.172387079000146,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_3D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034193.8485272,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.34303903,
+"total_s": 2.458894886000053,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_4D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034195.386072,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.359643528000106,
+"total_s": 2.252113430999998,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_3D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794034196.3075523,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0412_3D4_spx_l2b-v27-2026-246.fits?center=269.",
+"total_s": 2.5566029410001647,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_2A_0371_2D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794034194.162133,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.085783686000013,
+"total_s": 5.729791795999972,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034198.8641865,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/3/level2_2026W34_1A_0007_2D3_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 2.5849673100001382,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0233_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034195.8036513,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.7790126669997335,
+"total_s": 6.251882949999981,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0264_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034197.6383789,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.606216923999909,
+"total_s": 5.939136784999846,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0471_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034201.4491844,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.543137144999946,
+"total_s": 2.747734548000153,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_2D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034199.8921697,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.271213380000063,
+"total_s": 5.324065238999992,
+"bytes": 201600,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034203.5777743,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6340629279998211,
+"total_s": 2.8695957019999696,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_4D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034202.0558116,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.161573422999936,
+"total_s": 4.694846204999976,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_1D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034204.1971862,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2269641410002805,
+"total_s": 2.6555654140001934,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_3D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034206.44762,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.324993890999849,
+"total_s": 2.5574263819999032,
+"bytes": 187200,
+"shape": [
+81,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034206.852893,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4312954280003396,
+"total_s": 2.663944810999965,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_4D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034206.7507892,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4324310800002422,
+"total_s": 2.7730508380000174,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034209.0052843,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2244044009999016,
+"total_s": 2.456497494999894,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0403_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034209.517099,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.252675261999684,
+"total_s": 3.412438636999923,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0090_4D5_spx_l2b-v20-2025-267.fits",
+"t0": 1794034209.5240588,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.7564459029999853,
+"total_s": 3.7853472699998747,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_1D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034205.2164807,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.50268648500014,
+"total_s": 8.191792364999856,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_1D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034211.4619682,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6496301749998565,
+"total_s": 3.174770647999594,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_4D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034212.9297915,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2956673499998033,
+"total_s": 2.215605069999583,
+"bytes": 175680,
+"shape": [
+75,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034213.3095195,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2237746680002601,
+"total_s": 2.452090094000141,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_4D4_spx_l2b-v27-2026-246.fits",
+"t0": 1794034213.4085534,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.227116666999791,
+"total_s": 2.6898757929998283,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_3D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034214.6369753,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2269676509999954,
+"total_s": 2.1523185529999864,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_3D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034216.0987165,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W33_2C/l2b-v20-2025-267/3/level2_2025W33_2C_0321_3D3_spx_l2b-v20-2025-267.fits?center=269.",
+"total_s": 0.9938969989998441,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0456_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034215.7617292,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.226666860000023,
+"total_s": 2.148887249999916,
+"bytes": 161280,
+"shape": [
+57,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034217.9108527,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_1A/l2b-v24-2026-094/1/level2_2026W11_1A_0511_1D1_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 0.919255167999836,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_2A_0550_2D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034217.0926442,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2284487040001295,
+"total_s": 2.255985742000121,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_4D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034218.8301303,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.846110112000133,
+"total_s": 3.2817531210002926,
+"bytes": 187200,
+"shape": [
+85,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034216.789567,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.271488422999937,
+"total_s": 5.429573455999616,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_1D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034219.3488052,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.249693662000027,
+"total_s": 3.803917050999644,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_2D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794034222.1121395,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2152850090001266,
+"total_s": 2.1672905549999086,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_3D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034222.2194076,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2309494910000467,
+"total_s": 2.3513660089997757,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W15_2A_0137_1D6_spx_l2b-v24-2026-105.fits",
+"t0": 1794034215.145574,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.5784885769999164,
+"total_s": 10.95820817099957,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_4D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034223.1529531,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.209715001999939,
+"total_s": 3.3618146859998888,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_2D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034224.5710528,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.232552134999878,
+"total_s": 2.771116850999988,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_4D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794034224.2796721,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.3356054070000027,
+"total_s": 3.5663138339996294,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0126_1D5_spx_l2b-v27-2026-246.fits",
+"t0": 1794034226.5150568,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2244917530001658,
+"total_s": 2.354456444999869,
+"bytes": 181440,
+"shape": [
+78,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_3D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034226.1040602,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.3575272959997164,
+"total_s": 3.5864914799999497,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_3D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034227.3423884,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.221464535999985,
+"total_s": 2.3490115290001086,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034227.8461215,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.22580277499992,
+"total_s": 2.2525475580000602,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034230.0989478,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/5/level2_2026W34_1A_0363_2D5_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 1.0229033450000315,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0556_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034228.8697686,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2277665579999848,
+"total_s": 2.4606067730001087,
+"bytes": 201600,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_4D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034229.6915152,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6594289730001037,
+"total_s": 3.8911987400001635,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034231.330605,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3257917400001134,
+"total_s": 2.563539289000346,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_4D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794034231.1218824,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.329705560000093,
+"total_s": 3.4832136489999357,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_2B_0123_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034229.6906567,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6633477619998303,
+"total_s": 7.066704591999951,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034234.6053376,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2251711369999612,
+"total_s": 2.361929659999987,
+"bytes": 204480,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034236.9674978,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3210366329999488,
+"total_s": 2.8599164029997155,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_4D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034233.5829635,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.2718984029997955,
+"total_s": 6.549160182999913,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034239.827638,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/3/level2_2026W34_1A_0007_1D3_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9099191949999295,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0233_4D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034233.8943932,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.95939046400008,
+"total_s": 8.391751657999976,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_1D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034240.1323864,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2303301289998672,
+"total_s": 2.377816091999648,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0441_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034240.7375772,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2374543910000284,
+"total_s": 2.8777514469998096,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_1D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794034242.2863398,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2242275519997747,
+"total_s": 2.362450962999901,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034236.7575717,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2205010789998596,
+"total_s": 8.289814696999656,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_2D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034242.5104606,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3085144990000117,
+"total_s": 2.637677115000315,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034243.6155558,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.328745784000148,
+"total_s": 2.677824639999926,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034245.14838,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2284815230000277,
+"total_s": 2.3611915970000155,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0081_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034245.0476446,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6393959500001074,
+"total_s": 2.563762054000108,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_4D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034244.649083,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.24287630300023,
+"total_s": 3.676987821000239,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034247.5098095,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2230150199998207,
+"total_s": 2.3718469539999205,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_2D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034247.6116383,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2270637889996578,
+"total_s": 2.3509383999999045,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_3D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034246.293606,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7298650660000021,
+"total_s": 4.183618777999982,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_2D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034248.3262866,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2260773480002172,
+"total_s": 2.256015768999987,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_1D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034249.8819485,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/2/level2_2025W35_1A_0146_1D2_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9062717679998968,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_2A_0221_3D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794034249.9628131,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2292166349998297,
+"total_s": 2.180537073999858,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_1D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794034250.4774797,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2273623119999684,
+"total_s": 2.1513329719996364,
+"bytes": 144000,
+"shape": [
+51,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0238_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034252.1435962,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/3/level2_2026W34_1A_0238_1D3_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.8987085839999054,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0484_2D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034252.6290803,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/3/level2_2025W35_1A_0484_2D3_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9171507040000506,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0431_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034250.5823958,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.349344593999831,
+"total_s": 3.78722218699977,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_4D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034250.7882526,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.3755233699998826,
+"total_s": 4.297784777000288,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_1D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034253.5462546,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2289035650001097,
+"total_s": 2.1572314549998737,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_1A_0024_1D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034255.0862691,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.224593396000273,
+"total_s": 2.1509478259999923,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_1D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794034255.7036989,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.222595421999813,
+"total_s": 2.3542333659997894,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0570_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034257.2374272,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_1A/l2b-v24-2026-094/1/level2_2026W11_1A_0570_1D1_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 0.9220157930003552,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0511_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034253.0423338,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.221359456999835,
+"total_s": 5.526254424999934,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_4D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034254.3698785,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.839110496000103,
+"total_s": 5.3205783640000845,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_3D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034258.0581563,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2348533839999618,
+"total_s": 2.3535097560002214,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0484_1D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034259.6907406,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/3/level2_2025W35_1A_0484_1D3_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9918948260001343,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_2A_0412_2D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794034258.5688548,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2240039739999702,
+"total_s": 2.3502337569998417,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034260.411912,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/2/level2_2026W34_2A_0249_1D2_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9169477229997938,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W34_2B_0557_1D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034258.159469,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.400872139999592,
+"total_s": 4.31478374299968,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_1D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794034260.6826663,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2487292589999015,
+"total_s": 2.287461502000042,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_4D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034260.9192643,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.253830318999917,
+"total_s": 3.484509032999995,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_2D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034262.9703329,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.829411715000333,
+"total_s": 2.7663263560002633,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034262.4744537,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3201646160000564,
+"total_s": 3.464323911000065,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034261.328876,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.9961229690002256,
+"total_s": 5.6341819790000045,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034264.4040203,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.044862596999792,
+"total_s": 2.979829354999765,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W36_2B_0123_1D4_spx_l2b-v20-2025-272.fits",
+"t0": 1794034265.7369177,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2291791950001425,
+"total_s": 2.5592291680000017,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_3D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034267.3841429,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.315721940000003,
+"total_s": 2.8579032170000573,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_2D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034268.2963493,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.224849950999669,
+"total_s": 2.3521393819996774,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_4D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034266.963293,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.944899009999972,
+"total_s": 3.8945870509996894,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_4D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034265.939047,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229138743999556,
+"total_s": 5.835881909999898,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_1D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034270.2423398,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7379824479999115,
+"total_s": 2.765296299000056,
+"bytes": 155520,
+"shape": [
+61,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_2D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034270.648734,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4334880830001566,
+"total_s": 2.4560424589999457,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034270.8581307,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7363542449998022,
+"total_s": 2.66197360499973,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_3D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034271.7751727,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.8424538499998562,
+"total_s": 2.9496140849996664,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_3D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034273.0078747,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2313294430000497,
+"total_s": 2.6592331609999746,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034273.5203388,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2034031140001389,
+"total_s": 2.2482841850001023,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0081_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034275.7688828,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/3/level2_2026W34_2A_0081_1D3_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 0.9367002369999682,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0431_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034274.7250166,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2476241439999285,
+"total_s": 2.375364535999779,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034273.1050384,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.241011361999881,
+"total_s": 5.234204045999832,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_1D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794034275.667372,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9474279159999242,
+"total_s": 2.8682660399999804,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_2D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034277.10064,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3299096609998742,
+"total_s": 2.5592004299996916,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_3D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034276.7056108,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.217423121000138,
+"total_s": 2.966171900000063,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0444_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034278.5359144,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5338721419998365,
+"total_s": 2.4589214759998868,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034279.660131,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2275292509998508,
+"total_s": 2.05008567699997,
+"bytes": 169920,
+"shape": [
+66,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034279.6720715,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2433563459999277,
+"total_s": 2.1637064639999153,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_3D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034280.9950836,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/2/level2_2025W35_1A_0146_3D2_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9170382950001112,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0007_4D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034278.3395188,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.240942584000095,
+"total_s": 4.382532189999893,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0326_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034281.7104433,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2254446859997188,
+"total_s": 2.765046271999836,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_1D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794034281.9121532,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7401823320001313,
+"total_s": 2.6648556539998935,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_3D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794034281.8360286,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7145499439998275,
+"total_s": 2.939273521999894,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0324_2D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794034282.7222927,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2404268570003296,
+"total_s": 2.5838466060004066,
+"bytes": 178560,
+"shape": [
+79,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034284.4757357,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2298105979998581,
+"total_s": 2.154759763000129,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_2D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034284.5772078,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229417087999991,
+"total_s": 2.1507100849999006,
+"bytes": 204480,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034284.7755346,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2325136650001696,
+"total_s": 2.3607232940003087,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_4D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034285.306443,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6221717589996842,
+"total_s": 2.567073724999773,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_2D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034286.6307073,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3213257779998457,
+"total_s": 2.448656208000102,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_1D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034287.1364872,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2291684880001412,
+"total_s": 2.1846712370002024,
+"bytes": 178560,
+"shape": [
+75,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_3D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034286.7281525,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6390690640000685,
+"total_s": 2.5976863360001516,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_2D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034287.8737051,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2076286530000289,
+"total_s": 2.4392189200002576,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034289.0795937,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7407885990000977,
+"total_s": 3.5856142170000567,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_1D6_spx_l2b-v20-2025-269.fits",
+"t0": 1794034290.313131,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7396201890001066,
+"total_s": 2.969669925999824,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_2D2_spx_l2b-v20-2025-270.fits",
+"t0": 1794034289.3260398,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.596938427999703,
+"total_s": 5.592152991999683,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_1D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034292.6653106,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2293716240001231,
+"total_s": 2.357140291000178,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0484_2D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034293.2830312,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2306998280000698,
+"total_s": 2.150814207000167,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0496_1D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794034289.32138,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7043630289999783,
+"total_s": 7.133287779000057,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034294.9184353,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2274040040001637,
+"total_s": 2.458688847000303,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034295.0226874,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2249309909998374,
+"total_s": 2.455582942000092,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034297.4784153,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2272256209998886,
+"total_s": 2.2555817209999987,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W33_2A_0594_4D3_spx_l2b-v27-2026-241.fits",
+"t0": 1794034297.3774126,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2221966789998078,
+"total_s": 2.7622378430000936,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_2D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034295.4340868,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2230924310001683,
+"total_s": 4.913426508000157,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_4D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794034296.4549282,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3293599779999568,
+"total_s": 5.330489209000007,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034299.7342339,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2249775489999593,
+"total_s": 2.351791872999911,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_1D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794034300.3477461,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0658_1D4_spx_l2b-v20-2025-270.fits?center=269.",
+"total_s": 2.045297113000288,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0308_4D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034300.1398952,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2286266649998652,
+"total_s": 3.0787212370000816,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034301.785592,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.836458627000411,
+"total_s": 2.7608714440002586,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034302.3930535,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5619256949999,
+"total_s": 3.5892932980000296,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034303.2189136,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7393944460000057,
+"total_s": 3.4783109690001766,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0363_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034302.0862582,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.9980216900003143,
+"total_s": 6.148280208000415,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_2D6_spx_l2b-v24-2026-083.fits",
+"t0": 1794034305.9825933,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.7361538010000004,
+"total_s": 2.6634791430001314,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0249_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034304.5466566,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.225943473999905,
+"total_s": 5.030098142000043,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_1D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034306.697422,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229612655999972,
+"total_s": 2.96861164000029,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_4D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034308.2347763,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2252737640001214,
+"total_s": 2.2598419050000302,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_2D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794034308.6462917,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2180943849998584,
+"total_s": 3.169967994000217,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_4D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034309.6661687,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.659420142000272,
+"total_s": 3.897043488000236,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034310.494861,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.626669487000072,
+"total_s": 3.165314963000128,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0371_3D5_spx_l2b-v24-2026-083.fits",
+"t0": 1794034309.5770364,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.7501953129999492,
+"total_s": 4.310278896999989,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_3D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034311.816493,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2287658669997654,
+"total_s": 2.7635253349999402,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_4D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034313.563286,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1849631000000045,
+"total_s": 2.0516031499996643,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_4D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794034313.6603956,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2252047370002401,
+"total_s": 2.176229180000064,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_1D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034313.8875768,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1435348949999025,
+"total_s": 2.638555487999838,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_3D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034315.6151633,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W11_1A/l2b-v24-2026-094/1/level2_2026W11_1A_0539_3D1_spx_l2b-v24-2026-094.fits?center=269.",
+"total_s": 0.9139983260001827,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0008_2D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034314.5802383,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5378423669999393,
+"total_s": 2.6646290349999617,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_3D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034317.245085,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_1A/l2b-v24-2026-082/3/level2_2026W12_1A_0598_3D3_spx_l2b-v24-2026-082.fits?center=269.",
+"total_s": 0.9203287519999321,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0431_4D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034316.5291822,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2238679830002184,
+"total_s": 2.2648180520000096,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_2D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034315.8368576,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.144306739000058,
+"total_s": 4.381174541000291,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0216_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034318.165423,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229556716999923,
+"total_s": 2.1827838789999987,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_3D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034318.7942204,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2148274440000932,
+"total_s": 2.136730261000139,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_2D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034316.5263746,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.274365708000005,
+"total_s": 4.506243944999824,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_1D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034320.2182224,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2207910359998095,
+"total_s": 2.3501354919999358,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0264_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034320.9311507,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2222506470002372,
+"total_s": 2.236851918999946,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_4D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034320.3484697,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6026721719999841,
+"total_s": 3.2442631660001098,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034323.1682642,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.24352263100036,
+"total_s": 2.2702214559999447,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0092_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034323.593078,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2272003289999702,
+"total_s": 2.355782911999995,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_4D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034322.5685797,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3312708990001738,
+"total_s": 3.682458639000288,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_1D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034321.032806,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5386987300003057,
+"total_s": 6.5696144330004245,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_4D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034325.4387436,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.230697212999985,
+"total_s": 2.350225942000179,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_1D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034327.6026404,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W12_1A/l2b-v24-2026-082/6/level2_2026W12_1A_0598_1D6_spx_l2b-v24-2026-082.fits?center=269.",
+"total_s": 0.9354737339999701,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W35_1A_0038_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034326.2513165,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2325677589997213,
+"total_s": 2.873514822999823,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0386_3D3_spx_l2b-v20-2025-267.fits",
+"t0": 1794034325.9491303,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228087806000076,
+"total_s": 3.5810969560002377,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0249_4D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034327.7892578,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.638839571999597,
+"total_s": 2.5598706709997714,
+"bytes": 204480,
+"shape": [
+88,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034329.1250947,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.226555924999957,
+"total_s": 2.353856076000284,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034329.5305264,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1936336759999904,
+"total_s": 2.0541684790000545,
+"bytes": 149760,
+"shape": [
+55,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0549_1D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034328.5381434,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.299115563000214,
+"total_s": 3.755723683999804,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0353_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034331.479221,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2229391529999702,
+"total_s": 2.1604849150003247,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_4D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794034333.6398165,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6238315000000512,
+"total_s": 2.5450492140003007,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0038_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034332.2940958,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6623381670001436,
+"total_s": 3.9975223129999904,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0549_1D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034330.349392,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2335980580000978,
+"total_s": 6.347204767000221,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034331.5849478,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.473874144000092,
+"total_s": 5.317357605000325,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034336.1851075,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229027615999712,
+"total_s": 2.357840650000071,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_3D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034336.291858,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2226695070003188,
+"total_s": 2.7582033310000043,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_2D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034336.6968741,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2299776830000155,
+"total_s": 2.463325304999671,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034336.9024827,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2285552270000153,
+"total_s": 2.35198673099967,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0367_1D1_spx_l2b-v20-2025-277.fits",
+"t0": 1794034338.5432196,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2257939360001728,
+"total_s": 2.252223526000307,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034339.1602893,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6328734089997852,
+"total_s": 2.5557891230000678,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_3D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034339.2547562,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9229880139996567,
+"total_s": 2.8810053409997636,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_4D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034339.0503197,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5588759810002557,
+"total_s": 3.903906711000218,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_3D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034340.7956007,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2278716740001983,
+"total_s": 2.9686432250000507,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0430_2D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034342.9545608,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2212085239998487,
+"total_s": 2.2008594079998147,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_1D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034342.1360228,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.8321430440000768,
+"total_s": 3.069685230000232,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034343.7644804,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0079_1D1_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 2.0519352340002115,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0008_2D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034341.716355,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6615960960002667,
+"total_s": 4.197631879000255,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_2D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034345.2059684,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/2/level2_2025W35_1A_0146_2D2_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9322017389999928,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_2A_0474_4D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034345.1556582,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.67978260100017,
+"total_s": 2.634908674000144,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0007_3D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034345.8164394,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5343604199997571,
+"total_s": 2.6573387879998336,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_1D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034345.914205,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2241737599997577,
+"total_s": 2.853724783999951,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_1D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034346.138197,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6166690119998748,
+"total_s": 3.462661752999793,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_1D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034348.474048,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229490855000222,
+"total_s": 2.7662736359998235,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0178_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034347.790803,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.729479292999713,
+"total_s": 3.9657170229997973,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034349.601125,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2141395300000113,
+"total_s": 3.3802666229998977,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_2D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034348.7681544,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2412372899998445,
+"total_s": 4.833560594000119,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W39_1A_0371_1D5_spx_l2b-v27-2026-268.fits",
+"t0": 1794034351.2405806,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6321326069996758,
+"total_s": 2.562377268999626,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0496_1D2_spx_l2b-v24-2026-083.fits",
+"t0": 1794034351.7566044,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2227041529999951,
+"total_s": 2.4558441930003028,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0550_1D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034353.6019883,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.221792397000172,
+"total_s": 2.3461707450001086,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0126_1D2_spx_l2b-v27-2026-246.fits",
+"t0": 1794034352.9816349,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.1473830709996946,
+"total_s": 3.1067374919998656,
+"bytes": 195840,
+"shape": [
+83,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_4D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034353.8030589,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5300593879996995,
+"total_s": 2.463768673999766,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0456_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034354.2127142,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.3695521910003663,
+"total_s": 3.6570708720000766,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_3D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034355.9483821,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228669100999923,
+"total_s": 2.4821763899999496,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0441_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034356.2670739,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2167765340000187,
+"total_s": 2.4605809350000527,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0471_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034358.4308062,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W40_1A/l2b-v20-2025-277/4/level2_2025W40_1A_0471_1D4_spx_l2b-v20-2025-277.fits?center=269.",
+"total_s": 0.9540572529999736,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0176_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034356.0886707,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.321583101000215,
+"total_s": 3.447765864000303,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_3D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034358.7278676,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0611_3D4_spx_l2b-v20-2025-271.fits?center=269.",
+"total_s": 0.9828860220000024,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_1A_0308_4D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034357.870069,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1997892389999834,
+"total_s": 2.4772970899998654,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0090_4D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034359.5366843,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.211368020000009,
+"total_s": 2.354933259000063,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0539_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034359.710781,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2549925989997064,
+"total_s": 2.447369876999801,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_4D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034360.3475902,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2353260869999758,
+"total_s": 2.2120801709997977,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0053_1D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034359.3848703,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.9148993920002795,
+"total_s": 3.9765642970000954,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_3D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034362.1583905,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.9962755669998842,
+"total_s": 2.9308141490000708,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0216_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034361.8918443,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.55886663199999,
+"total_s": 3.6098689450000165,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0587_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034363.3616648,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4965531520001605,
+"total_s": 2.436147591000008,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_3D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034365.5017967,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.1973160839997945,
+"total_s": 2.5333312769998884,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_2D1_spx_l2b-v20-2025-271.fits",
+"t0": 1794034365.0894344,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2018799029997354,
+"total_s": 3.146299398999872,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0501_2D2_spx_l2b-v24-2026-094.fits",
+"t0": 1794034362.5599425,
+"status": 200,
+"ok": true,
+"ttfb_s": 4.959773014000348,
+"total_s": 5.8849337130000094,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_3D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034368.2359595,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W34_2B/l2b-v20-2025-267/2/level2_2025W34_2B_0557_3D2_spx_l2b-v20-2025-267.fits?center=269.",
+"total_s": 0.9267341979998491,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0432_4D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034368.0353925,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/1/level2_2025W35_1A_0432_4D1_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 1.1337959799998316,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_1A_0598_1D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034365.798038,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.747394541000176,
+"total_s": 3.6744630980001602,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_3D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034368.4450972,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2261772960000599,
+"total_s": 2.251571874000092,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_2D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034369.1627152,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2272508810001455,
+"total_s": 2.3562976350003737,
+"bytes": 204480,
+"shape": [
+90,
+90
+]
+},
+{
+"frame": "level2_2025W35_2A_0611_2D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034369.4727042,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2224303670000154,
+"total_s": 2.2466184990003057,
+"bytes": 198720,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_2D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034370.6967745,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3252435489998788,
+"total_s": 2.479359315000238,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0233_3D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034371.719468,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2297245320000911,
+"total_s": 2.1534139410000535,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0444_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034371.5192258,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2234684599998218,
+"total_s": 2.4530527309998433,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_2D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034369.1692133,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2218307519997325,
+"total_s": 4.80507401199975,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_2A_0520_2D3_spx_l2b-v24-2026-083.fits",
+"t0": 1794034373.8733313,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.22459279099985,
+"total_s": 2.3538164779997715,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_3D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034373.972535,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2295009579997895,
+"total_s": 2.385971437999615,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0474_2D4_spx_l2b-v20-2025-271.fits",
+"t0": 1794034373.9744713,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6377004139999372,
+"total_s": 2.6632550089998404,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_3D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034373.1763403,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1619547249997595,
+"total_s": 4.1533029869997335,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034376.227391,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2268843910001124,
+"total_s": 2.355875200000355,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0587_1D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034376.35879,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.2210256439998375,
+"total_s": 3.3456594959998256,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0053_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034377.3299167,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.274276385000121,
+"total_s": 3.2974041090001265,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_3D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034376.637914,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.6585357660001137,
+"total_s": 4.189728218000255,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W39_1A_0371_1D2_spx_l2b-v27-2026-268.fits",
+"t0": 1794034378.583519,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6353026769997996,
+"total_s": 3.4754255279999597,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_3D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034380.6275322,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2258401520002735,
+"total_s": 2.2501399140001013,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_4D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034382.059216,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-269/3/level2_2025W35_1A_0008_4D3_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.9243996429995605,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0757_2D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034380.8277428,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.5645171800001663,
+"total_s": 3.796407371999976,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_2D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034379.7047012,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3323216320000029,
+"total_s": 5.329419669999879,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W33_2C_0321_1D6_spx_l2b-v20-2025-266.fits",
+"t0": 1794034382.8779206,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2318962009999268,
+"total_s": 2.4755547529998694,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_1B_0164_1D6_spx_l2b-v20-2025-267.fits",
+"t0": 1794034382.9836435,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229201525999997,
+"total_s": 2.7648628449996977,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_1D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034384.624415,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3278398259999449,
+"total_s": 2.3507998410000255,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0233_2D5_spx_l2b-v27-2026-243.fits",
+"t0": 1794034385.034342,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2246591119996992,
+"total_s": 2.3765075499995874,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_2D3_spx_l2b-v20-2025-269.fits",
+"t0": 1794034386.9754393,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W34_2B/l2b-v20-2025-269/3/level2_2025W34_2B_0030_2D3_spx_l2b-v20-2025-269.fits?center=269.",
+"total_s": 0.919172122999953,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0511_4D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034385.3537037,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2157920780000495,
+"total_s": 2.6505444040003567,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_4D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034385.7487516,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2283915450002496,
+"total_s": 2.400788713000111,
+"bytes": 198720,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0658_3D4_spx_l2b-v20-2025-270.fits",
+"t0": 1794034387.411141,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0658_3D4_spx_l2b-v20-2025-270.fits?center=269.",
+"total_s": 0.9012531559997115,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W34_2A_0264_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034387.89464,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/2/level2_2026W34_2A_0264_1D2_spx_l2b-v27-2026-243.fits?center=269.",
+"total_s": 2.049500165000154,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W11_1A_0570_1D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034388.3124194,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2264041290000023,
+"total_s": 2.3521437839999635,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_4D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034388.149785,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3876742279999235,
+"total_s": 3.1260156280000047,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_2A_0513_3D5_spx_l2b-v24-2026-094.fits",
+"t0": 1794034388.0044506,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3269278269999631,
+"total_s": 3.478983450999749,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_3D6_spx_l2b-v24-2026-088.fits",
+"t0": 1794034389.9441688,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.23078526900008,
+"total_s": 2.1584728510001696,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_2A_0221_1D5_spx_l2b-v20-2025-271.fits",
+"t0": 1794034390.6648302,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2299752489998355,
+"total_s": 2.269781392999903,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0079_3D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034391.276091,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3332979790002355,
+"total_s": 2.3562590840001576,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0030_3D6_spx_l2b-v20-2025-269.fits",
+"t0": 1794034391.4836922,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.22748294899975,
+"total_s": 2.355753939999886,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0206_2D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034392.102871,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.742430303999754,
+"total_s": 2.9740233050001734,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_2A_0412_3D1_spx_l2b-v27-2026-246.fits",
+"t0": 1794034392.9348352,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2111493720003637,
+"total_s": 2.3407570050003415,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W15_2A_0137_1D3_spx_l2b-v24-2026-105.fits",
+"t0": 1794034393.6325963,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228159660000074,
+"total_s": 2.3585925910001606,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0046_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034393.8396943,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6377508749997105,
+"total_s": 2.5684986420001223,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0308_2D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034395.0771832,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.218237319000309,
+"total_s": 2.2428248380001605,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_1D2_spx_l2b-v20-2025-267.fits",
+"t0": 1794034395.9914186,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228371812000205,
+"total_s": 3.0695457599999827,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0403_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034395.2758248,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.226588558000003,
+"total_s": 3.990377161000197,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_2D4_spx_l2b-v27-2026-243.fits",
+"t0": 1794034397.3202903,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.228174509999917,
+"total_s": 2.4602203579997877,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0326_1D3_spx_l2b-v24-2026-131.fits",
+"t0": 1794034399.0612447,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W19_1A/l2b-v24-2026-131/3/level2_2026W19_1A_0326_1D3_spx_l2b-v24-2026-131.fits?center=269.",
+"total_s": 0.92126480800016,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2025W35_1A_0658_2D1_spx_l2b-v20-2025-269.fits",
+"t0": 1794034396.4083936,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1642834009999206,
+"total_s": 4.400812158999997,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0146_2D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034399.2664583,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.6367249649997575,
+"total_s": 2.5602414410000165,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_2D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034399.7807448,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2253338539999277,
+"total_s": 2.252822330000072,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0092_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034399.9825366,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.3310700760002874,
+"total_s": 2.3513992860002872,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_4D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034402.0338025,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.5326681869996719,
+"total_s": 2.5529859979997127,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0444_1D2_spx_l2b-v20-2025-269.fits",
+"t0": 1794034402.3342285,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2283545199998116,
+"total_s": 3.175116529999741,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0511_3D4_spx_l2b-v24-2026-094.fits",
+"t0": 1794034400.8094738,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.4490008150000904,
+"total_s": 5.422294512999997,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0456_1D2_spx_l2b-v27-2026-243.fits",
+"t0": 1794034401.8269768,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2267236269999557,
+"total_s": 4.607586230999914,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0610_2D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034404.5869079,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2330776129997503,
+"total_s": 2.2615065869999853,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_2D2_spx_l2b-v24-2026-082.fits",
+"t0": 1794034405.5095918,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2309238940001705,
+"total_s": 2.256692983999983,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_3D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034406.8485138,
+"status": 503,
+"ok": false,
+"error": "HTTP 503",
+"detail": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W13_1A/l2b-v24-2026-088/3/level2_2026W13_1A_0129_3D3_spx_l2b-v24-2026-088.fits?center=269.",
+"total_s": 0.9236295069999869,
+"ttfb_s": null,
+"bytes": 0
+},
+{
+"frame": "level2_2026W12_1A_0598_2D3_spx_l2b-v24-2026-082.fits",
+"t0": 1794034406.2320101,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2268001669999649,
+"total_s": 2.358152686000267,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0008_1D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034407.7665093,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2264666500000203,
+"total_s": 3.0709402149996095,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W19_1A_0046_1D6_spx_l2b-v24-2026-131.fits",
+"t0": 1794034407.772169,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2219477939997887,
+"total_s": 3.2696435930001826,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0238_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034406.4347453,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.22496307099982,
+"total_s": 5.9329297360000055,
+"bytes": 204480,
+"shape": [
+91,
+90
+]
+},
+{
+"frame": "level2_2026W12_1A_0311_3D5_spx_l2b-v24-2026-082.fits",
+"t0": 1794034411.0421042,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.227418648999901,
+"total_s": 2.1532302470000104,
+"bytes": 201600,
+"shape": [
+90,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0375_4D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034410.8375888,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.149190191999878,
+"total_s": 3.4832482009996966,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0176_1D6_spx_l2b-v27-2026-243.fits",
+"t0": 1794034408.5903537,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.6786986490001254,
+"total_s": 5.733644394000294,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W35_1A_0484_1D6_spx_l2b-v20-2025-270.fits",
+"t0": 1794034412.3678272,
+"status": 200,
+"ok": true,
+"ttfb_s": 2.156305638000049,
+"total_s": 3.0740339489998405,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W35_1A_0249_4D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034413.1955304,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.224780125000052,
+"total_s": 2.9664018809999106,
+"bytes": 184320,
+"shape": [
+75,
+91
+]
+},
+{
+"frame": "level2_2025W40_1A_0500_1D4_spx_l2b-v20-2025-277.fits",
+"t0": 1794034415.4421418,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.232277748999877,
+"total_s": 2.768304758999875,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W13_1A_0129_4D3_spx_l2b-v24-2026-088.fits",
+"t0": 1794034416.1621835,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.229645446000177,
+"total_s": 2.1559732680002526,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W12_1A_0598_2D6_spx_l2b-v24-2026-082.fits",
+"t0": 1794034414.324262,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.167266654999821,
+"total_s": 4.39600554899971,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W11_1A_0556_4D1_spx_l2b-v24-2026-094.fits",
+"t0": 1794034418.2106087,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2301858099999663,
+"total_s": 2.352789899999607,
+"bytes": 201600,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2025W34_2B_0557_3D5_spx_l2b-v20-2025-269.fits",
+"t0": 1794034418.7205007,
+"status": 200,
+"ok": true,
+"ttfb_s": 1.2372337629999492,
+"total_s": 2.3581273169997985,
+"bytes": 198720,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_2A_0757_1D1_spx_l2b-v27-2026-243.fits",
+"t0": 1794034414.3213735,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.171127980000165,
+"total_s": 7.473077434000061,
+"bytes": 207360,
+"shape": [
+91,
+91
+]
+},
+{
+"frame": "level2_2026W34_1A_0431_4D3_spx_l2b-v27-2026-243.fits",
+"t0": 1794034418.3183584,
+"status": 200,
+"ok": true,
+"ttfb_s": 3.1684223730003396,
+"total_s": 4.6997647080002025,
+"bytes": 204480,
+"shape": [
+91,
+91
+]
+}
+]
+}

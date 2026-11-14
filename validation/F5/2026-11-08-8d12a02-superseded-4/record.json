@@ -1,0 +1,39 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "F5",
+ "level": "L2",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "8d12a02",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\calib",
+  "config/calibration.lock"
+ ],
+ "input_frame_count": 0,
+ "runtime_s": 3.5,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/targets.py",
+  "backend/spherex/astrometry.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/photometry.py",
+  "backend/spherex/ephem.py",
+  "scripts/verify/m_foundations.py"
+ ],
+ "code_digest": "82a294fbfab019c53a50123db0e68ecfd9a040285f0df71bf5000b14c4580228",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "Windows developer checkout; not deployment performance",
+ "supersedes": "2026-11-08-8d12a02-superseded-3",
+ "date": "2026-11-08"
+}

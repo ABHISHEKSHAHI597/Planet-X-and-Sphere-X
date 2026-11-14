@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F11",
+ "record": "2026-11-07-20efbf1",
+ "role": "P",
+ "reviewer": "P",
+ "verdict": "approve",
+ "reproduced": true,
+ "notes": "Reproduced by P at git 40e3c21: f11_coverage.py --replay on the recorded SIA2+TAP responses -> PASS; deduplicated frame sets identical for all 5 targets; doc-count rows are informational. Replay reproduces the logic, not the live answer; the nightly network run on the VM re-establishes it live. Legacy record -> STALE until re-recorded.",
+ "date": "2026-11-07",
+ "code_digest_at_review": "955543a0abc96e63425787a8ded0fb90ca56c05472c53e818da5a85f8b24410c"
+}

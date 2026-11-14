@@ -1,0 +1,48 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "F4",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {
+  "matched_pairs": {
+   "value": 1,
+   "threshold": "at least one isolated star at matching wavelength",
+   "pass": true
+  },
+  "multiplication_improves": {
+   "value": "False",
+   "threshold": "corrected QR2 agrees better with QR3",
+   "pass": false
+  }
+ },
+ "git_sha": "8d12a02",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\frames\\ce\\ce8253e0df0d8b4505ada87439ac6ac0b3a6e75f_20e68b65817b.fits",
+  "C:\\Users\\iamda\\Nasa-Space-Apps-2026\\.cache\\m-acceptance\\frames\\a3\\a375770faea15b5db1216ecb3680de5fb0dca7dd_20e68b65817b.fits"
+ ],
+ "input_frame_count": 2,
+ "runtime_s": 75.0,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/spherex/photometry.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/preprocess.py",
+  "scripts/verify/m_f4.py"
+ ],
+ "code_digest": "493ff265ea4cbe6028077d2bf797e462169ed5220c513835b350c065b332153e",
+ "caveats": [
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-8d12a02-superseded-3",
+ "date": "2026-11-08"
+}

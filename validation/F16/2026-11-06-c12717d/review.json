@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "F16",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "changes",
+ "reproduced": false,
+ "notes": "Occupancy is heterogeneous; about one sample per bin is not a guarantee of adjacent support. Nearest sampled-bin interpolation must retain maximum-gap guards and missing support. Re-establish occupancy under current locked calibration/pins and report at least two real full-visit targets before enabling difference or scrubber.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "caf4f41a68d67862aff881be09a449d7b6aa50692c4ac1038f85e01479d54251"
+}

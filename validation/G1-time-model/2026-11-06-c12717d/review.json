@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "G1-time-model",
+ "record": "2026-11-06-c12717d",
+ "role": "M",
+ "reviewer": "",
+ "verdict": "approve",
+ "reproduced": false,
+ "notes": "Real recorded-MJD tests reproduce WISE band6 3/16/3/21 -> two full and two partial, and R Dra fixed bins. Approve decisions 0001/0002 for these pinned fields; 60 days is an engineering classifier, not a universal visit duration. Survey labels remain derived (F9). Legacy record needs fresh digest and G1 still needs resolver/I review.",
+ "date": "2026-11-08",
+ "code_digest_at_review": "74e2d4e115849e0bd4d99263cc542a5c2d9a2f471506239c5fb6ecd3991e45bc"
+}

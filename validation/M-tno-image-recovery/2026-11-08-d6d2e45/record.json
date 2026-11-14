@@ -1,0 +1,52 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "M-tno-image-recovery",
+ "level": "L3",
+ "verdict": "inconclusive",
+ "metrics": {},
+ "git_sha": "d6d2e45",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": "none",
+ "inputs": [
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W22_2B/l2b-v20-2025-251/6/level2_2025W22_2B_0258_1D6_spx_l2b-v20-2025-251.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W23_1C/l2b-v20-2025-251/6/level2_2025W23_1C_0121_2D6_spx_l2b-v20-2025-251.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W02_1A/l2b-v23-2026-009/6/level2_2026W02_1A_0200_1D6_spx_l2b-v23-2026-009.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W22_2A/l2b-v25-2026-152/6/level2_2026W22_2A_0398_1D6_spx_l2b-v25-2026-152.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W23_1A/l2b-v25-2026-156/6/level2_2026W23_1A_0186_1D6_spx_l2b-v25-2026-156.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W25_2A/l2b-v20-2025-254/6/level2_2025W25_2A_0252_1D6_spx_l2b-v20-2025-254.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W25_2A/l2b-v20-2025-254/6/level2_2025W25_2A_0661_1D6_spx_l2b-v20-2025-254.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W05_2A/l2b-v23-2026-034/6/level2_2026W05_2A_0244_1D6_spx_l2b-v23-2026-034.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_2A/l2b-v25-2026-174/6/level2_2026W25_2A_0625_2D6_spx_l2b-v25-2026-174.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W30_2A/l2b-v27-2026-224/6/level2_2026W30_2A_0382_1D6_spx_l2b-v27-2026-224.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W30_1B/l2b-v20-2025-262/6/level2_2025W30_1B_0102_1D6_spx_l2b-v20-2025-262.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W30_2B/l2b-v20-2025-262/6/level2_2025W30_2B_0173_2D6_spx_l2b-v20-2025-262.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W52_2A/l2b-v22-2026-006/6/level2_2025W52_2A_0242_1D6_spx_l2b-v22-2026-006.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W29_2A/l2b-v25-2026-206/6/level2_2026W29_2A_0445_1D6_spx_l2b-v25-2026-206.fits",
+  "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W30_1B/l2b-v27-2026-222/6/level2_2026W30_1B_0447_1D6_spx_l2b-v27-2026-222.fits"
+ ],
+ "input_frame_count": 15,
+ "runtime_s": 518.6,
+ "author": "M",
+ "reviewer": "pending (I, workflow.md \u00a79.4)",
+ "code_paths": [
+  "scripts/verify/m_tno_recovery.py",
+  "backend/spherex/epsf.py",
+  "backend/spherex/planetx.py",
+  "backend/spherex/movers.py",
+  "scripts/verify/_m_evidence.py"
+ ],
+ "code_digest": "a647355d696825d8d8ae6b16f20fe1853e88af57f3254158268cd174de155bbb",
+ "caveats": [
+  "Sources changed during execution: backend/spherex/planetx.py. Executed snapshot retained; rerun before acceptance.",
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "win32 local",
+ "supersedes": "2026-11-08-d6d2e45-superseded-1",
+ "date": "2026-11-08"
+}

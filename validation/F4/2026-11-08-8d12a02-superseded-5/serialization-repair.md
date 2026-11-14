@@ -1,0 +1,1 @@
+Serialization repair only: numpy boolean was encoded as string False/True by the evidence writer fallback. Original retained in record.original.txt. Converted to the equivalent JSON boolean without changing the numerical data, verdict, code digest, or review. Writer call now explicitly casts bool.

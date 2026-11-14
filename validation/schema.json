@@ -1,0 +1,44 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://parallax/validation/schema.json",
+ "title": "ParallaX evidence record (workflow.md §4.5)",
+ "description": "parallax-evidence@1 is written by scripts/validate.py:record(). parallax-evidence@0-temporary (I's interim writer) is accepted read-only; it has no code_digest, so its staleness falls back to git history.",
+ "type": "object",
+ "required": ["schema", "check_id", "level", "verdict", "metrics", "git_sha", "contract_versions", "calibration_lock",
+              "pins", "input_frame_count", "runtime_s", "author", "reviewer", "code_paths", "date"],
+ "properties": {
+  "schema": {"enum": ["parallax-evidence@1", "parallax-evidence@0-temporary"]},
+  "check_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$"},
+  "level": {"enum": ["L0", "L1", "L2", "L3", "L4"]},
+  "verdict": {"enum": ["pass", "fail", "inconclusive"]},
+  "metrics": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "object",
+    "required": ["value"],
+    "properties": {"value": {}, "threshold": {}, "pass": {"type": ["boolean", "null"]}}
+   }
+  },
+  "git_sha": {"type": "string", "minLength": 4},
+  "git_dirty": {"type": "boolean"},
+  "contract_versions": {"type": "object", "additionalProperties": {"type": "string"}},
+  "calibration_lock": {"type": "string"},
+  "pins": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}, {"type": "object"}]},
+  "inputs": {"type": ["array", "object"], "description": "array in @1; legacy records also used an object"},
+  "input_frame_count": {"type": "integer", "minimum": 0},
+  "runtime_s": {"type": "number", "minimum": 0},
+  "author": {"type": "string", "minLength": 1},
+  "reviewer": {"type": "string"},
+  "code_paths": {"type": "array", "items": {"type": "string"}},
+  "code_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+  "environment": {"type": "string"},
+  "threshold_changes": {"type": "array", "items": {"type": "string"}},
+  "supersedes": {"type": ["string", "null"]},
+  "caveats": {"type": "array", "items": {"type": "string"}},
+  "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
+ },
+ "allOf": [
+  {"if": {"properties": {"schema": {"const": "parallax-evidence@1"}}},
+   "then": {"required": ["code_digest", "git_dirty", "inputs", "caveats", "environment"]}}
+ ]
+}

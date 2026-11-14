@@ -1,0 +1,87 @@
+{
+ "schema": "parallax-evidence@1",
+ "check_id": "G2-repro",
+ "level": "L3",
+ "verdict": "pass",
+ "metrics": {
+  "same_key": {
+   "value": "088db33cfb6f43c74bfa5649 / 088db33cfb6f43c74bfa5649",
+   "threshold": "equal",
+   "pass": true
+  },
+  "f16_payloads": {
+   "value": 24,
+   "threshold": "> 0 (every ready stack)",
+   "pass": true
+  },
+  "byte_identical_f16_f32": {
+   "value": "all identical",
+   "threshold": "byte-identical",
+   "pass": true
+  },
+  "f16_digest": {
+   "value": "066d225f7ecbd0ae",
+   "threshold": "reported",
+   "pass": null
+  },
+  "frames_stacked": {
+   "value": 355,
+   "threshold": "reported",
+   "pass": null
+  },
+  "frames_skipped": {
+   "value": 4,
+   "threshold": "reported (each with a reason)",
+   "pass": null
+  },
+  "job_errors": {
+   "value": 0,
+   "threshold": "0",
+   "pass": true
+  },
+  "cold_s": {
+   "value": [
+    368.8,
+    313.2
+   ],
+   "threshold": "reported (budgets are G2-perf)",
+   "pass": null
+  }
+ },
+ "git_sha": "40e3c21",
+ "git_dirty": true,
+ "contract_versions": {
+  "spherex.types": "0.1.0",
+  "http-api": "0.1.0"
+ },
+ "calibration_lock": "94e18b883fdc9b28",
+ "pins": [
+  "21a7689afc4b"
+ ],
+ "inputs": [
+  "config/pins/21a7689afc4b",
+  "live IRSA archive"
+ ],
+ "input_frame_count": 355,
+ "runtime_s": 705.6,
+ "author": "P",
+ "reviewer": "pending (D, workflow.md \u00a79.4)",
+ "code_paths": [
+  "backend/app/pipeline.py",
+  "backend/app/worker.py",
+  "backend/spherex/stack.py",
+  "backend/spherex/grid.py",
+  "backend/spherex/preprocess.py",
+  "backend/spherex/render.py"
+ ],
+ "code_digest": "40096e40569a290ee7163980a207374eca1c1b9d2a36490cde52a7857cb4bb92",
+ "caveats": [
+  "CALIB_ROOT not set: stacks do not use \u03bb maps, so bytes are unaffected",
+  "runtime 701 s",
+  "recorded on a dirty working tree: code_digest identifies the exact code"
+ ],
+ "threshold_changes": [],
+ "environment": "developer laptop (Windows 11), residential network, not us-east-1",
+ "supersedes": null,
+ "date": "2026-11-07"
+}
