@@ -1,4 +1,4 @@
-# ParallaX — SPHEREx blink comparator
+# ParallaX — SPHEREx blink comparator 
 
 A free web tool that plays NASA [SPHEREx](https://spherex.caltech.edu/) images of any patch of sky like a short
 video, so that anyone can spot stars and brown dwarfs that move and objects that change brightness. Built for the
