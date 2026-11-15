@@ -1,0 +1,50 @@
+# Caddy for the Hugging Face Space (deploy/hf/Dockerfile). Same routing as deploy/Caddyfile, but one container:
+# the API is at 127.0.0.1:8000, Hugging Face terminates HTTPS, and the app listens on :7860.
+# No X-Frame-Options here: the Space page on huggingface.co shows the app in an iframe.
+{
+	admin off
+	auto_https off
+	servers {
+		# Only Hugging Face's proxy can reach this port, so pass its X-Forwarded-For on (per-visitor rate limits).
+		trusted_proxies static 0.0.0.0/0 ::/0
+	}
+}
+
+:7860 {
+	encode zstd gzip
+
+	@api path /api/* /healthz /openapi.json /docs
+	handle @api {
+		reverse_proxy 127.0.0.1:8000 {
+			flush_interval -1
+			transport http {
+				read_timeout 15m
+			}
+		}
+	}
+
+	@metrics path /metrics
+	respond @metrics 403
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+
+	@assets path /assets/*
+	header @assets Cache-Control "public, max-age=31536000, immutable"
+	@shell not path /assets/* /api/* /healthz /metrics /openapi.json /docs
+	header @shell Cache-Control "no-cache"
+
+	handle {
+		root * /app/site
+		try_files {path} /index.html
+		file_server
+	}
+
+	log {
+		output stdout
+		format console
+	}
+}
