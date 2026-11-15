@@ -69,9 +69,5 @@
 /backend/app/schemas.py             @parallax-2026/role-p @parallax-2026/role-f
 /frontend/src/api/                  @parallax-2026/role-f @parallax-2026/role-p
 /frontend/fixtures/                 @parallax-2026/role-f @parallax-2026/role-p @parallax-2026/role-i
-/CONTRACTS.md                       @parallax-2026/role-p @parallax-2026/role-f @parallax-2026/role-d
 
 # Sources of truth (§1)
-/understanding.md                   @parallax-2026/role-i @parallax-2026/role-m
-/implementation.md                  @parallax-2026/role-i @parallax-2026/role-m @parallax-2026/role-p
-/workflow.md                        @parallax-2026/role-f @parallax-2026/role-p

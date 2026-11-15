@@ -86,7 +86,7 @@ All settings are optional environment variables. They are documented in
 
 FastAPI serves everything under `/api/v1`, plus `/healthz` and `/metrics`. The OpenAPI schema is committed at
 [frontend/src/api/openapi.json](frontend/src/api/openapi.json) and the TypeScript client is generated from it
-(`scripts/gen_contracts.py`). Contract changes are logged in [CONTRACTS.md](CONTRACTS.md).
+(`scripts/gen_contracts.py`).
 
 | Group | Endpoints |
 |---|---|
@@ -183,13 +183,8 @@ offline laptops, failure drills, and **ParallaX Lite**, a frozen static copy for
 | `validation/` | Evidence records (`<check>/<date>-<sha>/record.json`, report, review) and `STATUS.md` |
 | `config/` | Feature flags, proof spec, releases, calibration lock, pinned targets, pre-warm list |
 | `deploy/` | Web Dockerfile, Caddyfile, AWS setup, deploy script, offline env |
-| `docs/` | Deploy runbook, [extending](docs/extending.md) (new release, pin, mission or capability), [data refresh](docs/data-refresh.md), [classroom activity](docs/classroom-barnard.md), [decision records](docs/decisions/) |
-| `design-system/` | The frontend's visual language ("Observing log") |
-| `submission/` | Space Apps submission drafts |
-
-Design documents at the root: [understanding.md](understanding.md) (the challenge), [implementation.md](implementation.md)
-(the plan), [workflow.md](workflow.md) (team process, validation levels, flags) and [optimisation.md](optimisation.md)
-(work ordered by judging criteria).
+| `docs/` | Deploy runbook, [extending](docs/extending.md) (new release, pin, mission or capability), [data refresh](docs/data-refresh.md), [classroom activity](docs/classroom-barnard.md), [decision records](docs/decisions/), [Hugging Face Spaces](docs/DEPLOY_HF.md) |
+| `ParallaX-presentation/` | Space Apps presentation (`main.tex` source, compiled `presentation.pdf`) |
 
 ## Licence
 

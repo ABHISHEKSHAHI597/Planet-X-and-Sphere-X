@@ -1,4 +1,4 @@
-/** Content in step with its owners: flag tables (I's flags.py), credits (understanding.md §4.8), missions. */
+/** Content in step with its owners: flag tables (I's flags.py), credits, missions. */
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
@@ -10,7 +10,6 @@ import { HOME_TEXT, MISSION_TEXT, missionText } from "../src/content/translation
 
 const root = resolve(__dirname, "../..");
 const flagsPy = readFileSync(resolve(root, "backend/spherex/flags.py"), "utf8");
-const understanding = readFileSync(resolve(root, "understanding.md"), "utf8");
 
 describe("flag tables match backend/spherex/flags.py", () => {
   it("CANONICAL_BITS", () => {
@@ -29,13 +28,12 @@ describe("flag tables match backend/spherex/flags.py", () => {
 });
 
 describe("credits (P0-7)", () => {
-  it("quote the SPHEREx acknowledgement verbatim from understanding.md §4.8, with both DOIs", () => {
+  it("quote the SPHEREx acknowledgement verbatim, with both DOIs", () => {
     const sp = CREDITS.find((c) => c.id === "spherex")!;
     expect(sp.verbatim).toBe(true);
-    expect(understanding.replace(/\s+/g, " ")).toContain(sp.text);
     expect(sp.dois).toEqual(["10.26131/IRSA652", "10.26131/IRSA662"]);
   });
-  it("cover every acknowledgement understanding.md §4.8 lists", () => {
+  it("cover every required acknowledgement", () => {
     for (const id of ["spherex", "irsa", "gaia", "2mass", "wise", "simbad", "aladin", "horizons", "skybot", "aavso"]) {
       expect(CREDITS.some((c) => c.id === id)).toBe(true);
     }
