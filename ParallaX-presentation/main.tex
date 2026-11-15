@@ -1,0 +1,272 @@
+\documentclass[aspectratio=169,professionalfonts]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\definecolor{Midnight}{HTML}{071827}
+\definecolor{Panel}{HTML}{102D43}
+\definecolor{Cyan}{HTML}{35D6E6}
+\definecolor{Teal}{HTML}{18B7B5}
+\definecolor{Ink}{HTML}{F2F7FA}
+\definecolor{Muted}{HTML}{A9C3D1}
+\definecolor{Rule}{HTML}{34576A}
+
+\setbeamercolor{normal text}{fg=Ink,bg=Midnight}
+\setbeamercolor{background canvas}{bg=Midnight}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{frametitle}{}
+\setlength{\parindent}{0pt}
+\hypersetup{
+  pdftitle={ParallaX | SPHEREx blink comparator},
+  pdfauthor={The ParallaX team},
+  pdfsubject={2026 NASA Space Apps Challenge: Planet X and SPHEREx},
+  unicode=true
+}
+\graphicspath{{assets/}}
+
+\newcommand{\Repo}{https://github.com/dakshrathi-india/Planet-X-and-Sphere-X}
+\newcommand{\Tree}{\Repo/blob/d1ea3789e671d76862a666209d9d237108f59d60}
+\newcommand{\CoverSource}{https://www.jpl.nasa.gov/images/pia26600-spherexs-first-all-sky-map/}
+\newcommand{\VelaSource}{https://science.nasa.gov/open-science/spherex-universe-map/}
+\newcommand{\Archive}{https://irsa.ipac.caltech.edu/Missions/spherex.html}
+\newcommand{\Link}[2]{\href{#1}{\textcolor{Cyan}{#2}}}
+\newcommand{\DeckTitle}[1]{{\fontsize{22}{24}\selectfont\bfseries #1}}
+\newcommand{\Display}[1]{{\fontsize{27}{29}\selectfont\bfseries #1}}
+\newcommand{\Subhead}[1]{{\fontsize{11.2}{13.2}\selectfont\bfseries #1}}
+\newcommand{\Body}[1]{{\fontsize{10.4}{13.1}\selectfont #1}}
+\newcommand{\SmallBody}[1]{{\fontsize{9.1}{11.5}\selectfont #1}}
+\newcommand{\Caption}[1]{{\color{Muted}\fontsize{7.4}{9.1}\selectfont #1}}
+\newcommand{\Label}[1]{{\color{Cyan}\fontsize{7.8}{9.3}\selectfont\bfseries #1}}
+\newcommand{\Copy}[2]{\parbox[t]{#1mm}{\raggedright\setlength{\baselineskip}{11.5pt}#2\par}}
+
+\tikzset{
+  slide text/.style={anchor=north west,inner sep=0,outer sep=0,text=Ink,align=left},
+  hairline/.style={draw=Rule,line width=.42pt},
+  flow/.style={-{Stealth[length=2mm,width=1.45mm]},draw=Cyan,line width=.7pt},
+  layer/.style={fill=Panel,draw=Rule,line width=.48pt,rounded corners=1.25mm},
+}
+\newcommand{\Place}[4][]{\node[slide text,#1] at (#2,#3) {#4};}
+\newenvironment{SlideCanvas}
+  {\begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
+   \begin{scope}[shift={(current page.south west)}]}
+  {\end{scope}\end{tikzpicture}}
+\newcommand{\Heading}[2]{%
+  \Place{8}{83}{\Label{#1}}
+  \Place{8}{77.6}{\DeckTitle{#2}}
+}
+\newcommand{\Footer}[1]{%
+  \draw[hairline] (8,8.2) -- (152,8.2);
+  \Place{8}{6.2}{\Caption{ParallaX \enspace / \enspace NASA Space Apps 2026}}
+  \Place[anchor=north east]{152}{6.2}{\Caption{#1 \enspace / \enspace 07}}
+}
+
+\begin{document}
+
+% 01 -- Title
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Place{79}{90}{\includegraphics[width=81mm,height=90mm]{spherex-cover.jpg}}
+  \fill[Midnight] (0,0) rectangle (79,90);
+  \draw[Cyan,line width=.6pt] (79,0) -- (79,90);
+  \fill[Midnight] (79.15,0) rectangle (160,8.2);
+  \draw[hairline] (79.15,8.2) -- (160,8.2);
+  \Place{83}{5.7}{\Caption{\Link{\CoverSource}{SPHEREx all-sky mosaic (crop)}\enspace / \enspace NASA/JPL-Caltech}}
+
+  \Place{8}{81.8}{\Label{2026 NASA SPACE APPS CHALLENGE}}
+  \Place{8}{75.8}{\Caption{Planet X and SPHEREx}}
+  \Place{7.55}{64}{{\fontsize{39}{41}\selectfont\bfseries Paralla\textcolor{Cyan}{X}}}
+  \Place{8}{46.5}{\Subhead{Blink the infrared sky}}
+  \draw[Cyan,line width=1pt] (8,41.2) -- (25,41.2);
+  \Place{8}{36.9}{\Copy{62}{\Body{A web tool that plays aligned SPHEREx images over time so anyone can look for motion and changes in brightness.}}}
+  \Place{8}{12.6}{\Caption{The ParallaX team}}
+\end{SlideCanvas}
+\end{frame}
+
+% 02 -- Motivation
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Heading{SCIENCE MOTIVATION}{The case for a blink comparator}
+
+  \Place{8}{63.4}{\Display{\textcolor{Cyan}{102}}}
+  \Place{30}{59.5}{\Subhead{infrared channels}}
+  \Place{8}{49.5}{\Copy{46}{\Body{SPHEREx surveys the whole sky about every six months. Repeat images let us look for objects that move or vary.}}}
+  \Place{8}{30.5}{\Copy{46}{\SmallBody{\textcolor{Muted}{A source can look brighter at a different wavelength.}}}}
+
+  \Place{62}{63.2}{\Label{SAME SKY FIELD AT TWO WAVELENGTHS}}
+  \Place{62}{58}{\includegraphics[width=43.6mm,height=24.5mm]{spherex-vela-098.jpg}}
+  \Place{108.4}{58}{\includegraphics[width=43.6mm,height=24.5mm]{spherex-vela-329.jpg}}
+  \draw[hairline] (62,58) rectangle (105.6,33.5);
+  \draw[hairline] (108.4,58) rectangle (152,33.5);
+  \Place{62}{31.1}{\Subhead{\(0.98\,\mu\mathrm{m}\)}}
+  \Place{108.4}{31.1}{\Subhead{\(3.29\,\mu\mathrm{m}\)}}
+  \Place{62}{25.1}{\Caption{\Link{\VelaSource}{Vela region, false color} \enspace / \enspace NASA/JPL-Caltech}}
+
+  \draw[hairline] (8,19.8) -- (152,19.8);
+  \Place{8}{16.9}{\Label{THE CHALLENGE}}
+  \Place{35}{17.3}{\Body{Make changes in a SPHEREx field easy to spot in a browser.}}
+  \Footer{02}
+\end{SlideCanvas}
+\end{frame}
+
+% 03 -- Product workflow
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Heading{USER WORKFLOW}{A browser for repeat observations}
+
+  \draw[hairline] (9,61.4) -- (9,24);
+  \foreach \y in {61.1,44.1,27.1}{
+    \fill[Teal] (9,\y) circle[radius=.75mm];
+  }
+  \Place{13}{63.3}{\Subhead{Choose a patch of sky}}
+  \Place{13}{57.4}{\Copy{50}{\SmallBody{Search by name or RA/Dec, or try one of five presets.}}}
+  \Place{13}{46.3}{\Subhead{Blink one infrared band}}
+  \Place{13}{40.4}{\Copy{50}{\SmallBody{Play or step through dated visits. Check coverage and pixel flags.}}}
+  \Place{13}{29.3}{\Subhead{Share the exact view}}
+  \Place{13}{23.4}{\Copy{50}{\SmallBody{Share a pinned link that records the input frame list.}}}
+
+  \Place{67}{65.4}{\includegraphics[width=85mm,height=47.6mm]{parallax-home.jpg}}
+  \draw[hairline] (67,65.4) rectangle (152,17.8);
+  \Place{67}{14.7}{\Caption{ParallaX home screen. The Pluto example is a schematic.}}
+  \Footer{03}
+\end{SlideCanvas}
+\end{frame}
+
+% 04 -- Code-derived architecture
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Heading{SYSTEM DESIGN}{How ParallaX builds a view}
+
+  \path[layer] (8,26) rectangle (45,63);
+  \path[layer] (53,26) rectangle (107,63);
+  \path[layer] (115,26) rectangle (152,63);
+
+  \Place{11.2}{59.6}{\Label{DATA SOURCES}}
+  \Place{11.2}{53.8}{\Subhead{IRSA archive}}
+  \Place{11.2}{48.1}{\Copy{30.2}{\SmallBody{SPHEREx QR2/QR3\\SIA2 / TAP coverage\\Cutouts / S3 sections}}}
+  \draw[hairline] (11.2,34.5) -- (41.8,34.5);
+  \Place{11.2}{32.1}{\Caption{SIMBAD / Gaia lookup}}
+
+  \Place{56.2}{59.6}{\Label{PYTHON SERVICE}}
+  \Place{56.2}{53.8}{\Subhead{FastAPI + science worker}}
+  \Place{56.2}{48.1}{\Copy{47}{\SmallBody{Resolve target and plan visits.\\Stack cutouts with Astropy,\\NumPy and reproject.}}}
+  \draw[hairline] (56.2,34.5) -- (103.8,34.5);
+  \Place{56.2}{32.1}{\Caption{Disk cache for frames and view products}}
+
+  \Place{118.2}{59.6}{\Label{BROWSER}}
+  \Place{118.2}{53.8}{\Subhead{React client}}
+  \Place{118.2}{48.1}{\Copy{30.8}{\SmallBody{TypeScript interface\\Tracks job progress\\Plays ready stacks}}}
+  \draw[hairline] (118.2,34.5) -- (148.8,34.5);
+  \Place{118.2}{32.1}{\Caption{WebGL2 or PNG fallback}}
+
+  \draw[flow] (53,49) -- (45,49);
+  \draw[flow] (45,43.5) -- (53,43.5);
+  \draw[flow] (115,49) -- (107,49);
+  \draw[flow] (107,43.5) -- (115,43.5);
+
+  \Place{8}{21.9}{\SmallBody{\textcolor{Cyan}{Browser contract}\enspace \texttt{POST /views}, server-sent progress events, then manifest and stack requests.}}
+  \Place{8}{15.5}{\Caption{\Link{\Archive}{NASA/IPAC IRSA} \enspace / \enspace Quick Releases \Link{https://doi.org/10.26131/IRSA652}{QR2} and \Link{https://doi.org/10.26131/IRSA662}{QR3} \enspace / \enspace \Link{\Tree/backend/app/main.py}{API source}}}
+  \Footer{04}
+\end{SlideCanvas}
+\end{frame}
+
+% 05 -- Image processing method
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Heading{IMAGING METHOD}{One stack per visit and band}
+
+  \draw[flow] (11.1,59.5) -- (43.2,59.5);
+  \draw[flow] (48.1,59.5) -- (80.2,59.5);
+  \draw[flow] (85.1,59.5) -- (117.2,59.5);
+  \foreach \x in {8,45,82,119}{
+    \fill[Cyan] (\x,59.5) circle[radius=.83mm];
+  }
+
+  \Place{8}{54.8}{\Subhead{Group by date}}
+  \Place{8}{48.6}{\Copy{31}{\SmallBody{Split visits at gaps over 20 days. Use 14-day bins in high-cadence fields.}}}
+  \Place{45}{54.8}{\Subhead{Mask and align}}
+  \Place{45}{48.6}{\Copy{31}{\SmallBody{Mask bad pixels, subtract sky background and reproject to one north-up sky grid.}}}
+  \Place{82}{54.8}{\Subhead{Stack by band}}
+  \Place{82}{48.6}{\Copy{30.8}{\SmallBody{Weight frames by inverse sky variance. Reject outliers on blank sky pixels.}}}
+  \Place{119}{54.8}{\Subhead{Set one stretch}}
+  \Place{119}{48.6}{\Copy{33}{\SmallBody{Apply the same display limits to all ready visits in the chosen band.}}}
+
+  \fill[Panel] (8,13) rectangle (152,26.3);
+  \draw[Cyan,line width=1pt] (8,13) -- (8,26.3);
+  \Place{11.3}{23.4}{\Subhead{Same sky grid and display scale across visits}}
+  \Place{11.3}{17.8}{\Caption{Blink within any of six broad bands to reduce flicker caused by changing wavelengths.}}
+  \Footer{05}
+\end{SlideCanvas}
+\end{frame}
+
+% 06 -- Demonstration and measured evidence
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Heading{DEMONSTRATION AND VALIDATION}{The prototype in action}
+
+  \Place{8}{63.1}{\Label{BARNARD'S STAR / SPHEREX BLINK STILLS}}
+  \Place{8}{57.6}{\includegraphics[width=34mm,height=30.63mm]{barnard-v1.png}}
+  \Place{45}{57.6}{\includegraphics[width=34mm,height=30.63mm]{barnard-v5.png}}
+  \draw[hairline] (8,57.6) rectangle (42,26.97);
+  \draw[hairline] (45,57.6) rectangle (79,26.97);
+  \Place{8}{24.8}{\SmallBody{V1 \enspace Aug 2025}}
+  \Place{45}{24.8}{\SmallBody{V5 \enspace Aug 2026}}
+  \Place{8}{19.2}{\Caption{\Link{\Tree/docs/img/barnard-blink.gif}{Stills from the recorded ParallaX export}}}
+
+  \Place{85}{63.1}{\Label{CROSS-SURVEY POSITION CHECK}}
+  \Place{85}{57.8}{\Caption{2MASS or AllWISE against SPHEREx, in arcminutes}}
+  \draw[hairline] (85,52.7) -- (152,52.7);
+  \Place{85}{50.8}{\Caption{Target}}
+  \Place[anchor=north east]{135.2}{50.8}{\Caption{Measured}}
+  \Place[anchor=north east]{152}{50.8}{\Caption{Predicted}}
+  \foreach \y in {46,39.8,33.6,27.4}{
+    \draw[hairline] (85,\y) -- (152,\y);
+  }
+  \Place{85}{44.35}{\SmallBody{Barnard's Star}}
+  \Place{85}{38.15}{\SmallBody{\(\varepsilon\) Indi B}}
+  \Place{85}{31.95}{\SmallBody{WISE 0855$-$0714}}
+  \Place[anchor=north east]{135.2}{44.35}{\SmallBody{\textcolor{Cyan}{4.540}}}
+  \Place[anchor=north east]{135.2}{38.15}{\SmallBody{2.085}}
+  \Place[anchor=north east]{135.2}{31.95}{\SmallBody{2.149}}
+  \Place[anchor=north east]{152}{44.35}{\SmallBody{4.540}}
+  \Place[anchor=north east]{152}{38.15}{\SmallBody{2.101}}
+  \Place[anchor=north east]{152}{31.95}{\SmallBody{2.153}}
+  \Place{85}{24.8}{\Caption{\Link{\Tree/validation/G5.25yr-jumps/2026-11-08-5f9f54b/report.md}{Development test} passed. Independent review pending.}}
+
+  \Place{8}{12.9}{\Caption{\Link{\Tree/validation/G2-repro/2026-11-10-989bf01/report.md}{Reproducibility check}\enspace / \enspace Two cold builds of the Barnard pin returned 24 byte-identical stacks from 359 inputs.}}
+  \Footer{06}
+\end{SlideCanvas}
+\end{frame}
+
+% 07 -- Impact, release path and repository link
+\begin{frame}[plain]
+\begin{SlideCanvas}
+  \Heading{IMPACT AND NEXT STEPS}{A tool for looking and sharing}
+
+  \Place{8}{62.6}{\Label{FOR CITIZEN SCIENCE AND CLASSROOMS}}
+  \Place{8}{54.3}{\Display{A changing sky,}}
+  \Place{8}{43.6}{\Display{\textcolor{Cyan}{open to explore.}}}
+  \Place{8}{29.8}{\Copy{66}{\Body{Volunteers can share candidate views. Students can estimate proper motion from dated images.}}}
+
+  \draw[hairline] (80,17.5) -- (80,63.1);
+  \Place{86}{62.6}{\Label{ROADMAP}}
+  \Place{86}{56.3}{\Subhead{Release the core viewer}}
+  \Place{86}{50.9}{\Copy{65}{\SmallBody{Review the staging blink evidence.}}}
+  \draw[hairline] (86,45.8) -- (152,45.8);
+  \Place{86}{42.9}{\Subhead{Keep new data reproducible}}
+  \Place{86}{37.5}{\Copy{65}{\SmallBody{Add releases and preserve their frame lists.}}}
+  \draw[hairline] (86,32.4) -- (152,32.4);
+  \Place{86}{29.5}{\Subhead{Validate advanced measurements}}
+  \Place{86}{24.1}{\Copy{65}{\SmallBody{Resolve short-band profile failures.\\Test wavelength-matched subtraction.}}}
+
+  \Place{8}{13.3}{\SmallBody{\Link{\Repo}{GitHub repository (access required)}}}
+  \Place[anchor=north east]{152}{13}{\Caption{AI assistance \enspace / \enspace Claude Code (software), ChatGPT (slides)}}
+  \Footer{07}
+\end{SlideCanvas}
+\end{frame}
+
+\end{document}
