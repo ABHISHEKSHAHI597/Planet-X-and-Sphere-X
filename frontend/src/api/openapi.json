@@ -66,6 +66,18 @@
       "title": "Mu",
       "type": "number"
      },
+     "n_visits": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Independent visits in the fit (frames within a visit correlate)",
+      "title": "N Visits"
+     },
      "pa_deg": {
       "title": "Pa Deg",
       "type": "number"
@@ -88,6 +100,12 @@
      },
      "pmra": {
       "title": "Pmra",
+      "type": "number"
+     },
+     "visit_floor_arcsec": {
+      "default": 0.0,
+      "description": "Visit-shared positional error added per axis (arcsec)",
+      "title": "Visit Floor Arcsec",
       "type": "number"
      }
     },
@@ -122,6 +140,18 @@
      "eta": {
       "title": "Eta",
       "type": "number"
+     },
+     "excluded": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Why a measured point is left out of the motion fit",
+      "title": "Excluded"
      },
      "fit_included": {
       "default": true,

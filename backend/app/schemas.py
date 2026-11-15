@@ -406,6 +406,7 @@ class AstroPoint(_M):
     rchi2: float | None = None
     cov_xi_eta: float = 0
     fit_included: bool = True
+    excluded: str | None = Field(None, description="Why a measured point is left out of the motion fit")
     method: str = "native-frame"
 
 
@@ -423,6 +424,8 @@ class AstroFit(_M):
     chi2: float
     dof: int
     delta_chi2: float
+    visit_floor_arcsec: float = Field(0.0, description="Visit-shared positional error added per axis (arcsec)")
+    n_visits: int | None = Field(None, description="Independent visits in the fit (frames within a visit correlate)")
 
 
 class AstroCatalogue(_M):

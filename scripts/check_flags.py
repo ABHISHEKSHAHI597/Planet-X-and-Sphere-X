@@ -6,8 +6,8 @@
 Fails (exit 1) when:
 - a flag is `on` but any of its `requires` (foundation check or gate) is not accepted in the evidence records
   (computed by scripts/validate.py from validation/, exactly what STATUS.md shows);
-- `diff` is above `dev` without G4a accepted, or any QR2/QR3-mixing capability (spectrum, lightcurve) is above
-  `dev` without F4 confirmed (§11.2 forbidden fallbacks);
+- `diff` is `on` without G4a accepted, or any QR2/QR3-mixing capability (spectrum, lightcurve) is `on` without F4
+  confirmed (§11.2 forbidden fallbacks);
 - a flag names an unknown requirement, or the frontend's capability list lacks a flag that is not `off`
   (a missing name is OFF in the UI, so the two would disagree). `core: true` flags are the P0 product the
   UI always shows; the API still gates them by level.
@@ -53,8 +53,9 @@ def problems(cfg: dict, frontend_caps: set[str] | None = None) -> list[str]:
                 out.append(f"{name}: level 'on' but not accepted: {', '.join(bad)} (validation/STATUS.md)")
             if not f.get("requires"):
                 out.append(f"{name}: level 'on' with no requirements listed")
+        # Release decision (2026-11-15): `staging` capabilities ship; only `on` (validity "accepted") needs the gate.
         for dep in SECTION_11_2.get(name, []):
-            if ORDER[lvl] > ORDER["dev"] and not accepted(dep):
+            if ORDER[lvl] > ORDER["staging"] and not accepted(dep):
                 out.append(f"{name}: level '{lvl}' violates workflow.md §11.2 until {dep} is accepted")
         if frontend_caps is not None and lvl != "off" and not f.get("core") and name not in frontend_caps:
             out.append(f"{name}: not in frontend/src/lib/features.ts CAPABILITIES (UI would show it OFF)")

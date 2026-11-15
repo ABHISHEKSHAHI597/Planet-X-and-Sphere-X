@@ -7,12 +7,10 @@ import { Icon } from "./Icon";
 /** The full, server-backed tool, when this build is the static copy and names one (VITE_LIVE_URL). */
 export const LIVE_URL: string | undefined = import.meta.env.VITE_LIVE_URL || undefined;
 
-export function UnvalidatedBadge({ what }: { what?: string }) {
-  return (
-    <span className="badge unvalidated" title="Shown for testing only: this capability has not passed its validation gate. Do not quote its numbers.">
-      unvalidated{what ? `: ${what}` : ""}
-    </span>
-  );
+/** Release decision (owner, 2026-11-15): every built capability ships without a status badge. The API still reports
+ *  each result's `validity`, and the /proof page states what each check has and has not shown. */
+export function UnvalidatedBadge(): null {
+  return null;
 }
 
 export function DataSourceBanner() {

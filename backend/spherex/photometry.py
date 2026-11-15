@@ -103,6 +103,14 @@ def spectrum_point(
         if fit is None:
             return None
         f, ef, chi, wing = fit.params[0], fit.errors[0], fit.rchi2, fit.wing_fit
+        # The ePSF is undersampled (FWHM ≈ 1.5 px): a model δ off the true position recovers F·⟨P(x), P(x−δ)⟩ < F,
+        # 3 % low at 0.1 px and 10 % at 0.2 px, from WCS or proper-motion error alone. A source bright enough to fix
+        # its own centroid gets it fitted (bounded shift); faint ones keep the forced position, where a free
+        # centroid would chase noise.
+        if ef > 0 and f / ef >= 10:
+            free = fit_native(frame.sci, frame.var, frame.bad_phot, psf, zone, x, y, max_shift=0.5)
+            if free is not None:
+                f, ef, chi, wing = free.params[2], free.errors[2], free.rchi2, free.wing_fit
     F, eF = map(float, (to_uJy(f, omega_arcsec2), to_uJy(ef, omega_arcsec2)))
     flags = frame.flags_near(x, y)
     contamination = set(flags) - {"SOURCE", "FULLSAMPLE", "OUTLIER", "STREAK"}

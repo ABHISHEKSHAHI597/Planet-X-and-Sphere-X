@@ -190,6 +190,11 @@ def registration(residuals_arcsec: Any, errors_arcsec: Any, min_stars: int = 5) 
         med = np.median(r[ok], axis=0)
         sig = np.maximum(1.4826 * np.median(abs(r[ok] - med), axis=0), np.median(e[ok], axis=0))
         ok &= np.all(abs(r - med) <= 4 * sig, axis=1)
+    # Offset and scatter from the set the last clip kept, the same set `used`, `error` and the RMS describe.
+    if ok.sum() < min_stars:
+        raise ValueError("registration needs at least five isolated unsaturated Gaia stars")
+    med = np.median(r[ok], axis=0)
+    sig = np.maximum(1.4826 * np.median(abs(r[ok] - med), axis=0), np.median(e[ok], axis=0))
     return dict(
         offset=med,
         error=1.2533 * sig / np.sqrt(ok.sum()),

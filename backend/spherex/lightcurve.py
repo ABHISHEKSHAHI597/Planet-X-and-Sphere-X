@@ -35,95 +35,157 @@ def relative_curve(rows: list[dict[str, Any]], width_days: float = 14.0, method:
     return dict(normalized_curve(rows, width_days, method)["bands"])
 
 
+MIN_SNR = 5.0     # ln f is linear in the noise only while σ_f/f is small
+
+
 def normalized_curve(rows: list[dict[str, Any]], width_days: float = 14.0, method: str = "psf") -> dict[str, Any]:
     """Rows carry detector, channel, region, mjd, flux, err, scale; no raw-channel LC.
 
-    Region is mandatory for annulus ratios: detector+channel alone does not cancel
-    spatially varying far wings. Reference error is a shared calibration limitation.
+    Joint relative photometry. A linear-variable filter samples a given channel at a fixed sky position only
+    within short windows (a visit, a 6-month repeat), so dividing each channel by its own temporal median turns the
+    curve into a high-pass filter: a slow variable (a Mira) normalises itself away, and a curved spectrum sampled by
+    different channels in different bins leaves fake steps. Instead, per detector,
+
+        ln f_i = s_g(i) + a_b(i) + ε_i,     σ(ε_i) = err_i / f_i,
+
+    with one level s_g per (channel[, region]) group and one brightness a_b per time bin, fitted by weighted least
+    squares. Bins are compared through every channel they share, directly or through chains of bins. The model has
+    one degenerate direction per connected component of the bin–channel graph (s + c, a − c); each component is
+    normalised to a geometric-mean brightness of 1, and components that share no channel are separate curves whose
+    relative level is unknown (only the largest is returned; the others are reported in `dropped`).
+
+    Region is mandatory for annulus ratios: detector+channel alone does not cancel spatially varying far wings.
     """
     if method not in ("psf", "annulus") or not np.isfinite(width_days) or width_days <= 0 or not rows:
         raise ValueError("valid method, bin width and observations required")
     if len({r["scale"] for r in rows}) > 1:
         raise ValueError("F4 unresolved: mixed-release light curve forbidden; select release=qr2 or release=qr3")
-    groups: dict[Any, list[dict[str, Any]]] = {}
+    t0 = min(r["mjd"] for r in rows)
+    by_detector: dict[int, list[dict[str, Any]]] = {}
+    dropped: list[list[str]] = []
     for row in rows:
-        if not np.isfinite(row["flux"]) or not np.isfinite(row["err"]) or row["err"] <= 0:
-            continue
         if method == "annulus" and "region" not in row:
             raise ValueError("annulus needs parent-detector region")
+        if not (np.isfinite(row["flux"]) and np.isfinite(row["err"]) and row["err"] > 0):
+            continue
         if not 1 <= row["channel"] <= 17:
             continue
-        group = (row["detector"], row["channel"], row.get("region") if method == "annulus" else None)
-        groups.setdefault(group, []).append(row)
-    t0 = min(r["mjd"] for r in rows)
-    groups = {k: v for k, v in groups.items() if len({int((r["mjd"] - t0) // width_days) for r in v}) >= 2}
-    flat = [r for v in groups.values() for r in v]
-    if not flat:
-        return dict(bands={}, covariance=[], covariance_order=[], reference=[])
-    flux = np.array([r["flux"] for r in flat])
-    variance = np.array([r["err"] ** 2 for r in flat])
-    # Local derivative of the median: one middle order statistic, or the mean
-    # of two. Ties share the derivative symmetrically. Smoothing never crosses
-    # a detector boundary and never bridges an unobserved channel gap.
-    keys = list(groups)
-    med = np.zeros((len(keys), len(flat)))
-    start = 0
-    for j, vals in enumerate(groups.values()):
-        f = flux[start : start + len(vals)]
-        order = np.sort(f)
-        for value in (order[(len(f) - 1) // 2], order[len(f) // 2]):
-            equal = np.flatnonzero(f == value) + start
-            med[j, equal] += 0.5 / len(equal)
-        start += len(vals)
-    smooth = np.eye(len(keys))
-    if method == "psf":
-        for j, key in enumerate(keys):
-            weights = np.array([max(0, 2 - abs(k[1] - key[1])) if k[0] == key[0] else 0 for k in keys], float)
-            smooth[j] = weights / weights.sum()
-    reference_map = smooth @ med
-    group_ref = reference_map @ flux
-    refs = []
-    derivatives = []
-    for j, vals in enumerate(groups.values()):
-        refs.extend([group_ref[j]] * len(vals))
-        derivatives.extend([reference_map[j]] * len(vals))
-    ref = np.asarray(refs)
-    rmap = np.asarray(derivatives)
-    ref_error = np.sqrt((rmap**2) @ variance)
-    usable = (ref > 5 * ref_error) & np.isfinite(ref)
-    ratio = np.divide(flux, ref, out=np.zeros_like(flux), where=usable)
-    jac = np.diag(np.divide(1.0, ref, out=np.zeros_like(ref), where=usable))
-    jac -= np.divide(flux, ref**2, out=np.zeros_like(flux), where=usable)[:, None] * rmap
-    bins: dict[Any, list[int]] = {}
-    for i, r in enumerate(flat):
-        if usable[i]:
-            bins.setdefault((r["detector"], int((r["mjd"] - t0) // width_days)), []).append(i)
+        if row["flux"] < MIN_SNR * row["err"]:
+            dropped.append([f"D{row['detector']} mjd {row['mjd']:.3f}", f"S/N < {MIN_SNR:g}"])
+            continue
+        by_detector.setdefault(int(row["detector"]), []).append(row)
     out: dict[str, Any] = {}
-    combine = np.zeros((len(bins), len(flat)))
-    ordering = []
-    for j, ((d, b), indices) in enumerate(sorted(bins.items())):
-        w = ref[indices] ** 2 / variance[indices]
-        combine[j, indices] = w / w.sum()
-        ordering.append([str(d), f"B{b}"])
-        out.setdefault(str(d), []).append(
-            dict(
-                mjd=float(w @ np.array([flat[i]["mjd"] for i in indices]) / w.sum()),
-                rel=float(combine[j] @ ratio),
-                err=0.0,
-                bin=f"B{b}",
-            )
-        )
-    propagated = combine @ jac
-    covariance = (propagated * variance) @ propagated.T
-    for j, (d, b) in enumerate(ordering):
-        next(p for p in out[d] if p["bin"] == b)["err"] = float(np.sqrt(max(0.0, covariance[j, j])))
+    ordering: list[list[str]] = []
+    blocks: list[Any] = []
+    reference: list[dict[str, Any]] = []
+    for det in sorted(by_detector):
+        fit = _joint_fit(by_detector[det], t0, width_days, method, dropped, det)
+        if fit is None:
+            continue
+        points, cov, levels = fit
+        out[str(det)] = points
+        ordering.extend([str(det), p["bin"]] for p in points)
+        blocks.append(cov)
+        reference.extend(dict(detector=det, channel=k[0], flux=float(v)) for k, v in levels)
+    n = sum(len(b) for b in blocks)
+    covariance = np.zeros((n, n))
+    i = 0
+    for b in blocks:
+        covariance[i : i + len(b), i : i + len(b)] = b
+        i += len(b)
     return dict(
         bands=out,
         covariance=covariance.tolist(),
         covariance_order=ordering,
-        reference=[dict(detector=k[0], channel=k[1], flux=float(group_ref[j])) for j, k in enumerate(keys)],
-        uncertainty="First-order measurement-noise propagation through sample medians and [1,2,1] channel smoothing; includes shared reference covariance. Conditional on median ordering; not temporal sampling or PSF systematics.",
+        reference=reference,
+        dropped=dropped,
+        uncertainty="Joint log-linear fit of per-channel levels and per-bin brightness; first-order (delta-method) "
+        "propagation of the measurement noise, including the correlation every bin shares through the fitted channel "
+        "levels and the normalisation. Not temporal sampling or PSF systematics.",
     )
+
+
+def _joint_fit(
+    rows: list[dict[str, Any]], t0: float, width_days: float, method: str, dropped: list[list[str]], det: int
+) -> tuple[list[dict[str, Any]], Any, list[Any]] | None:
+    gkey = [(r["channel"], r.get("region") if method == "annulus" else None) for r in rows]
+    bkey = [int((r["mjd"] - t0) // width_days) for r in rows]
+    # Groups seen in a single bin constrain nothing about time (their level absorbs them): drop, and say so.
+    seen: dict[Any, set[int]] = {}
+    for g, b in zip(gkey, bkey, strict=True):
+        seen.setdefault(g, set()).add(b)
+    keep = [i for i, g in enumerate(gkey) if len(seen[g]) >= 2]
+    for i in set(range(len(rows))) - set(keep):
+        dropped.append([f"D{det} B{bkey[i]}", "channel not repeated in another bin"])
+    if not keep:
+        return None
+    # Connected components of the bipartite bin–group graph (union-find over bins through shared groups).
+    parent: dict[int, int] = {}
+
+    def root(b: int) -> int:
+        while parent.setdefault(b, b) != b:
+            parent[b] = parent[parent[b]]
+            b = parent[b]
+        return b
+
+    first: dict[Any, int] = {}
+    for i in keep:
+        g, b = gkey[i], bkey[i]
+        if g in first:
+            parent[root(b)] = root(first[g])
+        else:
+            first[g] = b
+            root(b)
+    comps: dict[int, set[int]] = {}
+    for b in {bkey[i] for i in keep}:
+        comps.setdefault(root(b), set()).add(b)
+    main = max(comps.values(), key=lambda c: (len(c), -min(c)))
+    for c in comps.values():
+        if c is not main:
+            dropped.extend([f"D{det} B{b}", "shares no channel with the main curve"] for b in sorted(c))
+    keep = [i for i in keep if bkey[i] in main]
+    if len(main) < 2:
+        return None
+    bins = sorted(main)
+    groups = sorted({gkey[i] for i in keep}, key=str)
+    bi = {b: j for j, b in enumerate(bins)}
+    gi = {g: j for j, g in enumerate(groups)}
+    nb, ng = len(bins), len(groups)
+    f = np.array([rows[i]["flux"] for i in keep], float)
+    e = np.array([rows[i]["err"] for i in keep], float)
+    y, sigma = np.log(f), e / f
+    a = np.zeros((len(keep), ng + nb))
+    for k, i in enumerate(keep):
+        a[k, gi[gkey[i]]] = 1.0
+        a[k, ng + bi[bkey[i]]] = 1.0
+    w = 1 / sigma**2
+    normal = a.T @ (a * w[:, None])
+    # One connected component → exactly one null direction (s + c, a − c); the pseudo-inverse gives the
+    # minimum-norm solution and its covariance, and the gauge map G (centre a, i.e. geometric mean 1) removes it.
+    ninv = np.linalg.pinv(normal, rcond=1e-12, hermitian=True)
+    x = ninv @ (a.T @ (w * y))
+    gauge = np.eye(nb) - np.ones((nb, nb)) / nb
+    abin = gauge @ x[ng:]
+    cov_a = gauge @ ninv[ng:, ng:] @ gauge.T
+    # Residual scatter beyond the stated errors (PSF or calibration systematics) widens every error alike.
+    dof = len(keep) - (ng + nb - 1)
+    chi2 = float(np.sum(w * (y - a @ x) ** 2))
+    if dof > 0:
+        cov_a *= max(1.0, chi2 / dof)
+    rel = np.exp(abin)
+    cov = cov_a * np.outer(rel, rel)
+    points = []
+    for j, b in enumerate(bins):
+        idx = [k for k, i in enumerate(keep) if bkey[i] == b]
+        points.append(dict(
+            mjd=float(np.sum(w[idx] * np.array([rows[keep[k]]["mjd"] for k in idx])) / np.sum(w[idx])),
+            rel=float(rel[j]),
+            err=float(np.sqrt(max(0.0, cov[j, j]))),
+            bin=f"B{b}",
+        ))
+    # Group levels in flux units at the curve's geometric-mean brightness (the gauge moved a by −mean, s by +mean).
+    levels = [(g, np.exp(x[gi[g]] + np.mean(x[ng:]))) for g in groups]
+    return points, cov, levels
 
 
 def periodogram(mjd: Any, flux: Any, err: Any, min_days: float = 30.0, max_days: float = 500.0) -> dict[str, Any]:

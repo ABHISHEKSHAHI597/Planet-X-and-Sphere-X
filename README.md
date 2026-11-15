@@ -12,11 +12,25 @@ a blink. Moving stars hop; varying objects pulse.
 
 ```bash
 # backend
-cd backend && uv sync --frozen && uv run uvicorn app.main:app --reload
+cd backend && uv sync --frozen
+
+# one-time: the locked calibration (~430 MB from the public SPHEREx bucket, sha256-checked against
+# config/calibration.lock) into ~/.cache/parallax/calib
+uv run python ../scripts/bootstrap_calib.py fetch
+
+uv run uvicorn app.main:app --reload
 
 # frontend (separate terminal)
 cd frontend && npm ci && npm run dev
 ```
+
+The backend finds the calibration in `~/.cache/parallax/calib` (or `$PARALLAX_CALIB`) by itself; point
+`CALIB_ROOT` elsewhere if you keep it somewhere else. Without it the blink still works, but spectra, astrometry,
+light curves, differences, cubes and the flipbook answer *409 needs the locked calibration*. `GET /healthz`
+shows which calibration is loaded (`"calibration": "locked 94e18b883fdc9b28 at …"`).
+
+Gaia, AllWISE, CatWISE and new-target lookups go through IRSA; when IRSA is down (`/healthz` probe `sia2`
+not ok) those fail with *archive service not answering* while views already built and the pinned demos still open.
 
 See [docs/deploy.md](docs/deploy.md) for Docker, staging and production deployment.
 
@@ -36,6 +50,8 @@ Run `python scripts/validate.py status` to see the current state, or visit the `
 | Every moving test target has at least two full visits to blink | 2 | rule: ≥ 2 (P0-3) | passed, re-run pending | [G1-time-model](validation/G1-time-model/2026-11-06-c12717d/report.md) (L3) |
 | We find every frame the archive has, by two independent routes | 5 of 5 | rule: identical deduplicated sets | passed, re-run pending | [F11](validation/F11/2026-11-07-20efbf1/report.md) (L3) |
 | The same link gives the same pixels | all identical | rule: byte-identical | passed, re-run pending | [G2-repro](validation/G2-repro/2026-11-10-989bf01/report.md) (L3) |
+| Subtracting two visits naively is wrong for SPHEREx, and our tests show it | passed | rule: pass | accepted | [I-L1-synthetic](validation/I-L1-synthetic/2026-11-15-15f3ca1/report.md) (L1) |
+| Where nothing moves, the matched difference shows nothing | passed | rule: pass | accepted | [I-L1-synthetic](validation/I-L1-synthetic/2026-11-15-15f3ca1/report.md) (L1) |
 
 Not proven yet (each is hidden or marked *unvalidated* in the tool):
 
@@ -43,8 +59,6 @@ Not proven yet (each is hidden or marked *unvalidated* in the tool):
 |---|---|---|---|---|
 | Stars that should stay still, stay still | 0.08 px | rule: < 0.1 px (proposed) | changes requested | [G2-registration](validation/G2-registration/2026-11-06-c12717d/report.md) (L3) |
 | Each pixel is given the right wavelength | 2.52 nm | rule: < 3.0 | changes requested | [F1](validation/F1/2026-11-06-c12717d/report.md) (L2) |
-| Subtracting two visits naively is wrong for SPHEREx, and our tests show it | passed | rule: pass | changes requested | [I-L1-synthetic](validation/I-L1-synthetic/2026-11-06-c12717d/report.md) (L1) |
-| Where nothing moves, the matched difference shows nothing | passed | rule: pass | changes requested | [I-L1-synthetic](validation/I-L1-synthetic/2026-11-06-c12717d/report.md) (L1) |
 | Star profiles in the short-wavelength bands | — | — | failed | [F5](validation/F5/2026-11-08-d6d2e45/report.md) (L3) |
 | The wavelength-matched difference image on real data | 354.3° dipole direction | rule: 356 ± 15 | changes requested | [G4a-real](validation/G4a-real/2026-11-06-c12717d/report.md) (L3) |
 | WISE 0855's spectrum at short wavelengths | -3.24σ | rule: abs(S/N)<3 (signed blend flux must be consistent with zero) | failed | [G4b-wise-stacks](validation/G4b-wise-stacks/2026-11-08-8d12a02/report.md) (L3) |

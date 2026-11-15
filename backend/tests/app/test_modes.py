@@ -68,24 +68,36 @@ def test_security_headers_health_metrics(fixture_client):
 def test_gating_and_upstream_owners(fixture_client):
     c = fixture_client
     rel = c.get("/api/v1/releases").json()
-    # 2026-11-08: every built capability is `dev` (local laptop shows it, labelled unvalidated); none is `on`.
-    assert rel["environment"] == "local" and rel["features"]["diff"] == "dev" and rel["features"]["spectrum"] == "dev"
-    # dev-level measurement routes refuse honestly without the locked calibration (fixture slices only)
+    # 2026-11-15 release decision: every built capability is `staging` (shipped everywhere); none is `on`.
+    assert rel["environment"] == "local" and rel["features"]["diff"] == "staging" and rel["features"]["spectrum"] == "staging"
+    # measurement routes refuse honestly without the locked calibration (fixture slices only)
     assert c.get("/api/v1/spectrum", params={"ra": 1, "dec": 1}).status_code == 409
 
 
 def test_staging_hides_dev_capabilities(tmp_path):
-    s = make_settings(tmp_path, environment="staging")
+    features = tmp_path / "features.yaml"
+    cfg = __import__("yaml").safe_load((REPO / "config" / "features.yaml").read_text(encoding="utf-8"))
+    for name in ("spectrum", "astrometry", "lightcurve"):
+        cfg["flags"][name]["level"] = "dev"
+    features.write_text(__import__("yaml").safe_dump(cfg), encoding="utf-8")
+    s = make_settings(tmp_path, environment="staging", features_path=features)
     with TestClient(create_app(settings=s)) as c:
         for route in ("spectrum", "astrometry", "lightcurve"):
             assert c.get(f"/api/v1/{route}", params={"ra": 1, "dec": 1}).status_code == 404
 
 
-def test_production_never_serves_unaccepted_capabilities(tmp_path):
+def test_production_serves_staging_but_never_dev_capabilities(tmp_path):
+    """Release decision 2026-11-15: `staging` capabilities ship in production; `dev` ones never do."""
     s = make_settings(tmp_path, environment="production")
     with TestClient(create_app(settings=s)) as c:
         feats = c.get("/api/v1/releases").json()["features"]
-        assert set(feats.values()) == {"off"}                     # no gate accepted yet (validation/STATUS.md)
+        assert set(feats.values()) == {"staging"}                 # nothing `on`: no gate accepted yet
+    features = tmp_path / "features.yaml"
+    cfg = __import__("yaml").safe_load((REPO / "config" / "features.yaml").read_text(encoding="utf-8"))
+    cfg["flags"]["candidates"]["level"] = "dev"
+    features.write_text(__import__("yaml").safe_dump(cfg), encoding="utf-8")
+    s = make_settings(tmp_path / "dev", environment="production", features_path=features)
+    with TestClient(create_app(settings=s)) as c:
         body = {"ra": 1.0, "dec": 1.0, "view_key": "0" * 24, "kind": "mover"}
         assert c.post("/api/v1/candidates", json=body).status_code == 404
 

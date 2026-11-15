@@ -394,7 +394,8 @@ def psf_match(img: A, var: A, fwhm_from_px: float, fwhm_to_px: float) -> tuple[A
     den = gaussian_filter(z.astype(float), s)
     vv = gaussian_filter(np.where(z, var, 0.0), s / np.sqrt(2)) / (4 * np.pi * s * s)
     with np.errstate(invalid="ignore", divide="ignore"):
-        return np.where(den > 0.5, num / den, np.nan), np.where(den > 0.5, vv / den, np.nan)
+        # var(num/den) = var(num)/den²; den = 1 in the interior, < 1 at mask edges
+        return np.where(den > 0.5, num / den, np.nan), np.where(den > 0.5, vv / den ** 2, np.nan)
 
 
 def scrubber(cubes: "Iterable[Cube]") -> tuple[A, A, A]:

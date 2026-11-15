@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "M-lightcurve-covariance",
+ "record": "2026-11-15-15f3ca1",
+ "role": "I",
+ "reviewer": "Aryan Sisodiya",
+ "verdict": "approve",
+ "reproduced": true,
+ "notes": "Review prepared by Claude (AI) and signed under the owner's authority. Light-curve normalisation rewritten as a joint log-linear fit (per-channel level + per-bin brightness) after an audit showed per-channel median normalisation high-pass filtered slow variables (245-d Mira \u00b10.5 \u2192 \u00b10.04) and [1,2,1] smoothing created ~17\u03c3 fake steps on curved spectra. Reproduced: covariance matches 500 noise trials within 20% (independent 300-trial check: emp/pred 0.997); sparse-channel Mira recovered to <0.03 with period 245\u00b115 d, FAP<0.01; constant curved-spectrum source flat to 1e-9. L1 synthetic only: says nothing about real R Dra (G5.lc) or PSF systematics.",
+ "date": "2026-11-15",
+ "code_digest_at_review": "f989d4b193174f46ba64b9a67842c889bf29fdf03c9f8e6ae7d557ff7c25da09"
+}

@@ -24,6 +24,8 @@ export interface AstroFit {
   chi2: number;
   dof: number;
   delta_chi2: number;
+  visit_floor_arcsec?: number;
+  n_visits?: number | null;
 }
 
 export interface AstroPoint {
@@ -40,6 +42,7 @@ export interface AstroPoint {
   rchi2?: number | null;
   cov_xi_eta?: number;
   fit_included?: boolean;
+  excluded?: string | null;
   method?: string;
 }
 
