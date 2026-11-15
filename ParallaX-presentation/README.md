@@ -35,4 +35,4 @@ The application's primary images come from the [NASA/IPAC Infrared Science Archi
 
 ## Submission use
 
-Set `\ToolURL` and `\Repo` at the top of `main.tex`: the live-tool links appear only when `\ToolURL` is set, and judges must be able to open both without signing in. Host the PDF at a publicly accessible URL when adding the demo link to the [NASA Space Apps submission](https://www.spaceappschallenge.org/resources/project-submission-guide/). The repository's submission draft flags pre-event work for a Local Lead decision. The materials reviewed did not include that decision. The last slide records AI assistance with the software and deck.
+The slides link to neither the live tool nor the code repository. Host the PDF at a publicly accessible URL when adding the demo link to the [NASA Space Apps submission](https://www.spaceappschallenge.org/resources/project-submission-guide/). The repository's submission draft flags pre-event work for a Local Lead decision. The materials reviewed did not include that decision. The slides carry no SI-use statement: put it on the project page and in the repository README.

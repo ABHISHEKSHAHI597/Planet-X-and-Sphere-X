@@ -30,13 +30,6 @@
 }
 \graphicspath{{assets/}}
 
-% ---- LINKS: edit before submitting -------------------------------------------------------------
-% Public address of the running tool. Leave empty to hide the "Open the live tool" links.
-\def\ToolURL{}
-% Code repository. Judges must be able to open it without signing in, so make it public.
-\newcommand{\Repo}{https://github.com/ABHISHEKSHAHI597/Planet-X-and-Sphere-X}
-% -------------------------------------------------------------------------------------------------
-\newcommand{\Tree}{\Repo/blob/d1ea3789e671d76862a666209d9d237108f59d60}
 \newcommand{\CoverSource}{https://www.jpl.nasa.gov/images/pia26600-spherexs-first-all-sky-map/}
 \newcommand{\VelaSource}{https://science.nasa.gov/open-science/spherex-universe-map/}
 \newcommand{\Archive}{https://irsa.ipac.caltech.edu/Missions/spherex.html}
@@ -56,9 +49,6 @@
 \newcommand{\amin}{\ensuremath{'}}
 \newcommand{\asec}{\ensuremath{''}}
 \newcommand{\EpsInd}{\ensuremath{\varepsilon}~Indi~B}
-\newcommand{\Go}{\ensuremath{\,\rightarrow}}
-\newcommand{\CodeLink}{\href{\Repo}{\textcolor{Cyan}{\bfseries Code on GitHub\Go}}}
-\newcommand{\ToolLink}{\ifx\ToolURL\empty\else\href{\ToolURL}{\textcolor{Cyan}{\bfseries Open the live tool\Go}}\qquad\fi}
 
 \tikzset{
   slide text/.style={anchor=north west,inner sep=0,outer sep=0,text=Ink,align=left},
@@ -141,7 +131,6 @@
   \Place{42}{21.8}{\Member{Aryan Sisodiya}{InfinityxR9}}
   \Place{8}{17.0}{\Member{Tanmay Pratap Singh}{dhmaltps}}
 
-  \Place{8}{11.6}{\SmallBody{\ToolLink\CodeLink}}
 \end{SlideCanvas}
 \end{frame}
 
@@ -253,10 +242,10 @@
   \draw[hairline] (44,62.4) rectangle (77,32.67);
   \Place{8}{30.9}{\SmallBody{Visit 1 \enspace Aug 2025}}
   \Place{44}{30.9}{\SmallBody{Visit 5 \enspace Aug 2026}}
-  \Place{8}{25.4}{\Caption{\Link{\Tree/docs/img/barnard-blink.gif}{Stills from the recorded ParallaX blink}}}
-  \Place{8}{20.6}{\Copy{69}{\Caption{\Link{\Tree/validation/STATUS.md}{Development tests} passed; independent review pending. Unproven items are published too, such as R Dra's period.}}}
+  \Place{8}{25.4}{\Caption{Stills from the recorded ParallaX blink}}
+  \Place{8}{20.6}{\Copy{69}{\Caption{Development tests passed; independent review pending. Unproven items are published too, such as R Dra's period.}}}
 
-  \Place{84}{66.6}{\href{\Tree/validation/G5.25yr-jumps/2026-11-08-5f9f54b/report.md}{\Label{MOVED AS PREDICTED (ARCMIN)}}}
+  \Place{84}{66.6}{\Label{MOVED AS PREDICTED (ARCMIN)}}
   \Place{84}{62.4}{\Caption{Target}}
   \Place{109}{62.4}{\Caption{Old survey}}
   \Place[anchor=north east]{139}{62.4}{\Caption{Measured}}
@@ -277,9 +266,9 @@
   \Place[anchor=north east]{152}{51.8}{\SmallBody{2.101}}
   \Place[anchor=north east]{152}{46.2}{\SmallBody{2.153}}
 
-  \Stat{38.6}{\href{\Tree/validation/F11/2026-11-07-20efbf1/report.md}{3,878}}{frames for five targets; two archive routes find the same set.}
-  \Stat{29.0}{\href{\Tree/validation/G2-repro/2026-11-10-989bf01/report.md}{24 / 24}}{stacks byte-identical when one link is rebuilt twice from scratch.}
-  \Stat{19.4}{\href{\Tree/validation/G3-pm-epsindb/2026-11-08-8d12a02/report.md}{0.06\asec/yr}}{\EpsInd: motion fitted from SPHEREx alone vs the catalogue.}
+  \Stat{38.6}{3,878}{frames for five targets; two archive routes find the same set.}
+  \Stat{29.0}{24 / 24}{stacks byte-identical when one link is rebuilt twice from scratch.}
+  \Stat{19.4}{0.06\asec/yr}{\EpsInd: motion fitted from SPHEREx alone vs the catalogue.}
   \Footer{06}
 \end{SlideCanvas}
 \end{frame}
@@ -293,19 +282,14 @@
   \Place{8}{56.4}{\Copy{64}{\Label{BROWN DWARFS FOUND BY VOLUNTEERS BLINKING WISE IMAGES}}}
   \Place{8}{46.6}{\Copy{64}{\Body{WISE has stopped observing. SPHEREx maps the whole sky every six months in 102 colours, and had no public blink tool. Now it has one.}}}
   \Place{8}{26.8}{\Caption{Source: \Link{\BYWSource}{NASA, May 2026 (Backyard Worlds: Planet 9)}}}
-  \Place{8}{20.4}{\SmallBody{\ToolLink\CodeLink}}
-  \Place{8}{15.4}{\Caption{SI tools: Claude Code (code, slides), ChatGPT (slides)}}
-  \Place{8}{12.2}{\Caption{Not affiliated with or endorsed by NASA}}
 
-  \draw[hairline] (80,11.6) -- (80,66.6);
+  \draw[hairline] (80,24) -- (80,66.6);
   \Place{84}{66.6}{\ItemHead{Citizen scientists}}
   \Place{84}{61.7}{\Copy{68}{\SmallBody{Share any view as a link; open WiseView, ESASky or SIMBAD in a click.}}}
   \Place{84}{52.3}{\ItemHead{Classrooms}}
-  \Place{84}{47.4}{\Copy{68}{\SmallBody{A ready 30-minute \Link{\Tree/docs/classroom-barnard.md}{activity}: measure Barnard's Star's motion with a ruler.}}}
+  \Place{84}{47.4}{\Copy{68}{\SmallBody{A ready 30-minute activity: measure Barnard's Star's motion with a ruler.}}}
   \Place{84}{38.0}{\ItemHead{Everyone}}
   \Place{84}{33.1}{\Copy{68}{\SmallBody{No login, phones, keyboard, a no-WebGL fallback. English, Hindi and Spanish.}}}
-  \Place{84}{23.7}{\ItemHead{\textcolor{Cyan}{Next steps}}}
-  \Place{84}{18.8}{\Copy{68}{\SmallBody{Add DR1 when it lands; finish independent review; keep a copy online.}}}
   \Footer{07}
 \end{SlideCanvas}
 \end{frame}
