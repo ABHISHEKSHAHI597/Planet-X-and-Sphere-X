@@ -87,8 +87,9 @@ def test_png_rejects_bad_parameters():
 def test_feature_levels_per_environment():
     s = FlagSpec(level="staging", capability="x")
     assert effective_level(s, "local") == "staging" and effective_level(s, "staging") == "staging"
-    assert effective_level(s, "production") == "off" and effective_level(s, "snapshot") == "off"
+    assert effective_level(s, "production") == "staging" and effective_level(s, "snapshot") == "staging"
     assert effective_level(FlagSpec(level="dev", capability="x"), "staging") == "off"
+    assert effective_level(FlagSpec(level="dev", capability="x"), "production") == "off"
     assert effective_level(FlagSpec(level="on", capability="x"), "production") == "on"
     cfg = load_features(REPO / "config" / "features.yaml")
     assert all(f.level != "on" for f in cfg.flags.values())                   # nothing accepted yet

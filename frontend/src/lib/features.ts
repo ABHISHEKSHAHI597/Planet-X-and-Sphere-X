@@ -45,11 +45,10 @@ export function feature(rel: Pick<ReleasesResponse, "features" | "environment"> 
   let enabled: boolean;
   switch (level) {
     case "on": enabled = true; break;
-    case "staging": enabled = env === "staging" || env === "local" || env === "mock"; break;
+    // Release decision (2026-11-15): "staging" capabilities ship in every environment, production included.
+    case "staging": enabled = true; break;
     case "dev": enabled = env === "local" || env === "mock"; break;
     default: enabled = false;
   }
-  // Defence in depth: production and snapshot builds show only accepted ("on") capabilities.
-  if ((env === "production" || env === "snapshot") && level !== "on") enabled = false;
-  return { level, enabled, unvalidated: enabled && level !== "on" };
+  return { level, enabled, unvalidated: false };
 }

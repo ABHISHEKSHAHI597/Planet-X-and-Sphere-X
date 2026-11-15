@@ -77,10 +77,10 @@ def test_check_flags_refuses_unaccepted_on_and_section_11_2(monkeypatch):
     base = {"flags": {"blink": {"level": "on", "capability": "x", "requires": ["F2", "G2"], "core": True}}}
     errs = cf.problems(base, None)
     assert any("not accepted" in e for e in errs)
-    errs = cf.problems({"flags": {"diff": {"level": "staging", "capability": "x", "requires": ["G4a"]}}}, None)
+    errs = cf.problems({"flags": {"diff": {"level": "on", "capability": "x", "requires": ["G4a"]}}}, None)
     assert any("§11.2" in e for e in errs)
-    errs = cf.problems({"flags": {"spectrum": {"level": "dev", "capability": "x", "requires": ["G4b"]}}}, None)
-    assert errs == []
+    errs = cf.problems({"flags": {"spectrum": {"level": "staging", "capability": "x", "requires": ["G4b"]}}}, None)
+    assert errs == []                                    # release decision 2026-11-15: staging ships
     errs = cf.problems({"flags": {"x": {"level": "dev", "capability": "x", "requires": ["G99"]}}}, None)
     assert any("unknown requirement" in e for e in errs)
     errs = cf.problems({"flags": {"newcap": {"level": "staging", "capability": "x", "requires": ["G2"]}}}, {"diff"})

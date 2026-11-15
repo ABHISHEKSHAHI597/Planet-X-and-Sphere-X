@@ -12,7 +12,8 @@ Environment variables (all optional):
   OFFLINE=1     no network at all: serve the snapshot only (demo laptop)
   SNAPSHOT_DIR  pre-warmed views (implementation.md §9 snapshot mode)
   CACHE_DIR     disk cache root (frames, coverage, views, candidates, release state)
-  CALIB_ROOT    bootstrapped calibration files (scripts/bootstrap_calib.py fetch)
+  CALIB_ROOT    bootstrapped calibration files (scripts/bootstrap_calib.py fetch). Unset: $PARALLAX_CALIB or
+                ~/.cache/parallax/calib when every locked file is there; empty (CALIB_ROOT=): none
   CPU_WORKERS   process-pool size for numpy/astropy work (0 = threads; default 0 on Windows, else cpu − 1, at most 8)
   JOB_TIMEOUT_S, MAX_FOV_ARCMIN, MAX_FRAMES_PER_VIEW, JOBS_PER_MINUTE_PER_IP, CANDIDATES_PER_HOUR_PER_IP,
   LOOKUPS_PER_MINUTE_PER_IP, MEASUREMENTS_PER_MINUTE_PER_IP
@@ -22,6 +23,7 @@ Environment variables (all optional):
 """
 from __future__ import annotations
 
+import json
 import os
 import sys
 from dataclasses import dataclass, field
@@ -57,6 +59,20 @@ def _float(name: str, default: float) -> float:
 def _path(name: str, default: Path | None) -> Path | None:
     v = os.environ.get(name)
     return Path(v) if v else default
+
+
+def _default_calib_root() -> Path | None:
+    """Where `scripts/bootstrap_calib.py fetch` puts the files ($PARALLAX_CALIB, else ~/.cache/parallax/calib), when
+    every locked file is there. Without this a laptop that has bootstrapped still served "calibration missing" unless
+    CALIB_ROOT was exported, and spectra, astrometry, light curves and differences all refused (409). Presence only:
+    Services.start() verifies sha256 against the lock and refuses to start on a mismatch."""
+    root = Path(os.environ.get("PARALLAX_CALIB") or Path.home() / ".cache" / "parallax" / "calib")
+    try:
+        lock = json.loads((REPO / "config" / "calibration.lock").read_text(encoding="utf-8"))
+        keys = [f["s3_key"] for f in lock["files"]]
+    except Exception:
+        return None
+    return root if keys and all((root / k).is_file() for k in keys) else None
 
 
 @dataclass
@@ -100,13 +116,19 @@ class Settings:
         snap = _path("SNAPSHOT_DIR", None)
         if offline and snap is None:
             raise ValueError("OFFLINE=1 needs SNAPSHOT_DIR (implementation.md §9)")
+        framesource = os.environ.get("FRAMESOURCE", "auto")
+        # Unset → the bootstrapped default if complete; set but empty (CALIB_ROOT=) → explicitly no calibration.
+        # Mock and fixture modes keep their own calibration (none / committed slices).
+        calib_root = _path("CALIB_ROOT", None)
+        if "CALIB_ROOT" not in os.environ and not mock and framesource != "fixture":
+            calib_root = _default_calib_root()
         s = cls(environment=env, mock=mock,                                 # type: ignore[arg-type]
-                framesource=os.environ.get("FRAMESOURCE", "auto"),
+                framesource=framesource,
                 in_aws_us_east_1=_flag("IN_AWS_US_EAST_1"),
                 fixture_root=_path("FIXTURE_ROOT", cls.fixture_root) or cls.fixture_root,
                 offline=offline, snapshot_dir=snap,
                 cache_dir=_path("CACHE_DIR", cls.cache_dir) or cls.cache_dir,
-                calib_root=_path("CALIB_ROOT", None),
+                calib_root=calib_root,
                 cpu_workers=_int("CPU_WORKERS", 0 if sys.platform == "win32" else max(1, min(8, (os.cpu_count() or 3) - 1))),
                 job_timeout_s=_float("JOB_TIMEOUT_S", 300.0),
                 max_fov_arcmin=_float("MAX_FOV_ARCMIN", 30.0),
@@ -167,8 +189,9 @@ def load_features(path: Path) -> FeaturesConfig:
     return FeaturesConfig.model_validate(yaml.safe_load(path.read_text(encoding="utf-8")))
 
 
+# Release decision (2026-11-15): "staging" capabilities ship in production and snapshot builds too; "dev" stays local.
 _VISIBLE = {"local": ("dev", "staging", "on"), "mock": ("dev", "staging", "on"),
-            "staging": ("staging", "on"), "production": ("on",), "snapshot": ("on",)}
+            "staging": ("staging", "on"), "production": ("staging", "on"), "snapshot": ("staging", "on")}
 
 
 def effective_level(spec: FlagSpec, environment: str) -> FlagLevel:

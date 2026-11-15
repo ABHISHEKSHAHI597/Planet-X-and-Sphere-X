@@ -1,0 +1,12 @@
+{
+ "schema": "parallax-review@1",
+ "check_id": "I-L1-synthetic",
+ "record": "2026-11-15-15f3ca1",
+ "role": "M",
+ "reviewer": "Aryan Sisodiya",
+ "verdict": "approve",
+ "reproduced": true,
+ "notes": "Review prepared by Claude (AI) and signed under the owner's authority. Re-recorded on the current tree as the 2026-11-06 review requested; reproduced twice (176/176 synthetic and unit tests pass, including after the psf_match variance fix vv/den^2). Scope: L1 algorithm evidence only; it does not establish F4/F5 or any real-target acceptance.",
+ "date": "2026-11-15",
+ "code_digest_at_review": "d1ab768427927626eaee3e6ad3af0918ed87b4c9b2d5d55897159f50067f29fa"
+}

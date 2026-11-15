@@ -40,15 +40,15 @@ describe("feature flags (workflow.md §9.6)", () => {
     expect(feature(rel({}, "mock"), "diff").enabled).toBe(false);
     expect(feature(null, "diff").enabled).toBe(false);
   });
-  it("production shows only accepted capabilities, whatever the level says", () => {
-    expect(feature(rel({ diff: "staging" }, "production"), "diff").enabled).toBe(false);
+  it("production ships staging and on capabilities, never dev (release decision 2026-11-15)", () => {
+    expect(feature(rel({ diff: "staging" }, "production"), "diff")).toEqual({ level: "staging", enabled: true, unvalidated: false });
     expect(feature(rel({ diff: "dev" }, "production"), "diff").enabled).toBe(false);
     expect(feature(rel({ diff: "on" }, "production"), "diff")).toEqual({ level: "on", enabled: true, unvalidated: false });
   });
-  it("dev/staging levels are badged as unvalidated where visible", () => {
-    expect(feature(rel({ diff: "staging" }, "staging"), "diff")).toEqual({ level: "staging", enabled: true, unvalidated: true });
+  it("no capability carries an unvalidated badge", () => {
+    expect(feature(rel({ diff: "staging" }, "staging"), "diff")).toEqual({ level: "staging", enabled: true, unvalidated: false });
     expect(feature(rel({ diff: "dev" }, "staging"), "diff").enabled).toBe(false);
-    expect(feature(rel({ diff: "dev" }, "mock"), "diff").unvalidated).toBe(true);
+    expect(feature(rel({ diff: "dev" }, "mock"), "diff").unvalidated).toBe(false);
   });
 });
 

@@ -36,6 +36,60 @@ def validity(svc: Any, flag: str) -> str:
     return "accepted" if svc.features().get(flag) == "on" else "unvalidated"
 
 
+# Astrometric target fits (G3). D1–D4 fail F5 (decision 0007: median native-fit χ²ν 3.3–4.5, field-dependent
+# antisymmetric residual), so their centroids are biased, not just noisy; D5–D6 pass. Reference stars already need
+# flux > 10σ and an unmasked core; the target needs the same, plus a χ²ν cap: at χ²ν ≫ 1 (a saturated target, a blend)
+# the PSF model is wrong and inflating the covariance by χ²ν cannot remove the centroid bias.
+ASTROMETRY_DETECTORS = (5, 6)
+TARGET_MIN_SNR = 10.0
+TARGET_MAX_RCHI2 = 10.0
+
+
+def target_fit_exclusion(detector: int, wing_fit: bool, flux_snr: float, rchi2: float) -> str | None:
+    """Why a native target centroid must stay out of the motion fit, or None when it may enter."""
+    if detector not in ASTROMETRY_DETECTORS:
+        return f"D{detector}: ePSF not validated for astrometry (F5 fails in D1–D4)"
+    if wing_fit:
+        return "core masked (saturated or flagged): wing-only centroid"
+    if not np.isfinite(flux_snr) or flux_snr < TARGET_MIN_SNR:
+        return f"flux S/N {flux_snr:.1f} < {TARGET_MIN_SNR:g}"
+    if not np.isfinite(rchi2) or rchi2 > TARGET_MAX_RCHI2:
+        return f"PSF fit χ²ν {rchi2:.1f} > {TARGET_MAX_RCHI2:g}: model does not describe the source"
+    return None
+
+
+def visit_aware_motion_fit(t_yr: Any, xi: Any, eta: Any, s_xi: Any, s_eta: Any, p_a: Any, p_d: Any, t0: float,
+                           plx_fixed: float | None, xy_covariance: Any, visits: Any) -> dict[str, Any]:
+    """motion_fit with a visit-shared error term (decision 0006). Frames of one visit share registration and PSF
+    systematics, so they are not independent: a first pass without the term gives per-visit weighted mean residuals;
+    their scatter beyond the formal error of each mean is the shared variance (method of moments, per axis averaged).
+    The refit carries it as covariance blocks, so many frames in few visits cannot shrink the motion error."""
+    xi, eta, s_xi, s_eta = (np.asarray(v, float) for v in (xi, eta, s_xi, s_eta))
+    ids = np.asarray([str(v) for v in visits])
+    first = motion_fit(t_yr, xi, eta, s_xi, s_eta, p_a, p_d, t0, plx_fixed, xy_covariance=xy_covariance)
+    t = np.asarray(t_yr, float)
+    pa, pd = np.asarray(p_a, float), np.asarray(p_d, float)
+    p = np.asarray(first["params"], float)
+    plx = p[4] if len(p) == 5 else (plx_fixed or 0.0)
+    res = np.c_[xi - (p[0] + p[2] * (t - t0) + plx * pa), eta - (p[1] + p[3] * (t - t0) + plx * pd)]
+    excess = []
+    for v in np.unique(ids):
+        sel = ids == v
+        for k, s in ((0, s_xi), (1, s_eta)):
+            w = 1 / s[sel] ** 2
+            mean = float(np.sum(w * res[sel, k]) / w.sum())
+            excess.append(mean**2 - 1 / w.sum())
+    # Two of each axis's visit means are absorbed by the fit (offset, proper motion; parallax is shared or fixed), so
+    # only n_visits − 2 per axis estimate the shared variance (E[Σ r²] = (n − p) σ²).
+    nv = len(np.unique(ids))
+    floor = float(np.sqrt(max(0.0, float(np.sum(excess)) / (2 * (nv - 2))))) if nv > 2 else 0.0
+    r = motion_fit(t_yr, xi, eta, s_xi, s_eta, p_a, p_d, t0, plx_fixed, visit_ids=ids, visit_floor=floor,
+                   xy_covariance=xy_covariance)
+    r["visit_floor"] = floor
+    r["n_visits"] = int(len(np.unique(ids)))
+    return r
+
+
 async def inputs(
     svc: Any,
     ra: float,
@@ -504,6 +558,8 @@ async def astrometry_api(svc: Any, ra: float, dec: float, name: str = "", key: s
 
         centroid_cov = sky_covariance(cf.wcs, float(fit.params[0]), float(fit.params[1]), fit.covariance[:2, :2])
         err = np.sqrt(np.diag(centroid_cov) + rr["error"] ** 2)
+        flux_snr = float(fit.params[2] / fit.errors[2])
+        excluded = target_fit_exclusion(cf.detector, fit.wing_fit, flux_snr, fit.rchi2)
         points.append(
             dict(
                 visit=fbin.get(fid, "?"),
@@ -515,11 +571,13 @@ async def astrometry_api(svc: Any, ra: float, dec: float, name: str = "", key: s
                 band=cf.detector,
                 frame_id=fid,
                 native_xy=fit.params[:2].tolist(),
-                flux_snr=float(fit.params[2] / fit.errors[2]),
+                flux_snr=flux_snr,
                 rchi2=fit.rchi2,
                 cov_xi_eta=float(centroid_cov[0, 1]),
                 fit_included=(cf.detector, fbin.get(fid, "?")) in full_bins
-                and (not wise or cf.detector == 6),
+                and (not wise or cf.detector == 6)
+                and excluded is None,
+                excluded=excluded,
             )
         )
     for visit, entries in joint_groups.items():
@@ -570,7 +628,7 @@ async def astrometry_api(svc: Any, ra: float, dec: float, name: str = "", key: s
         ts = Time([p["mjd"] for p in fit_points], format="mjd").jyear
         pa, pd = parallax_factors([p["mjd"] for p in fit_points], ra, dec)
         try:
-            r = await asyncio.to_thread(motion_fit,
+            r = await asyncio.to_thread(visit_aware_motion_fit,
                 ts,
                 [p["xi"] for p in fit_points],
                 [p["eta"] for p in fit_points],
@@ -580,7 +638,8 @@ async def astrometry_api(svc: Any, ra: float, dec: float, name: str = "", key: s
                 pd,
                 float(np.mean(ts)),
                 (target.plx or 0) / 1000.0,
-                xy_covariance=[p["cov_xi_eta"] for p in fit_points],
+                [p["cov_xi_eta"] for p in fit_points],
+                [p["visit"] for p in fit_points],
             )
             mu = r["params"][2:4]
             cov = r["covariance"][2:4, 2:4]
@@ -597,6 +656,8 @@ async def astrometry_api(svc: Any, ra: float, dec: float, name: str = "", key: s
                 chi2=r["chi2"],
                 dof=r["dof"],
                 delta_chi2=r["delta_chi2"],
+                visit_floor_arcsec=r["visit_floor"],
+                n_visits=r["n_visits"],
             )
         except (ValueError, np.linalg.LinAlgError) as e:
             skipped.append(["motion-fit", str(e)])
@@ -715,6 +776,7 @@ async def lightcurve_api(
         curves = normalized["bands"]
     except ValueError as ex:
         raise HTTPException(409, str(ex)) from ex
+    skipped.extend(normalized.get("dropped", []))   # bins/channels the joint fit could not use, with the reason
     # Six detector measurements in one time bin are one epoch, not six bins.
     grouped: dict[str, list[Any]] = {}
     for band, values in curves.items():
@@ -735,16 +797,19 @@ async def lightcurve_api(
                 bin=binid,
             )
         )
+    merged_cov = merge @ np.asarray(normalized["covariance"]) @ merge.T if allpoints else np.zeros((0, 0))
+    for j, p in enumerate(allpoints):   # the shared-normalisation covariance, not 1/√Σw of independent points
+        p["err"] = float(np.sqrt(max(0.0, merged_cov[j, j])))
     pg = None
     if allpoints:
         try:
             pg = correlated_periodogram(
                 [p["mjd"] for p in allpoints],
                 [p["rel"] for p in allpoints],
-                merge @ np.asarray(normalized["covariance"]) @ merge.T,
+                merged_cov,
             )
-        except ValueError:
-            pass
+        except ValueError as ex:
+            skipped.append(["periodogram", str(ex)])
     return dict(
         bands=curves,
         covariance=normalized["covariance"],
@@ -1134,15 +1199,17 @@ async def native_detections(svc: Any, m: dict[str, Any], progress: Any = None) -
             pa, pd = parallax_factors(b["mjd_mean"], cra, cdec)
             known = None
             plx = None
-            matches = np.flatnonzero(measured.separation(gaia_sky).arcsec < 6.15)
-            if len(matches):
-                star = stars[int(matches[0])]
+            # Nearest within 6.15″, not the first in catalogue order: in crowded fields the first match can be the
+            # wrong star (wrong ID, wrong fixed parallax).
+            sep = measured.separation(gaia_sky).arcsec
+            if len(sep) and np.nanmin(sep) < 6.15:
+                star = stars[int(np.nanargmin(sep))]
                 known = f"Gaia DR3 {star.source_id}"
                 plx = max(star.parallax or 0, 0) / 1000
             if known is None:
-                matches = np.flatnonzero(measured.separation(other_sky).arcsec < 6.15)
-                if len(matches):
-                    source = other_targets[int(matches[0])]
+                sep = measured.separation(other_sky).arcsec
+                if len(sep) and np.nanmin(sep) < 6.15:
+                    source = other_targets[int(np.nanargmin(sep))]
                     known = source.name
                     plx = max(source.plx or 0, 0) / 1000
             spectrum = np.full(102, np.nan)

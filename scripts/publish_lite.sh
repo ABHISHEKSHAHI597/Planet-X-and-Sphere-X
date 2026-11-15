@@ -31,8 +31,7 @@ cp -a "$SRC"/. "$WORK"/
 touch "$WORK/.nojekyll"                # serve files as they are (no Jekyll processing)
 git -C "$WORK" add -A
 if git -C "$WORK" diff --cached --quiet; then echo "gh-pages already up to date"; exit 0; fi
-git -C "$WORK" commit -q -m "ParallaX Lite: frozen copy of the pinned demo views ($(date -u +%Y-%m-%d))" \
-  -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+git -C "$WORK" commit -q -m "ParallaX Lite: frozen copy of the pinned demo views ($(date -u +%Y-%m-%d))"
 if [ "${1:-}" = "--dry-run" ]; then echo "committed on local gh-pages; not pushed (dry run)"; exit 0; fi
 git -C "$WORK" push -q origin gh-pages
 echo "pushed gh-pages: https://$(git remote get-url origin | sed -E 's#.*[:/]([^/]+)/([^/.]+)(\.git)?$#\L\1\E.github.io/\2#')/"

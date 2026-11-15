@@ -106,6 +106,36 @@
    "date": "2026-11-10",
    "record": "G2-repro/2026-11-10-989bf01",
    "record_url": "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026/tree/main/validation/G2-repro/2026-11-10-989bf01"
+  },
+  {
+   "id": "trap",
+   "claim": "Subtracting two visits naively is wrong for SPHEREx, and our tests show it",
+   "detail": "On a synthetic sky with known answers, a plain visit-minus-visit difference leaves false residuals at static stars, because the two visits saw different wavelengths.",
+   "check": "I-L1-synthetic",
+   "ours": "passed",
+   "ours_label": "test that the naive method fails",
+   "reference": "rule: pass",
+   "state": "passed, re-run pending",
+   "verdict": "pass",
+   "level": "L1",
+   "date": "2026-11-15",
+   "record": "I-L1-synthetic/2026-11-15-15f3ca1",
+   "record_url": "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026/tree/main/validation/I-L1-synthetic/2026-11-15-15f3ca1"
+  },
+  {
+   "id": "null-result",
+   "claim": "Where nothing moves, the matched difference shows nothing",
+   "detail": "The same synthetic sky, differenced with wavelengths matched pixel by pixel. Static stars cancel; only the moving source remains.",
+   "check": "I-L1-synthetic",
+   "ours": "passed",
+   "ours_label": "test that static stars cancel",
+   "reference": "rule: pass",
+   "state": "passed, re-run pending",
+   "verdict": "pass",
+   "level": "L1",
+   "date": "2026-11-15",
+   "record": "I-L1-synthetic/2026-11-15-15f3ca1",
+   "record_url": "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026/tree/main/validation/I-L1-synthetic/2026-11-15-15f3ca1"
   }
  ],
  "open": [
@@ -138,36 +168,6 @@
    "date": "2026-11-06",
    "record": "F1/2026-11-06-c12717d",
    "record_url": "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026/tree/main/validation/F1/2026-11-06-c12717d"
-  },
-  {
-   "id": "trap",
-   "claim": "Subtracting two visits naively is wrong for SPHEREx, and our tests show it",
-   "detail": "On a synthetic sky with known answers, a plain visit-minus-visit difference leaves false residuals at static stars, because the two visits saw different wavelengths.",
-   "check": "I-L1-synthetic",
-   "ours": "passed",
-   "ours_label": "test that the naive method fails",
-   "reference": "rule: pass",
-   "state": "changes requested",
-   "verdict": "pass",
-   "level": "L1",
-   "date": "2026-11-06",
-   "record": "I-L1-synthetic/2026-11-06-c12717d",
-   "record_url": "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026/tree/main/validation/I-L1-synthetic/2026-11-06-c12717d"
-  },
-  {
-   "id": "null-result",
-   "claim": "Where nothing moves, the matched difference shows nothing",
-   "detail": "The same synthetic sky, differenced with wavelengths matched pixel by pixel. Static stars cancel; only the moving source remains.",
-   "check": "I-L1-synthetic",
-   "ours": "passed",
-   "ours_label": "test that static stars cancel",
-   "reference": "rule: pass",
-   "state": "changes requested",
-   "verdict": "pass",
-   "level": "L1",
-   "date": "2026-11-06",
-   "record": "I-L1-synthetic/2026-11-06-c12717d",
-   "record_url": "https://github.com/ABHISHEKSHAHI597/Nasa-Space-Apps-2026/tree/main/validation/I-L1-synthetic/2026-11-06-c12717d"
   },
   {
    "id": "epsf",

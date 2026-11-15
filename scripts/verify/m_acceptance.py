@@ -210,11 +210,17 @@ async def main(args):
             tolerance = 1.0 if args.target == "barnard" else 1.5
             pa_tol = 6.0 if args.target == "barnard" else 20.0
             if cat:
-                dm = abs(f["mu"] - cat["mu"])
                 dp = abs((f["pa_deg"] - cat["pa_deg"] + 180) % 360 - 180)
+                # |μ_fit − μ_cat| as vectors (law of cosines), not the difference of magnitudes: a fit with the right
+                # speed in the wrong direction must not pass the speed tolerance.
+                dm = float(np.sqrt(max(0.0, f["mu"] ** 2 + cat["mu"] ** 2
+                                       - 2 * f["mu"] * cat["mu"] * np.cos(np.radians(dp)))))
                 metrics = {
                     "pm_error_arcsec_yr": dict(
-                        value=dm, threshold=f"<{tolerance}", **{"pass": dm < tolerance}
+                        value=dm, threshold=f"<{tolerance} (vector difference)", **{"pass": dm < tolerance}
+                    ),
+                    "pm_magnitude_error_arcsec_yr": dict(
+                        value=abs(f["mu"] - cat["mu"]), threshold="reported", **{"pass": None}
                     ),
                     "pa_error_deg": dict(
                         value=dp, threshold=f"<{pa_tol}", **{"pass": dp < pa_tol}

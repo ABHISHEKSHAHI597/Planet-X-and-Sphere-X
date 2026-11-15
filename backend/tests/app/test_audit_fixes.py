@@ -3,6 +3,7 @@ import asyncio
 from types import SimpleNamespace
 
 from app import pipeline
+from app.settings import REPO
 from spherex.access.coverage import CoverageRow
 from spherex.access.releases import load as load_registry
 from spherex.targets import Target
@@ -112,8 +113,8 @@ def test_every_pinned_demo_target_is_frozen():
 
 
 def test_the_wise_layer_has_its_own_capability(tmp_path, monkeypatch):
-    """optimisation.md REL-5: AllWISE is drawn as catalogued, never propagated, so a staging host shows it while the
-    propagated Gaia/SIMBAD markers (`overlays`, waiting on G3) stay off there."""
+    """optimisation.md REL-5: AllWISE is drawn as catalogued, never propagated, so it has its own capability
+    (`wise_layer`); switching the propagated Gaia/SIMBAD markers (`overlays`) off leaves it on."""
     from fastapi.testclient import TestClient
 
     from app import science
@@ -123,8 +124,13 @@ def test_the_wise_layer_has_its_own_capability(tmp_path, monkeypatch):
         return dict(catalogue=cat, mjd=mjd, sources=[], epoch=2010.5)
 
     monkeypatch.setattr(science, "overlay", fake_overlay)
+    features = tmp_path / "features.yaml"
+    cfg = __import__("yaml").safe_load((REPO / "config" / "features.yaml").read_text(encoding="utf-8"))
+    cfg["flags"]["overlays"]["level"] = "off"
+    features.write_text(__import__("yaml").safe_dump(cfg), encoding="utf-8")
     q = {"ra": 133.79, "dec": -7.25, "r": 0.05, "mjd": 61000.0}
-    with TestClient(create_app(settings=make_settings(tmp_path, environment="staging", mock=True))) as c:
+    settings = make_settings(tmp_path, environment="staging", mock=True, features_path=features)
+    with TestClient(create_app(settings=settings)) as c:
         assert c.get("/api/v1/overlays/gaia", params=q).status_code == 404
         r = c.get("/api/v1/overlays/allwise", params=q)
         assert r.status_code == 200 and r.json()["epoch"] == 2010.5
@@ -132,7 +138,8 @@ def test_the_wise_layer_has_its_own_capability(tmp_path, monkeypatch):
 
 def test_a_view_built_with_filled_cores_is_never_served_where_filling_is_off(tmp_path):
     """Browser test 2026-11-14: views built on a laptop (bright_fill shown) were served unchanged by a staging host
-    (bright_fill off), model-filled cores included, because the view key ignored the capability."""
+    (bright_fill off), model-filled cores included, because the view key ignored the capability. Since the
+    2026-11-15 release decision bright_fill is `staging` (shown everywhere), so the test pins it to `dev`."""
     from fastapi.testclient import TestClient
 
     from app.main import create_app
@@ -141,9 +148,13 @@ def test_a_view_built_with_filled_cores_is_never_served_where_filling_is_off(tmp
 
     from .conftest import BARNARD_PIN, REAL
 
+    features = tmp_path / "features.yaml"
+    cfg = __import__("yaml").safe_load((REPO / "config" / "features.yaml").read_text(encoding="utf-8"))
+    cfg["flags"]["bright_fill"]["level"] = "dev"
+    features.write_text(__import__("yaml").safe_dump(cfg), encoding="utf-8")
     keys = {}
     for env in ("local", "staging"):
-        svc = Services(make_settings(tmp_path / env, environment=env),
+        svc = Services(make_settings(tmp_path / env, environment=env, features_path=features),
                        transport=ReplayTransport(REAL / "recorded" / "coverage"))
         with TestClient(create_app(services=svc)) as c:
             keys[env] = c.post("/api/v1/views", json={"q": "Barnard's Star", "pin": BARNARD_PIN}).json()["key"]
