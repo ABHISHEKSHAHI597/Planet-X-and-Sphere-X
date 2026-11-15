@@ -221,7 +221,11 @@ def _stale(data: dict[str, Any]) -> tuple[bool, str]:
         return (now != data["code_digest"]), ("code_paths changed since the record (digest)"
                                                if now != data["code_digest"] else "")
     sha = data.get("git_sha", "")
-    changed = git("log", "--format=%h", f"{sha}..HEAD", "--", *cps) if sha else "?"
+    # A sha missing from history (rebased/squashed away, or absent from a shallow clone) cannot prove "unchanged":
+    # `git()` swallows the error and returns "", which used to fall through to the git_dirty wording only on clean
+    # trees, so the committed STATUS.md depended on whether the regenerating tree had local edits.
+    known = bool(sha) and bool(git("rev-parse", "--verify", "--quiet", f"{sha}^{{commit}}"))
+    changed = git("log", "--format=%h", f"{sha}..HEAD", "--", *cps) if known else "?"
     wt = git("status", "--porcelain", "--", *cps)
     if changed or wt:
         # One wording whatever changed (commits or the working tree): listing commit hashes here made the committed
