@@ -200,7 +200,9 @@ def time_bins(mjd: ArrayLike, band: ArrayLike, axis: str = "visit", surveys: Seq
                            for j in np.unique(k[band == b])]
     elif axis == "survey":
         for b in np.unique(band):
-            out[int(b)] = [mk("IOC" if s < 0 else ("S?" if s == 0 else f"S{s}"), b, np.flatnonzero((sv == s) & (band == b)), "survey")
+            # "SU" (survey unknown), not "S?": a bin id is a path segment and a URL part ('?' starts a query string,
+            # and store paths reject it). The label still reads "S?" (_surveys_label).
+            out[int(b)] = [mk("IOC" if s < 0 else ("SU" if s == 0 else f"S{s}"), b, np.flatnonzero((sv == s) & (band == b)), "survey")
                            for s in np.unique(sv[band == b])]
     elif axis == "exposure":
         for b in np.unique(band):

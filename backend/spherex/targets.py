@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import math
 import re
 import unicodedata
@@ -54,6 +55,9 @@ OFFLINE = {
 BRIGHT_TARGETS = {"NAME Barnard's Star", "V* RW Aur", "V* R Dra"}  # fallback when no K magnitude is known
 # K (Vega) of the offline targets (understanding.md §8.1); WISE 0855 is undetected in 2MASS (J ≈ 25).
 OFFLINE_K = {"NAME Barnard's Star": 4.52, "* eps Ind B": 11.21, "V* RW Aur": 7.02, "V* R Dra": 2.23}
+# The Gaia refinement is optional (SIMBAD's values stand without it), so it never holds a lookup longer than this:
+# IRSA TAP can hang for minutes while recovering from an outage, which outlasted the 60 s planning deadline.
+GAIA_STEP_S = 15.0
 # F7 (validation/F7): OVERFLOW sets in at K ≈ 9–9.5 in bands 2–4, so brighter targets get the `bright` preset.
 BRIGHT_K_MAG = 9.0
 
@@ -354,7 +358,7 @@ async def resolve_name(query: str, client: Any | None) -> Target:
     try:
         gid = await sim.gaia_dr3_id(o.oid)
         if gid is not None:
-            g = await GaiaClient(client).by_id([gid])
+            g = await asyncio.wait_for(GaiaClient(client).by_id([gid]), GAIA_STEP_S)
             if g and g[0].pmra is not None:
                 s = g[0]
                 t = Target(
@@ -384,7 +388,7 @@ async def resolve_name(query: str, client: Any | None) -> Target:
         t.extra["k_mag"] = k_mag
     if o.main_id == "V* RW Aur":
         try:
-            b = await GaiaClient(client).by_id([156430822114424576])
+            b = await asyncio.wait_for(GaiaClient(client).by_id([156430822114424576]), GAIA_STEP_S)
         except Exception:  # Gaia down: B's kinematics from the verified offline table (never A's RUWE-16 values)
             b = []
         if b and b[0].pmra is not None:

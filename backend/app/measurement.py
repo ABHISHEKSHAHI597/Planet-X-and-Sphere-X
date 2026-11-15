@@ -920,6 +920,8 @@ def stars_pos(targets: list[Target], mjd: Any) -> list[tuple[Any, Any]]:
     return out
 
 
+# A healthy 6′ Gaia cone takes ≈46 s; past this IRSA is hanging (seen 2026-11-15: 3 × ReadTimeout, ≈7 min).
+GAIA_REFERENCE_DEADLINE_S = 150.0
 DETECTIONS_VERSION = 1  # bump when native_detections changes what it returns
 _detection_runs: dict[str, asyncio.Future[list[list[dict[str, Any]]]]] = {}
 
@@ -993,7 +995,12 @@ async def native_detections(svc: Any, m: dict[str, Any], progress: Any = None) -
                     *_exact(a, d, radius + 0.15)),
         return_exceptions=True,
     )
-    stars = await gaia_query
+    try:
+        stars = await asyncio.wait_for(gaia_query, GAIA_REFERENCE_DEADLINE_S)
+    except TimeoutError:
+        raise HTTPException(503, f"Gaia DR3 (queried through IRSA) did not answer within {GAIA_REFERENCE_DEADLINE_S:.0f} s. "
+                                 "The moving-object search needs it as its reference star list; IRSA is probably slow "
+                                 "or recovering from an outage, so try again in a few minutes.") from None
     catalogue_complete = not any(isinstance(rows, BaseException) for rows in catalogue_rows)
     other_targets = []
     if isinstance(catalogue_rows[0], list):

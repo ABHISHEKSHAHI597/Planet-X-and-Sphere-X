@@ -62,3 +62,14 @@ def test_time_bins_axes():
     assert time_bins(mjd, det, "auto", sv)[6][0].status == "full"
     with pytest.raises(ValueError):
         time_bins(mjd, det, "weekly")
+
+
+def test_survey_axis_bin_ids_are_path_safe():
+    """Planning has no headers, so every science frame is survey 0: its bin id used to be "S?", which the store
+    rejected (UnsafePath) and which a URL reads as a query string, so axis=survey failed for every target."""
+    import re
+
+    tb = time_bins([60700.0, 60900.0, 60910.0, 61300.0], [6, 6, 6, 6], "survey")
+    ids = [b.id for b in tb[6]]
+    assert ids == ["IOC", "SU"] and all(re.match(r"^[A-Za-z0-9_.:+-]{1,64}$", i) for i in ids)
+    assert "S?" in tb[6][1].label                       # the label still says the survey is unknown
