@@ -15,6 +15,8 @@ from collections.abc import AsyncIterator, Awaitable, Callable
 from dataclasses import dataclass, field
 from typing import Any
 
+from .upstream import describe_upstream
+
 log = logging.getLogger("parallax.jobs")
 Emit = Callable[[dict[str, Any]], None]
 TERMINAL = ("done", "error")
@@ -115,7 +117,9 @@ class JobRegistry:
                                                   "far stay available and the view resumes on the next request"})
         except Exception as e:                                       # never leave a subscriber hanging
             log.exception("job %s failed", job.id)
-            job.emit({"type": "error", "message": f"{type(e).__name__}: {e}"[:300]})
+            what = describe_upstream(e)
+            msg = f"{what}: try again in a few minutes" if what else f"{type(e).__name__}: {e}"
+            job.emit({"type": "error", "message": msg[:300]})
         finally:
             job.finished = time.time()
             self.counters[job.status if job.status in ("done", "error") else "error"] += 1

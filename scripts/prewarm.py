@@ -2,6 +2,13 @@
 
   python scripts/prewarm.py --api http://localhost:8000              every view in config/demo_views.yaml
   python scripts/prewarm.py --api https://staging.example --json out.json
+  python scripts/prewarm.py --api http://localhost:8010 --stars "Proxima Centauri,Wolf 359"
+  python scripts/prewarm.py --api http://localhost:8010 --stars-file config/prewarm_stars.txt --coverage-only
+
+--stars / --stars-file build a view for each named star instead of the demo views, so it keeps working while IRSA is
+down: its name lookup, frame list and frames are then on disk, and the API falls back to them (a frame list of any
+age, marked "coverage_stale"). --coverage-only saves just the lookup and frame list (seconds per star, no frame
+downloads; the frames then come from S3 or IRSA cutouts when the star is opened).
 
 For each pinned demo view: POST /api/v1/views, follow the SSE stream to `done`, then fetch the manifest and
 every ready stack once (so Caddy/CDN and the browser cache are warm too). Prints cold/warm timings; exits 1 if
@@ -83,19 +90,68 @@ def extras(client: httpx.Client, m: dict, wanted: list[str], features: dict[str,
     return out
 
 
+def star_names(a: argparse.Namespace) -> list[str]:
+    names = [n.strip() for n in (a.stars or "").split(",") if n.strip()]
+    if a.stars_file:
+        for line in a.stars_file.read_text(encoding="utf-8").splitlines():
+            line = line.split("#", 1)[0].strip()
+            if line:
+                names.append(line)
+    return list(dict.fromkeys(names))
+
+
+def warm_star(client: httpx.Client, name: str, coverage_only: bool, timeout_s: float) -> dict:
+    t0 = time.monotonic()
+    r = client.get("/api/v1/resolve", params={"q": name}, timeout=120.0)
+    if r.status_code != 200:
+        raise RuntimeError(f"resolve HTTP {r.status_code}: {r.text[:200]}")
+    pos = r.json()["propagated_now"]
+    if coverage_only:
+        c = client.get("/api/v1/coverage", params={"ra": pos["ra"], "dec": pos["dec"]}, timeout=180.0)
+        if c.status_code != 200:
+            raise RuntimeError(f"coverage HTTP {c.status_code}: {c.text[:200]}")
+        n = c.json()["n_frames"]
+        if not n:
+            raise RuntimeError("SPHEREx has no frames there in the configured releases")
+        return dict(frames=n, seconds=round(time.monotonic() - t0, 1))
+    res = build(client, {"q": name, "bands": "6"}, timeout_s)
+    res.pop("manifest")
+    return res
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--api", default="http://localhost:8000")
     ap.add_argument("--views", type=Path, default=REPO / "config" / "demo_views.yaml")
     ap.add_argument("--json", type=Path)
+    ap.add_argument("--stars", help="comma-separated star names to pre-load instead of the demo views")
+    ap.add_argument("--stars-file", type=Path, help="one star name per line (# comments allowed)")
+    ap.add_argument("--coverage-only", action="store_true", help="with --stars: save lookup + frame list only")
+    ap.add_argument("--timeout", type=float, default=900.0, help="seconds per view build (default 900)")
     a = ap.parse_args()
-    views = yaml.safe_load(a.views.read_text(encoding="utf-8"))["views"]
     out, bad = [], 0
+    names = star_names(a)
+    if names:
+        with httpx.Client(base_url=a.api, timeout=60.0) as c:
+            for name in names:
+                try:
+                    res = dict(name=name, **warm_star(c, name, a.coverage_only, a.timeout))
+                    print(f"ok   {name:<32} {res}")
+                except Exception as e:  # noqa: BLE001 — report every star, then fail
+                    bad += 1
+                    res = dict(name=name, error=repr(e)[:300])
+                    print(f"FAIL {name:<32} {res['error']}")
+                out.append(res)
+        if a.json:
+            a.json.write_text(json.dumps(out, indent=1), encoding="utf-8")
+        print(f"{len(names) - bad}/{len(names)} stars pre-loaded")
+        return 1 if bad else 0
+    views = yaml.safe_load(a.views.read_text(encoding="utf-8"))["views"]
     with httpx.Client(base_url=a.api, timeout=60.0) as c:
         features = c.get("/api/v1/releases").raise_for_status().json().get("features", {})
         for v in views:
             try:
-                res = build(c, v["body"])
+                res = build(c, v["body"], a.timeout)
                 res["name"] = v["name"]
                 res["extras"] = extras(c, res.pop("manifest"), v.get("extras", []), features)
                 print(f"ok   {v['name']:<42} key={res['key']} cold={res['cold_s']}s warm={res['warm_s']}s "

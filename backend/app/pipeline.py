@@ -17,6 +17,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
+import httpx
 import numpy as np
 
 from spherex.access.coverage import TARGET_RADIUS_DEG, half_diagonal_deg
@@ -25,6 +26,7 @@ from spherex.access.deepfield import cap_frames
 from spherex.access.failover import fetch_frames
 from spherex.access.frames import FrameBox, snap_box
 from spherex.access.pins import Pin, frame_list_digest, load as load_pin
+from spherex.access.retry import GaveUp
 from spherex.epochs import time_bins
 from spherex.flags import CANONICAL_BITS, FLAG_INFO
 from spherex.grid import make_grid, pixel_scale_for
@@ -108,6 +110,7 @@ def request_canonical(params: dict[str, str]) -> str:
 
 
 RESOLVE_TTL_S = 7 * 86400
+UPSTREAM_FAILURES = (UpstreamError, GaveUp, httpx.HTTPError)
 
 
 async def cached_resolve(svc: Any, query: str, client: Any) -> Target:
@@ -132,9 +135,26 @@ async def cached_resolve(svc: Any, query: str, client: Any) -> Target:
                 return t
         except (OSError, ValueError, KeyError, TypeError):   # corrupt or older entry: resolve again (K-37)
             pass
-    t = await resolve_name(query, client)
-    if client is not None and t.kind == "star" and not t.extra.get("warning"):
-        atomic_write(path, json.dumps(dict(t=time.time(), target=t.__dict__)).encode())
+    last = path.with_suffix(".last.json")   # the newest answer of any quality: used only while SIMBAD is down
+    try:
+        t = await resolve_name(query, client)
+    except UPSTREAM_FAILURES:
+        for p in (path, last):
+            try:
+                d = json.loads(p.read_text(encoding="utf-8"))
+                t = Target(**d["target"])
+            except (OSError, ValueError, KeyError, TypeError):
+                continue
+            t.query = query
+            t.extra["warning"] = ("SIMBAD is not answering: position and motion from the lookup saved on "
+                                  f"{time.strftime('%Y-%m-%d', time.gmtime(d['t']))}")
+            return t
+        raise
+    if client is not None and t.kind == "star":
+        doc = json.dumps(dict(t=time.time(), target=t.__dict__)).encode()
+        atomic_write(last, doc)
+        if not t.extra.get("warning"):
+            atomic_write(path, doc)
     return t
 
 
@@ -316,7 +336,8 @@ async def frame_list(
         now_ra, now_dec, radius, collections_for(svc, params["rel"]), release_state=svc.release_state().token()
     )
     if svc.coverage.last.get("warning"):
-        warnings.append(dict(code="coverage_fallback", severity="warn", message=svc.coverage.last["warning"]))
+        code = "coverage_stale" if svc.coverage.last.get("service") == "stale-cache" else "coverage_fallback"
+        warnings.append(dict(code=code, severity="warn", message=svc.coverage.last["warning"]))
     res = dedup(rows, svc.registry)
     if not res.frames:
         raise PlanError("SPHEREx has no frames covering this position in the configured releases yet. The quick "

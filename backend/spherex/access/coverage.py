@@ -131,12 +131,25 @@ class CoverageClient:
                 self.last = {"service": "cache", "rows": len(hit)}
                 return [CoverageRow(**r) for r in hit]
         try:
-            rows = await self.sia2(ra, dec, radius_deg, colls)
-        except (httpx.HTTPError, ServiceError, QueryOverflow, RuntimeError) as e:
-            rows = await self.tap(ra, dec, colls)
-            self.last["fallback_reason"] = repr(e)[:200]
-            if radius_deg > TARGET_RADIUS_DEG:
-                self.last["warning"] = "TAP fallback answered for the centre point only"
+            try:
+                rows = await self.sia2(ra, dec, radius_deg, colls)
+            except (httpx.HTTPError, ServiceError, QueryOverflow, RuntimeError) as e:
+                rows = await self.tap(ra, dec, colls)
+                self.last["fallback_reason"] = repr(e)[:200]
+                if radius_deg > TARGET_RADIUS_DEG:
+                    self.last["warning"] = "TAP fallback answered for the centre point only"
+        except QueryOverflow:
+            raise
+        except (httpx.HTTPError, ServiceError, RuntimeError) as e:   # SIA2 and TAP both down: last known list
+            stale = self.cache.get_stale(ckey) if self.cache is not None else None
+            if stale is None:
+                raise
+            hit, saved = stale
+            day = time.strftime("%Y-%m-%d", time.gmtime(saved))
+            self.last = {"service": "stale-cache", "rows": len(hit), "saved": saved, "fallback_reason": repr(e)[:200],
+                         "warning": f"IRSA is not answering, so this view uses the frame list saved on {day}. "
+                                    "Frames IRSA added after that are missing until it is back."}
+            return [CoverageRow(**r) for r in hit]
         if self.cache is not None:
             self.cache.put(ckey, [r.as_dict() for r in rows], release_state)
         return rows
