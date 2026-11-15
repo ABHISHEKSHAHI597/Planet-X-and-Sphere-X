@@ -59,6 +59,20 @@ export function composeRGB(ch: [Float32Array, Float32Array, Float32Array], lim: 
 }
 
 const presetLimits = new Map<string, { lo: number; hi: number }[]>();
+/** Decoded λ-range composites by view|bin|preset. Without it, playback re-downloaded every bin on every loop and
+ *  hit the server's measurement rate limit (429 "Composite not available") within the first pass. Bounded LRU. */
+const RGB_CACHE_MAX = 64;
+const rgbCache = new Map<string, Promise<Float32Array>>();
+function rgbValues(key: string, bin: string, preset: string): Promise<Float32Array> {
+  const k = `${key}|${bin}|${preset}`;
+  let p = rgbCache.get(k);
+  if (p) { rgbCache.delete(k); rgbCache.set(k, p); return p; }   // refresh LRU position
+  p = api.rgbF16(key, bin, preset).then(decodeF16);
+  p.catch(() => rgbCache.delete(k));                              // a failure is retried next time, not cached
+  rgbCache.set(k, p);
+  while (rgbCache.size > RGB_CACHE_MAX) rgbCache.delete(rgbCache.keys().next().value!);
+  return p;
+}
 
 /** Resolve `rgb:…` to what to fetch. null: not a composite this build knows (shown as a notice). */
 export function rgbPlan(bands: string): { kind: "bands"; bands: [number, number, number] } | { kind: "range"; preset: string } | null {
@@ -96,7 +110,7 @@ export function RgbCanvas({ bin }: { bin: string }) {
         ch = await Promise.all(plan.bands.map((b, k) => getValues(m.key, chBins[k]!, b, m.formats.stack))) as [Float32Array, Float32Array, Float32Array];
         lim = plan.bands.map((b) => m.limits[String(b)] ?? { lo: 0, hi: 1 });
       } else {
-        const all = decodeF16(await api.rgbF16(m.key, bin, plan.preset));
+        const all = await rgbValues(m.key, bin, plan.preset);
         const n = nx * ny;
         ch = [all.subarray(0, n), all.subarray(n, 2 * n), all.subarray(2 * n, 3 * n)];
         const k = `${m.key}|${plan.preset}`;

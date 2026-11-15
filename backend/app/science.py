@@ -320,6 +320,10 @@ def _ks_expected(t: Target) -> float | None:
     return None
 
 
+# Archive searches + cutouts for the 25-year blink; past this IRSA is hanging (seen 2026-11-15: 600 s for a 502).
+BLINK25_DEADLINE_S = 180.0
+
+
 async def blink25(svc: Any, m: dict[str, Any]) -> dict[str, Any]:
     """25-year blink (P2-1, implementation.md §4.13): D's epoch plan (2MASS Ks, AllWISE W2, NEOWISE W2 thinned to
     ≈ one per two years), fetched as cutouts, put by I's `spherex.blink25` on one grid centred between the archival
@@ -375,7 +379,7 @@ async def _build_blink25(svc: Any, m: dict[str, Any], idx_path: Any) -> dict[str
         return float(a[0]), float(d[0])
 
     try:
-        p = await plan(
+        p = await asyncio.wait_for(plan(
             t.name,
             pos,
             now_year,
@@ -383,8 +387,18 @@ async def _build_blink25(svc: Any, m: dict[str, Any], idx_path: Any) -> dict[str
             WiseClient(svc.client),
             "spherex.targets.Target.pos (catalogue epoch, proper motion and parallax)",
             k_expected=_ks_expected(t),
-        )
+        ), BLINK25_DEADLINE_S)
+    except TimeoutError:
+        raise HTTPException(503, f"25-year blink: the 2MASS/WISE archives at IRSA did not answer within "
+                                 f"{BLINK25_DEADLINE_S:.0f} s. IRSA is probably slow or recovering from an outage; "
+                                 "try again in a few minutes.") from None
     except Exception as e:  # archive failures are reported, never replaced by a guess
+        from .upstream import describe_upstream
+
+        what = describe_upstream(e)
+        if what is not None:
+            raise HTTPException(503, f"25-year blink: {what} while searching the 2MASS/WISE archives. That is an "
+                                     "outage on their side; try again in a few minutes.") from None
         raise HTTPException(502, f"archival search failed: {type(e).__name__}: {e}"[:300]) from None
     d = p.as_dict()
     old = (d["twomass_source"]["ra"], d["twomass_source"]["dec"]) if d["twomass_source"] else pos(2010.5)

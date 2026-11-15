@@ -129,6 +129,7 @@ async def upstream_error(request: Request, e: Exception) -> JSONResponse:
     return JSONResponse({"detail": detail}, status_code=503)
 
 
+OVERLAY_DEADLINE_S = 45.0    # one catalogue overlay (a TAP cone is 10-17 s when the archive is healthy)
 PLAN_DEADLINE_S = 60.0       # planning (resolve + coverage) never holds a request longer than this
 HEALTH_FAILS_TO_DOWN = 3     # consecutive failed probes before the API serves the snapshot (audit K-01)
 
@@ -640,10 +641,12 @@ def _routes(r: APIRouter) -> None:  # noqa: C901 — one place lists every endpo
         """RGB preset composite (implementation.md §7): 3 × ny × nx f16, R, G, B planes from per-pixel λ."""
         svc = _svc(request)
         require(svc, "rgb")
-        limit(request, "measure")
         if not name.endswith(".f16"):
             raise HTTPException(400, "expected <preset>.f16")
-        if svc.calib_spec[0] == "missing" and not find(svc, "rgb_path", key, bin_id, name[:-4]).exists():
+        cached = find(svc, "rgb_path", key, bin_id, name[:-4]).exists()
+        if not cached:                  # a cached composite is a file read: only computing one counts as a measurement
+            limit(request, "measure")
+        if svc.calib_spec[0] == "missing" and not cached:
             raise HTTPException(409, "λ-range composites need the locked calibration (CALIB_ROOT)")
         from .science import rgb_payload
 
@@ -827,7 +830,14 @@ def _routes(r: APIRouter) -> None:  # noqa: C901 — one place lists every endpo
             raise HTTPException(404, "catalogue must be gaia|catwise|allwise|simbad|sso")
         from .science import overlay
 
-        return await overlay(svc, cat, ra, dec, r_deg, mjd)
+        try:
+            return await asyncio.wait_for(overlay(svc, cat, ra, dec, r_deg, mjd), OVERLAY_DEADLINE_S)
+        except TimeoutError:
+            # A catalogue cone that hangs (IRSA TAP recovering from an outage held Gaia for 300 s) must not keep the
+            # checkbox spinning for minutes; the cone keeps no partial state, so the next tick simply asks again.
+            src = "IRSA" if cat in ("gaia", "catwise", "allwise") else {"simbad": "SIMBAD", "sso": "SkyBoT"}[cat]
+            raise HTTPException(503, f"The {cat} catalogue (via {src}) did not answer within {OVERLAY_DEADLINE_S:.0f} s. "
+                                     "Untick and tick the overlay again in a few minutes.") from None
 
     # ------------------------------------------------------------------------------------- exports
     @r.get(
