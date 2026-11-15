@@ -11,7 +11,7 @@ from spherex.external import tap
 from spherex.external.allwise import AllwiseSource, cone_sql as allwise_cone_sql
 from spherex.external.catwise import CatwiseClient
 from spherex.external.gaia import GaiaClient
-from spherex.external.simbad import SimbadClient, by_identifier_sql, high_pm_cone_sql
+from spherex.external.simbad import SimbadClient, by_identifier_sql, high_pm_cone_sql, name_variants
 from spherex.external.skybot import SkybotClient, params as skybot_params, parse_text
 from spherex.external.twomass import TwoMassClient
 from spherex.external.wise import WiseClient, group_epochs
@@ -33,6 +33,12 @@ def test_adql_escaping_and_injection():
     with pytest.raises(ValueError):
         tap.adql_number(float("nan"))
     assert "> 250000.0" in high_pm_cone_sql(1, 2)                     # 0.5″/yr²
+
+
+def test_iau_star_name_variants():
+    assert name_variants("xamidimura") == ["Xamidimura", "NAME-IAU xamidimura", "NAME-IAU Xamidimura"]
+    assert name_variants("Xamidimura") == ["NAME-IAU Xamidimura"]
+    assert by_identifier_sql("a", "b'c").endswith("WHERE i.id = 'a' OR i.id = 'b''c'")
 
 
 def test_simbad_names_and_traps():

@@ -51,9 +51,17 @@ class SimbadObject:
                    s("coo_bibcode"), s("pm_bibcode"))
 
 
-def by_identifier_sql(identifier: str) -> str:
-    return (f"SELECT {COLUMNS} FROM basic AS b JOIN ident AS i ON i.oidref = b.oid "
-            f"WHERE i.id = {adql_literal(identifier)}")
+def by_identifier_sql(*identifiers: str) -> str:
+    where = " OR ".join(f"i.id = {adql_literal(x)}" for x in identifiers)
+    return f"SELECT {COLUMNS} FROM basic AS b JOIN ident AS i ON i.oidref = b.oid WHERE {where}"
+
+
+def name_variants(identifier: str) -> list[str]:
+    """Spellings to retry after an exact miss. SIMBAD's ident match is case-sensitive and maps `Polaris` to
+    `NAME Polaris` itself, but IAU-approved star names are stored as `NAME-IAU Xamidimura` and are not mapped."""
+    cap = " ".join(w[:1].upper() + w[1:] for w in identifier.split(" "))
+    out = [cap, f"NAME-IAU {identifier}", f"NAME-IAU {cap}"]
+    return [x for i, x in enumerate(out) if x != identifier and x not in out[:i]]
 
 
 def gaia_id_sql(oid: int) -> str:
@@ -79,6 +87,8 @@ class SimbadClient:
 
     async def by_identifier(self, identifier: str) -> SimbadObject | None:
         rows = await self._q(by_identifier_sql(identifier))
+        if not rows and (alts := name_variants(identifier)):  # one more query, only on a miss
+            rows = await self._q(by_identifier_sql(*alts))
         return SimbadObject.from_row(rows[0]) if rows else None
 
     async def gaia_dr3_id(self, oid: int) -> int | None:

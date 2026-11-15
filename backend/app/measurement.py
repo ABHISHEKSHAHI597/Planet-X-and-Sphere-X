@@ -420,8 +420,16 @@ async def astrometry_api(svc: Any, ra: float, dec: float, name: str = "", key: s
     if svc.client is None:
         raise HTTPException(409, "Differential astrometry needs Gaia stars in a >=12 arcmin registration region")
     r_reg = 0.25 if wise else 0.1
-    stars = await cached_cone(svc, "gaia", GaiaSource, lambda: GaiaClient(svc.client).cone(ra, dec, r_reg, g_max=18.0),
-                              *_exact(ra, dec, r_reg, 18.0))
+    try:
+        stars = await asyncio.wait_for(
+            cached_cone(svc, "gaia", GaiaSource, lambda: GaiaClient(svc.client).cone(ra, dec, r_reg, g_max=18.0),
+                        *_exact(ra, dec, r_reg, 18.0)),
+            GAIA_REFERENCE_DEADLINE_S,
+        )
+    except TimeoutError:
+        raise HTTPException(503, f"Gaia DR3 (queried through IRSA) did not answer within {GAIA_REFERENCE_DEADLINE_S:.0f} s. "
+                                 "Astrometry needs it as its reference star list; IRSA is probably slow or recovering "
+                                 "from an outage, so try again in a few minutes.") from None
     all_stars = list(stars)
     keep = isolated([s.ra for s in stars], [s.dec for s in stars])
     stars = [s for s, k in zip(stars, keep, strict=True) if k]
@@ -1053,11 +1061,13 @@ async def native_detections(svc: Any, m: dict[str, Any], progress: Any = None) -
     # cached on disk by their exact query, so a repeated search does not ask TAP again.
     gaia_query = asyncio.ensure_future(cached_cone(
         svc, "gaia", GaiaSource, lambda: GaiaClient(svc.client).cone(a, d, radius + 0.1, g_max=20), *_exact(a, d, radius + 0.1, 20)))
+    # A hung catalogue times out like a failed one: the search goes on, marked catalogue-incomplete (not cached).
     catalogue_rows = await asyncio.gather(
-        cached_cone(svc, "catwise", CatwiseSource, lambda: CatwiseClient(svc.client).cone(a, d, radius + 0.1),
-                    *_exact(a, d, radius + 0.1)),
-        cached_cone(svc, "simbad-hpm", SimbadObject, lambda: SimbadClient(svc.client).high_pm_cone(a, d, radius + 0.15, 0),
-                    *_exact(a, d, radius + 0.15)),
+        asyncio.wait_for(cached_cone(svc, "catwise", CatwiseSource, lambda: CatwiseClient(svc.client).cone(a, d, radius + 0.1),
+                                     *_exact(a, d, radius + 0.1)), GAIA_REFERENCE_DEADLINE_S),
+        asyncio.wait_for(cached_cone(svc, "simbad-hpm", SimbadObject,
+                                     lambda: SimbadClient(svc.client).high_pm_cone(a, d, radius + 0.15, 0),
+                                     *_exact(a, d, radius + 0.15)), GAIA_REFERENCE_DEADLINE_S),
         return_exceptions=True,
     )
     try:

@@ -161,6 +161,16 @@
   "sha256": "2ab15504a5324a7af2204812f9b8d48d60d57f43fe4d6f53d05bd5c8d8d26075",
   "status": 200
  },
+ "POST https://simbad.harvard.edu/simbad/sim-tap/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+b.oid%2C+b.main_id%2C+b.ra%2C+b.dec%2C+b.pmra%2C+b.pmdec%2C+b.plx_value%2C+b.plx_err%2C+b.plx_bibcode%2C+b.rvz_radvel%2C+b.sp_type%2C+b.otype%2C+b.coo_bibcode%2C+b.pm_bibcode+FROM+basic+AS+b+JOIN+ident+AS+i+ON+i.oidref+%3D+b.oid+WHERE+i.id+%3D+%27NAME-IAU+WISE+0855-0714%27&REQUEST=doQuery": {
+  "bytes": 3256,
+  "file": "1726751fb81d0c4ca39cff03.gz",
+  "headers": {
+   "content-type": "application/x-votable+xml;charset=UTF-8"
+  },
+  "retrieved": "2026-11-15T19:14:57+00:00",
+  "sha256": "43e4dd807aa10ca2d094ca3cfccb93756e950defd696380557dabf123498a9a2",
+  "status": 200
+ },
  "POST https://simbad.harvard.edu/simbad/sim-tap/sync BODY FORMAT=votable&LANG=ADQL&MAXREC=1000000&QUERY=SELECT+b.oid%2C+b.main_id%2C+b.ra%2C+b.dec%2C+b.pmra%2C+b.pmdec%2C+b.plx_value%2C+b.plx_err%2C+b.plx_bibcode%2C+b.rvz_radvel%2C+b.sp_type%2C+b.otype%2C+b.coo_bibcode%2C+b.pm_bibcode+FROM+basic+AS+b+JOIN+ident+AS+i+ON+i.oidref+%3D+b.oid+WHERE+i.id+%3D+%27V%2A+R+Dra%27&REQUEST=doQuery": {
   "bytes": 3461,
   "file": "25a0f542a0cb2fc07e6f32e3.gz",

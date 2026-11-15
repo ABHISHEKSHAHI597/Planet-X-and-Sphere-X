@@ -50,3 +50,17 @@ def test_gaia_step_of_a_lookup_is_bounded_and_falls_back_to_simbad(monkeypatch):
     t = asyncio.run(targets.resolve_name("LHS 288", object()))
     assert t.astrometry_source == "SIMBAD J2000 (linear)" and t.pmdec == 1611.1
     assert "Gaia lookup failed" in t.extra["warning"] and t.extra["k_mag"] == 7.5
+
+
+def test_coverage_gives_up_on_its_deadline(tmp_path, monkeypatch):
+    import app.main as main
+
+    async def hang(*a, **k):
+        await asyncio.sleep(30)
+
+    monkeypatch.setattr(main, "PLAN_DEADLINE_S", 0.05)
+    with _client(tmp_path, lambda req: httpx.Response(200)) as c:
+        monkeypatch.setattr(c.app.state.svc.coverage, "coverage", hang)
+        r = c.get("/api/v1/coverage", params={"ra": 10.0, "dec": 20.0})
+    assert r.status_code == 503
+    assert "coverage took longer than" in r.json()["detail"]

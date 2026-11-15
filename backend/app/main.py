@@ -373,7 +373,13 @@ def _routes(r: APIRouter) -> None:  # noqa: C901 — one place lists every endpo
         from spherex.epochs import choose_axis, cluster_visits, time_bins
 
         t0 = time.perf_counter()
-        rows = await svc.coverage.coverage(ra, dec, TARGET_RADIUS_DEG, release_state=svc.release_state().token())
+        try:
+            rows = await asyncio.wait_for(
+                svc.coverage.coverage(ra, dec, TARGET_RADIUS_DEG, release_state=svc.release_state().token()),
+                PLAN_DEADLINE_S,
+            )
+        except TimeoutError:
+            raise HTTPException(503, f"{UPSTREAM_MESSAGE} (coverage took longer than {PLAN_DEADLINE_S:.0f} s)") from None
         frames = dedup(rows, svc.registry).frames
         svc.counters.inc("coverage_seconds", time.perf_counter() - t0)
         if not frames:
