@@ -48,6 +48,7 @@ from .render_png import RenderError, decode_f16, png_bytes
 from .services import Services, snapshot_index
 from .settings import API_VERSION, Settings
 from .store import UnsafePath, find
+from .upstream import describe_upstream
 from .viewkey import ParamError, normalize
 
 log = logging.getLogger("parallax")
@@ -118,7 +119,13 @@ UPSTREAM_MESSAGE = ("An archive service this request needs (IRSA, SIMBAD, Gaia o
 
 async def upstream_error(request: Request, e: Exception) -> JSONResponse:
     log.warning(json.dumps({"event": "upstream_error", "path": request.url.path, "error": repr(e)[:300]}))
-    detail = str(e) if isinstance(e, UpstreamError) else f"{UPSTREAM_MESSAGE} ({type(e).__name__})"
+    if isinstance(e, UpstreamError):
+        detail = str(e)
+    elif (what := describe_upstream(e)) is not None:
+        detail = (f"{what}, so this cannot be loaded right now. That is an outage on their side; try again in a few "
+                  "minutes. Pinned targets, and stars this server has opened before, still work.")
+    else:
+        detail = f"{UPSTREAM_MESSAGE} ({type(e).__name__})"
     return JSONResponse({"detail": detail}, status_code=503)
 
 

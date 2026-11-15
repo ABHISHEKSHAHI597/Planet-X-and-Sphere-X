@@ -1,0 +1,22 @@
+# Stars scripts/prewarm.py --stars-file pre-loads, so they still open while IRSA is down. One SIMBAD name per line.
+# Nearby and fast-moving stars (the motion shows in a SPHEREx blink)
+Proxima Centauri
+alpha Cen A
+Wolf 359
+Lalande 21185
+Luyten's Star
+Kapteyn's Star
+Groombridge 1830
+61 Cyg A
+Ross 128
+Teegarden's Star
+van Maanen's Star
+Gliese 581
+TRAPPIST-1
+Luhman 16
+# Well-known bright stars (expect saturation flags in some bands)
+Sirius
+Vega
+Betelgeuse
+Altair
+Polaris

@@ -23,6 +23,7 @@ from ..types import FrameRef, RawFrame
 from .frames import FrameBox
 
 COVERAGE_TTL_S = 24 * 3600
+STALE_NEAR_DEG = 1.0 / 60     # a stale coverage entry this close stands in for the query when IRSA is down
 _HDUS = ("IMAGE", "FLAGS", "VARIANCE", "ZODI")
 
 
@@ -34,6 +35,21 @@ def _atomic_write(p: Path, data: bytes) -> None:
     tmp = p.with_name(p.name + f".tmp{os.getpid()}.{threading.get_ident()}")
     tmp.write_bytes(data)
     tmp.replace(p)
+
+
+def _parse_key(key: str) -> tuple[float, float, str, str] | None:
+    """A coverage key "ra,dec,radius,coll|coll" (CoverageClient.coverage) → (ra, dec, radius text, collections)."""
+    try:
+        ra, dec, rad, colls = key.split(",", 3)
+        return float(ra), float(dec), rad, colls
+    except ValueError:
+        return None
+
+
+def _sep_deg(ra1: float, dec1: float, ra2: float, dec2: float) -> float:
+    r1, d1, r2, d2 = map(np.radians, (ra1, dec1, ra2, dec2))
+    c = np.sin(d1) * np.sin(d2) + np.cos(d1) * np.cos(d2) * np.cos(r1 - r2)
+    return float(np.degrees(np.arccos(np.clip(c, -1.0, 1.0))))
 
 
 class FrameCache:
@@ -112,6 +128,35 @@ class CoverageCache:
         if d.get("release_state") != release_state or self.clock() - d["t"] > self.ttl:
             return None
         return d["rows"]  # type: ignore[no-any-return]
+
+    def get_stale(self, key: str, near_deg: float = STALE_NEAR_DEG) -> tuple[list[dict[str, Any]], float] | None:
+        """(rows, saved_at) of the newest entry for this query, or for the same radius and collections within
+        `near_deg` of it, whatever its age or release state. Only for when the archive is not answering: a
+        moving star's position (and so its key) shifts a little every day, and a SPHEREx detector is ≈3.5° wide,
+        so last week's frame list for a point a few arcseconds away is the same list minus the newest frames."""
+        p = self._path(key)
+        try:
+            d = json.loads(p.read_text())
+            return d["rows"], float(d["t"])
+        except (OSError, ValueError, KeyError, TypeError):
+            pass
+        want = _parse_key(key)
+        if want is None:
+            return None
+        ra0, dec0, rad0, colls0 = want
+        best: tuple[float, list[dict[str, Any]], float] | None = None
+        for q in self.root.glob("*.json"):
+            try:
+                d = json.loads(q.read_text())
+                got = _parse_key(d["key"])
+                if got is None or got[2] != rad0 or got[3] != colls0:
+                    continue
+                sep = _sep_deg(ra0, dec0, got[0], got[1])
+                if sep <= near_deg and (best is None or sep < best[0]):
+                    best = (sep, d["rows"], float(d["t"]))
+            except (OSError, ValueError, KeyError, TypeError):
+                continue
+        return None if best is None else (best[1], best[2])
 
     def put(self, key: str, rows: list[dict[str, Any]], release_state: str) -> None:
         _atomic_write(self._path(key), json.dumps({"key": key, "t": self.clock(), "release_state": release_state,

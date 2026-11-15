@@ -189,7 +189,8 @@ def test_b09_archive_outage_is_a_clear_503(tmp_path, no_backoff):
                   c.get("/api/v1/coverage", params={"ra": 269.4461, "dec": 4.7707}),
                   c.get("/api/v1/overlays/gaia", params={"ra": 269.4461, "dec": 4.7707, "mjd": 61000})):
             assert r.status_code == 503, r.text
-            assert "not answering" in r.json()["detail"]
+            # names the service and what it did, not "GaveUp"
+            assert "IRSA (NASA's SPHEREx archive) answered HTTP 503" in r.json()["detail"]
 
 
 # ------------------------------------------------------------------------------------------- K-01
